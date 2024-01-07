@@ -8,10 +8,19 @@ class BasicStatistics:
 
     #TODO: Change the return type of number_action_avg_by_player_by_scope in the case there are mutliple Names
     # should be able to get all of the change
-    def calculate_action_player(self, name, data, action, side):
+    def __init__(self):
+        self.side = {'Total' : 0, 'Side 1' : 1, 'Side 2' : 2}
+
+    def calculate_action_player(self, name, data, average, action, side):
+        """ 
+        Function that calculate the average action  (kills/death) of a player for a given side (attack, defense or total) 
+        returns the name and the average kill of the player
+        """
         report = {name : 0}
+        actions = []
+
         try:
-            side_ = SIDE[side]
+            side_ = self.side[side]
         except NameError:
             raise NameError(f'No side named {side}')
         
@@ -20,14 +29,41 @@ class BasicStatistics:
         else:
             action_ = action
         
-        #TODO: continue
-        return 0
+        for i,value in enumerate(data):
+            actions.append(int(data[action_].iloc[i].split('\n')[side_]))
+        
+        if average:
+            report[name] = self.average(actions)
+        else:
+            report[name] = sum(actions)
+        return report
     
-    def calculate_action_team(self, names, data, action, side):
-        report = {n:0 for n in names}
+    def calculate_action_team(self, names, data, average, action, side):
+        """ 
+        Function that calculate the average action  (kills/death) of a player for a given side (attack, defense or total) 
+        returns the name and the average kill of each player of the team
+        """
+        report = {n:[] for n in names}
+        
+        try:
+            side_ = self.side[side]
+        except NameError:
+            raise NameError(f'No side named {side}')
+        
+        if action not in ['K', 'D']:
+            action_ = 'K'
+        else:
+            action_ = action
 
-
-        return 0
+        for i,value in enumerate(data):
+            name = value['Player Name']
+            report[name].append(int(data[action_].iloc[i].split('\n')[side_]))
+        
+        if average:
+            final_report = {n:self.average(report[n]) for n in names}
+        else:
+            final_report = {n:sum(report[n]) for n in names}
+        return final_report
     
     def filter_by_scope(self, data, scope):
 
@@ -46,7 +82,7 @@ class BasicStatistics:
     def average(list):
         return sum(list) / len(list)
 
-    def number_action_avg_by_player_by_scope(self, df, action, side = None, scope = None, name = None, team_name = None):
+    def number_action_by_player_by_scope(self, df, action, average,side = None, scope = None, name = None, team_name = None):
         """
             Function that calculates the average kill/death of each player by scope
 
@@ -56,97 +92,32 @@ class BasicStatistics:
                 action : string 'K', 'D'
                 side : string 'Total', 'Side 1', 'Side 2'
         """
-        try:
-            processed_kills = []
-            if name:
-                # want statistic on a particular player
+
+        if name is not None:
+            # want statistic on a particular player
+            try:
                 data_player = df[df['Player Name'] == name]
-                data_player_filtered_by_scope = self.filter_by_scope(data_player, scope)
-                report_player = self.calculate_action_player(data_player_filtered_by_scope, action, side)
+            except NameError:
+                print(f'No such {name} in the dataset : {NameError}')
+            data_player_filtered_by_scope = self.filter_by_scope(data_player, scope)
+            report_player = self.calculate_action_player(name, data_player_filtered_by_scope,average,action, side)
 
-            elif team_name:
-                # want statistic on the all team
+            return report_player
+
+        elif team_name is not None:
+            # want statistic on the all team
+            try:
                 set_names = set(df['Player Name'].where(df['Team Name'] == team_name))
-                names = pd.DataFrame(list(set_names), columns=['Player']).dropna()['Player'].values.tolist()
-                data_team = df[df['Player Name'].isin(names)]
-                data_team_filtered_by_scope = self.filter_by_scope(data_team, scope)
-                report_team = self.calculate_action_team(data_team_filtered_by_scope, action, side)
-            else:
-                raise NameError('No instance can be treated')
-            
-            
+            except NameError:
+                print(f'No such {set_names} in the dataset : {NameError}')
 
-            if scope != "Tournament" and scope in set(kills['Series']):
-                # average in a particular Match
-                kills = kills[kills['Series'] == scope]
-                for i in range(len(kills)):
-                    processed_kills.append(int(kills[action].iloc[i].split('\n')[SIDE[side]]))
-                return self.average(processed_kills)    
-            elif scope == "Tournament":
-                # average in the all Tournament
-                for i in range(len(kills)):
-                    processed_kills.append(int(kills[action].iloc[i].split('\n')[SIDE[side]]))
-                return self.average(processed_kills)
-            else:
-                print(f'{scope} is not available or mispelled')
-                
-        except NameError:
-            print(f'Cannot fetch kills because {NameError}')
+            names = pd.DataFrame(list(set_names), columns=['Player']).dropna()['Player'].values.tolist()
+            data_team = df[df['Player Name'].isin(names)]
+            data_team_filtered_by_scope = self.filter_by_scope(data_team, scope)
+            report_team = self.calculate_action_team(names,data_team_filtered_by_scope, average,action, side)
 
-    def number_action_by_player_by_scope(df, scope, action, side, name = NAME):
-        """Function that calculates the kills/deaths of each player by scope
-
-            parameter:
-                df : data set
-                scope : string, 'Tournament' for the all, values in the column Series for discretized
-                action : string 'K', 'D'
-        """
-        try:
-            processed_kills = []
-            kills = df[df['Player Name'].isin(name)]
-            if scope != "Tournament" and scope in set(kills['Series']):
-                # average in a particular Match
-                kills = kills[kills['Series'] == scope]
-                for i in range(len(kills)):
-                    processed_kills.append(int(kills[action].iloc[i].split('\n')[SIDE[side]]))
-                return processed_kills   
-            elif scope == "Tournament":
-                # average in the all Tournament
-                for i in range(len(kills)):
-                    processed_kills.append(int(kills[action].iloc[i].split('\n')[SIDE[side]]))
-                return processed_kills
-            else:
-                print(f'{scope} is not available or mispelled')
-                
-        except NameError:
-            print(f'Cannot fetch kills because {NameError}')
-
-    def ratio_kill_death(self, df, scope, side):
-        """
-            Function that calculates the average kill/death ratio of each player by scope
-
-            parameter:
-                df : data set
-                scope : string, 'Tournament' for the all, values in the column Series for discretized
-                side : string 'Total', 'Side 1', 'Side 2'
-        """
-        try:
-            processed_kills = []
-            ratio = []
-            kills = df[df['Player Name'].isin(NAME)]
-            if scope != "Tournament" and scope in set(kills['Series']):
-                # average in a particular Match
-                kills = kills[kills['Series'] == scope]
-                for i in range(len(kills)):
-                    processed_kills.append(int(kills['K'].iloc[i].split('\n')[SIDE[side]]))
-                return self.average(processed_kills)    
-            elif scope == "Tournament":
-                # average in the all Tournament
-                for i in range(len(kills)):
-                    processed_kills.append(int(kills['K'].iloc[i].split('\n')[SIDE[side]]))
-                return self.average(processed_kills)
-            else:
-                print(f'{scope} is not available or mispelled')
-        except NameError:
-            print(f'Cannot fetch kills because {NameError}')
+            return report_team
+        else:
+            raise NameError('No instance can be treated')
+    
 
