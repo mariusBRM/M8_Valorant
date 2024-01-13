@@ -5,6 +5,8 @@ SIDE = {'Total' : 0, 'Side 1' : 1, 'Side 2' : 2}
 NAME = ['logaN', 'Wailers', 'beyAz', 'TakaS', 'nataNk']
 TEAM = "Gentle Mates"
 
+#region BasicStatistiques
+
 def calculate_action_player(name, data, average, action, side):
     """
     Functions that calculate the number of action by side
@@ -157,7 +159,7 @@ def number_action_by_player_by_scope(df, action, average, side=None, scope=None,
     
 def average_score_by_player_by_scope(df, type, side=None, scope=None, name=None, team_name=None):
     """
-    Functions that calculate the number of action by side by player and by scope
+    Functions that calculate the average score by side by player and by scope
 
     parameter:
         df : dataframe of the retrieve data from the scraper
@@ -195,5 +197,101 @@ def average_score_by_player_by_scope(df, type, side=None, scope=None, name=None,
         return report_team
     else:
         raise ValueError('No instance can be treated')
+    
+#endregion
+    
+#region AgentStatistiques
+    
+def agent_popularity(data, player_name):
+    """
+        Function that returns a dictionnary of most picked agent for a player
+
+        parameter:
+            data : dataframe extracted from the scraper
+            player : name of the player
+    """
+    try:
+
+        data_player = data[data['Player Name'] == player_name]
+
+        agent_popularity = {
+            'player': player_name,
+            'played_agent' : {agent:0 for agent in list(set(data_player["Agent Name"]))}
+            }
+
+        for i in range(len(data_player)):
+            agent_played = data_player.iloc[i]["Agent Name"]
+            agent_popularity['played_agent'][agent_played] += 1
+        
+        return agent_popularity
+  
+    except NameError:
+        print(f'{NameError} | agent_popularity search failed')
+
+
+def calculate_action_agent(agent, data, average, action, side):
+    """
+    Functions that calculate the number of action by side
+
+    parameter:
+        name : name of the player | string
+        data : dataframe of the retrieve data from the scraper
+        average : boolean if true then calculate the average, sum otherwise
+        action : either 'K' or 'D'
+        side : ATK, DFS or full match
+    
+    return:
+        report : a dictionnary with the name as key and the calculated value
+    """
+    report = {agent: 0}
+    actions = []
+
+    side_mapping = {'Total': 0, 'Side 1': 1, 'Side 2': 2}
+    side_ = side_mapping.get(side, None)
+    
+    if side_ is None:
+        side_ = 0
+    
+    action_ = action if action in ['K', 'D'] else 'K'
+    
+    for i, _ in enumerate(data):
+        actions.append(int(data[action_].iloc[i].split('\n')[side_]))
+    
+    if average:
+        report[agent] = calculate_average(actions)
+    else:
+        report[agent] = sum(actions)
+    
+    return report
+
+def number_action_by_scope_by_agent(df, agent, action, average, side=None, scope=None, name=None):
+    """
+    Functions that calculate the number of action by side, by player, by scope and by agent
+
+    parameter:
+        df : dataframe of the retrieve data from the scraper
+        agent : Agent played by the player to analyze | string
+        average : boolean if true then calculate the average, sum otherwise
+        scope : string representing the instance that is under study i.e the match or the all tournament set to None by default
+        action : either 'K' or 'D'
+        side : ATK, DFS or full match set to None by default
+    
+    return:
+        report : a dictionnary with the names as keys and the calculated value for each name
+    """
+    try:
+        data_played_agent = df[df["Agent Name"] == agent]
+    except NameError:
+        print(f'No such {agent} in the dataset : {NameError}')
+
+    data_player_filtered_by_scope = filter_by_scope(data_played_agent, scope)
+    report = calculate_action_agent(agent, data_player_filtered_by_scope, average, action, side)
+
+    return report
+
+
+
+
+#endregion
     
 
