@@ -2,18 +2,34 @@ import os
 import pandas as pd
 import lxml
 import requests  
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment
 import re
+from utils import *
 
-def extract_round_numbers_if_present(text):
-    if 'Round' in text:
-        round_numbers = re.findall(r'Round (\d+)', text)
-        return [int(round_number) for round_number in round_numbers]
-    else:
-        return text
 
 def matches_scraper(url):
-    return 0
+    """
+    Function that extract the match url from a vlr.gg url (page of a valorant event)
+
+    parameter:
+        list_url : list of url representing the different matches
+    
+    return:
+        match_url_list : a list of string
+    """
+    match_url_list = []
+
+    source_matchlist = requests.get(url=url).text
+
+    soup_matchlist = BeautifulSoup(source_matchlist,'lxml')
+
+    days = soup_matchlist.findAll('div', {'class':'wf-card'})
+
+    for d in range(1,len(days)):
+        for i in days[d].findAll(href=True):
+            match_url_list.append(i['href'])
+
+    return match_url_list
 
 def general_data_scraper(list_url):
     """
@@ -93,6 +109,16 @@ def general_data_scraper(list_url):
     return result
 
 def performance_data_scraper(list_url):
+    """
+    Function that extract the performance data from a vlr.gg url (page of a match between two teams)
+    The performance data aims the performance display in the vlr.gg page and gather the data displayed in the tables in a textual form
+
+    parameter:
+        list_url : list of url representing the different matches
+    
+    return:
+        result : a dataframe of all the extracted data flatten
+    """
 
     match_stats = []
 
@@ -127,7 +153,6 @@ def performance_data_scraper(list_url):
             df_match = pd.DataFrame(columns=headers_match)
 
             for i,row in enumerate(table.find_all('tr')[1:]):
-                added_row = []
                 data = row.find_all('td')
                 row_data = [td.text for td in data]
                 transformed_data = [extract_round_numbers_if_present(text.replace('\t','').strip()) for text in row_data]
@@ -149,5 +174,55 @@ def performance_data_scraper(list_url):
     
     return result
 
-def economy_data_scraper(url):
-    return 0
+def economy_data_scraper(list_url):
+    """
+    Function that extract the economical data from a vlr.gg url (page of a match between two teams)
+    The economy data aims the economy display in the vlr.gg page and gather the data displayed in the tables in a textual form
+
+    parameter:
+        list_url : list of url representing the different matches
+    
+    return:
+        result : a dataframe of all the extracted data flatten
+    """
+    match_stats = []
+
+    for matchnum in range(len(list_url)):
+
+        url = list_url[matchnum]
+        
+        source_match = requests.get(url=url).text
+        soup_match = BeautifulSoup(source_match, features="html.parser")
+
+        stage = soup_match.findAll('div', {'class':'match-header-event-series'})[0].text.strip().split(":", 1)[0]
+
+        series = soup_match.findAll('div', {'class':'match-header-event-series'})[0].text.strip().split("\n", 1)[1].strip()
+
+        # for table_economy[i] if i%2==0 : the full bank with the round description, otherwise that is the higher level information
+        # the last one is not useful as it is the overall result so only things interesting are [0,5] for a BO3
+        table_economy = soup_match.findAll('table', {'class':'wf-table-inset mod-econ'})
+
+        for i in range(0, len(table_economy)-1, 2):
+
+            map_num = i // 2
+            map_name = soup_match.findAll('div', {'class':'vm-stats-gamesnav-item js-map-switch'})[map_num].text.strip()[1:].strip()
+
+            headers_match = ["Team Name", "Map #", "Map Name", "Stage", "Series", "Pistol_Won", "Eco", "Eco_Won", "$", "$_Won", "$$", "$$_Won", '$$$', '$$$_Won', "Bank", "Buys"]
+            df_match = pd.DataFrame(columns=headers_match)
+
+            table_economy_general = table_economy[i]
+            bank = table_economy[i+1]
+
+            team1, team2 = get_economy_data(table_economy_general)
+            banks, buys = get_banking_data(bank)
+
+            length = len(df_match)
+
+            df_match.loc[length], df_match.loc[length+1] = create_economy_row(team1, team2, banks, buys, series, stage, map_num, map_name)
+
+            match_stats.append(df_match)
+
+    result = pd.concat(match_stats).reset_index(drop=True)
+    result = result.apply(pd.to_numeric, errors='ignore')
+
+    return result
