@@ -1,4 +1,6 @@
 import pandas as pd
+import re
+from bs4 import BeautifulSoup, Comment
 
 # Set general constant
 SIDE = {'Total' : 0, 'Side 1' : 1, 'Side 2' : 2}
@@ -293,5 +295,146 @@ def number_action_by_scope_by_agent(df, agent, action, average, side=None, scope
 
 
 #endregion
-    
 
+#region Scraping
+
+def extract_round_numbers_if_present(text):
+    """ Extract the round in the performance table from the text : Round X --> X """
+    if 'Round' in text:
+        round_numbers = re.findall(r'Round (\d+)', text)
+        return [int(round_number) for round_number in round_numbers]
+    else:
+        return text
+
+def convert_to_number(s):
+    if s.endswith('k'):
+        return int(float(s[:-1]) * 1000)
+    elif s:
+        return int(float(s))
+    else:
+        return None
+
+def get_economy_data(table_economy_general):
+
+    general_econ = []
+
+    for _, row in enumerate(table_economy_general.find_all('tr')[1:]):
+        data = row.find_all('td')
+        team = data[0].text.strip()
+        pistol_won = data[1].text.strip()
+        Eco, Eco_Won = re.findall(r'\d+', data[2].text.strip())[0], re.findall(r'\d+', data[2].text.strip())[1]
+        Semi_Eco, Semi_Eco_Won = re.findall(r'\d+', data[3].text.strip())[0], re.findall(r'\d+', data[3].text.strip())[1]
+        Semi_Buy, Semi_Buy_Won = re.findall(r'\d+', data[4].text.strip())[0], re.findall(r'\d+', data[4].text.strip())[1]
+        Full_Buy, Full_Buy_Won = re.findall(r'\d+', data[5].text.strip())[0], re.findall(r'\d+', data[5].text.strip())[1]
+
+        general_econ.append([team, pistol_won, Eco, Eco_Won, Semi_Eco, Semi_Eco_Won, Semi_Buy, Semi_Buy_Won, Full_Buy, Full_Buy_Won])
+
+    return general_econ[0], general_econ[1]
+
+
+def get_banking_data(bank):
+
+    banks = [[],[]]
+    buys = [[],[]]
+
+    for _, row in enumerate(bank.find_all('tr')):
+
+        data = row.find_all('td')[1:]
+        
+        for column in data:
+            # Extract text from each div element and also from comments and store in a list
+            extracted_data = [element.get_text(strip=True) for element in column if element.string and element.string.strip() != ""]
+
+            # Find all comments and extract the text from them
+            comment_text = [comment.string.strip() for comment in column.find_all(text=lambda text: isinstance(text, Comment))]
+
+            # find the commented part of the page
+            div_text = [BeautifulSoup(item, 'html.parser').get_text(strip=True) for item in comment_text if item.startswith('<div>')]
+
+            combined_data = extracted_data + div_text
+
+            # remove empty string
+            transformed_data = [item for item in combined_data if item.strip()] 
+
+            # Remove elements containing '$' or the round retrieved
+            filtered_data = [item for item in transformed_data if '$' not in item]
+
+            # transform into integers
+            transformed_lists = [convert_to_number(element) for element in filtered_data[1:]]
+
+            # gather data
+            banks[0].append(transformed_lists[0])
+            banks[1].append(transformed_lists[1])
+            buys[0].append(transformed_lists[2])
+            buys[1].append(transformed_lists[3])
+    
+    return banks, buys
+
+def create_economy_row(general_data1, general_data2, bank, buys, series, stage, map_num, map_name):
+    """ 
+    Build a row with that header : ["Team Name", "Map #", "Map Name", "Stage", "Series", "Pistol_Won", "Eco", "Eco_Won", "$", "$_Won", "$$", "$$_Won", '$$$', '$$$_Won', "Bank", "Buys"]
+    """
+    row1, row2 = [], []
+
+    # Team Name
+    row1.append(general_data1[0])
+    row2.append(general_data2[0])
+
+    # Map #
+    row1.append(map_num+1)
+    row2.append(map_num+1)
+
+    # Map Name
+    row1.append(map_name)
+    row2.append(map_name)
+
+    # Stage
+    row1.append(stage)
+    row2.append(stage)
+
+    # Series
+    row1.append(series)
+    row2.append(series)
+
+    # general economic data
+    row1.extend(general_data1[1:])
+    row2.extend(general_data2[1:])
+
+    # Bank
+    row1.append(bank[0])
+    row2.append(bank[1])
+
+    # Buys
+    row1.append(buys[0])
+    row2.append(buys[1])
+    
+    return row1, row2
+
+def reorganize_phrases(phrases):
+    team_map = {}
+
+    decider = phrases[-1].strip().split(' ')[0]
+    
+    for i, phrase in enumerate(phrases):
+        
+        if i != len(phrases) - 1:
+            
+            parts = phrase.strip().split()
+            team = parts[0]
+            action = parts[1]
+            
+            if team not in team_map:
+                team_map[team] = {'banned': [], 'picked': [], 'remaining': []}
+            if action == 'ban':
+                team_map[team]['banned'].append(parts[2])
+            elif action == 'pick':
+                team_map[team]['picked'].append(parts[2])
+
+
+    result = []
+    for team, maps in team_map.items():
+        result.append([team, maps['banned'], maps['picked'], [decider]])
+
+    return result
+
+#endregion   

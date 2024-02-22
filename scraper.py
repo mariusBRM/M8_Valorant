@@ -226,3 +226,48 @@ def economy_data_scraper(list_url):
     result = result.apply(pd.to_numeric, errors='ignore')
 
     return result
+
+def pick_and_ban_scraper(list_url):
+    """
+    Function that extract the picks and ban data from a vlr.gg url (page of a match between two teams)
+    The economy data aims the economy display in the vlr.gg page and gather the data displayed in the tables in a textual form
+
+    parameter:
+        list_url : list of url representing the different matches
+    
+    return:
+        result : a dataframe of all the extracted data flatten
+    """
+
+    match_stats = []
+
+    for matchnum in range(len(list_url)):
+        url = list_url[matchnum]
+        
+        source_match = requests.get(url=url).text
+        soup_match = BeautifulSoup(source_match, features="html.parser")
+
+        stage = soup_match.findAll('div', {'class':'match-header-event-series'})[0].text.strip().split(":", 1)[0]
+
+        series = soup_match.findAll('div', {'class':'match-header-event-series'})[0].text.strip().split("\n", 1)[1].strip()
+
+        picks_bans = soup_match.findAll('div', {'class':'match-header-note'})[0].text.strip().split(";")
+
+        headers_match = ["Stage","Series","Team Name", "Picks", "Bans", "Decider"]
+        df_match = pd.DataFrame(columns=headers_match)
+
+        [pick_or_ban_team1, pick_or_ban_team2] = reorganize_phrases(picks_bans)
+
+        row1 = [stage, series] + pick_or_ban_team1
+        row2 = [stage, series]+ pick_or_ban_team2
+
+        length = len(df_match)
+        df_match.loc[length] = row1
+        df_match.loc[length+1] = row2
+
+        match_stats.append(df_match)
+    
+    result = pd.concat(match_stats).reset_index(drop=True)
+    result = result.apply(pd.to_numeric, errors='ignore')
+
+    return result
