@@ -59,6 +59,8 @@ def general_data_scraper(list_url):
         series = soup_match.findAll('div', {'class':'match-header-event-series'})[0].text.strip().split("\n", 1)[1].strip()
 
         winner = soup_match.findAll('div', {'class':'match-bet-item-team'})[0].text.strip().split("\n")[2].strip()
+
+        rounds = soup_match.findAll('div', {'class':'vlr-rounds'})
         
         for a in [a for a in list(range(len(table_match))) if a not in [2,3]]:
             if a in [0,1]:
@@ -69,6 +71,17 @@ def general_data_scraper(list_url):
             map_name = soup_match.findAll('div', {'class':'vm-stats-gamesnav-item js-map-switch'})[map_num-1].text.strip()[1:].strip()
             stage = soup_match.findAll('div', {'class':'match-header-event-series'})[0].text.strip().split(":", 1)[0]
             team_name = soup_match.findAll('div', {'class':'wf-title-med'})[a % 2].text.strip()
+            round_played = rounds[map_num-1]
+
+            all_rounds = round_played.find_all('div', class_='vlr-rounds-row-col')
+            scoring_one_by_one_for_all = []
+            for i,item in enumerate(all_rounds[1:]):
+                if i != 12:
+                    title_value = item['title']
+                    if len(title_value) > 0:
+                        scoring_one_by_one_for_all.append(title_value)
+            
+            scoring_round_per_team = reorganize_rounds_based_on_titles(scoring_one_by_one_for_all)
             
             table = table_match[a]
             headers_match = []
@@ -96,6 +109,7 @@ def general_data_scraper(list_url):
             df_match['Stage'] = stage
             df_match['Series'] = series
             df_match['winner'] = winner
+            df_match['rounds'] = ', '.join(map(str, scoring_round_per_team[a%2]))
             
             match_stats.append(df_match)
         
