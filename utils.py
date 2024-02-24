@@ -411,6 +411,10 @@ def create_economy_row(general_data1, general_data2, bank, buys, series, stage, 
     return row1, row2
 
 def reorganize_phrases(phrases):
+    """
+    Process the phrases like : C9 ban Split; NRG ban Bind; C9 pick Sunset; NRG pick Ascent; C9 ban Breeze; NRG ban Icebox; Lotus remains
+    into a list of two lists with the corresponding values (team name, map(s) banned, map(s) picked, remaining map )
+    """
     team_map = {}
 
     decider = phrases[-1].strip().split(' ')[0]
@@ -436,5 +440,23 @@ def reorganize_phrases(phrases):
         result.append([team, maps['banned'], maps['picked'], [decider]])
 
     return result
+
+def reorganize_rounds_based_on_titles(scoring_one_by_one_for_all):
+    """
+    title[N-1] - title[N] -> [1,0] get the score of the round N based on the previous score and the actual score
+    """
+    team1_score, team2_score = [],[]
+    for i in range(len(scoring_one_by_one_for_all)):
+        if i==0:
+            scores = scoring_one_by_one_for_all[i].split('-')
+            team1_score.append(int(scores[0]))
+            team2_score.append(int(scores[1]))
+        else:
+            # calculate scores
+            previous_scores = scoring_one_by_one_for_all[i-1].split('-')
+            actual_scores = scoring_one_by_one_for_all[i].split('-')
+            team1_score.append(int(actual_scores[0]) - int(previous_scores[0]))
+            team2_score.append(int(actual_scores[1]) - int(previous_scores[1]))
+    return [team1_score, team2_score]
 
 #endregion   
