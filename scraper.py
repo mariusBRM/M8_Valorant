@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup, Comment
 import re
 from utils import *
-
+import sys
 
 def matches_scraper(url):
     """
@@ -27,7 +27,7 @@ def matches_scraper(url):
 
     for d in range(1,len(days)):
         for i in days[d].findAll(href=True):
-            match_url_list.append(i['href'])
+            match_url_list.append("https://www.vlr.gg" + i['href'])
 
     return match_url_list
 
@@ -58,67 +58,83 @@ def general_data_scraper(list_url):
 
         series = soup_match.findAll('div', {'class':'match-header-event-series'})[0].text.strip().split("\n", 1)[1].strip()
 
-        winner = soup_match.findAll('div', {'class':'match-bet-item-team'})[0].text.strip().split("\n")[2].strip()
+        try:
+            winner = soup_match.findAll('div', {'class':'match-bet-item-team'})[0].text.strip().split("\n")[2].strip()
 
-        rounds = soup_match.findAll('div', {'class':'vlr-rounds'})
+            rounds = soup_match.findAll('div', {'class':'vlr-rounds'})
         
-        for a in [a for a in list(range(len(table_match))) if a not in [2,3]]:
-            if a in [0,1]:
-                map_num = 1
-            else:
-                map_num = a//2
-            
-            map_name = soup_match.findAll('div', {'class':'vm-stats-gamesnav-item js-map-switch'})[map_num-1].text.strip()[1:].strip()
-            stage = soup_match.findAll('div', {'class':'match-header-event-series'})[0].text.strip().split(":", 1)[0]
-            team_name = soup_match.findAll('div', {'class':'wf-title-med'})[a % 2].text.strip()
-            round_played = rounds[map_num-1]
-
-            all_rounds = round_played.find_all('div', class_='vlr-rounds-row-col')
-            scoring_one_by_one_for_all = []
-            for i,item in enumerate(all_rounds[1:]):
-                if i != 12:
-                    title_value = item['title']
-                    if len(title_value) > 0:
-                        scoring_one_by_one_for_all.append(title_value)
-            
-            scoring_round_per_team = reorganize_rounds_based_on_titles(scoring_one_by_one_for_all)
-            
-            table = table_match[a]
-            headers_match = []
-            
-            for i in table.find_all('th'):
-                title_match = i.text.strip()
-                headers_match.append(title_match)
+            for a in [a for a in list(range(len(table_match))) if a not in [2,3]]:
+                if a in [0,1]:
+                    map_num = 1
+                else:
+                    map_num = a//2
                 
-            headers_match[0] = 'Player Name'
-            headers_match[1] = 'Agent Name'
-            headers_match[6] = 'K/D +/–'   
-            headers_match[12] = 'FK/FD +/–'   
-            df_match = pd.DataFrame(columns=headers_match)
-            
-            for row in table.find_all('tr')[1:]:
-                data = row.find_all('td')
-                row_data = [td.text.strip() for td in data]
-                row_data[1] = str(data[1]).split('title="',1)[1].split('"',1)[0].title()
-                length = len(df_match)
-                df_match.loc[length] = row_data
-            
-            df_match['Team Name'] = team_name
-            df_match['Map Name'] = map_name
-            df_match['Map #'] = map_num
-            df_match['Stage'] = stage
-            df_match['Series'] = series
-            df_match['winner'] = winner
-            df_match['rounds'] = ', '.join(map(str, scoring_round_per_team[a%2]))
-            
-            match_stats.append(df_match)
-        
+                # need to check if this is a BO1 for map name
+                bo_x = soup_match.findAll('div', {'class':'match-header-vs-note'})[1].text.strip()
 
-    result = pd.concat(match_stats).reset_index(drop=True)
-    result['Player Name'] = result['Player Name'].str.split("\n").str[0].str.strip()
-    result['D'] = result['D'].str[1:-1]
-    result = result.apply(pd.to_numeric, errors='ignore')
-    result.drop('KAST', axis=1, inplace = True)
+                if "1" in bo_x:
+                    map_name = soup_match.findAll('div', {'class':'map'})[0].text.strip().split('\n')[0].strip()
+                else:
+                    map_name = soup_match.findAll('div', {'class':'vm-stats-gamesnav-item js-map-switch'})[map_num-1].text.strip()[1:].strip()
+
+                stage = soup_match.findAll('div', {'class':'match-header-event-series'})[0].text.strip().split(":", 1)[0]
+                team_name = soup_match.findAll('div', {'class':'wf-title-med'})[a % 2].text.strip()
+                round_played = rounds[map_num-1]
+                
+                table = table_match[a]
+                headers_match = []
+                
+                for i in table.find_all('th'):
+                    title_match = i.text.strip()
+                    headers_match.append(title_match)
+                    
+                headers_match[0] = 'Player Name'
+                headers_match[1] = 'Agent Name'
+                headers_match[6] = 'K/D +/–'   
+                headers_match[12] = 'FK/FD +/–'   
+                df_match = pd.DataFrame(columns=headers_match)
+                
+                for row in table.find_all('tr')[1:]:
+                    data = row.find_all('td')
+                    row_data = [td.text.strip() for td in data]
+                    row_data[1] = str(data[1]).split('title="',1)[1].split('"',1)[0].title()
+                    length = len(df_match)
+                    df_match.loc[length] = row_data
+                
+                df_match['Team Name'] = team_name
+                df_match['Map Name'] = map_name
+                df_match['Map #'] = map_num
+                df_match['Stage'] = stage
+                df_match['Series'] = series
+                df_match['winner'] = winner
+
+                try:
+                    all_rounds = round_played.find_all('div', class_='vlr-rounds-row-col')
+                    scoring_one_by_one_for_all = []
+                    for i,item in enumerate(all_rounds[1:]):
+                        if i != 12:
+                            title_value = item['title']
+                            if len(title_value) > 0:
+                                scoring_one_by_one_for_all.append(title_value)
+                    
+                    scoring_round_per_team = reorganize_rounds_based_on_titles(scoring_one_by_one_for_all)
+                    df_match['rounds'] = ', '.join(map(str, scoring_round_per_team[a%2]))
+                except:
+                    continue
+                
+                match_stats.append(df_match)
+
+        except NameError:
+            print(f'Matches on the {series}, {stage} are not played yet or')
+            print(NameError)
+    try:
+        result = pd.concat(match_stats).reset_index(drop=True)
+        result['Player Name'] = result['Player Name'].str.split("\n").str[0].str.strip()
+        result['D'] = result['D'].str[1:-1]
+        result = result.apply(pd.to_numeric, errors='ignore')
+        result.drop('KAST', axis=1, inplace = True)
+    except:
+        result = None
 
     return result
 
@@ -137,6 +153,7 @@ def performance_data_scraper(list_url):
     match_stats = []
 
     for matchnum in range(len(list_url)):
+
         url = list_url[matchnum] + '/?game=all&tab=performance'
         
         source_match = requests.get(url=url).text
@@ -148,44 +165,64 @@ def performance_data_scraper(list_url):
 
         table_performance = soup_match.findAll('table', {'class':'wf-table-inset mod-adv-stats'})
 
-        for map_num in range(1, len(table_performance)):
+        try:
 
-            map_name = soup_match.findAll('div', {'class':'vm-stats-gamesnav-item js-map-switch'})[map_num-1].text.strip()[1:].strip()
+            winner = soup_match.findAll('div', {'class':'match-bet-item-team'})[0].text.strip().split("\n")[2].strip()
 
-            table = table_performance[map_num]
+            for map_num in range(1, len(table_performance)):
 
-            headers_match = []
-            
-            for i in table.find_all('th'):
-                title_match = i.text.strip()
-                headers_match.append(title_match)
-            
-            headers_match[0] = 'Player Name'
-            headers_match[1] = 'Map Name'
-            headers_match.append('Team Name')
+                # need to check if this is a BO1 for map name
+                bo_x = soup_match.findAll('div', {'class':'match-header-vs-note'})[1].text.strip()
+                
+                if "1" in bo_x:
 
-            df_match = pd.DataFrame(columns=headers_match)
+                    source_match_overview = requests.get(url=list_url[matchnum]).text
+                    soup_match_overview = BeautifulSoup(source_match_overview, features="html.parser")
 
-            for i,row in enumerate(table.find_all('tr')[1:]):
-                data = row.find_all('td')
-                row_data = [td.text for td in data]
-                transformed_data = [extract_round_numbers_if_present(text.replace('\t','').strip()) for text in row_data]
-                name_and_team = transformed_data[0].split('\n')
-                transformed_data[0] = name_and_team[0]
-                transformed_data.append(name_and_team[1])
-                length = len(df_match)
-                df_match.loc[length] = transformed_data
-            
-            df_match['Map Name'] = map_name
-            df_match['Map #'] = map_num
-            df_match['Stage'] = stage
-            df_match['Series'] = series
+                    map_name = soup_match_overview.findAll('div', {'class':'map'})[0].text.strip().split('\n')[0].strip()
+                else:
+                    map_name = soup_match.findAll('div', {'class':'vm-stats-gamesnav-item js-map-switch'})[map_num-1].text.strip()[1:].strip()
 
-            match_stats.append(df_match)
-    
-    result = pd.concat(match_stats).reset_index(drop=True)
-    result = result.apply(pd.to_numeric, errors='ignore')
-    
+                table = table_performance[map_num]
+
+                headers_match = []
+                
+                for i in table.find_all('th'):
+                    title_match = i.text.strip()
+                    headers_match.append(title_match)
+                
+                headers_match[0] = 'Player Name'
+                headers_match[1] = 'Map Name'
+                headers_match.append('Team Name')
+
+                df_match = pd.DataFrame(columns=headers_match)
+
+                for i,row in enumerate(table.find_all('tr')[1:]):
+                    data = row.find_all('td')
+                    row_data = [td.text for td in data]
+                    transformed_data = [extract_round_numbers_if_present(text.replace('\t','').strip()) for text in row_data]
+                    name_and_team = transformed_data[0].split('\n')
+                    transformed_data[0] = name_and_team[0]
+                    transformed_data.append(name_and_team[1])
+                    length = len(df_match)
+                    df_match.loc[length] = transformed_data
+                
+                df_match['Map Name'] = map_name
+                df_match['Map #'] = map_num
+                df_match['Stage'] = stage
+                df_match['Series'] = series
+
+                match_stats.append(df_match)
+        except NameError:
+            print(f'Matches on the {series}, {stage} are not played yet...')
+            print(NameError)
+            continue
+    try:
+        result = pd.concat(match_stats).reset_index(drop=True)
+        result = result.apply(pd.to_numeric, errors='ignore')
+    except:
+        result = None
+
     return result
 
 def economy_data_scraper(list_url):
@@ -203,7 +240,7 @@ def economy_data_scraper(list_url):
 
     for matchnum in range(len(list_url)):
 
-        url = list_url[matchnum]
+        url = list_url[matchnum] + "/?game=all&tab=economy"
         
         source_match = requests.get(url=url).text
         soup_match = BeautifulSoup(source_match, features="html.parser")
@@ -212,32 +249,54 @@ def economy_data_scraper(list_url):
 
         series = soup_match.findAll('div', {'class':'match-header-event-series'})[0].text.strip().split("\n", 1)[1].strip()
 
-        # for table_economy[i] if i%2==0 : the full bank with the round description, otherwise that is the higher level information
-        # the last one is not useful as it is the overall result so only things interesting are [0,5] for a BO3
-        table_economy = soup_match.findAll('table', {'class':'wf-table-inset mod-econ'})
+        try:
+            winner = soup_match.findAll('div', {'class':'match-bet-item-team'})[0].text.strip().split("\n")[2].strip()
 
-        for i in range(0, len(table_economy)-1, 2):
+            # for table_economy[i] if i%2==0 : the full bank with the round description, otherwise that is the higher level information
+            # the last one is not useful as it is the overall result so only things interesting are [0,5] for a BO3
+            table_economy = soup_match.findAll('table', {'class':'wf-table-inset mod-econ'})
 
-            map_num = i // 2
-            map_name = soup_match.findAll('div', {'class':'vm-stats-gamesnav-item js-map-switch'})[map_num].text.strip()[1:].strip()
+            for i in range(0, len(table_economy)-1, 2):
 
-            headers_match = ["Team Name", "Map #", "Map Name", "Stage", "Series", "Pistol_Won", "Eco", "Eco_Won", "$", "$_Won", "$$", "$$_Won", '$$$', '$$$_Won', "Bank", "Buys"]
-            df_match = pd.DataFrame(columns=headers_match)
+                map_num = i // 2
 
-            table_economy_general = table_economy[i]
-            bank = table_economy[i+1]
+                # need to check if this is a BO1 for map name
+                bo_x = soup_match.findAll('div', {'class':'match-header-vs-note'})[1].text.strip()
+                
+                if "1" in bo_x:
 
-            team1, team2 = get_economy_data(table_economy_general)
-            banks, buys = get_banking_data(bank)
+                    source_match_overview = requests.get(url=list_url[matchnum]).text
+                    soup_match_overview = BeautifulSoup(source_match_overview, features="html.parser")
+                    
+                    map_name = soup_match_overview.findAll('div', {'class':'map'})[0].text.strip().split('\n')[0].strip()
+                else:
+                    map_name = soup_match.findAll('div', {'class':'vm-stats-gamesnav-item js-map-switch'})[map_num].text.strip()[1:].strip()
 
-            length = len(df_match)
 
-            df_match.loc[length], df_match.loc[length+1] = create_economy_row(team1, team2, banks, buys, series, stage, map_num, map_name)
+                headers_match = ["Team Name", "Map #", "Map Name", "Stage", "Series", "Pistol_Won", "Eco", "Eco_Won", "$", "$_Won", "$$", "$$_Won", '$$$', '$$$_Won', "Bank", "Buys"]
+                df_match = pd.DataFrame(columns=headers_match)
 
-            match_stats.append(df_match)
+                table_economy_general = table_economy[i]
+                bank = table_economy[i+1]
 
-    result = pd.concat(match_stats).reset_index(drop=True)
-    result = result.apply(pd.to_numeric, errors='ignore')
+                team1, team2 = get_economy_data(table_economy_general)
+                banks, buys = get_banking_data(bank)
+
+                length = len(df_match)
+
+                df_match.loc[length], df_match.loc[length+1] = create_economy_row(team1, team2, banks, buys, series, stage, map_num, map_name)
+
+                match_stats.append(df_match)
+        except NameError:
+            print(f'Matches on the {series}, {stage} are not played yet...')
+            print(NameError)
+            continue
+
+    try:
+        result = pd.concat(match_stats).reset_index(drop=True)
+        result = result.apply(pd.to_numeric, errors='ignore')
+    except:
+        result = None
 
     return result
 
@@ -265,23 +324,84 @@ def pick_and_ban_scraper(list_url):
 
         series = soup_match.findAll('div', {'class':'match-header-event-series'})[0].text.strip().split("\n", 1)[1].strip()
 
-        picks_bans = soup_match.findAll('div', {'class':'match-header-note'})[0].text.strip().split(";")
+        try:
+            winner = soup_match.findAll('div', {'class':'match-bet-item-team'})[0].text.strip().split("\n")[2].strip()
 
-        headers_match = ["Stage","Series","Team Name", "Picks", "Bans", "Decider"]
-        df_match = pd.DataFrame(columns=headers_match)
+            picks_bans = soup_match.findAll('div', {'class':'match-header-note'})[0].text.strip().split(";")
 
-        [pick_or_ban_team1, pick_or_ban_team2] = reorganize_phrases(picks_bans)
+            headers_match = ["Stage","Series","Team Name", "Bans", "Picks", "Decider"]
+            df_match = pd.DataFrame(columns=headers_match)
 
-        row1 = [stage, series] + pick_or_ban_team1
-        row2 = [stage, series]+ pick_or_ban_team2
+            [pick_or_ban_team1, pick_or_ban_team2] = reorganize_phrases(picks_bans)
 
-        length = len(df_match)
-        df_match.loc[length] = row1
-        df_match.loc[length+1] = row2
+            row1 = [stage, series] + pick_or_ban_team1
+            row2 = [stage, series]+ pick_or_ban_team2
 
-        match_stats.append(df_match)
-    
-    result = pd.concat(match_stats).reset_index(drop=True)
-    result = result.apply(pd.to_numeric, errors='ignore')
+            length = len(df_match)
+            df_match.loc[length] = row1
+            df_match.loc[length+1] = row2
+
+            match_stats.append(df_match)   
+        except NameError:
+            print(f'Matches on the {series}, {stage} are not played yet...')
+            print(NameError)
+            continue
+
+
+    try:
+        result = pd.concat(match_stats).reset_index(drop=True)
+        result = result.apply(pd.to_numeric, errors='ignore')
+    except:
+        result = None
 
     return result
+
+
+def main(url):
+
+    # get the event that we want to extract the matches from
+    print('Get all the matches...')
+    list_url = matches_scraper(url)
+    
+    # fetching the general data from all matches
+    print("Fetching General Data...")
+    general_data = general_data_scraper(list_url)
+    
+    # fetching the performance data from all matches
+    print("Fetching Performance Data...")
+    performance_data = performance_data_scraper(list_url)
+    
+    # fetching the economic data from all matches
+    print("Fetching Economy Data...")
+    economy_data = economy_data_scraper(list_url)
+    
+    # fetching the pick and ban from all matches 
+    print("Fetching Picks and Bans Data...")
+    pick_and_ban_data = pick_and_ban_scraper(list_url)
+    
+
+    try:
+        print("Saving the data...")
+        # saving the general data from all matches 
+        save_match_data(url, "general", general_data)
+        # saving the performance data from all matches
+        save_match_data(url, "performance", performance_data)
+        # saving the economic data from all matches
+        save_match_data(url, "economy", economy_data)
+        # saving the pick and ban from all matches 
+        save_match_data(url, "pick_ban", pick_and_ban_data)
+    except NameError:
+        print(f"Failed at saving data. Error : {NameError}")
+        print("The Url must be of the same type as : https://www.vlr.gg/event/matches/[INTEGER]/[NAME OF EVENT]/?series_id=all")
+
+
+    test = pick_and_ban_scraper(list_url)
+    return test
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python main.py <URL>")
+    else:
+        url = sys.argv[1]
+        print('Working...')
+        result = main(url)

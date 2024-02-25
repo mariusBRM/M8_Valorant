@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 import re
 from bs4 import BeautifulSoup, Comment
 
@@ -458,5 +459,22 @@ def reorganize_rounds_based_on_titles(scoring_one_by_one_for_all):
             team1_score.append(int(actual_scores[0]) - int(previous_scores[0]))
             team2_score.append(int(actual_scores[1]) - int(previous_scores[1]))
     return [team1_score, team2_score]
+
+def save_match_data(url, type_of_data, data):
+    """
+    Save the dataframe as CSV into the correct directory...
+    """
+    event = url.split('/')[-2]
+
+    name_of_data = type_of_data + "_data_" + event + ".csv"
+
+    if not os.path.exists(event +'_data'):
+        os.makedirs(event +'_data')
+    
+    file_path = os.path.join(event +'_data', name_of_data)
+
+    data.to_csv(file_path, index=False)
+
+    print(f"DataFrame saved as CSV file: {file_path}")
 
 #endregion   
