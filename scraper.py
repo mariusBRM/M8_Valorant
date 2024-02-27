@@ -108,19 +108,17 @@ def general_data_scraper(list_url):
                 df_match['Series'] = series
                 df_match['winner'] = winner
 
-                try:
-                    all_rounds = round_played.find_all('div', class_='vlr-rounds-row-col')
-                    scoring_one_by_one_for_all = []
-                    for i,item in enumerate(all_rounds[1:]):
-                        if i != 12:
+                all_rounds = round_played.find_all('div', class_='vlr-rounds-row-col')
+                scoring_one_by_one_for_all = []
+                for i,item in enumerate(all_rounds[1:]):
+                        try:
                             title_value = item['title']
                             if len(title_value) > 0:
                                 scoring_one_by_one_for_all.append(title_value)
-                    
-                    scoring_round_per_team = reorganize_rounds_based_on_titles(scoring_one_by_one_for_all)
-                    df_match['rounds'] = ', '.join(map(str, scoring_round_per_team[a%2]))
-                except:
-                    continue
+                        except:
+                            continue
+                scoring_round_per_team = reorganize_rounds_based_on_titles(scoring_one_by_one_for_all)
+                df_match['rounds'] = ', '.join(map(str, scoring_round_per_team[a%2]))
                 
                 match_stats.append(df_match)
 
