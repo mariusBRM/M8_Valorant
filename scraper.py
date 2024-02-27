@@ -392,9 +392,7 @@ def main(url):
         print(f"Failed at saving data. Error : {NameError}")
         print("The Url must be of the same type as : https://www.vlr.gg/event/matches/[INTEGER]/[NAME OF EVENT]/?series_id=all")
 
-
-    test = pick_and_ban_scraper(list_url)
-    return test
+    return 0
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
