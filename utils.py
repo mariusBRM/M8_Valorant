@@ -200,7 +200,10 @@ def average_score_by_player_by_scope(df, type, side=None, scope=None, name=None,
         return report_team
     else:
         raise ValueError('No instance can be treated')
-    
+
+def get_win_rate(df, team_name, for_matches = True, for_maps = False, for_Rounds = False, side = None):
+
+    data = df.groupby(['Team Name', 'winner']).drop_duplicates(['Team Name', 'winner'])    
 #endregion
     
 #region AgentStatistiques
