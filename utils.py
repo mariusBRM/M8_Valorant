@@ -201,9 +201,61 @@ def average_score_by_player_by_scope(df, type, side=None, scope=None, name=None,
     else:
         raise ValueError('No instance can be treated')
 
-def get_win_rate(df, team_name, for_matches = True, for_maps = False, for_Rounds = False, side = None):
+def set_map_winner(df):
+    """
+    Function that create a column for the map winner based on whose got the more rounds
 
-    data = df.groupby(['Team Name', 'winner']).drop_duplicates(['Team Name', 'winner'])    
+    parameters:
+        df : dataframe of the general data
+
+    returns:
+        df : df with extra column
+    """
+    map_winners = []
+
+    for i in range(0,len(df)-1,2):
+        if df['total_rounds'].iloc[i] > df['total_rounds'].iloc[i+1]:
+            map_winners.append(df['Team Name'].iloc[i])
+            map_winners.append(df['Team Name'].iloc[i])
+        else:
+            map_winners.append(df['Team Name'].iloc[i+1])
+            map_winners.append(df['Team Name'].iloc[i+1])
+    
+    df['map_winners'] = map_winners
+
+    return df
+
+def calculate_win_rate(df, scope = 'match'):
+    """
+    Function that calculate the win rate based on different scope (match, round, maps) for all the teams present in the dataset
+
+    parameters:
+        df : dataframe of the general data of the event at stake
+        scope : string that only takes 3 possible values : "match", "map", "round"
+    returns:
+        win_rate: a dictionnary with the team names as keys and the win rate on the values
+    """ 
+    match scope:
+        case "match":
+            data = df.drop_duplicates(['Stage', 'Series','Team Name'])
+            win_rates = {team : round(len(data[data['Team Name'] == team].where(data['Team Name'] == data['winner']).dropna()) / len(data[data['Team Name'] == team].dropna()),2) for team in list(set(data['Team Name']))}
+            return win_rates
+        case "map":
+            data_round = df.drop_duplicates(['Stage', 'Series','Team Name', 'Map #'])[['Stage', 'Series', 'Map #','Team Name', 'rounds', 'winner']]
+            data_round['rounds'] = data_round['rounds'].apply(lambda x: list(map(int, x.split(', '))))
+            data_round['total_rounds'] = data_round['rounds'].apply(lambda x: sum(x))
+            map_winners = set_map_winner(data_round)
+            win_rates = {team : round(len(map_winners[map_winners['Team Name'] == team].where(map_winners['Team Name'] == map_winners['map_winners']).dropna()) / len(map_winners[map_winners['Team Name'] == team].dropna()),2) for team in list(set(data['Team Name']))}
+            return win_rates
+        case "round":
+            data_round = df.drop_duplicates(['Stage', 'Series','Team Name', 'Map #'])[['Stage', 'Series', 'Map #','Team Name', 'rounds', 'winner']]
+            data_round['rounds'] = data_round['rounds'].apply(lambda x: list(map(int, x.split(', '))))
+            data_round['total_rounds'] = data_round['rounds'].apply(lambda x: sum(x))
+            win_rates = {team : round(sum(data_round[data_round['Team Name'] == team].dropna()['total_rounds']) / data_round[data_round['Team Name'] == team].dropna()['rounds'].apply(len).sum(), 2) for team in list(set(df['Team Name']))}
+            return win_rates
+        case _:
+            raise NameError
+
 #endregion
     
 #region AgentStatistiques
