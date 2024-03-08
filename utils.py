@@ -98,6 +98,146 @@ def calculate_score_player(data,name, type, side):
 def calculate_score_team():
     return 0
 
+def calculate_average_rating_players(df, side = None):
+    """ 
+    Function that calculate the average rating of the players on a filtered by side 
+
+    parameters:
+        df: dataframe of the general data
+        side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
+    """
+    if side is None:
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['R'].apply(lambda x: float(x.split('\n')[0]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    elif side == 'ATK':
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['R'].apply(lambda x: float(x.split('\n')[1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    elif side == 'DFS':
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['R'].apply(lambda x: float(x.split('\n')[2]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    else:
+        print(f'Side is either None, ATK or DFS')
+
+def calculate_average_kills_players(df, side=None):
+    """ 
+    Function that calculate the average kills of the players on a filtered by side 
+
+    parameters:
+        df: dataframe of the general data
+        side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
+    """
+    if side is None:
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['K'].apply(lambda x: float(x.split('\n')[0]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    elif side == 'ATK':
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['K'].apply(lambda x: float(x.split('\n')[1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    elif side == 'DFS':
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['K'].apply(lambda x: float(x.split('\n')[2]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    else:
+        print(f'Side is either None, ATK or DFS')
+
+def calculate_average_death_players(df, side=None):
+    """ 
+    Function that calculate the average kills of the players on a filtered by side 
+
+    parameters:
+        df: dataframe of the general data
+        side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
+    """
+    if side is None:
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['D'].apply(lambda x: float(x.split('\n')[0]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    elif side == 'ATK':
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['D'].apply(lambda x: float(x.split('\n')[1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    elif side == 'DFS':
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['D'].apply(lambda x: float(x.split('\n')[2]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    else:
+        print(f'Side is either None, ATK or DFS')
+
+def calculate_average_adr_players(df, side=None):
+    """ 
+    Function that calculate the average kills of the players on a filtered by side 
+
+    parameters:
+        df: dataframe of the general data
+        side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
+    """
+    if side is None:
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['ADR'].apply(lambda x: float(x.split('\n')[0]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    elif side == 'ATK':
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['ADR'].apply(lambda x: float(x.split('\n')[1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    elif side == 'DFS':
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['ADR'].apply(lambda x: float(x.split('\n')[2]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    else:
+        print(f'Side is either None, ATK or DFS')
+
+def calculate_average_hs_players(df, side=None):
+    """ 
+    Function that calculate the average kills of the players on a filtered by side 
+
+    parameters:
+        df: dataframe of the general data
+        side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
+    """
+    if side is None:
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['HS%'].apply(lambda x: float(x.split('\n')[0][:-1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    elif side == 'ATK':
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['HS%'].apply(lambda x: float(x.split('\n')[1][:-1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    elif side == 'DFS':
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['HS%'].apply(lambda x: float(x.split('\n')[2][:-1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    else:
+        print(f'Side is either None, ATK or DFS')
+
+def calculate_average_fk_players(df, side=None):
+    """ 
+    Function that calculate the average kills of the players on a filtered by side 
+
+    parameters:
+        df: dataframe of the general data
+        side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
+    """
+    if side is None:
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['FK'].apply(lambda x: float(x.split('\n')[0]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    elif side == 'ATK':
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['FK'].apply(lambda x: float(x.split('\n')[1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    elif side == 'DFS':
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['FK'].apply(lambda x: float(x.split('\n')[2]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    else:
+        print(f'Side is either None, ATK or DFS')
+
+def calculate_average_fd_players(df, side=None):
+    """ 
+    Function that calculate the average kills of the players on a filtered by side 
+
+    parameters:
+        df: dataframe of the general data
+        side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
+    """
+    if side is None:
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['FK/FD +/'].apply(lambda x: float(x.split('\n')[0]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    elif side == 'ATK':
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['FK/FD +/'].apply(lambda x: float(x.split('\n')[1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    elif side == 'DFS':
+        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['FK/FD +/'].apply(lambda x: float(x.split('\n')[2]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_rating_scores
+    else:
+        print(f'Side is either None, ATK or DFS')
+
 def filter_by_scope(data, scope):
     """
     Function that keep only the wanted match, get the all tournament by default
@@ -245,7 +385,7 @@ def calculate_win_rate(df, scope = 'match'):
             data_round['rounds'] = data_round['rounds'].apply(lambda x: list(map(int, x.split(', '))))
             data_round['total_rounds'] = data_round['rounds'].apply(lambda x: sum(x))
             map_winners = set_map_winner(data_round)
-            win_rates = {team : round(len(map_winners[map_winners['Team Name'] == team].where(map_winners['Team Name'] == map_winners['map_winners']).dropna()) / len(map_winners[map_winners['Team Name'] == team].dropna()),2) for team in list(set(data['Team Name']))}
+            win_rates = {team : round(len(map_winners[map_winners['Team Name'] == team].where(map_winners['Team Name'] == map_winners['map_winners']).dropna()) / len(map_winners[map_winners['Team Name'] == team].dropna()),2) for team in list(set(df['Team Name']))}
             return win_rates
         case "round":
             data_round = df.drop_duplicates(['Stage', 'Series','Team Name', 'Map #'])[['Stage', 'Series', 'Map #','Team Name', 'rounds', 'winner']]

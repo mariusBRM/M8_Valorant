@@ -9,4 +9,3 @@ economic_data = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/economy
 st.text('Economic Data')
 st.write(economic_data)
 
-
