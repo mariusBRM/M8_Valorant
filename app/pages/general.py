@@ -12,6 +12,7 @@ st.text('General Data')
 st.write(general_data)
 
 st.subheader("Win rates of each team")
+
 # calculate win rate
 win_rate_matches = calculate_win_rate(general_data,scope='match')
 win_rate_maps = calculate_win_rate(general_data,scope='map')
@@ -56,6 +57,72 @@ with col3:
         color_continuous_scale="reds")
 
     st.plotly_chart(fig_rounds, theme="streamlit", use_container_width=True)
+
+
+st.subheader("Individual Statistics")
+
+# Rating
+ratings = calculate_average_rating_players(general_data)
+st.caption("Average ratings of the top 15 players")
+ratings_sorted = ratings.sort_values(by="rating", ascending=False)
+
+fig_maps_rating = px.bar(
+    ratings_sorted.head(15),
+    x="rating",
+    y="player",
+    color='team')
+
+st.plotly_chart(fig_maps_rating, theme="streamlit", use_container_width=True)
+
+# Kills
+kills = calculate_average_kills_players(general_data)
+kills_sorted = kills.sort_values(by="kills", ascending=False)
+
+st.caption("Average kills of the top 15 players")
+
+fig_maps_kills = px.bar(
+    kills_sorted.head(15),
+    x="kills",
+    y="player",
+    color="team")
+
+st.plotly_chart(fig_maps_kills, theme="streamlit", use_container_width=True)
+
+# Deaths
+deaths = calculate_average_death_players(general_data)
+deaths_sorted = deaths.sort_values(by="deaths", ascending=True)
+
+st.caption("Average death of the top 15 players (with least deaths)")
+
+fig_maps_death = px.bar(
+    deaths_sorted.head(15),
+    x="deaths",
+    y="player",
+    color="team")
+
+st.plotly_chart(fig_maps_death, theme="streamlit", use_container_width=True)
+
+# ADR
+adr = calculate_average_adr_players(general_data)
+adr_sorted = adr.sort_values(by="adr", ascending=False)
+st.caption("Average ADR of the top 15 players")
+
+fig_maps_adr = px.bar(
+    adr_sorted.head(15),
+    x="adr",
+    y="player",
+    color="team")
+
+st.plotly_chart(fig_maps_adr, theme="streamlit", use_container_width=True)
+# HS
+hs = calculate_average_hs_players(general_data)
+df_hs = pd.DataFrame(list(hs.items()), columns=['player', 'hs'])
+# First Kills
+first_kills = calculate_average_fk_players(general_data)
+df_fk = pd.DataFrame(list(first_kills.items()), columns=['player', 'first kill'])
+# First Death
+first_deaths = calculate_average_fd_players(general_data)
+df_fd = pd.DataFrame(list(first_deaths.items()), columns=['player', 'first death'])
 
 
 
