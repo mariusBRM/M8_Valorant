@@ -94,7 +94,7 @@ def calculate_score_player(data,name, type, side):
     for i,_ in enumerate(data):
         scores.append(int(data[type].iloc[i].split('\n')[side_]))
     return 0
-
+ 
 def calculate_score_team():
     return 0
 
@@ -106,17 +106,21 @@ def calculate_average_rating_players(df, side = None):
         df: dataframe of the general data
         side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
     """
-    if side is None:
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['R'].apply(lambda x: float(x.split('\n')[0]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
-    elif side == 'ATK':
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['R'].apply(lambda x: float(x.split('\n')[1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
-    elif side == 'DFS':
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['R'].apply(lambda x: float(x.split('\n')[2]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
-    else:
-        print(f'Side is either None, ATK or DFS')
+    index_side = 0
+    if side is not None:
+        if side == 'ATK':
+            index_side = 1
+        elif side == 'DFS':
+            index_side = 2
+        else:
+            print('Side is either None, ATK or DFS')
+
+    average_rating_scores = {player : ( list(set(df[df['Player Name'] == player].dropna()['Team Name']))[0],round(sum(df[df['Player Name'] == player].dropna()['R'].apply(lambda x: float(x.split('\n')[index_side]))) / len(df[df['Player Name'] == player].dropna()), 2)) for player in list(set(df['Player Name']))}
+    # Convert dictionary to DataFrame
+    df_rating = pd.DataFrame.from_dict(average_rating_scores, orient='index', columns=['team', 'rating']).reset_index()
+    # Rename index column to 'player'
+    df_rating.rename(columns={'index': 'player'}, inplace=True)
+    return df_rating
 
 def calculate_average_kills_players(df, side=None):
     """ 
@@ -125,18 +129,22 @@ def calculate_average_kills_players(df, side=None):
     parameters:
         df: dataframe of the general data
         side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
-    """
-    if side is None:
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['K'].apply(lambda x: float(x.split('\n')[0]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
-    elif side == 'ATK':
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['K'].apply(lambda x: float(x.split('\n')[1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
-    elif side == 'DFS':
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['K'].apply(lambda x: float(x.split('\n')[2]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
-    else:
-        print(f'Side is either None, ATK or DFS')
+    """    
+    index_side = 0
+    if side is not None:
+        if side == 'ATK':
+            index_side = 1
+        elif side == 'DFS':
+            index_side = 2
+        else:
+            print('Side is either None, ATK or DFS')
+
+    average_kills = {player : ( list(set(df[df['Player Name'] == player].dropna()['Team Name']))[0],round(sum(df[df['Player Name'] == player].dropna()['K'].apply(lambda x: float(x.split('\n')[index_side]))) / len(df[df['Player Name'] == player].dropna()), 2)) for player in list(set(df['Player Name']))}
+    # Convert dictionary to DataFrame
+    df_kills = pd.DataFrame.from_dict(average_kills, orient='index', columns=['team', 'kills']).reset_index()
+    # Rename index column to 'player'
+    df_kills.rename(columns={'index': 'player'}, inplace=True)
+    return df_kills
 
 def calculate_average_death_players(df, side=None):
     """ 
@@ -146,17 +154,21 @@ def calculate_average_death_players(df, side=None):
         df: dataframe of the general data
         side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
     """
-    if side is None:
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['D'].apply(lambda x: float(x.split('\n')[0]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
-    elif side == 'ATK':
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['D'].apply(lambda x: float(x.split('\n')[1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
-    elif side == 'DFS':
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['D'].apply(lambda x: float(x.split('\n')[2]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
-    else:
-        print(f'Side is either None, ATK or DFS')
+    index_side = 0
+    if side is not None:
+        if side == 'ATK':
+            index_side = 1
+        elif side == 'DFS':
+            index_side = 2
+        else:
+            print('Side is either None, ATK or DFS')
+
+    average_deaths = {player : ( list(set(df[df['Player Name'] == player].dropna()['Team Name']))[0],round(sum(df[df['Player Name'] == player].dropna()['D'].apply(lambda x: float(x.strip().split('\n')[index_side]))) / len(df[df['Player Name'] == player].dropna()), 2)) for player in list(set(df['Player Name']))}
+    # Convert dictionary to DataFrame
+    df_deaths = pd.DataFrame.from_dict(average_deaths, orient='index', columns=['team', 'deaths']).reset_index()
+    # Rename index column to 'player'
+    df_deaths.rename(columns={'index': 'player'}, inplace=True)
+    return df_deaths
 
 def calculate_average_adr_players(df, side=None):
     """ 
@@ -166,17 +178,23 @@ def calculate_average_adr_players(df, side=None):
         df: dataframe of the general data
         side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
     """
-    if side is None:
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['ADR'].apply(lambda x: float(x.split('\n')[0]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
-    elif side == 'ATK':
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['ADR'].apply(lambda x: float(x.split('\n')[1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
-    elif side == 'DFS':
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['ADR'].apply(lambda x: float(x.split('\n')[2]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
-    else:
-        print(f'Side is either None, ATK or DFS')
+    index_side = 0
+
+    if side is not None:
+        if side == 'ATK':
+            index_side = 1
+        elif side == 'DFS':
+            index_side = 2
+        else:
+            print('Side is either None, ATK or DFS')
+
+    average_adr = {player : ( list(set(df[df['Player Name'] == player].dropna()['Team Name']))[0],round(sum(df[df['Player Name'] == player].dropna()['ADR'].apply(lambda x: float(x.split('\n')[index_side]))) / len(df[df['Player Name'] == player].dropna()), 2)) for player in list(set(df['Player Name']))}
+    # Convert dictionary to DataFrame
+    df_adr = pd.DataFrame.from_dict(average_adr, orient='index', columns=['team', 'adr']).reset_index()
+    # Rename index column to 'player'
+    df_adr.rename(columns={'index': 'player'}, inplace=True)
+
+    return df_adr
 
 def calculate_average_hs_players(df, side=None):
     """ 
@@ -187,14 +205,14 @@ def calculate_average_hs_players(df, side=None):
         side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
     """
     if side is None:
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['HS%'].apply(lambda x: float(x.split('\n')[0][:-1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
+        average_hs = {player : round(sum(df[df['Player Name'] == player].dropna()['HS%'].apply(lambda x: float(x.split('\n')[0][:-1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_hs
     elif side == 'ATK':
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['HS%'].apply(lambda x: float(x.split('\n')[1][:-1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
+        average_hs = {player : round(sum(df[df['Player Name'] == player].dropna()['HS%'].apply(lambda x: float(x.split('\n')[1][:-1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_hs
     elif side == 'DFS':
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['HS%'].apply(lambda x: float(x.split('\n')[2][:-1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
+        average_hs = {player : round(sum(df[df['Player Name'] == player].dropna()['HS%'].apply(lambda x: float(x.split('\n')[2][:-1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_hs
     else:
         print(f'Side is either None, ATK or DFS')
 
@@ -207,14 +225,14 @@ def calculate_average_fk_players(df, side=None):
         side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
     """
     if side is None:
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['FK'].apply(lambda x: float(x.split('\n')[0]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
+        average_fk = {player : round(sum(df[df['Player Name'] == player].dropna()['FK'].apply(lambda x: float(x.split('\n')[0]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_fk
     elif side == 'ATK':
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['FK'].apply(lambda x: float(x.split('\n')[1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
+        average_fk = {player : round(sum(df[df['Player Name'] == player].dropna()['FK'].apply(lambda x: float(x.split('\n')[1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_fk
     elif side == 'DFS':
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['FK'].apply(lambda x: float(x.split('\n')[2]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
+        average_fk = {player : round(sum(df[df['Player Name'] == player].dropna()['FK'].apply(lambda x: float(x.split('\n')[2]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_fk
     else:
         print(f'Side is either None, ATK or DFS')
 
@@ -227,14 +245,14 @@ def calculate_average_fd_players(df, side=None):
         side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
     """
     if side is None:
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['FK/FD +/'].apply(lambda x: float(x.split('\n')[0]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
+        average_fd = {player : round(sum(df[df['Player Name'] == player].dropna()['FK/FD +/–'].apply(lambda x: float(x.split('\n')[0]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_fd
     elif side == 'ATK':
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['FK/FD +/'].apply(lambda x: float(x.split('\n')[1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
+        average_fd = {player : round(sum(df[df['Player Name'] == player].dropna()['FK/FD +/–'].apply(lambda x: float(x.split('\n')[1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_fd
     elif side == 'DFS':
-        average_rating_scores = {player : round(sum(df[df['Player Name'] == player].dropna()['FK/FD +/'].apply(lambda x: float(x.split('\n')[2]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_rating_scores
+        average_fd = {player : round(sum(df[df['Player Name'] == player].dropna()['FK/FD +/–'].apply(lambda x: float(x.split('\n')[2]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
+        return average_fd
     else:
         print(f'Side is either None, ATK or DFS')
 
