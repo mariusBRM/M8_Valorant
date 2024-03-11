@@ -43,7 +43,7 @@ with col2:
         x="Team",
         y="Win rate",
         color="Win rate",
-        color_continuous_scale="reds")
+        color_continuous_scale="blues")
 
     st.plotly_chart(fig_maps, theme="streamlit", use_container_width=True)
 
@@ -54,75 +54,91 @@ with col3:
         x="Team",
         y="Win rate",
         color="Win rate",
-        color_continuous_scale="reds")
+        color_continuous_scale="purples")
 
     st.plotly_chart(fig_rounds, theme="streamlit", use_container_width=True)
 
 
 st.subheader("Individual Statistics")
 
+top_ratings = st.number_input("Select the top X player to analyze for rating", value=0, step=1, format="%d")
+is_not_set = False
 # Rating
 ratings = calculate_average_rating_players(general_data)
-st.caption("Average ratings of the top 15 players")
-ratings_sorted = ratings.sort_values(by="rating", ascending=False)
+if top_ratings == 0:
+    #by default
+    st.caption(f"Average ratings of the top 15 players")
+    is_not_set = True
+else:
+    st.caption(f"Average ratings of the top {int(top_ratings)} players")
 
-fig_maps_rating = px.bar(
-    ratings_sorted.head(15),
-    x="rating",
-    y="player",
-    color='team')
+if is_not_set:
+    top_ratings = 15
 
-st.plotly_chart(fig_maps_rating, theme="streamlit", use_container_width=True)
+plot_bar_individual_data(ratings, "rating", top_ratings, True, True)
+
 
 # Kills
 kills = calculate_average_kills_players(general_data)
-kills_sorted = kills.sort_values(by="kills", ascending=False)
 
-st.caption("Average kills of the top 15 players")
+top_kills = st.number_input("Select the top X player to analyze for kills", value=0, step=1, format="%d")
+is_not_set = False
 
-fig_maps_kills = px.bar(
-    kills_sorted.head(15),
-    x="kills",
-    y="player",
-    color="team")
+if top_kills == 0:
+    #by default
+    st.caption(f"Average kills of the top 15 players")
+    is_not_set = True
+else:
+    st.caption(f"Average kills of the top {int(top_kills)} players")
 
-st.plotly_chart(fig_maps_kills, theme="streamlit", use_container_width=True)
+if is_not_set:
+    top_kills = 15
+
+plot_bar_individual_data(kills, "kills", top_kills, True, True)
+
 
 # Deaths
 deaths = calculate_average_death_players(general_data)
-deaths_sorted = deaths.sort_values(by="deaths", ascending=True)
 
-st.caption("Average death of the top 15 players (with least deaths)")
+top_deaths = st.number_input("Select the top X player to analyze for deaths", value=0, step=1, format="%d")
+is_not_set = False
 
-fig_maps_death = px.bar(
-    deaths_sorted.head(15),
-    x="deaths",
-    y="player",
-    color="team")
+if top_deaths == 0:
+    #by default
+    st.caption(f"Average deaths of the top 15 players")
+    is_not_set = True
+else:
+    st.caption(f"Average deaths of the top {int(top_deaths)} players")
 
-st.plotly_chart(fig_maps_death, theme="streamlit", use_container_width=True)
+if is_not_set:
+    top_deaths = 15
+
+plot_bar_individual_data(deaths, "deaths", top_deaths, True, True)
 
 # ADR
 adr = calculate_average_adr_players(general_data)
-adr_sorted = adr.sort_values(by="adr", ascending=False)
-st.caption("Average ADR of the top 15 players")
 
-fig_maps_adr = px.bar(
-    adr_sorted.head(15),
-    x="adr",
-    y="player",
-    color="team")
+top_adr = st.number_input("Select the top X player to analyze for ADR", value=0, step=1, format="%d")
+is_not_set = False
 
-st.plotly_chart(fig_maps_adr, theme="streamlit", use_container_width=True)
+if top_adr == 0:
+    #by default
+    st.caption(f"Average ADR of the top 15 players")
+    is_not_set = True
+else:
+    st.caption(f"Average ADR of the top {int(top_adr)} players")
+
+if is_not_set:
+    top_adr = 15
+
+plot_bar_individual_data(adr, "adr", top_adr, True, True)
+
 # HS
 hs = calculate_average_hs_players(general_data)
-df_hs = pd.DataFrame(list(hs.items()), columns=['player', 'hs'])
 # First Kills
 first_kills = calculate_average_fk_players(general_data)
-df_fk = pd.DataFrame(list(first_kills.items()), columns=['player', 'first kill'])
 # First Death
 first_deaths = calculate_average_fd_players(general_data)
-df_fd = pd.DataFrame(list(first_deaths.items()), columns=['player', 'first death'])
 
 
 
