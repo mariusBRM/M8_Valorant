@@ -2,6 +2,8 @@ import pandas as pd
 import os
 import re
 from bs4 import BeautifulSoup, Comment
+import streamlit as st
+import plotly.express as px
 
 # Set general constant
 SIDE = {'Total' : 0, 'Side 1' : 1, 'Side 2' : 2}
@@ -691,3 +693,73 @@ def save_match_data(url, type_of_data, data):
     print(f"DataFrame saved as CSV file: {file_path}")
 
 #endregion   
+
+#region plotly in report
+
+def plot_bar_individual_data(data, data_type, top_players, mean = None, std = None, colored_by = None):
+    """
+    Function that plots the bar chart of the dataframe of the general data for individual statistics from general data (cf. e.g. calculate_average_adr_player)
+
+    parameters:
+        data : dictionnary with key : player name, value : (team name, average score) (cf. e.g. calculate_average_adr_player)
+        data_type : type of the data we want to display (rating, kills, deaths, adr, ...)
+        top_players : int | number of top players that needs to be displayed
+        mean : shows the mean value
+        std : show the std high/low edges
+        colored_by : ?
+    """
+
+    data_sorted = data.sort_values(by=data_type, ascending=False)
+
+    fig_maps = px.bar(
+        data_sorted.head(top_players),
+        x= data_type,
+        y="player",
+        color='team')
+
+    if mean:
+        mean = data[data_type].mean()
+
+        fig_maps.add_shape(
+            type="line",
+            x0=mean,
+            y0=-0.5,
+            x1=mean,
+            y1=top_players,
+            line=dict(
+                color="black",
+                width=2,
+                dash="dot",
+            )
+        )
+        
+        if std :
+            std = data[data_type].std()
+            fig_maps.add_shape(
+                type="line",
+                x0=mean+std,
+                y0=-0.5,
+                x1=mean+std,
+                y1=top_players,
+                line=dict(
+                    color="red",
+                    width=1,
+                    dash="dot",
+                )
+            )
+            fig_maps.add_shape(
+                type="line",
+                x0=mean-std,
+                y0=-0.5,
+                x1=mean-std,
+                y1=top_players,
+                line=dict(
+                    color="red",
+                    width=1,
+                    dash="dot",
+                ))
+
+    st.plotly_chart(fig_maps, theme="streamlit", use_container_width=True)
+
+    
+#endregion

@@ -11,6 +11,9 @@ st.set_page_config(
     page_icon="Valorant",
 )
 
+st.write('Enter an event: ')
+#input
+
 st.title("PRX in VCT Pacific Kick Off 2024!")
 
 st.sidebar.success("Select a report above!")
