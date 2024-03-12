@@ -5,6 +5,11 @@ import plotly.express as px
 
 st.set_page_config(page_title="General Data", page_icon="general")
 
+if st.button("Clear All"):
+    # Clear values from *all* all in-memory and on-disk data caches:
+    # i.e. clear values from both square and cube
+    st.cache_data.clear()
+
 st.title('Data visualization of the general data of the Pacific KickOff 2024')
 general_data = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/general_data_champions-tour-2024-pacific-kickoff.csv')
 
@@ -135,10 +140,40 @@ plot_bar_individual_data(adr, "adr", top_adr, True, True)
 
 # HS
 hs = calculate_average_hs_players(general_data)
+
+top_hs = st.number_input("Select the top X player to analyze for headshot rate", value=0, step=1, format="%d")
+is_not_set = False
+
+if top_hs == 0:
+    #by default
+    st.caption(f"Average headshot rate of the top 15 players")
+    is_not_set = True
+else:
+    st.caption(f"Average headshot rate of the top {int(top_hs)} players")
+
+if is_not_set:
+    top_hs = 15
+
+plot_bar_individual_data(hs, "hs", top_hs, True, True)
+
 # First Kills
 first_kills = calculate_average_fk_players(general_data)
-# First Death
-first_deaths = calculate_average_fd_players(general_data)
+
+top_fk = st.number_input("Select the top X player to analyze for first kill", value=0, step=1, format="%d")
+is_not_set = False
+
+if top_fk == 0:
+    #by default
+    st.caption(f"Average first kills of the top 15 players")
+    is_not_set = True
+else:
+    st.caption(f"Average first kills of the top {int(top_hs)} players")
+
+if is_not_set:
+    top_fk = 15
+
+plot_bar_individual_data(first_kills, "fk", top_fk, True, True)
+
 
 
 

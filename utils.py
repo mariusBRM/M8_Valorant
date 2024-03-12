@@ -1,5 +1,7 @@
 import pandas as pd
 import os
+import ast
+from collections import defaultdict
 import re
 from bs4 import BeautifulSoup, Comment
 import streamlit as st
@@ -100,6 +102,7 @@ def calculate_score_player(data,name, type, side):
 def calculate_score_team():
     return 0
 
+@st.cache_data
 def calculate_average_rating_players(df, side = None):
     """ 
     Function that calculate the average rating of the players on a filtered by side 
@@ -124,6 +127,7 @@ def calculate_average_rating_players(df, side = None):
     df_rating.rename(columns={'index': 'player'}, inplace=True)
     return df_rating
 
+@st.cache_data
 def calculate_average_kills_players(df, side=None):
     """ 
     Function that calculate the average kills of the players on a filtered by side 
@@ -172,6 +176,7 @@ def calculate_average_death_players(df, side=None):
     df_deaths.rename(columns={'index': 'player'}, inplace=True)
     return df_deaths
 
+@st.cache_data
 def calculate_average_adr_players(df, side=None):
     """ 
     Function that calculate the average kills of the players on a filtered by side 
@@ -198,6 +203,7 @@ def calculate_average_adr_players(df, side=None):
 
     return df_adr
 
+@st.cache_data
 def calculate_average_hs_players(df, side=None):
     """ 
     Function that calculate the average kills of the players on a filtered by side 
@@ -206,18 +212,26 @@ def calculate_average_hs_players(df, side=None):
         df: dataframe of the general data
         side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
     """
-    if side is None:
-        average_hs = {player : round(sum(df[df['Player Name'] == player].dropna()['HS%'].apply(lambda x: float(x.split('\n')[0][:-1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_hs
-    elif side == 'ATK':
-        average_hs = {player : round(sum(df[df['Player Name'] == player].dropna()['HS%'].apply(lambda x: float(x.split('\n')[1][:-1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_hs
-    elif side == 'DFS':
-        average_hs = {player : round(sum(df[df['Player Name'] == player].dropna()['HS%'].apply(lambda x: float(x.split('\n')[2][:-1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_hs
-    else:
-        print(f'Side is either None, ATK or DFS')
+    
+    index_side = 0
 
+    if side is not None:
+        if side == 'ATK':
+            index_side = 1
+        elif side == 'DFS':
+            index_side = 2
+        else:
+            print('Side is either None, ATK or DFS')
+
+    average_hs = {player : ( list(set(df[df['Player Name'] == player].dropna()['Team Name']))[0],round(sum(df[df['Player Name'] == player].dropna()['HS%'].apply(lambda x: float(x.split('\n')[index_side][:-1]))) / len(df[df['Player Name'] == player].dropna()), 2)) for player in list(set(df['Player Name']))}
+    # Convert dictionary to DataFrame
+    df_hs = pd.DataFrame.from_dict(average_hs, orient='index', columns=['team', 'hs']).reset_index()
+    # Rename index column to 'player'
+    df_hs.rename(columns={'index': 'player'}, inplace=True)
+
+    return df_hs
+
+@st.cache_data
 def calculate_average_fk_players(df, side=None):
     """ 
     Function that calculate the average kills of the players on a filtered by side 
@@ -226,17 +240,23 @@ def calculate_average_fk_players(df, side=None):
         df: dataframe of the general data
         side: string that takes one of the following values : None (for the total), ATK for attacking and DFS for defense
     """
-    if side is None:
-        average_fk = {player : round(sum(df[df['Player Name'] == player].dropna()['FK'].apply(lambda x: float(x.split('\n')[0]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_fk
-    elif side == 'ATK':
-        average_fk = {player : round(sum(df[df['Player Name'] == player].dropna()['FK'].apply(lambda x: float(x.split('\n')[1]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_fk
-    elif side == 'DFS':
-        average_fk = {player : round(sum(df[df['Player Name'] == player].dropna()['FK'].apply(lambda x: float(x.split('\n')[2]))) / len(df[df['Player Name'] == player].dropna()), 2) for player in list(set(df['Player Name']))}
-        return average_fk
-    else:
-        print(f'Side is either None, ATK or DFS')
+    index_side = 0
+
+    if side is not None:
+        if side == 'ATK':
+            index_side = 1
+        elif side == 'DFS':
+            index_side = 2
+        else:
+            print('Side is either None, ATK or DFS')
+
+    average_fk = {player : ( list(set(df[df['Player Name'] == player].dropna()['Team Name']))[0],round(sum(df[df['Player Name'] == player].dropna()['FK'].apply(lambda x: float(x.split('\n')[index_side]))) / len(df[df['Player Name'] == player].dropna()), 2)) for player in list(set(df['Player Name']))}
+    # Convert dictionary to DataFrame
+    df_fk = pd.DataFrame.from_dict(average_fk, orient='index', columns=['team', 'fk']).reset_index()
+    # Rename index column to 'player'
+    df_fk.rename(columns={'index': 'player'}, inplace=True)
+
+    return df_fk
 
 def calculate_average_fd_players(df, side=None):
     """ 
@@ -512,6 +532,46 @@ def number_action_by_scope_by_agent(df, agent, action, average, side=None, scope
 
 #endregion
 
+#region Pick and Bans
+
+def calculate_most_picked_map(data, data_type,team_name = None):
+    """
+    Function that return the repartition of the picked map among the tournament
+    
+    parameter:
+        data: data pick and bans from the scraper
+        data_type: either 'Picks' or 'Bans'
+        team_name: either string or None to get the most picked map of a team or all teams respectively
+    return:
+        df_picked_map : dataframe from dictionnary with the map as key and the number of times it has been picked
+    """
+    picked_map = defaultdict(int)
+
+    if team_name:
+        for maps in data[data['Team Name'] == team_name].dropna()[data_type].apply(ast.literal_eval):
+            for map in maps:
+                picked_map[map] += 1
+
+        df_picked_map= pd.DataFrame.from_dict(dict(picked_map), orient='index', columns=[f'number_{data_type}']).reset_index()
+        df_picked_map.rename(columns={'index': 'map'}, inplace=True)
+        return df_picked_map
+    else:
+        # Iterate over each map and increment its count in picked_map
+        for maps in data[data_type].apply(ast.literal_eval):
+            for map in maps:
+                picked_map[map] += 1
+
+        df_picked_map= pd.DataFrame.from_dict(dict(picked_map), orient='index', columns=[f'number_{data_type}']).reset_index()
+        df_picked_map.rename(columns={'index': 'map'}, inplace=True)
+        return df_picked_map
+
+def calculate_most_banned_map():
+    return 0
+
+def calcualte_most_decider_map():
+    return 0
+#endregion
+
 #region Scraping
 
 def extract_round_numbers_if_present(text):
@@ -695,7 +755,8 @@ def save_match_data(url, type_of_data, data):
 #endregion   
 
 #region plotly in report
-
+    
+@st.cache_data
 def plot_bar_individual_data(data, data_type, top_players, mean = None, std = None, colored_by = None):
     """
     Function that plots the bar chart of the dataframe of the general data for individual statistics from general data (cf. e.g. calculate_average_adr_player)
@@ -761,5 +822,22 @@ def plot_bar_individual_data(data, data_type, top_players, mean = None, std = No
 
     st.plotly_chart(fig_maps, theme="streamlit", use_container_width=True)
 
+@st.cache_data
+def plot_bar_picks_bans(data, data_type):
+    """
+    Function that plots the bar chart of the dataframe of the general data for individual statistics from general data (cf. e.g. calculate_average_adr_player)
+
+    parameters:
+        data : dictionnary with key : player name, value : (team name, average score) (cf. e.g. calculate_average_adr_player)
+        data_type : type of the data we want to display (Picks, Bans)
+    """
+    fig_maps = px.bar(
+        data,
+        x='map',
+        y=data_type,
+        color=data_type,
+        color_continuous_scale="reds")
+    
+    st.plotly_chart(fig_maps, theme="streamlit", use_container_width=True)
     
 #endregion
