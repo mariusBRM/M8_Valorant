@@ -355,6 +355,8 @@ def pick_and_ban_scraper(list_url):
 
     return result
 
+def map_data_scraper(list_url):
+    return None
 
 def main(url):
 
