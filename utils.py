@@ -6,6 +6,8 @@ import re
 from bs4 import BeautifulSoup, Comment
 import streamlit as st
 import plotly.express as px
+import plotly.graph_objects as go
+import numpy as np
 
 # Set general constant
 SIDE = {'Total' : 0, 'Side 1' : 1, 'Side 2' : 2}
@@ -565,13 +567,30 @@ def calculate_most_picked_map(data, data_type,team_name = None):
         df_picked_map.rename(columns={'index': 'map'}, inplace=True)
         return df_picked_map
 
-def calculate_most_banned_map():
-    return 0
-
-def calcualte_most_decider_map():
-    return 0
 #endregion
 
+#region Economy
+def calculate_mean_economy(data, team=[], series=None, stage=None):
+    """
+    Function that calculate the mean economy (banks and buys) filtered on the team, the stage and the series
+    Intentionally no conflict here 
+    """
+    if len(team)>0:
+        teams = team
+    else:
+        teams = set(data['Team Name'])
+        
+    if series:
+        data = data[data['Series'] == series]
+
+    if stage:
+        data = data[data['Stage'] == stage]
+                
+    banks_buys = {team : (round(np.mean(data[data['Team Name'] == team]['Bank'].apply(lambda x: np.mean(ast.literal_eval(x)))),2), round(np.mean(data[data['Team Name'] == team]['Buys'].apply(lambda x: np.mean(ast.literal_eval(x)))),2))for team in teams}
+
+    return banks_buys
+#endregion
+    
 #region Scraping
 
 def extract_round_numbers_if_present(text):
@@ -839,5 +858,131 @@ def plot_bar_picks_bans(data, data_type):
         color_continuous_scale="reds")
     
     st.plotly_chart(fig_maps, theme="streamlit", use_container_width=True)
+
+def plot_average_economy(data, mean=None, std=None):
+
+    # Convert dictionary to DataFrame
+    df = pd.DataFrame.from_dict(data, orient='index', columns=['Bank', 'Buys']).reset_index()
+    df = df.rename(columns={'index': 'Team'})
+
+    # Plot the bar chart using Plotly Express
+    fig = px.bar(df, x='Team', y=['Bank', 'Buys'], barmode='group', title='Bank and Loadout by Team')
+
+    # Display the plot in Streamlit
+    st.plotly_chart(fig)
+
+def display_charts_two_teams(show_diff_bank, show_diff_buys, team, bank_a, bank_b, buys_a, buys_b):
+
+    diff_bank = [bank_a[i] - bank_b[i] for i in range(len(bank_a))]
+    diff_buys = [buys_a[i] - buys_b[i] for i in range(len(buys_a))]
+
+    d = {f'diff_bank_{team[0]}-{team[1]}': diff_bank, f'diff_loadout_{team[0]}-{team[1]}': diff_buys}
+
+    df = pd.DataFrame(d)
+
+    if show_diff_bank and show_diff_buys:
+        st.area_chart(df, use_container_width=True)
+    elif show_diff_bank:
+        st.area_chart(df[f'diff_bank_{team[0]}-{team[1]}'],use_container_width=True)
+    elif show_diff_buys:
+        st.area_chart(df[f'diff_loadout_{team[0]}-{team[1]}'], use_container_width=True)
+    else:
+        st.write("Please select at least one chart to display.")
+
+def display_charts_two_teams_2(show_diff_bank, show_diff_buys, team, bank_a, bank_b, buys_a, buys_b):
+
+    diff_bank = [bank_a[i] - bank_b[i] for i in range(len(bank_a))]
+    diff_buys = [buys_a[i] - buys_b[i] for i in range(len(buys_a))]
+
+    d = {f'diff_bank_{team[0]}-{team[1]}': diff_bank, f'diff_loadout_{team[0]}-{team[1]}': diff_buys}
+
+    df = pd.DataFrame(d)
+
+    # Calculate mean of each column
+    mean_diff_bank = np.mean(diff_bank)
+    mean_diff_buys = np.mean(diff_buys)
+
+    # Create a figure
+    fig = go.Figure()
+
+    if show_diff_bank:
+        fig.add_trace(go.Scatter(x=df.index, y=df[f'diff_bank_{team[0]}-{team[1]}'], mode='lines', name=f'diff_bank_{team[0]}-{team[1]}'))
+
+    if show_diff_buys:
+        fig.add_trace(go.Scatter(x=df.index, y=df[f'diff_loadout_{team[0]}-{team[1]}'], mode='lines', name=f'diff_loadout_{team[0]}-{team[1]}'))
+
+    # Add trace for mean values
+    fig.add_trace(go.Scatter(x=df.index, y=[mean_diff_bank] * len(df.index), mode='lines', name='Mean diff_bank', line=dict(color='red')))
+    fig.add_trace(go.Scatter(x=df.index, y=[mean_diff_buys] * len(df.index), mode='lines', name='Mean diff_buys', line=dict(color='blue')))
+
+    st.plotly_chart(fig, use_container_width=True)
+
+def plot_bank_and_buys(data, stage, series, map_name, team=[]):
     
+    if len(team) <= 1:
+
+        fig = go.Figure()
+
+        bank = ast.literal_eval(data.loc[(data['Stage'] == stage) & (data['Series'] == series) & (data['Map Name'] == map_name) & (data['Team Name'] == team[0])]['Bank'].values[0])
+        buys = ast.literal_eval(data.loc[(data['Stage'] == stage) & (data['Series'] == series) & (data['Map Name'] == map_name) & (data['Team Name'] == team[0])]['Buys'].values[0])
+
+        fig.add_trace(go.Scatter(x=list(range(1, len(bank)+1)), y=bank, mode='lines+markers', name=f'{team[0]} - Bank', visible='legendonly'))
+        fig.add_trace(go.Scatter(x=list(range(1, len(bank)+1)), y=buys, mode='lines+markers',name=f'{team[0]} - Buys', visible='legendonly'))
+
+        # Add buttons for selecting/deselecting series
+        fig.update_layout(
+            updatemenus=[
+                dict(
+                    type="buttons",
+                    direction="down",
+                    buttons=list([
+                        dict(label="Show Bank",
+                            method="update",
+                            args=[{"visible": [True, False]}]),
+                        dict(label="Show Buys",
+                            method="update",
+                            args=[{"visible": [False, True]}]),
+                        dict(label="Show Both",
+                            method="update",
+                            args=[{"visible": [True, True]}]),
+                        dict(label="Show None",
+                            method="update",
+                            args=[{"visible": [False, False]}])
+                    ]),
+                    x=0.1,
+                    xanchor='left',
+                    y=1.15,
+                    yanchor='top',
+                    bgcolor='rgba(255, 255, 255, 0.7)',
+                    bordercolor='rgba(0, 0, 0, 0.5)',
+                    borderwidth=1,
+                    font=dict(family="Arial, sans-serif", size=10)
+                )
+            ],
+            title='Bank and Loadout for Teams',
+            xaxis_title='Match Time (minutes)',
+            yaxis_title='Values',
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+            font=dict(family="Arial, sans-serif"),
+            plot_bgcolor='rgba(255,255,255,0)',
+            paper_bgcolor='rgba(255,255,255,0.8)',
+            xaxis=dict(showgrid=True),
+            yaxis=dict(showgrid=True)
+        )
+
+        st.plotly_chart(fig)
+    else:
+
+        bank_a = ast.literal_eval(data.loc[(data['Stage'] == stage) & (data['Series'] == series) & (data['Map Name'] == map_name) & (data['Team Name'] == team[0])]['Bank'].values[0])
+        buys_a = ast.literal_eval(data.loc[(data['Stage'] == stage) & (data['Series'] == series) & (data['Map Name'] == map_name) & (data['Team Name'] == team[0])]['Buys'].values[0])
+
+        bank_b = ast.literal_eval(data.loc[(data['Stage'] == stage) & (data['Series'] == series) & (data['Map Name'] == map_name) & (data['Team Name'] == team[1])]['Bank'].values[0])
+        buys_b = ast.literal_eval(data.loc[(data['Stage'] == stage) & (data['Series'] == series) & (data['Map Name'] == map_name) & (data['Team Name'] == team[1])]['Buys'].values[0])
+        
+        show_diff_bank = st.sidebar.checkbox("Show diff_bank")
+        show_diff_buys = st.sidebar.checkbox("Show diff_buys")
+
+        display_charts_two_teams(show_diff_bank, show_diff_buys, team, bank_a, bank_b, buys_a, buys_b)
+
 #endregion
+    
