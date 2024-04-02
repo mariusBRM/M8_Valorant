@@ -589,6 +589,72 @@ def calculate_mean_economy(data, team=[], series=None, stage=None):
     banks_buys = {team : (round(np.mean(data[data['Team Name'] == team]['Bank'].apply(lambda x: np.mean(ast.literal_eval(x)))),2), round(np.mean(data[data['Team Name'] == team]['Buys'].apply(lambda x: np.mean(ast.literal_eval(x)))),2))for team in teams}
 
     return banks_buys
+
+def create_summary_rounds_dataset(data):
+    """ 
+    Function that summarize the Economy data for each teams with rounds statistics over the all tournament
+
+    Parameters:
+        data : economy data
+    
+    Return:
+        df : return sum of all the rounds / team categories by economy
+    """
+    data['nb_rounds'] = data['Bank'].apply(lambda x : len(ast.literal_eval(x)))
+    
+    summary_rounds = {team : (data.loc[data['Team Name'] == team,['Pistol_Won']].sum().values[0],
+                            2 * len(data.loc[data['Team Name'] == team]),
+                                data.loc[data['Team Name'] == team,['Eco_Won']].sum().values[0],
+                                data.loc[data['Team Name'] == team,['Eco']].sum().values[0],
+                                data.loc[data['Team Name'] == team,['$_Won']].sum().values[0],
+                                data.loc[data['Team Name'] == team,['$']].sum().values[0],
+                                data.loc[data['Team Name'] == team,['$$_Won']].sum().values[0],
+                                data.loc[data['Team Name'] == team,['$$']].sum().values[0],
+                                data.loc[data['Team Name'] == team,['$$$_Won']].sum().values[0],
+                                data.loc[data['Team Name'] == team,['$$$']].sum().values[0],
+                                data.loc[data['Team Name'] == team,['nb_rounds']].sum().values[0]) for team in set(data['Team Name'])}
+    
+    df = pd.DataFrame.from_dict(summary_rounds, orient='index', columns=['Pistol_Won','Pistol',
+        'Eco_Won','Eco', '$_Won', '$', '$$_Won', '$$', '$$$_Won', '$$$', 'nb_rounds'])
+    # Reset index to have the index as a separate column
+    df.reset_index(inplace=True)
+    # Rename the index column to 'key'
+    df.rename(columns={'index': 'Team Name'}, inplace=True)
+
+    return df
+
+def create_ratio_economy_rounds(data):
+    """ 
+    Function that creates a dataframe with winrate for each Eco's, light buys, semi buys and full buys 
+        as well as the ratio of eco rounds, light buys, semi buys and full buys
+    
+    Parameter:
+        data : dataframe from create_summary_rounds_dataset()
+
+    Return:
+        df with added feature : ratio_pistol_won, ratio_eco_won, ratio_$_won, ratio_$$_won, ratio_$$$_won, ratio_eco, ratio_$, ratio_$$, ratio_$$$
+    """
+
+    # deal with null denominators 
+    data['Pistol'] = data['Pistol'].replace(0,1)
+    data['Eco'] = data['Eco'].replace(0,1)
+    data['$'] = data['$'].replace(0,1)
+    data['$$'] = data['$$'].replace(0,1)
+    data['$$$'] = data['$$$'].replace(0,1)
+
+    # ratio 
+    data['ratio_pistol_won'] = round(data['Pistol_Won'] / data['Pistol'], 2)
+    data['ratio_eco_won'] = round(data['Eco_Won'] / data['Eco'], 2)
+    data['ratio_$_won'] = round(data['$_Won'] / data['$'], 2)
+    data['ratio_$$_won'] = round(data['$$_Won'] / data['$$'], 2)
+    data['ratio_$$$_won'] = round(data['$$$_Won'] / data['$$$'], 2)
+    data['ratio_Eco'] = round(data['Eco'] / data['nb_rounds'], 3)
+    data['ratio_$'] = round(data['$'] / data['nb_rounds'], 3)
+    data['ratio_$$'] = round(data['$$'] / data['nb_rounds'], 3)
+    data['ratio_$$$'] = round(data['$$$'] / data['nb_rounds'], 3)
+
+    return data
+
 #endregion
     
 #region Scraping
@@ -984,5 +1050,15 @@ def plot_bank_and_buys(data, stage, series, map_name, team=[]):
 
         display_charts_two_teams(show_diff_bank, show_diff_buys, team, bank_a, bank_b, buys_a, buys_b)
 
+def plot_rounds_economy(data, round_type, mean=None, std=None):
+    """ """ 
+    fig_maps = px.bar(
+        data,
+        x='Team Name',
+        y=round_type,
+        color=round_type,
+        color_continuous_scale="reds")
+    
+    st.plotly_chart(fig_maps, theme="streamlit", use_container_width=True)
 #endregion
     
