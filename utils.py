@@ -7,6 +7,8 @@ from bs4 import BeautifulSoup, Comment
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
+import matplotlib.pyplot as plt
+import seaborn as sns
 import numpy as np
 
 # Set general constant
@@ -534,6 +536,51 @@ def number_action_by_scope_by_agent(df, agent, action, average, side=None, scope
 
 #endregion
 
+#region general
+
+def calculate_composition_for_each_team(data, map_to_select=None):
+    """ Function that calculates the composition of each team based on a map
+        
+        Parameter:
+            data : general data scraped from general scraper
+            map_to_select : a map to focalize the calculation
+        
+        Return:
+            heatmap_matrix : a 2 dimensional array with dim1 : teams and dim2 : agents
+            map_to_select : can be null otherwise it is a string
+            teams : list of team's name 
+            agents : list of agent played"""
+    
+    if map_to_select:
+        data = data[data['Map Name'] == map_to_select]
+    
+    summary = {id_match : {map_match : {team_name : set(data[(data['Id'] == id_match) & (data['Map Name'] == map_match) & (data['Team Name'] == team_name)]['Agent Name']) for team_name in set(data[(data['Id'] == id_match) & (data['Map Name'] == map_match)]['Team Name'])} for map_match in set(data[data['Id'] == id_match]['Map Name'])} for id_match in set(data["Id"])}
+
+    teams = set()
+    agents = set()
+
+    for match in summary.values():
+        for map_name, map_data in match.items():
+            for team_name, agents_set in map_data.items():
+                teams.add(team_name)
+                agents.update(agents_set)
+
+    # Mapping agents to indices
+    agent_to_index = {agent: i for i, agent in enumerate(sorted(agents))}
+    team_to_index = {team: i for i, team in enumerate(sorted(teams))}
+
+    # Create empty heatmap matrix
+    heatmap_matrix = np.zeros((len(teams), len(agents)))
+
+    # Fill in the heatmap matrix
+    for match in summary.values():
+        for map_data in match.values():
+            for team_name, agents_set in map_data.items():
+                for agent in agents_set:
+                    heatmap_matrix[team_to_index[team_name], agent_to_index[agent]] += 1
+    
+    return heatmap_matrix, map_to_select, agents, teams
+#endregion
 #region Pick and Bans
 
 def calculate_most_picked_map(data, data_type,team_name = None):
@@ -1026,7 +1073,7 @@ def plot_bank_and_buys(data, stage, series, map_name, team=[]):
                 )
             ],
             title='Bank and Loadout for Teams',
-            xaxis_title='Match Time (minutes)',
+            xaxis_title='Match rounds',
             yaxis_title='Values',
             legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
             font=dict(family="Arial, sans-serif"),
@@ -1039,6 +1086,11 @@ def plot_bank_and_buys(data, stage, series, map_name, team=[]):
         st.plotly_chart(fig)
     else:
 
+        st.write(team)
+        st.write(stage)
+        st.write(series)
+        st.write(map_name)
+        
         bank_a = ast.literal_eval(data.loc[(data['Stage'] == stage) & (data['Series'] == series) & (data['Map Name'] == map_name) & (data['Team Name'] == team[0])]['Bank'].values[0])
         buys_a = ast.literal_eval(data.loc[(data['Stage'] == stage) & (data['Series'] == series) & (data['Map Name'] == map_name) & (data['Team Name'] == team[0])]['Buys'].values[0])
 
@@ -1060,5 +1112,20 @@ def plot_rounds_economy(data, round_type, mean=None, std=None):
         color_continuous_scale="reds")
     
     st.plotly_chart(fig_maps, theme="streamlit", use_container_width=True)
+
+def plot_composition_for_each_team(heatmap_matrix, map_to_select, agents, teams):
+
+    # Plotting the heatmap
+    fig, ax = plt.subplots(figsize=(10, 6))
+    sns.heatmap(heatmap_matrix, cmap="YlOrRd", annot=True, fmt=".0f", xticklabels=sorted(agents), yticklabels=sorted(teams), ax=ax)
+    ax.set_xlabel('Agents')
+    ax.set_ylabel('Teams')
+    if map_to_select:
+        ax.set_title(f'Agent Composition by Team and Match on {map_to_select}')
+    else:
+        ax.set_title('Agent Composition by Team and Match')
+
+    # Display the plot in Streamlit
+    st.pyplot(fig)
 #endregion
     
