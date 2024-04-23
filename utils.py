@@ -581,6 +581,7 @@ def calculate_composition_for_each_team(data, map_to_select=None):
     
     return heatmap_matrix, map_to_select, agents, teams
 #endregion
+
 #region Pick and Bans
 
 def calculate_most_picked_map(data, data_type,team_name = None):
@@ -703,7 +704,64 @@ def create_ratio_economy_rounds(data):
     return data
 
 #endregion
+
+#region Performance
+
+def total_individual_exploit(performance):
+    """ Function that calculate the total number of individual exploit for each player throughout the tournament."""
     
+    performance.replace(pd.NA, '[]', inplace=True)
+    names = set(performance['Player Name'])
+
+    total_2K = {name : performance[performance['Player Name'] == name]['2K'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
+    total_3K = {name : performance[performance['Player Name'] == name]['3K'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
+    total_4K = {name : performance[performance['Player Name'] == name]['4K'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
+    total_5K = {name : performance[performance['Player Name'] == name]['5K'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
+    total_1v1 = {name : performance[performance['Player Name'] == name]['1v1'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
+    total_1v2 = {name : performance[performance['Player Name'] == name]['1v2'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
+    total_1v3 = {name : performance[performance['Player Name'] == name]['1v3'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
+    total_1v4 = {name : performance[performance['Player Name'] == name]['1v4'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
+    total_1v5 = {name : performance[performance['Player Name'] == name]['1v5'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
+
+    return total_2K, total_3K, total_4K, total_5K, total_1v1, total_1v2, total_1v3, total_1v4, total_1v5
+
+def ratio_individual_exploit(performance, data_type, economy, tot_rounds=False):
+    """ Function that calculates the ratio of action X in the total number of round throughout the tournament.
+        
+        Parameter:
+            total_X : dictionnary from total_individual_exploit() 
+            economy : dataframe from economy_data_scraper()
+            tot_rounds : boolean set to false, if we want to return the total number of round played
+        
+        Return:
+            Dict : key is Player Name and value is ratio or (ratio, total rounds played) depending on tot_rounds"""
+    
+    performance.replace(pd.NA, '[]', inplace=True)
+    
+    ActionRatio_eco = {name : [performance[performance['Player Name'] == name][data_type].apply(lambda x: len(ast.literal_eval(x))),
+                              performance[performance['Player Name'] == name]['Team Name'],
+                              performance[performance['Player Name'] == name]['Map #'],
+                              performance[performance['Player Name'] == name]['Stage'],
+                              performance[performance['Player Name'] == name]['Series']] for name in set(performance['Player Name'])}
+    dict_name_ratio = {}
+
+    for keys,values in ActionRatio_eco.items():
+        tot_x = sum(values[0])
+        tot_rounds = 0
+        for i in range(len(values[0])):
+            rounds_played = economy.loc[(economy['Team Name'] == list(values[1])[i])
+                                            & (economy['Map #'] == list(values[2])[i])
+                                            & (economy['Stage'] == list(values[3])[i])
+                                            & (economy['Series'] == list(values[4])[i])]['Bank']
+            nbr_rounds_played = len(ast.literal_eval(list(rounds_played)[0]))
+            tot_rounds+=nbr_rounds_played
+        
+
+        dict_name_ratio[keys] = tot_x/tot_rounds
+    
+    return dict_name_ratio
+#endregion
+
 #region Scraping
 
 def extract_round_numbers_if_present(text):
@@ -955,6 +1013,77 @@ def plot_bar_individual_data(data, data_type, top_players, mean = None, std = No
     st.plotly_chart(fig_maps, theme="streamlit", use_container_width=True)
 
 @st.cache_data
+def plot_bar_performance_data(data, data_type, top_players, mean = None, std = None, colored_by = None):
+    """
+    Function that plots the bar chart of for the performance data for each player
+
+    parameters:
+        data : dictionnary with key : player name, value
+        data_type : type of the data we want to display (2K, 3K, 4K, 5K, 1v2, ...)
+        top_players : int | number of top players that needs to be displayed
+        mean : shows the mean value
+        std : show the std high/low edges
+        colored_by : ?
+    """
+    # Convert dictionary to DataFrame
+    df_rating = pd.DataFrame.from_dict(data, orient='index', columns=[data_type]).reset_index()
+    
+    # Rename index column to 'player'
+    df_rating.rename(columns={'index': 'Player Name'}, inplace=True)
+
+    data_sorted = df_rating.sort_values(by=data_type, ascending=False)
+
+    fig_maps = px.bar(
+        data_sorted.head(top_players),
+        x=data_type,
+        y="Player Name")
+
+    if mean:
+        mean = df_rating[data_type].mean()
+
+        fig_maps.add_shape(
+            type="line",
+            x0=mean,
+            y0=-0.5,
+            x1=mean,
+            y1=top_players,
+            line=dict(
+                color="black",
+                width=2,
+                dash="dot",
+            )
+        )
+        
+        if std :
+            std = df_rating[data_type].std()
+            fig_maps.add_shape(
+                type="line",
+                x0=mean+std,
+                y0=-0.5,
+                x1=mean+std,
+                y1=top_players,
+                line=dict(
+                    color="red",
+                    width=1,
+                    dash="dot",
+                )
+            )
+            if mean-std > 0:
+                fig_maps.add_shape(
+                    type="line",
+                    x0=mean-std,
+                    y0=-0.5,
+                    x1=mean-std,
+                    y1=top_players,
+                    line=dict(
+                        color="red",
+                        width=1,
+                        dash="dot",
+                    ))
+
+    st.plotly_chart(fig_maps, theme="streamlit", use_container_width=True)
+
+@st.cache_data
 def plot_bar_picks_bans(data, data_type):
     """
     Function that plots the bar chart of the dataframe of the general data for individual statistics from general data (cf. e.g. calculate_average_adr_player)
@@ -1128,4 +1257,35 @@ def plot_composition_for_each_team(heatmap_matrix, map_to_select, agents, teams)
     # Display the plot in Streamlit
     st.pyplot(fig)
 #endregion
+
+#region Display in UI
+def display_individual_statistics(data, metric_name, type_calculated='total', mean=True, std=True):
+
+    """ Function that display the plot of the individual statistics in the UI adding a button that control the ranges.
     
+        Parameter:
+            data: this is a dataframe (likewise calculate_average_fk_players)
+            metric_name : name of the metric '1v2', 'ADR', 'ACS','4K'...
+            mean & std : true by default """
+    
+    top_X = st.number_input(f"Select the top X player for {metric_name} ({type_calculated}) : ", value=0, step=1, format="%d")
+    is_not_set = False
+    count_greater_than_zero = 0
+
+    if top_X == 0:
+        #by default
+        st.caption(f"Total {metric_name} of the top 15 players")
+        is_not_set = True
+    else:
+        st.caption(f"Total {metric_name} of the top {int(top_X)} players ({type_calculated})")
+
+    if is_not_set:
+        
+        for value in data.values():
+            if value > 0:
+                count_greater_than_zero += 1
+        top_X = min(15,count_greater_than_zero)
+
+    plot_bar_performance_data(data, metric_name, top_X, mean, std)
+
+#endregion   
