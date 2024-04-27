@@ -13,7 +13,6 @@ st.write(performance_data)
 display_option = st.radio("Select Display Option", ("Total individual action", "Individual action rate"))
 
 
-
 def display_individual_total_action():
 
     total_2K, total_3K, total_4K, total_5K, total_1v1, total_1v2, total_1v3, total_1v4, total_1v5 = total_individual_exploit(performance_data)
@@ -84,6 +83,11 @@ def display_individual_action_rate():
     ratio_1v5 = ratio_individual_exploit(performance_data,'1v5',economy)
     # 1v5s
     display_individual_statistics(ratio_1v5, '1v5', 'ratio')
+
+    # display Econ Rating
+    econ = calculate_econ_per_player(performance_data)
+    display_individual_statistics(econ,'ECON','ratio')
+
 
 
 if display_option == "Total individual action":
