@@ -1,2 +1,8 @@
 # M8_Valorant
-Gather data and analyze data from the Gentle Mate Rooster on Valorant
+Gather data and analyze data from VLR.gg
+
+Build a report for Data visualisation
+
+Give good insights
+
+
