@@ -470,7 +470,6 @@ def agent_popularity(data, player_name):
     except NameError:
         print(f'{NameError} | agent_popularity search failed')
 
-
 def calculate_action_agent(agent, data, average, action, side):
     """
     Functions that calculate the number of action by side
@@ -530,9 +529,6 @@ def number_action_by_scope_by_agent(df, agent, action, average, side=None, scope
     report = calculate_action_agent(agent, data_player_filtered_by_scope, average, action, side)
 
     return report
-
-
-
 
 #endregion
 
@@ -618,6 +614,7 @@ def calculate_most_picked_map(data, data_type,team_name = None):
 #endregion
 
 #region Economy
+
 def calculate_mean_economy(data, team=[], series=None, stage=None):
     """
     Function that calculate the mean economy (banks and buys) filtered on the team, the stage and the series
@@ -778,6 +775,14 @@ def ratio_individual_exploit(performance, data_type, economy, tot_rounds=False):
     df_total.rename(columns={'index': 'player'}, inplace=True)
 
     return df_total
+
+def calculate_econ_per_player(performance):
+    """ Function that calculates the mean Econ Rating = Damage / (Credits * 1000) """
+    names = set(performance['Player Name'])
+
+    mean_econ = {name : round(performance[performance['Player Name'] == name]['ECON'].mean(),2) for name in names}
+
+    return mean_econ
 #endregion
 
 #region Scraping
@@ -814,7 +819,6 @@ def get_economy_data(table_economy_general):
         general_econ.append([team, pistol_won, Eco, Eco_Won, Semi_Eco, Semi_Eco_Won, Semi_Buy, Semi_Buy_Won, Full_Buy, Full_Buy_Won])
 
     return general_econ[0], general_econ[1]
-
 
 def get_banking_data(bank):
 
