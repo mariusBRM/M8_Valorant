@@ -43,6 +43,14 @@ def display_individual_total_action():
     # 1v5s
     display_individual_statistics(total_1v5, '1v5')
 
+    # PL
+    pl = calculate_spike_action(performance_data,'PL',True)
+    display_individual_statistics(pl, 'PL')
+
+    # DE
+    de = calculate_spike_action(performance_data,'DE',True)
+    display_individual_statistics(de, 'DE')
+
 
 def display_individual_action_rate():
     
@@ -87,6 +95,14 @@ def display_individual_action_rate():
     # display Econ Rating
     econ = calculate_econ_per_player(performance_data)
     display_individual_statistics(econ,'ECON','ratio')
+
+    # PL
+    pl = calculate_spike_action(performance_data,'PL',False)
+    display_individual_statistics(pl, 'PL','ratio')
+    
+    # DE
+    de = calculate_spike_action(performance_data,'DE',False)
+    display_individual_statistics(de, 'DE','ratio')
 
 
 
