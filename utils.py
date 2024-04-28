@@ -713,17 +713,29 @@ def total_individual_exploit(performance):
     performance.replace(pd.NA, '[]', inplace=True)
     names = set(performance['Player Name'])
 
-    total_2K = {name : performance[performance['Player Name'] == name]['2K'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
-    total_3K = {name : performance[performance['Player Name'] == name]['3K'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
-    total_4K = {name : performance[performance['Player Name'] == name]['4K'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
-    total_5K = {name : performance[performance['Player Name'] == name]['5K'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
-    total_1v1 = {name : performance[performance['Player Name'] == name]['1v1'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
-    total_1v2 = {name : performance[performance['Player Name'] == name]['1v2'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
-    total_1v3 = {name : performance[performance['Player Name'] == name]['1v3'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
-    total_1v4 = {name : performance[performance['Player Name'] == name]['1v4'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
-    total_1v5 = {name : performance[performance['Player Name'] == name]['1v5'].apply(lambda x: len(ast.literal_eval(x))).sum() for name in names}
+    total_2K = {name : ( performance[performance['Player Name'] == name]['Team Name'].iloc[0], performance[performance['Player Name'] == name]['2K'].apply(lambda x: len(ast.literal_eval(x))).sum()) for name in names}
+    total_3K = {name : ( performance[performance['Player Name'] == name]['Team Name'].iloc[0], performance[performance['Player Name'] == name]['3K'].apply(lambda x: len(ast.literal_eval(x))).sum()) for name in names}
+    total_4K = {name : ( performance[performance['Player Name'] == name]['Team Name'].iloc[0], performance[performance['Player Name'] == name]['4K'].apply(lambda x: len(ast.literal_eval(x))).sum()) for name in names}
+    total_5K = {name : ( performance[performance['Player Name'] == name]['Team Name'].iloc[0], performance[performance['Player Name'] == name]['5K'].apply(lambda x: len(ast.literal_eval(x))).sum()) for name in names}
+    total_1v1 = {name : ( performance[performance['Player Name'] == name]['Team Name'].iloc[0], performance[performance['Player Name'] == name]['1v1'].apply(lambda x: len(ast.literal_eval(x))).sum()) for name in names}
+    total_1v2 = {name : ( performance[performance['Player Name'] == name]['Team Name'].iloc[0], performance[performance['Player Name'] == name]['1v2'].apply(lambda x: len(ast.literal_eval(x))).sum()) for name in names}
+    total_1v3 = {name : ( performance[performance['Player Name'] == name]['Team Name'].iloc[0], performance[performance['Player Name'] == name]['1v3'].apply(lambda x: len(ast.literal_eval(x))).sum()) for name in names}
+    total_1v4 = {name : ( performance[performance['Player Name'] == name]['Team Name'].iloc[0], performance[performance['Player Name'] == name]['1v4'].apply(lambda x: len(ast.literal_eval(x))).sum()) for name in names}
+    total_1v5 = {name : ( performance[performance['Player Name'] == name]['Team Name'].iloc[0], performance[performance['Player Name'] == name]['1v5'].apply(lambda x: len(ast.literal_eval(x))).sum()) for name in names}
 
-    return total_2K, total_3K, total_4K, total_5K, total_1v1, total_1v2, total_1v3, total_1v4, total_1v5
+    list_totals = [total_2K, total_3K, total_4K, total_5K, total_1v1, total_1v2, total_1v3, total_1v4, total_1v5]
+    list_name = ['2K', '3K', '4K', '5K', '1v1', '1v2', '1v3', '1v4', '1v5']
+    df_totals = []
+
+    for i,total in enumerate(list_totals):
+        # Convert dictionary to DataFrame
+        df_total = pd.DataFrame.from_dict(total, orient='index', columns=['team', list_name[i]]).reset_index()
+        # Rename index column to 'player'
+        df_total.rename(columns={'index': 'player'}, inplace=True)
+        # Add to list
+        df_totals.append(df_total)
+
+    return df_totals
 
 def ratio_individual_exploit(performance, data_type, economy, tot_rounds=False):
     """ Function that calculates the ratio of action X in the total number of round throughout the tournament.
@@ -747,6 +759,7 @@ def ratio_individual_exploit(performance, data_type, economy, tot_rounds=False):
 
     for keys,values in ActionRatio_eco.items():
         tot_x = sum(values[0])
+        team = list(values[1])[0]
         tot_rounds = 0
         for i in range(len(values[0])):
             rounds_played = economy.loc[(economy['Team Name'] == list(values[1])[i])
@@ -757,9 +770,14 @@ def ratio_individual_exploit(performance, data_type, economy, tot_rounds=False):
             tot_rounds+=nbr_rounds_played
         
 
-        dict_name_ratio[keys] = tot_x/tot_rounds
+        dict_name_ratio[keys] = (team,tot_x/tot_rounds)
     
-    return dict_name_ratio
+    # Convert dictionary to DataFrame
+    df_total = pd.DataFrame.from_dict(dict_name_ratio, orient='index', columns=['team', data_type]).reset_index()
+    # Rename index column to 'player'
+    df_total.rename(columns={'index': 'player'}, inplace=True)
+
+    return df_total
 #endregion
 
 #region Scraping
@@ -998,77 +1016,7 @@ def plot_bar_individual_data(data, data_type, top_players, mean = None, std = No
                     dash="dot",
                 )
             )
-            fig_maps.add_shape(
-                type="line",
-                x0=mean-std,
-                y0=-0.5,
-                x1=mean-std,
-                y1=top_players,
-                line=dict(
-                    color="red",
-                    width=1,
-                    dash="dot",
-                ))
-
-    st.plotly_chart(fig_maps, theme="streamlit", use_container_width=True)
-
-@st.cache_data
-def plot_bar_performance_data(data, data_type, top_players, mean = None, std = None, colored_by = None):
-    """
-    Function that plots the bar chart of for the performance data for each player
-
-    parameters:
-        data : dictionnary with key : player name, value
-        data_type : type of the data we want to display (2K, 3K, 4K, 5K, 1v2, ...)
-        top_players : int | number of top players that needs to be displayed
-        mean : shows the mean value
-        std : show the std high/low edges
-        colored_by : ?
-    """
-    # Convert dictionary to DataFrame
-    df_rating = pd.DataFrame.from_dict(data, orient='index', columns=[data_type]).reset_index()
-    
-    # Rename index column to 'player'
-    df_rating.rename(columns={'index': 'Player Name'}, inplace=True)
-
-    data_sorted = df_rating.sort_values(by=data_type, ascending=False)
-
-    fig_maps = px.bar(
-        data_sorted.head(top_players),
-        x=data_type,
-        y="Player Name")
-
-    if mean:
-        mean = df_rating[data_type].mean()
-
-        fig_maps.add_shape(
-            type="line",
-            x0=mean,
-            y0=-0.5,
-            x1=mean,
-            y1=top_players,
-            line=dict(
-                color="black",
-                width=2,
-                dash="dot",
-            )
-        )
-        
-        if std :
-            std = df_rating[data_type].std()
-            fig_maps.add_shape(
-                type="line",
-                x0=mean+std,
-                y0=-0.5,
-                x1=mean+std,
-                y1=top_players,
-                line=dict(
-                    color="red",
-                    width=1,
-                    dash="dot",
-                )
-            )
-            if mean-std > 0:
+            if mean - std > 0:
                 fig_maps.add_shape(
                     type="line",
                     x0=mean-std,
@@ -1280,12 +1228,11 @@ def display_individual_statistics(data, metric_name, type_calculated='total', me
         st.caption(f"Total {metric_name} of the top {int(top_X)} players ({type_calculated})")
 
     if is_not_set:
-        
-        for value in data.values():
-            if value > 0:
+        for i in range(len(data)):
+            if data[metric_name].iloc[i] > 0:
                 count_greater_than_zero += 1
         top_X = min(15,count_greater_than_zero)
 
-    plot_bar_performance_data(data, metric_name, top_X, mean, std)
+    plot_bar_individual_data(data, metric_name, top_X, mean, std)
 
 #endregion   
