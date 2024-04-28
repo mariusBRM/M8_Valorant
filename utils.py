@@ -780,9 +780,37 @@ def calculate_econ_per_player(performance):
     """ Function that calculates the mean Econ Rating = Damage / (Credits * 1000) """
     names = set(performance['Player Name'])
 
-    mean_econ = {name : round(performance[performance['Player Name'] == name]['ECON'].mean(),2) for name in names}
+    mean_econ = {name : (performance[performance['Player Name'] == name]['Team Name'].iloc[0], round(performance[performance['Player Name'] == name]['ECON'].mean(),2)) for name in names}
 
-    return mean_econ
+    # Convert dictionary to DataFrame
+    df_total = pd.DataFrame.from_dict(mean_econ, orient='index', columns=['team', 'ECON']).reset_index()
+    # Rename index column to 'player'
+    df_total.rename(columns={'index': 'player'}, inplace=True)
+
+    return df_total
+
+def calculate_spike_action(performance, data_type, total):
+
+    """ Function that calculate the number of spike action
+    
+        Parameter:
+            performance : performance data for scraping
+            data_type : a string either 'PL' or 'DE' 
+            total : either the total number of action if true or the ratio."""
+
+    names = set(performance['Player Name'])
+
+    if total:
+        data = {name : (performance[performance['Player Name'] == name]['Team Name'].iloc[0], performance[performance['Player Name'] == name][data_type].mean().sum()) for name in names}
+    else:
+        data = {name : (performance[performance['Player Name'] == name]['Team Name'].iloc[0], round(performance[performance['Player Name'] == name][data_type].mean(),2)) for name in names}
+
+    # Convert dictionary to DataFrame
+    df_total = pd.DataFrame.from_dict(data, orient='index', columns=['team', data_type]).reset_index()
+    # Rename index column to 'player'
+    df_total.rename(columns={'index': 'player'}, inplace=True)
+
+    return df_total
 #endregion
 
 #region Scraping
