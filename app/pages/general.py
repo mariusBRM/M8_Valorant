@@ -11,7 +11,15 @@ if st.button("Clear All"):
     st.cache_data.clear()
 
 st.title('Data visualization of the general data of the Pacific KickOff 2024')
-general_data = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/general_data_champions-tour-2024-pacific-kickoff.csv')
+region = st.session_state['region']
+
+# "EMEA", "Pacific", "Americas"
+if region == 'Pacific':
+    general_data = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/general_data_champions-tour-2024-pacific-kickoff.csv')
+elif region == 'EMEA':
+    general_data = pd.read_csv('../champions-tour-2024-emea-kickoff_data/general_data_champions-tour-2024-emea-kickoff.csv')
+elif region == 'Americas':
+    general_data = pd.read_csv('../champions-tour-2024-americas-kickoff_data/general_data_champions-tour-2024-americas-kickoff.csv')
 
 st.text('General Data')
 st.write(general_data)

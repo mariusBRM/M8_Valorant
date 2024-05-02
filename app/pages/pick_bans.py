@@ -3,7 +3,16 @@ import pandas as pd
 from utils import *
 st.set_page_config(page_title="Pick & Bans", page_icon="pick_and bans")
 
-pick_bans = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/pick_ban_data_champions-tour-2024-pacific-kickoff.csv')
+region = st.session_state['region']
+
+# "EMEA", "Pacific", "Americas"
+if region == 'Pacific':
+    pick_bans = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/pick_ban_data_data_champions-tour-2024-pacific-kickoff.csv')
+elif region == 'EMEA':
+    pick_bans = pd.read_csv('../champions-tour-2024-emea-kickoff_data/pick_ban_data_data_champions-tour-2024-emea-kickoff.csv')
+elif region == 'Americas':
+    pick_bans = pd.read_csv('../champions-tour-2024-americas-kickoff_data/pick_ban_data_champions-tour-2024-americas-kickoff.csv')
+
 
 st.text('Picks & Bans')
 st.write(pick_bans)

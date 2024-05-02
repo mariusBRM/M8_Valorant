@@ -5,7 +5,16 @@ from utils import *
 
 st.set_page_config(page_title="Performance Data", page_icon="performance")
 
-performance_data = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/performance_data_champions-tour-2024-pacific-kickoff.csv')
+region = st.session_state['region']
+
+# "EMEA", "Pacific", "Americas"
+if region == 'Pacific':
+    performance_data = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/performance_data_champions-tour-2024-pacific-kickoff.csv')
+elif region == 'EMEA':
+    performance_data = pd.read_csv('../champions-tour-2024-emea-kickoff_data/performance_data_champions-tour-2024-emea-kickoff.csv')
+elif region == 'Americas':
+    performance_data = pd.read_csv('../champions-tour-2024-americas-kickoff_data/performance_data_champions-tour-2024-americas-kickoff.csv')
+
 
 st.text('Performance Data')
 st.write(performance_data)
@@ -52,9 +61,14 @@ def display_individual_total_action():
     display_individual_statistics(de, 'DE')
 
 
-def display_individual_action_rate():
+def display_individual_action_rate(region):
     
-    economy = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/economy_data_champions-tour-2024-pacific-kickoff.csv')
+    if region == 'Pacific':
+        economy = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/economy_data_champions-tour-2024-pacific-kickoff.csv')
+    elif region == 'EMEA':
+        economy = pd.read_csv('../champions-tour-2024-emea-kickoff_data/economy_data_champions-tour-2024-emea-kickoff.csv')
+    elif region == 'Americas':
+        economy = pd.read_csv('../champions-tour-2024-americas-kickoff_data/economy_data_champions-tour-2024-americas-kickoff.csv')
 
     ratio_2K = ratio_individual_exploit(performance_data,'2K',economy)
     # 2Ks
@@ -109,4 +123,4 @@ def display_individual_action_rate():
 if display_option == "Total individual action":
     display_individual_total_action()
 elif display_option == "Individual action rate":
-    display_individual_action_rate()
+    display_individual_action_rate(region)

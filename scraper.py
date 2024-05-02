@@ -134,7 +134,8 @@ def general_data_scraper(list_url):
         result.drop('KAST', axis=1, inplace = True)
     except:
         result = None
-
+        
+    result = create_id_column(result)
     return result
 
 def performance_data_scraper(list_url):

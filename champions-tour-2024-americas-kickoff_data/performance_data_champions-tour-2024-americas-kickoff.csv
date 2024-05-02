@@ -1,0 +1,511 @@
+Player Name,Map Name,2K,3K,4K,5K,1v1,1v2,1v3,1v4,1v5,ECON,PL,DE,Team Name,Map #,Stage,Series
+crashies,Breeze,"[11, 18, 21]",,,,,,,,,71,2,0,NRG,1,Group Stage,Opening (A)
+Victor,Breeze,"[13, 18, 23]","[6, 21]",,,[21],,,,,61,1,0,NRG,1,Group Stage,Opening (A)
+Marved,Breeze,"[5, 7, 8, 17, 23]",,,,,[23],,,,55,1,1,NRG,1,Group Stage,Opening (A)
+Ethan,Breeze,"[9, 10]",[5],,,[9],,,,,57,4,1,NRG,1,Group Stage,Opening (A)
+Demon1,Breeze,"[6, 8, 10, 16, 17]",[3],,,,,,,,68,0,0,NRG,1,Group Stage,Opening (A)
+mwzera,Breeze,"[1, 2, 10, 18, 20]","[4, 12]",,,,[18],,,,75,2,2,FUR,1,Group Stage,Opening (A)
+kon4n,Breeze,"[14, 16, 21]",[1],,,,,,,,40,1,0,FUR,1,Group Stage,Opening (A)
+Khalil,Breeze,"[2, 9, 12, 15, 19, 23]",,,,,,,,,51,1,0,FUR,1,Group Stage,Opening (A)
+liazzi,Breeze,"[4, 7, 18, 19, 20, 21]",[13],,,,[13],,,,55,1,1,FUR,1,Group Stage,Opening (A)
+havoc,Breeze,[14],,,,,,,,,13,1,0,FUR,1,Group Stage,Opening (A)
+crashies,Ascent,"[4, 8, 15, 21]",,,,,,,,,43,2,0,NRG,2,Group Stage,Opening (A)
+Victor,Ascent,"[7, 13]",[16],[2],,,,,,,53,2,0,NRG,2,Group Stage,Opening (A)
+Marved,Ascent,[20],,,,,,,,,29,0,0,NRG,2,Group Stage,Opening (A)
+Ethan,Ascent,"[1, 20, 21]","[15, 17]",,,,,,,,77,4,1,NRG,2,Group Stage,Opening (A)
+Demon1,Ascent,"[12, 16, 18, 19]",[10],,,[19],,,,,62,0,1,NRG,2,Group Stage,Opening (A)
+mwzera,Ascent,"[8, 17]",[9],,,,,,,,42,0,1,FUR,2,Group Stage,Opening (A)
+kon4n,Ascent,"[6, 12, 13]",,,,,,,,,59,2,0,FUR,2,Group Stage,Opening (A)
+Khalil,Ascent,"[4, 8]",[19],,,[4],,,,,45,2,0,FUR,2,Group Stage,Opening (A)
+liazzi,Ascent,[15],,,,,,,,,34,0,1,FUR,2,Group Stage,Opening (A)
+havoc,Ascent,"[4, 5, 9]",[3],,,,,,,,41,0,0,FUR,2,Group Stage,Opening (A)
+wippie,Bind,"[2, 3, 8, 10, 12, 21]",[13],,,,,[13],,,72,0,0,C9,1,Group Stage,Opening (A)
+vanity,Bind,,,,,,,,,,34,6,0,C9,1,Group Stage,Opening (A)
+Xeppaa,Bind,"[5, 8, 9]",,[1],,,,,,,47,1,0,C9,1,Group Stage,Opening (A)
+jakee,Bind,"[11, 14, 22]","[4, 17, 24]",,,,,,,,66,1,1,C9,1,Group Stage,Opening (A)
+OXY,Bind,"[3, 5, 12, 18, 20]",[23],,,,,,,,56,1,0,C9,1,Group Stage,Opening (A)
+frz,Bind,"[2, 10, 14, 22]",,,,,[8],,,,43,0,0,MIBR,1,Group Stage,Opening (A)
+RgLMeister,Bind,"[9, 11, 13, 16]",[18],,,[2],[18],,,,61,1,1,MIBR,1,Group Stage,Opening (A)
+artzin,Bind,[8],"[3, 7]",,,,"[3, 17]",,,,50,2,1,MIBR,1,Group Stage,Opening (A)
+mazin,Bind,[10],[15],,,,,,,,38,4,0,MIBR,1,Group Stage,Opening (A)
+jzz,Bind,[24],[16],,,,,,,,42,1,0,MIBR,1,Group Stage,Opening (A)
+wippie,Split,"[1, 8]",,,,,,,,,55,0,2,C9,2,Group Stage,Opening (A)
+vanity,Split,"[4, 11]",[10],[20],,[10],[20],,,,45,1,1,C9,2,Group Stage,Opening (A)
+Xeppaa,Split,"[6, 7, 12]",[14],,,,,,,,57,2,0,C9,2,Group Stage,Opening (A)
+jakee,Split,,[21],,,,,,,,46,2,0,C9,2,Group Stage,Opening (A)
+OXY,Split,"[6, 7, 10, 11, 16]",,,[9],,,,,,59,0,0,C9,2,Group Stage,Opening (A)
+frz,Split,[12],,[15],,,,,,,39,2,0,MIBR,2,Group Stage,Opening (A)
+RgLMeister,Split,"[1, 4, 11, 13, 14]",,,,,,,,,41,1,0,MIBR,2,Group Stage,Opening (A)
+artzin,Split,"[19, 20]",,,,,,,,,48,2,0,MIBR,2,Group Stage,Opening (A)
+mazin,Split,"[1, 5, 7, 21]",,,,[21],,,,,45,4,2,MIBR,2,Group Stage,Opening (A)
+jzz,Split,"[4, 12, 13, 20]",[2],,,,,,,,59,0,1,MIBR,2,Group Stage,Opening (A)
+wippie,Lotus,,,,,,,,,,58,1,0,C9,3,Group Stage,Opening (A)
+vanity,Lotus,"[1, 4, 12, 23]","[16, 19]",,,[17],[16],,,,72,8,1,C9,3,Group Stage,Opening (A)
+Xeppaa,Lotus,"[6, 17, 22]",[14],,,[6],,,,,47,0,1,C9,3,Group Stage,Opening (A)
+jakee,Lotus,[23],,,,,,,,,33,1,1,C9,3,Group Stage,Opening (A)
+OXY,Lotus,"[21, 22]",[7],[13],[18],,,,,,66,0,1,C9,3,Group Stage,Opening (A)
+frz,Lotus,"[2, 6, 11, 19]",,,,,,,,,44,0,1,MIBR,3,Group Stage,Opening (A)
+RgLMeister,Lotus,"[7, 12, 23]",[17],,,,,,,,58,2,3,MIBR,3,Group Stage,Opening (A)
+artzin,Lotus,"[4, 15, 16]","[5, 8]",,,,,,,,56,1,0,MIBR,3,Group Stage,Opening (A)
+mazin,Lotus,"[2, 3, 7, 16, 21]",,,,[19],,,,,54,1,1,MIBR,3,Group Stage,Opening (A)
+jzz,Lotus,"[5, 20]","[1, 3]",,,,,,,,53,2,0,MIBR,3,Group Stage,Opening (A)
+saadhak,Split,"[2, 15, 16, 21, 22]",[23],[24],,,,,,,48,2,0,LOUD,1,Group Stage,Opening (B)
+Quick,Split,"[3, 6, 14, 16, 18, 22]",[17],,,,,,,,65,0,1,LOUD,1,Group Stage,Opening (B)
+tuyz,Split,"[8, 20, 21]",,,,[13],,,,,43,1,1,LOUD,1,Group Stage,Opening (B)
+cauanzin,Split,"[1, 2, 14, 23]",,,[10],,,,,,55,5,1,LOUD,1,Group Stage,Opening (B)
+Less,Split,"[1, 3, 6, 15]",[4],,,,,,,,37,0,1,LOUD,1,Group Stage,Opening (B)
+TenZ,Split,"[8, 20]",[18],[5],,,,,,,62,0,0,SEN,1,Group Stage,Opening (B)
+Sacy,Split,[7],[23],,,,,,,,24,3,0,SEN,1,Group Stage,Opening (B)
+Zellsis,Split,"[7, 9]",[12],,,[1],,,,,45,4,2,SEN,1,Group Stage,Opening (B)
+johnqt,Split,"[4, 12, 13, 24]",,,,[4],,,,,46,0,0,SEN,1,Group Stage,Opening (B)
+zekken,Split,"[4, 8, 10, 11, 19]",[1],,,,,,,,68,0,2,SEN,1,Group Stage,Opening (B)
+saadhak,Ascent,[22],,,[17],,,,,,48,3,1,LOUD,2,Group Stage,Opening (B)
+Quick,Ascent,[19],[5],[14],,,,,,,51,1,0,LOUD,2,Group Stage,Opening (B)
+tuyz,Ascent,[20],,,,,,,,,21,0,2,LOUD,2,Group Stage,Opening (B)
+cauanzin,Ascent,"[3, 13, 18, 21]",[9],,,,,,,,52,3,2,LOUD,2,Group Stage,Opening (B)
+Less,Ascent,"[13, 15, 19, 20]",,,,,,,[1],,66,1,0,LOUD,2,Group Stage,Opening (B)
+TenZ,Ascent,,,,,,,,,,34,0,0,SEN,2,Group Stage,Opening (B)
+Sacy,Ascent,"[3, 9, 11]","[1, 5, 7]",,,,,,,,88,2,1,SEN,2,Group Stage,Opening (B)
+Zellsis,Ascent,,,,,,,,,,34,2,2,SEN,2,Group Stage,Opening (B)
+johnqt,Ascent,"[4, 11, 13]",[15],,,,,,,,56,1,0,SEN,2,Group Stage,Opening (B)
+zekken,Ascent,,"[10, 12]",,,,,,,,49,2,0,SEN,2,Group Stage,Opening (B)
+C0M,Bind,"[1, 7, 20]",,[15],,,,,,,45,0,0,LEV,1,Group Stage,Opening (B)
+tex,Bind,"[1, 5]",,,,,,,,,46,7,0,LEV,1,Group Stage,Opening (B)
+Mazino,Bind,"[2, 12, 17]","[8, 22]",,,,,,,,72,1,0,LEV,1,Group Stage,Opening (B)
+aspas,Bind,"[2, 4, 8, 12, 17, 18]",[16],[6],[13],[8],,,,,83,0,1,LEV,1,Group Stage,Opening (B)
+kiNgg,Bind,[11],,[21],,,,,,,33,0,0,LEV,1,Group Stage,Opening (B)
+Asuna,Bind,[3],[13],,,,,,,,34,0,0,100T,1,Group Stage,Opening (B)
+Boostio,Bind,"[9, 19, 20]",[10],[14],,,,,,,67,3,0,100T,1,Group Stage,Opening (B)
+eeiu,Bind,"[5, 8]",,,,,,,,,45,1,0,100T,1,Group Stage,Opening (B)
+bang,Bind,[11],,,,[11],,,,,32,0,0,100T,1,Group Stage,Opening (B)
+Cryocells,Bind,[18],,,,[13],,,,,53,1,1,100T,1,Group Stage,Opening (B)
+C0M,Split,[6],,,,[6],,,,,46,0,0,LEV,2,Group Stage,Opening (B)
+tex,Split,,,,,,,,,,35,0,0,LEV,2,Group Stage,Opening (B)
+Mazino,Split,"[2, 3]",,,,,[3],,,,47,3,0,LEV,2,Group Stage,Opening (B)
+aspas,Split,"[3, 9]",[4],,,,,,,,58,1,0,LEV,2,Group Stage,Opening (B)
+kiNgg,Split,[6],"[7, 9]",,,,,,,,51,1,0,LEV,2,Group Stage,Opening (B)
+Asuna,Split,"[1, 2, 3, 10]",[5],,,,,,,,67,0,1,100T,2,Group Stage,Opening (B)
+Boostio,Split,"[14, 15]",,,,,,,,,68,3,1,100T,2,Group Stage,Opening (B)
+eeiu,Split,"[1, 4, 6, 8, 10, 11, 16]",,,,,,,,,61,0,1,100T,2,Group Stage,Opening (B)
+bang,Split,"[2, 9, 13]",,,,[7],,,,,61,0,0,100T,2,Group Stage,Opening (B)
+Cryocells,Split,"[6, 7, 15]",[14],,,,,,,,75,1,0,100T,2,Group Stage,Opening (B)
+C0M,Icebox,"[8, 18, 20]","[1, 5, 21]",,,,[5],,,,80,2,4,LEV,3,Group Stage,Opening (B)
+tex,Icebox,"[1, 15, 17, 22]",,,,,,,,,46,0,0,LEV,3,Group Stage,Opening (B)
+Mazino,Icebox,"[2, 4, 17, 20, 22]",,,,,,,,,44,6,1,LEV,3,Group Stage,Opening (B)
+aspas,Icebox,"[6, 9, 12, 24]",[16],"[3, 19]",,,,,,,79,0,0,LEV,3,Group Stage,Opening (B)
+kiNgg,Icebox,"[4, 11, 24]",,,,[2],,,,,40,1,0,LEV,3,Group Stage,Opening (B)
+Asuna,Icebox,"[10, 15, 20]",,,,[20],,,,,24,9,1,100T,3,Group Stage,Opening (B)
+Boostio,Icebox,"[12, 13, 14, 24]","[6, 8, 23]",,,,,,,,63,0,0,100T,3,Group Stage,Opening (B)
+eeiu,Icebox,"[5, 9, 14]",,,,,,,,,33,0,0,100T,3,Group Stage,Opening (B)
+bang,Icebox,"[10, 11, 13]",,[2],,[12],,,,,46,1,1,100T,3,Group Stage,Opening (B)
+Cryocells,Icebox,[19],[15],"[7, 21]",,[15],,,,,67,0,1,100T,3,Group Stage,Opening (B)
+Melser,Icebox,"[18, 21]",[22],,,,[22],,,,49,6,0,KRÜ,1,Group Stage,Opening (C)
+keznit,Icebox,"[3, 18]","[16, 21]",,[20],,,,,,64,0,0,KRÜ,1,Group Stage,Opening (C)
+Klaus,Icebox,"[7, 10, 12, 17]",,,,,,,,,64,2,1,KRÜ,1,Group Stage,Opening (C)
+Shyy,Icebox,,[19],,[9],"[8, 19]",,,,,95,1,0,KRÜ,1,Group Stage,Opening (C)
+mta,Icebox,"[1, 6, 8, 10, 11]",,,,,,,,,44,0,0,KRÜ,1,Group Stage,Opening (C)
+valyn,Icebox,"[4, 5, 22]","[7, 13]",[8],,,,,,,82,4,1,G2,1,Group Stage,Opening (C)
+JonahP,Icebox,,,[2],,[12],,,,,37,0,0,G2,1,Group Stage,Opening (C)
+neT,Icebox,[19],,,,,,,,,31,0,0,G2,1,Group Stage,Opening (C)
+leaf,Icebox,[9],,[1],,,,,,,48,1,0,G2,1,Group Stage,Opening (C)
+trent,Icebox,"[12, 14, 22]",,,,,,,,,44,2,1,G2,1,Group Stage,Opening (C)
+Melser,Sunset,"[5, 12]",,,,,,,,,37,2,0,KRÜ,2,Group Stage,Opening (C)
+keznit,Sunset,"[4, 12, 18, 21]",,,,,,,,,47,0,1,KRÜ,2,Group Stage,Opening (C)
+Klaus,Sunset,"[6, 8, 13, 15, 20]",,,,[20],,,,,58,6,0,KRÜ,2,Group Stage,Opening (C)
+Shyy,Sunset,[14],,,,,,,,,28,1,0,KRÜ,2,Group Stage,Opening (C)
+mta,Sunset,"[6, 14]",,[3],,,,,,,39,0,1,KRÜ,2,Group Stage,Opening (C)
+valyn,Sunset,"[6, 16, 19]",,[20],,,,,,,73,5,0,G2,2,Group Stage,Opening (C)
+JonahP,Sunset,"[2, 3, 10, 11, 17]",[21],,[8],,,,,,81,0,2,G2,2,Group Stage,Opening (C)
+neT,Sunset,"[1, 22]",,,,,,,,,45,1,0,G2,2,Group Stage,Opening (C)
+leaf,Sunset,"[17, 18, 22]","[2, 10, 11]",,,,,,,,54,2,1,G2,2,Group Stage,Opening (C)
+trent,Sunset,"[9, 16]",,[15],,,,,,,46,1,0,G2,2,Group Stage,Opening (C)
+Melser,Ascent,[5],,,,,,,,,27,2,0,KRÜ,3,Group Stage,Opening (C)
+keznit,Ascent,"[4, 8, 14, 20, 21]","[1, 2, 11, 17]",,,,,,,,96,1,0,KRÜ,3,Group Stage,Opening (C)
+Klaus,Ascent,"[6, 7, 13, 21]",[20],,,,,,,,55,2,1,KRÜ,3,Group Stage,Opening (C)
+Shyy,Ascent,"[1, 7, 11, 24]",,,,"[11, 21]",,,,,78,2,1,KRÜ,3,Group Stage,Opening (C)
+mta,Ascent,"[4, 8, 10, 15]",,,,,,,,,38,1,0,KRÜ,3,Group Stage,Opening (C)
+valyn,Ascent,[3],,,,,,,,,38,4,1,G2,3,Group Stage,Opening (C)
+JonahP,Ascent,"[9, 11, 13, 14, 24]","[3, 22]",,,"[14, 20]",[14],,,,57,2,0,G2,3,Group Stage,Opening (C)
+neT,Ascent,"[5, 20, 21]",[6],,,,,,,,47,2,0,G2,3,Group Stage,Opening (C)
+leaf,Ascent,"[9, 13, 16]","[18, 19]",,,,,,,,45,0,0,G2,3,Group Stage,Opening (C)
+trent,Ascent,,"[5, 12]",,,[5],,,,,64,2,1,G2,3,Group Stage,Opening (C)
+mwzera,Split,"[4, 7, 10, 17, 18]",,[21],,,,,,,69,0,0,FUR,1,Group Stage,Elimination (A)
+kon4n,Split,"[10, 22]",,,,[10],,,,,47,5,0,FUR,1,Group Stage,Elimination (A)
+Khalil,Split,"[13, 17]",[7],,,,,,,,42,0,0,FUR,1,Group Stage,Elimination (A)
+liazzi,Split,[18],,,,,,,,,30,1,0,FUR,1,Group Stage,Elimination (A)
+havoc,Split,"[9, 12]","[13, 14]",,,,,,,,50,2,0,FUR,1,Group Stage,Elimination (A)
+frz,Split,"[2, 5, 10, 22]","[14, 18, 19]",,,"[18, 22]",,,,,79,2,1,MIBR,1,Group Stage,Elimination (A)
+RgLMeister,Split,[8],,,,[17],,,,,42,4,0,MIBR,1,Group Stage,Elimination (A)
+artzin,Split,"[17, 22]",,,,,,,,,43,0,0,MIBR,1,Group Stage,Elimination (A)
+mazin,Split,"[3, 15, 16]",,,,,,,,,37,2,0,MIBR,1,Group Stage,Elimination (A)
+jzz,Split,"[1, 2, 15, 19]",[20],,,,,,,,54,0,0,MIBR,1,Group Stage,Elimination (A)
+mwzera,Breeze,"[3, 11, 20]",,,,,,,,,58,1,0,FUR,2,Group Stage,Elimination (A)
+kon4n,Breeze,"[8, 15]",[5],,,,,,,,50,2,0,FUR,2,Group Stage,Elimination (A)
+Khalil,Breeze,"[3, 4, 21, 22]",[23],,,,,,,,44,2,1,FUR,2,Group Stage,Elimination (A)
+liazzi,Breeze,[23],[10],,,,,,,,51,3,1,FUR,2,Group Stage,Elimination (A)
+havoc,Breeze,"[4, 7, 15, 16, 17]","[9, 11]",,,,,,,,60,1,0,FUR,2,Group Stage,Elimination (A)
+frz,Breeze,"[1, 3]",[20],,,,,,,,52,0,0,MIBR,2,Group Stage,Elimination (A)
+RgLMeister,Breeze,"[2, 8, 9, 13, 22, 24]",,,,,[22],,,,49,5,4,MIBR,2,Group Stage,Elimination (A)
+artzin,Breeze,[21],"[6, 14]",[19],,[20],,,,,69,0,1,MIBR,2,Group Stage,Elimination (A)
+mazin,Breeze,[1],,,,,,,,,31,1,0,MIBR,2,Group Stage,Elimination (A)
+jzz,Breeze,"[11, 14, 18, 22]",,,,,,,,,48,0,1,MIBR,2,Group Stage,Elimination (A)
+TenZ,Lotus,"[1, 10, 11]",,,,[17],,,,,53,2,1,SEN,1,Group Stage,Elimination (B)
+Sacy,Lotus,"[4, 8]",,,,,,,,,59,8,2,SEN,1,Group Stage,Elimination (B)
+Zellsis,Lotus,"[3, 13, 17]",,,,,,,,,70,0,0,SEN,1,Group Stage,Elimination (B)
+johnqt,Lotus,[18],"[7, 14]",[12],,,,,,,56,1,0,SEN,1,Group Stage,Elimination (B)
+zekken,Lotus,"[3, 7, 13, 18]","[2, 9]",,,,,,,,70,0,0,SEN,1,Group Stage,Elimination (B)
+Asuna,Lotus,[16],,,,,,,,,47,4,1,100T,1,Group Stage,Elimination (B)
+Boostio,Lotus,[17],,,,,,,,,37,1,0,100T,1,Group Stage,Elimination (B)
+eeiu,Lotus,[5],,,,,,,,,26,0,1,100T,1,Group Stage,Elimination (B)
+bang,Lotus,"[6, 15]",,,,,[7],,,,57,0,0,100T,1,Group Stage,Elimination (B)
+Cryocells,Lotus,"[6, 12, 17]",,,,,,,,,60,0,0,100T,1,Group Stage,Elimination (B)
+TenZ,Bind,"[4, 7]",[3],[14],,,,,,,67,0,0,SEN,2,Group Stage,Elimination (B)
+Sacy,Bind,"[3, 11, 17]",,,,,,,,,41,1,1,SEN,2,Group Stage,Elimination (B)
+Zellsis,Bind,[16],[13],,,,,,,,46,2,1,SEN,2,Group Stage,Elimination (B)
+johnqt,Bind,,"[1, 5]",,,,,,,,55,2,1,SEN,2,Group Stage,Elimination (B)
+zekken,Bind,,"[8, 12]",,,,,,,,46,0,0,SEN,2,Group Stage,Elimination (B)
+Asuna,Bind,"[6, 9, 11, 18, 19]",[8],,,[11],,,,,60,1,0,100T,2,Group Stage,Elimination (B)
+Boostio,Bind,"[1, 16]",[12],,,,,[12],,,55,8,0,100T,2,Group Stage,Elimination (B)
+eeiu,Bind,"[11, 18, 19]",,,,,,,,,50,0,1,100T,2,Group Stage,Elimination (B)
+bang,Bind,[17],[16],,,,,,,,54,0,1,100T,2,Group Stage,Elimination (B)
+Cryocells,Bind,"[2, 6]",,,,,,,,,52,1,1,100T,2,Group Stage,Elimination (B)
+TenZ,Split,"[2, 5, 8, 9]",[16],,,,,,,,54,2,0,SEN,3,Group Stage,Elimination (B)
+Sacy,Split,"[2, 12, 15, 20, 21]",[19],,,,,,,,65,5,1,SEN,3,Group Stage,Elimination (B)
+Zellsis,Split,"[1, 13, 17, 21]",,,,,,,,,62,1,1,SEN,3,Group Stage,Elimination (B)
+johnqt,Split,"[1, 12]","[10, 18]",,,,,,,,64,1,0,SEN,3,Group Stage,Elimination (B)
+zekken,Split,"[4, 7, 9, 16, 20]",[5],,,,,,,,77,0,1,SEN,3,Group Stage,Elimination (B)
+Asuna,Split,,[1],,,,,,,,39,0,0,100T,3,Group Stage,Elimination (B)
+Boostio,Split,[10],,,,,,,,,49,5,1,100T,3,Group Stage,Elimination (B)
+eeiu,Split,,[9],[3],,,,[9],,,45,1,1,100T,3,Group Stage,Elimination (B)
+bang,Split,"[20, 21]","[6, 7]",,,,,,,,47,0,1,100T,3,Group Stage,Elimination (B)
+Cryocells,Split,,"[13, 14]",[15],,[13],,[15],,,43,0,0,100T,3,Group Stage,Elimination (B)
+crashies,Sunset,"[2, 4]",,,,,[2],,,,45,1,2,NRG,1,Group Stage,Winner's (A)
+Victor,Sunset,"[11, 13]","[5, 18]",,,,,,,,60,0,0,NRG,1,Group Stage,Winner's (A)
+Marved,Sunset,[13],[20],,,,,,,,46,1,1,NRG,1,Group Stage,Winner's (A)
+Ethan,Sunset,"[4, 9, 19]",[10],,,[16],,,,,58,4,0,NRG,1,Group Stage,Winner's (A)
+Demon1,Sunset,"[3, 12]","[7, 9, 14]",[16],,,,,,,102,1,0,NRG,1,Group Stage,Winner's (A)
+wippie,Sunset,"[1, 14]","[2, 16]",,,[14],,,,,53,2,1,C9,1,Group Stage,Winner's (A)
+vanity,Sunset,[11],,,,,,,,,47,5,1,C9,1,Group Stage,Winner's (A)
+Xeppaa,Sunset,"[1, 15]",[7],,,,,,,,50,0,0,C9,1,Group Stage,Winner's (A)
+jakee,Sunset,"[3, 14]",,,,,,,,,42,0,0,C9,1,Group Stage,Winner's (A)
+OXY,Sunset,"[7, 8, 15, 17]",,,,[7],,,,,32,0,0,C9,1,Group Stage,Winner's (A)
+crashies,Ascent,[11],[17],,,,,,,,47,1,1,NRG,2,Group Stage,Winner's (A)
+Victor,Ascent,"[7, 13, 25]",[8],[1],,[13],,,,,63,2,1,NRG,2,Group Stage,Winner's (A)
+Marved,Ascent,"[9, 14]","[6, 12]",,,,,,,,42,2,0,NRG,2,Group Stage,Winner's (A)
+Ethan,Ascent,"[15, 21, 26]",,,,,,,,,36,2,1,NRG,2,Group Stage,Winner's (A)
+Demon1,Ascent,"[12, 15, 18, 24]",[23],,,,,,,,45,0,0,NRG,2,Group Stage,Winner's (A)
+wippie,Ascent,"[13, 18, 20, 26]",,,,,,,,,39,0,0,C9,2,Group Stage,Winner's (A)
+vanity,Ascent,"[8, 9, 13]","[10, 21]",,,[8],,,,,75,5,2,C9,2,Group Stage,Winner's (A)
+Xeppaa,Ascent,"[5, 6, 9]",[22],,,,,,,,45,1,0,C9,2,Group Stage,Winner's (A)
+jakee,Ascent,"[4, 8]",[3],,,,,,,,41,1,0,C9,2,Group Stage,Winner's (A)
+OXY,Ascent,"[4, 7, 11, 15, 19, 24]",,,,,,,,,50,1,0,C9,2,Group Stage,Winner's (A)
+saadhak,Bind,"[1, 3, 9, 16]",,,,,,,,,58,4,1,LOUD,1,Group Stage,Winner's (B)
+Quick,Bind,"[11, 13, 15]",[23],,,,,,,,39,0,0,LOUD,1,Group Stage,Winner's (B)
+tuyz,Bind,"[12, 18, 21]",,,,,,,,,51,0,1,LOUD,1,Group Stage,Winner's (B)
+cauanzin,Bind,"[7, 17]",[22],,,,,,,,49,5,0,LOUD,1,Group Stage,Winner's (B)
+Less,Bind,"[10, 14, 21]",,,,,,,,,53,1,1,LOUD,1,Group Stage,Winner's (B)
+C0M,Bind,"[7, 19, 24]",[8],,,,,,,,43,2,1,LEV,1,Group Stage,Winner's (B)
+tex,Bind,"[4, 6, 19]",[2],,,,,,,,55,6,0,LEV,1,Group Stage,Winner's (B)
+Mazino,Bind,"[2, 11]",[12],,,[4],[12],,,,58,3,1,LEV,1,Group Stage,Winner's (B)
+aspas,Bind,"[4, 9]",,,,,,,,,47,0,0,LEV,1,Group Stage,Winner's (B)
+kiNgg,Bind,[6],"[1, 18, 20]",[5],,,[1],,,,78,1,0,LEV,1,Group Stage,Winner's (B)
+saadhak,Split,"[14, 19]",,,,,,,,,40,1,1,LOUD,2,Group Stage,Winner's (B)
+Quick,Split,"[1, 2, 13]",[9],,,,,,,,42,1,1,LOUD,2,Group Stage,Winner's (B)
+tuyz,Split,"[3, 6]","[8, 13]",,,[13],,,,,58,1,0,LOUD,2,Group Stage,Winner's (B)
+cauanzin,Split,"[9, 10, 14, 20]",[23],,,,,,,,54,5,1,LOUD,2,Group Stage,Winner's (B)
+Less,Split,"[1, 3, 11, 12, 20, 22]",[18],[16],,[16],,,,,84,1,0,LOUD,2,Group Stage,Winner's (B)
+C0M,Split,"[4, 7, 13, 17]",,,,,,,,,40,5,0,LEV,2,Group Stage,Winner's (B)
+tex,Split,"[6, 17, 23]",,,,,,,,,39,0,0,LEV,2,Group Stage,Winner's (B)
+Mazino,Split,,[8],,,,,,,,30,3,0,LEV,2,Group Stage,Winner's (B)
+aspas,Split,"[15, 19]",,,,"[3, 8, 18]",[19],,,,43,1,1,LEV,2,Group Stage,Winner's (B)
+kiNgg,Split,"[15, 20]",[5],[18],,,,,,,67,0,1,LEV,2,Group Stage,Winner's (B)
+saadhak,Ascent,"[1, 3, 15]",,,,,,,,,41,0,0,LOUD,3,Group Stage,Winner's (B)
+Quick,Ascent,"[1, 2, 12]","[4, 9]",,,,,,,,62,2,0,LOUD,3,Group Stage,Winner's (B)
+tuyz,Ascent,"[2, 6]","[7, 20]",,,,,,,,64,1,1,LOUD,3,Group Stage,Winner's (B)
+cauanzin,Ascent,"[10, 16]",,,,,,,,,35,6,0,LOUD,3,Group Stage,Winner's (B)
+Less,Ascent,"[5, 12, 17]","[3, 18]",,,[12],,,,,88,1,1,LOUD,3,Group Stage,Winner's (B)
+C0M,Ascent,"[6, 17]",[5],,,,,,,,77,3,0,LEV,3,Group Stage,Winner's (B)
+tex,Ascent,[16],,,,,,,,,36,1,0,LEV,3,Group Stage,Winner's (B)
+Mazino,Ascent,"[11, 14]",,,,,,,,,44,0,1,LEV,3,Group Stage,Winner's (B)
+aspas,Ascent,"[13, 15, 16]","[19, 20]",,,,,,,,57,1,0,LEV,3,Group Stage,Winner's (B)
+kiNgg,Ascent,"[3, 13, 14]","[8, 12]",,,,,,,,47,1,0,LEV,3,Group Stage,Winner's (B)
+valyn,Sunset,"[1, 15]",[25],,,,,,,,30,5,1,G2,1,Group Stage,Winner's (C)
+JonahP,Sunset,"[2, 7]","[5, 16, 19]",,,[2],,,,,51,5,1,G2,1,Group Stage,Winner's (C)
+neT,Sunset,"[6, 10, 21, 23]",[9],,,,[9],,,,45,0,0,G2,1,Group Stage,Winner's (C)
+leaf,Sunset,"[2, 7, 23]","[3, 15, 17, 22]",,,,,,,,56,0,0,G2,1,Group Stage,Winner's (C)
+trent,Sunset,"[9, 26]","[4, 18]",,,,,,,,45,1,1,G2,1,Group Stage,Winner's (C)
+supamen,Sunset,"[4, 11]","[10, 14]",,,,,,,,40,2,1,EG,1,Group Stage,Winner's (C)
+Derrek,Sunset,"[2, 11, 13, 16]","[22, 24]",,,[22],[16],,,,46,0,0,EG,1,Group Stage,Winner's (C)
+jawgemo,Sunset,"[8, 12, 20, 27, 28]",[21],,,,,,,,53,0,1,EG,1,Group Stage,Winner's (C)
+NaturE,Sunset,"[13, 16, 22, 27]",[19],,,[25],[19],,,,41,7,1,EG,1,Group Stage,Winner's (C)
+Apoth,Sunset,"[12, 18]","[20, 25]",,,,,,,,47,0,0,EG,1,Group Stage,Winner's (C)
+valyn,Icebox,"[13, 18, 20]",[24],,,,,,,,57,2,2,G2,2,Group Stage,Winner's (C)
+JonahP,Icebox,[7],[14],,[21],,,,,,54,2,1,G2,2,Group Stage,Winner's (C)
+neT,Icebox,[16],,,,,,,,,29,2,0,G2,2,Group Stage,Winner's (C)
+leaf,Icebox,"[3, 10, 11, 17, 23]",[6],,,,,,,,66,0,0,G2,2,Group Stage,Winner's (C)
+trent,Icebox,"[3, 10, 18]",,,,,,,,,60,2,1,G2,2,Group Stage,Winner's (C)
+supamen,Icebox,"[8, 19, 20]","[1, 21, 24]",,,,"[8, 24]",,,,82,3,1,EG,2,Group Stage,Winner's (C)
+Derrek,Icebox,"[4, 6, 7, 9, 12, 23]",[15],,,,,,,,50,4,1,EG,2,Group Stage,Winner's (C)
+jawgemo,Icebox,"[1, 20]",,[5],,,,,,,34,0,0,EG,2,Group Stage,Winner's (C)
+NaturE,Icebox,[2],,,,,,,,,32,3,0,EG,2,Group Stage,Winner's (C)
+Apoth,Icebox,"[2, 9, 23]","[8, 19]",[22],,,,,,,64,0,1,EG,2,Group Stage,Winner's (C)
+wippie,Bind,"[4, 14, 24]",,,,,,,,,43,0,0,C9,1,Group Stage,Decider (A)
+vanity,Bind,"[1, 3, 17, 24, 25]","[16, 20]",,,,,,,,50,3,1,C9,1,Group Stage,Decider (A)
+Xeppaa,Bind,"[18, 22]",[12],,,[19],,,,,48,2,0,C9,1,Group Stage,Decider (A)
+jakee,Bind,"[1, 4, 12, 19]",,,,,,,,,39,4,1,C9,1,Group Stage,Decider (A)
+OXY,Bind,"[11, 16, 21]",[22],[2],,,,,,,55,1,1,C9,1,Group Stage,Decider (A)
+frz,Bind,"[10, 26]",[7],,,[26],[7],,[22],,42,0,2,MIBR,1,Group Stage,Decider (A)
+RgLMeister,Bind,"[13, 25, 26]","[19, 23]",,,,,,,,64,8,0,MIBR,1,Group Stage,Decider (A)
+artzin,Bind,"[3, 6, 11]",,,,[6],,,,,31,2,0,MIBR,1,Group Stage,Decider (A)
+mazin,Bind,"[7, 15, 23, 25]","[8, 14]",,,,,,,,50,1,0,MIBR,1,Group Stage,Decider (A)
+jzz,Bind,"[6, 13]",,,,,,,,,38,0,1,MIBR,1,Group Stage,Decider (A)
+wippie,Ascent,[2],,,,,,,,,49,2,1,C9,2,Group Stage,Decider (A)
+vanity,Ascent,"[3, 8, 17, 18, 21]",,,,,,,,,46,3,0,C9,2,Group Stage,Decider (A)
+Xeppaa,Ascent,"[3, 10, 11]",,[5],,,,,,,57,2,0,C9,2,Group Stage,Decider (A)
+jakee,Ascent,"[4, 11, 14, 15, 17, 19]",,,,"[4, 11]",,,,,60,0,2,C9,2,Group Stage,Decider (A)
+OXY,Ascent,"[4, 6, 20]",,,,,,,,,36,0,0,C9,2,Group Stage,Decider (A)
+frz,Ascent,"[3, 5, 6, 12, 18]",[13],,,,[6],,,,65,0,0,MIBR,2,Group Stage,Decider (A)
+RgLMeister,Ascent,,"[1, 4, 8, 16]",,,,[8],,,,62,4,1,MIBR,2,Group Stage,Decider (A)
+artzin,Ascent,"[12, 15, 18]",[22],[10],,,,,,,47,0,0,MIBR,2,Group Stage,Decider (A)
+mazin,Ascent,"[7, 15]",[14],,,,[15],,,,50,1,1,MIBR,2,Group Stage,Decider (A)
+jzz,Ascent,"[6, 9, 20]","[7, 11]",,,,,,,,60,4,1,MIBR,2,Group Stage,Decider (A)
+C0M,Split,[16],,,,,,,,,35,2,0,LEV,1,Group Stage,Decider (B)
+tex,Split,[13],,,,,,,,,37,2,0,LEV,1,Group Stage,Decider (B)
+Mazino,Split,,,,,,,,,,27,3,0,LEV,1,Group Stage,Decider (B)
+aspas,Split,,,"[4, 6]",,[6],,,,,66,2,0,LEV,1,Group Stage,Decider (B)
+kiNgg,Split,"[9, 10]","[1, 7]",,,,,,,,82,1,0,LEV,1,Group Stage,Decider (B)
+TenZ,Split,"[3, 11]",,,,[13],,,,,36,1,0,SEN,1,Group Stage,Decider (B)
+Sacy,Split,[5],[16],,,,,[16],,,40,0,1,SEN,1,Group Stage,Decider (B)
+Zellsis,Split,"[3, 11, 12, 15]",,[7],,[7],,,,,79,1,3,SEN,1,Group Stage,Decider (B)
+johnqt,Split,"[1, 10]",,[13],,,[4],,,,61,1,0,SEN,1,Group Stage,Decider (B)
+zekken,Split,"[2, 5, 8, 16]","[6, 14]",,,,,,,,125,1,2,SEN,1,Group Stage,Decider (B)
+C0M,Breeze,[17],,,,,,,,,38,2,1,LEV,2,Group Stage,Decider (B)
+tex,Breeze,"[6, 13, 19]",,,,,,,,,59,0,0,LEV,2,Group Stage,Decider (B)
+Mazino,Breeze,"[5, 12, 15]",[10],,,[15],,,,,68,6,1,LEV,2,Group Stage,Decider (B)
+aspas,Breeze,"[3, 16]","[2, 4, 11]",,,,,,,,60,0,0,LEV,2,Group Stage,Decider (B)
+kiNgg,Breeze,[16],[13],[1],,"[1, 5]",,,,,67,2,1,LEV,2,Group Stage,Decider (B)
+TenZ,Breeze,"[9, 18]",,,,,,,,,38,1,0,SEN,2,Group Stage,Decider (B)
+Sacy,Breeze,"[7, 18]",[9],,,,,,,,54,4,1,SEN,2,Group Stage,Decider (B)
+Zellsis,Breeze,"[5, 13]",,,,,[13],,,,35,1,0,SEN,2,Group Stage,Decider (B)
+johnqt,Breeze,"[3, 7]",,,,,,,,,51,0,0,SEN,2,Group Stage,Decider (B)
+zekken,Breeze,"[5, 15]",[1],[8],,,,,,,54,0,0,SEN,2,Group Stage,Decider (B)
+C0M,Bind,"[2, 4, 18, 21]",[19],,,,,,,,43,0,1,LEV,3,Group Stage,Decider (B)
+tex,Bind,"[2, 10, 12, 13, 21]",,,,,,,,,38,4,0,LEV,3,Group Stage,Decider (B)
+Mazino,Bind,"[3, 13]",[8],,,[8],,,,,33,1,1,LEV,3,Group Stage,Decider (B)
+aspas,Bind,"[4, 6, 11]",[1],[17],,[11],,,,,68,0,1,LEV,3,Group Stage,Decider (B)
+kiNgg,Bind,[8],[18],,,,,,,,45,1,0,LEV,3,Group Stage,Decider (B)
+TenZ,Bind,"[4, 14, 19]",,,,,,,,,49,0,1,SEN,3,Group Stage,Decider (B)
+Sacy,Bind,"[5, 9, 12, 13, 16]",[11],,,"[6, 13]",,,,,66,4,1,SEN,3,Group Stage,Decider (B)
+Zellsis,Bind,[8],,,,,,,,,45,5,0,SEN,3,Group Stage,Decider (B)
+johnqt,Bind,"[10, 20]",,,,[21],,,,,46,0,1,SEN,3,Group Stage,Decider (B)
+zekken,Bind,"[6, 14, 16, 18, 21]",[22],,,,,,,,71,0,0,SEN,3,Group Stage,Decider (B)
+valyn,Split,"[6, 11]",,,,,,,,,43,4,0,G2,1,Group Stage,Decider (C)
+JonahP,Split,"[2, 8]",,,,,,,,,23,0,0,G2,1,Group Stage,Decider (C)
+neT,Split,"[10, 15, 17]",[7],[19],,,[19],,,,65,0,0,G2,1,Group Stage,Decider (C)
+leaf,Split,"[9, 16, 21]","[4, 6, 20]",,,[20],,,,,90,0,1,G2,1,Group Stage,Decider (C)
+trent,Split,"[1, 4, 14, 17]",,,,,,,,,71,1,0,G2,1,Group Stage,Decider (C)
+Melser,Split,"[13, 17]",,,,,,,,,36,0,0,KRÜ,1,Group Stage,Decider (C)
+keznit,Split,"[3, 5, 13]",,,,,,,,,49,1,0,KRÜ,1,Group Stage,Decider (C)
+Klaus,Split,,,,,,,,,,36,4,0,KRÜ,1,Group Stage,Decider (C)
+Shyy,Split,"[3, 5, 7, 11]","[10, 14]",,,,[11],,,,63,0,0,KRÜ,1,Group Stage,Decider (C)
+mta,Split,"[11, 20]","[12, 18]",,,,,,,,49,1,0,KRÜ,1,Group Stage,Decider (C)
+valyn,Sunset,"[6, 13]",,,,,,,,,45,2,0,G2,2,Group Stage,Decider (C)
+JonahP,Sunset,"[4, 15, 16]","[7, 11]",,,,[15],,,,56,5,1,G2,2,Group Stage,Decider (C)
+neT,Sunset,"[2, 15, 17, 21]",[1],,,,,,,,57,0,0,G2,2,Group Stage,Decider (C)
+leaf,Sunset,[14],[3],,,,,,,,66,1,0,G2,2,Group Stage,Decider (C)
+trent,Sunset,"[10, 12, 21]",[20],,,,[10],,,,79,0,1,G2,2,Group Stage,Decider (C)
+Melser,Sunset,"[2, 20]",[8],,,,,,,,23,2,0,KRÜ,2,Group Stage,Decider (C)
+keznit,Sunset,"[5, 7, 9, 10, 11, 16]",[3],,,,,,,,78,0,0,KRÜ,2,Group Stage,Decider (C)
+Klaus,Sunset,,[1],,,,,[1],,,43,4,0,KRÜ,2,Group Stage,Decider (C)
+Shyy,Sunset,"[6, 9, 15]",,,,"[6, 12]",,,,,50,2,0,KRÜ,2,Group Stage,Decider (C)
+mta,Sunset,"[12, 17]",[18],,,,,,,,45,0,0,KRÜ,2,Group Stage,Decider (C)
+frz,Split,"[5, 6, 12, 14, 17]",[16],,,,,,,,60,1,0,MIBR,1,Play-Ins,Play-ins
+RgLMeister,Split,[5],[14],,,,,,,,45,2,0,MIBR,1,Play-Ins,Play-ins
+artzin,Split,"[3, 13, 17, 20]",[10],,,[13],,,,,51,0,2,MIBR,1,Play-Ins,Play-ins
+mazin,Split,"[9, 12, 19]",,,,,,,,,36,3,0,MIBR,1,Play-Ins,Play-ins
+jzz,Split,[13],[15],,,,,,,,45,0,1,MIBR,1,Play-Ins,Play-ins
+TenZ,Split,"[11, 20]","[1, 13]",,,,,,,,57,1,0,SEN,1,Play-Ins,Play-ins
+Sacy,Split,"[4, 5]",,,,[5],,,,,36,1,2,SEN,1,Play-Ins,Play-ins
+Zellsis,Split,"[4, 12, 15]",,,,,,,,,55,1,0,SEN,1,Play-Ins,Play-ins
+johnqt,Split,"[1, 8, 18, 20]",[3],,,,[3],,,,59,2,0,SEN,1,Play-Ins,Play-ins
+zekken,Split,"[2, 5, 18]","[6, 9, 15]",,,,,,,,80,0,2,SEN,1,Play-Ins,Play-ins
+frz,Ascent,"[1, 2]",,,,,[1],,,,44,1,0,MIBR,2,Play-Ins,Play-ins
+RgLMeister,Ascent,,[1],,,,,,,,31,1,0,MIBR,2,Play-Ins,Play-ins
+artzin,Ascent,"[2, 4, 10, 17, 18]",[3],,,,,,,,75,0,0,MIBR,2,Play-Ins,Play-ins
+mazin,Ascent,"[4, 16, 17]",,,,,,,,,44,2,0,MIBR,2,Play-Ins,Play-ins
+jzz,Ascent,"[5, 6, 10]",,,,,,,,,29,4,0,MIBR,2,Play-Ins,Play-ins
+TenZ,Ascent,"[4, 9, 16]","[1, 14]",,,,,,,,57,0,0,SEN,2,Play-Ins,Play-ins
+Sacy,Ascent,"[12, 19]",[7],,,,,,,,81,2,1,SEN,2,Play-Ins,Play-ins
+Zellsis,Ascent,[3],"[6, 16]",,,,[3],,,,45,3,2,SEN,2,Play-Ins,Play-ins
+johnqt,Ascent,[8],[17],,,[17],,,,,40,1,0,SEN,2,Play-Ins,Play-ins
+zekken,Ascent,"[3, 9, 11, 13, 15]","[12, 19]",,,,,,,,89,0,0,SEN,2,Play-Ins,Play-ins
+valyn,Sunset,,"[7, 15]",,,,[15],,,,41,2,0,G2,1,Play-Ins,Play-ins
+JonahP,Sunset,[2],[4],,,,,,,,52,0,0,G2,1,Play-Ins,Play-ins
+neT,Sunset,"[10, 11, 17, 19, 22]",,,,,,,,,49,2,0,G2,1,Play-Ins,Play-ins
+leaf,Sunset,[18],"[1, 2, 8]",,,,,,,,53,1,3,G2,1,Play-Ins,Play-ins
+trent,Sunset,"[9, 15]",[21],,,[8],,,,,75,2,2,G2,1,Play-Ins,Play-ins
+frz,Sunset,"[3, 4, 8, 12, 22]",,,,,,,,,72,1,2,MIBR,1,Play-Ins,Play-ins
+RgLMeister,Sunset,[15],,,,,,,,,35,5,0,MIBR,1,Play-Ins,Play-ins
+artzin,Sunset,"[9, 12, 18]",,,,,,,,,52,1,0,MIBR,1,Play-Ins,Play-ins
+mazin,Sunset,"[5, 6, 11, 13]",,,,,,,,,51,1,1,MIBR,1,Play-Ins,Play-ins
+jzz,Sunset,"[13, 14, 17, 22]","[10, 18, 20]",,,,,[10],,,70,3,1,MIBR,1,Play-Ins,Play-ins
+valyn,Split,"[1, 14, 26]","[8, 24]",,,,,,,,32,4,0,G2,2,Play-Ins,Play-ins
+JonahP,Split,"[6, 18, 27]",,,,,,,,,33,2,2,G2,2,Play-Ins,Play-ins
+neT,Split,[17],[15],,,,,,,,38,1,1,G2,2,Play-Ins,Play-ins
+leaf,Split,"[9, 12, 13, 14, 15, 19, 23]",[28],,,,,,,,63,2,1,G2,2,Play-Ins,Play-ins
+trent,Split,"[7, 13, 23]",[5],,,[24],,,,,60,2,1,G2,2,Play-Ins,Play-ins
+frz,Split,"[5, 7, 21]","[17, 25]",,,[17],,,,,47,2,1,MIBR,2,Play-Ins,Play-ins
+RgLMeister,Split,"[1, 3, 4, 16, 22, 26]",[2],,,,[1],,,,51,4,0,MIBR,2,Play-Ins,Play-ins
+artzin,Split,"[1, 9]",,,,[23],,,,,35,0,1,MIBR,2,Play-Ins,Play-ins
+mazin,Split,"[5, 11, 15]",,,,[5],,,,,30,6,0,MIBR,2,Play-Ins,Play-ins
+jzz,Split,"[3, 4, 6, 8, 16, 28]",[11],[23],,,,,,,68,1,0,MIBR,2,Play-Ins,Play-ins
+valyn,Breeze,,[7],,,,"[7, 12]",,,,28,1,2,G2,3,Play-Ins,Play-ins
+JonahP,Breeze,"[1, 6, 19]",[8],,,,,,,,47,2,1,G2,3,Play-Ins,Play-ins
+neT,Breeze,"[6, 9, 11, 12, 14, 16, 19, 23]",,,,,,,,,68,0,1,G2,3,Play-Ins,Play-ins
+leaf,Breeze,[5],,[4],,,,,,,44,1,0,G2,3,Play-Ins,Play-ins
+trent,Breeze,[18],,[13],,,,,,,39,3,0,G2,3,Play-Ins,Play-ins
+frz,Breeze,[12],"[1, 23]",,,,[1],,,,36,0,0,MIBR,3,Play-Ins,Play-ins
+RgLMeister,Breeze,"[10, 21]","[12, 22]",,,,,,,,72,5,1,MIBR,3,Play-Ins,Play-ins
+artzin,Breeze,"[3, 6, 7, 22]",[20],"[8, 9]",,,,,,,76,0,1,MIBR,3,Play-Ins,Play-ins
+mazin,Breeze,"[2, 3]",,,,[8],,,,,40,2,1,MIBR,3,Play-Ins,Play-ins
+jzz,Breeze,[2],"[15, 19]",[17],,,,,,,73,3,0,MIBR,3,Play-Ins,Play-ins
+TenZ,Sunset,"[7, 9, 10, 14, 17, 20]",,,,,,,,,46,0,0,SEN,1,Play-Ins,Play-ins
+Sacy,Sunset,"[12, 16, 18, 19]",,,,,,,,,76,7,2,SEN,1,Play-Ins,Play-ins
+Zellsis,Sunset,"[2, 11, 18]",,[5],,,,[5],,,82,1,3,SEN,1,Play-Ins,Play-ins
+johnqt,Sunset,[19],,,,,,,,,42,1,0,SEN,1,Play-Ins,Play-ins
+zekken,Sunset,"[4, 20]","[3, 13]",,,,[21],,,,62,0,2,SEN,1,Play-Ins,Play-ins
+valyn,Sunset,[8],,,,,,,,,37,5,0,G2,1,Play-Ins,Play-ins
+JonahP,Sunset,,[3],[6],,,,,,,51,0,1,G2,1,Play-Ins,Play-ins
+neT,Sunset,[11],"[1, 21]",,,[2],,,,,39,1,0,G2,1,Play-Ins,Play-ins
+leaf,Sunset,"[2, 7, 8, 9, 11]","[5, 12]",,,,[12],,,,54,0,1,G2,1,Play-Ins,Play-ins
+trent,Sunset,[15],[10],,,[10],,,,,46,1,3,G2,1,Play-Ins,Play-ins
+TenZ,Breeze,[7],"[8, 14, 15]",,,,,[8],,,53,1,1,SEN,2,Play-Ins,Play-ins
+Sacy,Breeze,"[5, 12]",,,,,,,,,34,6,0,SEN,2,Play-Ins,Play-ins
+Zellsis,Breeze,"[12, 19]",[16],[13],,[18],,[13],,,51,0,1,SEN,2,Play-Ins,Play-ins
+johnqt,Breeze,[17],"[7, 19]",,,,,,,,55,2,1,SEN,2,Play-Ins,Play-ins
+zekken,Breeze,"[3, 5, 10, 22]",[18],,,,,,,,51,0,0,SEN,2,Play-Ins,Play-ins
+valyn,Breeze,"[17, 21]",,,,,,,,,47,5,0,G2,2,Play-Ins,Play-ins
+JonahP,Breeze,"[2, 4, 22]",,,,,,,,,44,1,1,G2,2,Play-Ins,Play-ins
+neT,Breeze,"[1, 2, 7, 11]","[8, 9, 17, 18]",,,,[17],,,,85,0,2,G2,2,Play-Ins,Play-ins
+leaf,Breeze,"[4, 12, 15, 20, 21, 22]",[11],,,,,,,,58,0,0,G2,2,Play-Ins,Play-ins
+trent,Breeze,"[6, 13]",[10],[3],,[12],,[3],,,75,4,0,G2,2,Play-Ins,Play-ins
+TenZ,Split,[15],,,,,,,,,44,0,0,SEN,3,Play-Ins,Play-ins
+Sacy,Split,"[10, 17]","[3, 21]",,,,,,,,61,4,1,SEN,3,Play-Ins,Play-ins
+Zellsis,Split,"[6, 10, 12, 17, 21]",[2],,,,,,,,63,0,1,SEN,3,Play-Ins,Play-ins
+johnqt,Split,"[4, 5, 11]",,,,,,,,,56,0,0,SEN,3,Play-Ins,Play-ins
+zekken,Split,"[5, 6, 7, 11, 20]",,,,,,,,,68,0,2,SEN,3,Play-Ins,Play-ins
+valyn,Split,"[4, 12, 13, 17]",[19],,,[17],,,,,47,3,1,G2,3,Play-Ins,Play-ins
+JonahP,Split,"[14, 15]",,,,,,,,,24,4,0,G2,3,Play-Ins,Play-ins
+neT,Split,"[1, 3, 12, 13, 19]",,[2],,,,,,,57,1,0,G2,3,Play-Ins,Play-ins
+leaf,Split,"[14, 17]",[8],[16],,,,,,,39,0,0,G2,3,Play-Ins,Play-ins
+trent,Split,,,,,[4],,,,,44,1,1,G2,3,Play-Ins,Play-ins
+supamen,Ascent,"[10, 12, 17]","[7, 11]",,,[7],,,,,81,3,0,EG,1,Playoffs,Semifinals
+Derrek,Ascent,"[4, 5, 17]",,,,[17],,,,,59,1,0,EG,1,Playoffs,Semifinals
+jawgemo,Ascent,"[3, 11, 12, 19]",[15],[8],,,,,,,88,0,0,EG,1,Playoffs,Semifinals
+NaturE,Ascent,[9],,,,,,,,,38,1,0,EG,1,Playoffs,Semifinals
+Apoth,Ascent,"[1, 2, 18]",[10],,,[10],,,,,57,0,1,EG,1,Playoffs,Semifinals
+saadhak,Ascent,,[3],,,,,,,,48,0,0,LOUD,1,Playoffs,Semifinals
+Quick,Ascent,[13],,,,,,,,,26,0,0,LOUD,1,Playoffs,Semifinals
+tuyz,Ascent,"[2, 3, 17, 18]",[6],,,[18],[3],,,,64,2,1,LOUD,1,Playoffs,Semifinals
+cauanzin,Ascent,[18],[7],,,,,,,,43,2,0,LOUD,1,Playoffs,Semifinals
+Less,Ascent,"[14, 16]",,,,,,,,,47,0,0,LOUD,1,Playoffs,Semifinals
+supamen,Icebox,"[15, 17]",,,,[18],,,,,44,0,1,EG,2,Playoffs,Semifinals
+Derrek,Icebox,"[12, 18]",,,,,,,,,40,6,0,EG,2,Playoffs,Semifinals
+jawgemo,Icebox,"[6, 8, 9, 19]",[3],,,,,,,,51,0,0,EG,2,Playoffs,Semifinals
+NaturE,Icebox,,,,,,,,,,31,2,0,EG,2,Playoffs,Semifinals
+Apoth,Icebox,"[9, 12]","[5, 11, 14]",,,,,,,,66,0,0,EG,2,Playoffs,Semifinals
+saadhak,Icebox,[16],[18],,,,,,,,45,3,2,LOUD,2,Playoffs,Semifinals
+Quick,Icebox,[10],,,,,,,,,46,0,1,LOUD,2,Playoffs,Semifinals
+tuyz,Icebox,"[2, 3, 10, 15]",[17],,,,[3],,,,65,5,0,LOUD,2,Playoffs,Semifinals
+cauanzin,Icebox,"[1, 6, 13, 15]",,[4],,,,,,,54,0,1,LOUD,2,Playoffs,Semifinals
+Less,Icebox,"[3, 7, 12, 16]",,,,,[12],,,,66,1,1,LOUD,2,Playoffs,Semifinals
+supamen,Sunset,,,,,,,,,,23,0,0,EG,3,Playoffs,Semifinals
+Derrek,Sunset,"[3, 4, 7, 9]",[16],[12],,,,[12],,,79,4,0,EG,3,Playoffs,Semifinals
+jawgemo,Sunset,,[15],,,,,,,,31,2,0,EG,3,Playoffs,Semifinals
+NaturE,Sunset,"[13, 18]",,,,,,,,,36,3,0,EG,3,Playoffs,Semifinals
+Apoth,Sunset,,[3],[10],,,,,,,63,0,0,EG,3,Playoffs,Semifinals
+saadhak,Sunset,"[1, 4, 17]",[12],,,,,,,,62,1,2,LOUD,3,Playoffs,Semifinals
+Quick,Sunset,[4],"[2, 7]",,,,,,,,58,1,2,LOUD,3,Playoffs,Semifinals
+tuyz,Sunset,"[6, 8, 16]",,,,,,,,,65,0,0,LOUD,3,Playoffs,Semifinals
+cauanzin,Sunset,,[5],[18],,,,,,,45,1,0,LOUD,3,Playoffs,Semifinals
+Less,Sunset,"[5, 11, 16]",[15],[13],,,,,,,72,2,1,LOUD,3,Playoffs,Semifinals
+crashies,Sunset,"[2, 11, 12, 19]","[7, 22]",,,,[1],,,,38,0,2,NRG,1,Playoffs,Semifinals
+Victor,Sunset,"[18, 21]","[13, 25]",,,,,,,,33,1,0,NRG,1,Playoffs,Semifinals
+Marved,Sunset,"[3, 8, 11, 14, 18, 19, 27]",,,,,,,,,43,1,1,NRG,1,Playoffs,Semifinals
+Ethan,Sunset,"[7, 12]",,,,,[12],,,,27,7,1,NRG,1,Playoffs,Semifinals
+Demon1,Sunset,"[1, 2, 15, 27, 30]",,,,,,,,,45,0,0,NRG,1,Playoffs,Semifinals
+TenZ,Sunset,"[10, 15, 16, 22, 23, 28, 30]",,[24],,,,,,,64,0,0,SEN,1,Playoffs,Semifinals
+Sacy,Sunset,"[20, 26]",[17],,,,,,,,44,9,0,SEN,1,Playoffs,Semifinals
+Zellsis,Sunset,"[3, 19]",,,,,,,,,39,1,1,SEN,1,Playoffs,Semifinals
+johnqt,Sunset,"[2, 10, 12, 16, 27, 29]",,,,,,,,,39,0,0,SEN,1,Playoffs,Semifinals
+zekken,Sunset,"[5, 6, 15, 23, 26, 28]","[21, 30]",[1],,,,,,,62,0,3,SEN,1,Playoffs,Semifinals
+crashies,Ascent,"[4, 17, 21]",,,,,,,,,45,2,1,NRG,2,Playoffs,Semifinals
+Victor,Ascent,"[3, 5, 17, 19]",,,,,[5],,,,58,0,0,NRG,2,Playoffs,Semifinals
+Marved,Ascent,"[1, 8]",,,,,,,,,29,0,0,NRG,2,Playoffs,Semifinals
+Ethan,Ascent,"[1, 6, 10, 13, 15]","[3, 4]",[14],,,,,,,75,6,2,NRG,2,Playoffs,Semifinals
+Demon1,Ascent,"[5, 9, 13, 21]",[19],,,,,,,,54,1,0,NRG,2,Playoffs,Semifinals
+TenZ,Ascent,"[1, 16]",,,,,,,,,59,2,0,SEN,2,Playoffs,Semifinals
+Sacy,Ascent,[12],[1],,,[1],,,,,54,2,1,SEN,2,Playoffs,Semifinals
+Zellsis,Ascent,"[2, 6, 15, 18, 21]",[12],,,,,,,,53,3,0,SEN,2,Playoffs,Semifinals
+johnqt,Ascent,[7],,,,,,,,,26,0,0,SEN,2,Playoffs,Semifinals
+zekken,Ascent,"[3, 13]",,,,,,,,,57,0,0,SEN,2,Playoffs,Semifinals
+crashies,Split,,[16],,,,,,,,33,4,0,NRG,3,Playoffs,Semifinals
+Victor,Split,"[4, 12]",[8],,,,,,,,51,1,1,NRG,3,Playoffs,Semifinals
+Marved,Split,"[5, 7, 14]",,,[13],,,,,,68,0,0,NRG,3,Playoffs,Semifinals
+Ethan,Split,"[6, 10]",,,,,,,,,44,1,0,NRG,3,Playoffs,Semifinals
+Demon1,Split,"[1, 11, 14]",,,,,,,,,42,2,0,NRG,3,Playoffs,Semifinals
+TenZ,Split,"[3, 7]",[5],,,,,,,,46,1,0,SEN,3,Playoffs,Semifinals
+Sacy,Split,[15],"[10, 16]",,,,[16],,,,60,1,1,SEN,3,Playoffs,Semifinals
+Zellsis,Split,"[1, 9, 15]",[11],,,,,,,,71,0,1,SEN,3,Playoffs,Semifinals
+johnqt,Split,"[2, 3, 9, 12]",[7],[6],,"[6, 7]",,,,,81,1,3,SEN,3,Playoffs,Semifinals
+zekken,Split,"[1, 4]",,,,,,,,,47,0,2,SEN,3,Playoffs,Semifinals
+saadhak,Sunset,"[7, 18]",,,,,,,,,42,0,1,LOUD,1,Playoffs,Grand Final
+Quick,Sunset,"[3, 4, 8, 14, 15, 19]",,,,,[9],,,,55,0,1,LOUD,1,Playoffs,Grand Final
+tuyz,Sunset,"[13, 14, 18, 21]",,,,[13],[18],,[13],,59,0,0,LOUD,1,Playoffs,Grand Final
+cauanzin,Sunset,"[7, 10]",,,,,,,,,45,9,1,LOUD,1,Playoffs,Grand Final
+Less,Sunset,[6],[9],,,[3],,,,,56,0,1,LOUD,1,Playoffs,Grand Final
+TenZ,Sunset,"[5, 9, 15, 17, 18, 20]","[10, 16]",,,,,,,,83,1,0,SEN,1,Playoffs,Grand Final
+Sacy,Sunset,"[4, 5, 11, 13, 18]",[6],,,,,[5],,,78,10,0,SEN,1,Playoffs,Grand Final
+Zellsis,Sunset,"[15, 16]",[22],,,,,,,,42,0,1,SEN,1,Playoffs,Grand Final
+johnqt,Sunset,"[2, 19, 20]",,,,,,,,,48,0,2,SEN,1,Playoffs,Grand Final
+zekken,Sunset,"[1, 2, 3, 11, 17]",[12],,,,,,,,54,1,1,SEN,1,Playoffs,Grand Final
+saadhak,Split,,,,,,,,,,22,1,0,LOUD,2,Playoffs,Grand Final
+Quick,Split,[5],,,,,,,,,40,0,0,LOUD,2,Playoffs,Grand Final
+tuyz,Split,[7],,,,,,,,,39,0,0,LOUD,2,Playoffs,Grand Final
+cauanzin,Split,"[1, 12, 14]",,,,,,,,,34,3,0,LOUD,2,Playoffs,Grand Final
+Less,Split,[5],[10],,,,,,,,80,2,0,LOUD,2,Playoffs,Grand Final
+TenZ,Split,"[7, 10, 12, 13, 15]",[3],,,,,,,,73,1,0,SEN,2,Playoffs,Grand Final
+Sacy,Split,"[1, 4, 7]",,,,,,,,,69,3,2,SEN,2,Playoffs,Grand Final
+Zellsis,Split,"[9, 11]",[14],,,[10],,,,,57,0,1,SEN,2,Playoffs,Grand Final
+johnqt,Split,[4],,,,,,,,,52,0,0,SEN,2,Playoffs,Grand Final
+zekken,Split,"[2, 5, 9, 16]",[6],,,,,,,,84,0,0,SEN,2,Playoffs,Grand Final
+saadhak,Icebox,"[7, 11, 23]",[24],,,,,,,,60,7,0,LOUD,3,Playoffs,Grand Final
+Quick,Icebox,[19],[12],,,,,,,,39,0,0,LOUD,3,Playoffs,Grand Final
+tuyz,Icebox,"[2, 3]","[10, 22]",,,,[2],,,,57,3,1,LOUD,3,Playoffs,Grand Final
+cauanzin,Icebox,"[5, 8, 13]",[9],,,,,,,,64,1,0,LOUD,3,Playoffs,Grand Final
+Less,Icebox,[13],"[5, 18]",,,,,,,,62,0,2,LOUD,3,Playoffs,Grand Final
+TenZ,Icebox,[19],"[1, 6, 21]",,,,,,,,49,1,0,SEN,3,Playoffs,Grand Final
+Sacy,Icebox,[10],,,,,,,,,25,7,2,SEN,3,Playoffs,Grand Final
+Zellsis,Icebox,"[4, 14, 15, 19]",[17],,,,,,,,42,0,0,SEN,3,Playoffs,Grand Final
+johnqt,Icebox,"[2, 7, 12, 22]",[4],,,[7],,,,,60,2,1,SEN,3,Playoffs,Grand Final
+zekken,Icebox,"[5, 8, 20]",,,,,,,,,44,0,0,SEN,3,Playoffs,Grand Final
+saadhak,Bind,,[16],,,,,,,,66,2,0,LOUD,4,Playoffs,Grand Final
+Quick,Bind,"[6, 21]","[8, 9, 12]",[2],,,,,,,69,2,0,LOUD,4,Playoffs,Grand Final
+tuyz,Bind,"[3, 5, 13, 20, 21]",[11],,,"[13, 20]",,,,,58,3,2,LOUD,4,Playoffs,Grand Final
+cauanzin,Bind,"[11, 13, 19]",[10],,,,,,,,46,3,1,LOUD,4,Playoffs,Grand Final
+Less,Bind,"[1, 4, 10]",,,,,,,,,21,0,0,LOUD,4,Playoffs,Grand Final
+TenZ,Bind,"[1, 16, 17, 19]",,,,,,,,,46,1,0,SEN,4,Playoffs,Grand Final
+Sacy,Bind,[15],[7],,,,,,,,46,3,0,SEN,4,Playoffs,Grand Final
+Zellsis,Bind,[16],"[9, 20]",,,,,,,,60,2,1,SEN,4,Playoffs,Grand Final
+johnqt,Bind,"[2, 7, 13]",[3],,,[3],,,,,59,2,0,SEN,4,Playoffs,Grand Final
+zekken,Bind,"[9, 19]",[14],,,,,,,,59,0,0,SEN,4,Playoffs,Grand Final
+saadhak,Lotus,"[11, 16, 17]",,,,[7],,,,,47,2,1,LOUD,5,Playoffs,Grand Final
+Quick,Lotus,"[4, 12, 14]",[7],,,,,,,,66,0,0,LOUD,5,Playoffs,Grand Final
+tuyz,Lotus,"[10, 13, 15]",,,,,,,,,53,0,1,LOUD,5,Playoffs,Grand Final
+cauanzin,Lotus,"[1, 14, 15]",,,,,,,,,46,2,0,LOUD,5,Playoffs,Grand Final
+Less,Lotus,"[5, 8]",[12],,,,,,,,74,0,0,LOUD,5,Playoffs,Grand Final
+TenZ,Lotus,"[2, 16]",[13],,,,,,,,47,1,0,SEN,5,Playoffs,Grand Final
+Sacy,Lotus,"[1, 7, 8, 9]",[11],,,[11],[1],,,,68,4,0,SEN,5,Playoffs,Grand Final
+Zellsis,Lotus,[6],,,,[5],,,,,35,1,1,SEN,5,Playoffs,Grand Final
+johnqt,Lotus,"[3, 6, 10]",,,,"[4, 6, 8]",[12],,,,64,3,0,SEN,5,Playoffs,Grand Final
+zekken,Lotus,"[2, 3, 9, 17]","[5, 12]",,,,[17],,,,72,2,1,SEN,5,Playoffs,Grand Final

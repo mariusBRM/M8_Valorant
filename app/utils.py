@@ -815,22 +815,6 @@ def calculate_spike_action(performance, data_type, total):
 
 #region Scraping
 
-def create_id_column(df):
-    """ Function that create an Id column in General data"""
-    id_column = []
-    prev_values = None
-    current_id = 0
-
-    for index, row in df.iterrows():
-        current_values = row[['winner', 'Stage', 'Series']]
-        if prev_values is None or not prev_values.equals(current_values):
-            current_id += 1
-        id_column.append(current_id)
-        prev_values = current_values
-
-    df['Id'] = id_column
-    return df
-
 def extract_round_numbers_if_present(text):
     """ Extract the round in the performance table from the text : Round X --> X """
     if 'Round' in text:
