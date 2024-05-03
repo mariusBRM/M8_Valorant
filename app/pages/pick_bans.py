@@ -7,9 +7,9 @@ region = st.session_state['region']
 
 # "EMEA", "Pacific", "Americas"
 if region == 'Pacific':
-    pick_bans = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/pick_ban_data_data_champions-tour-2024-pacific-kickoff.csv')
+    pick_bans = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/pick_ban_data_champions-tour-2024-pacific-kickoff.csv')
 elif region == 'EMEA':
-    pick_bans = pd.read_csv('../champions-tour-2024-emea-kickoff_data/pick_ban_data_data_champions-tour-2024-emea-kickoff.csv')
+    pick_bans = pd.read_csv('../champions-tour-2024-emea-kickoff_data/pick_ban_data_champions-tour-2024-emea-kickoff.csv')
 elif region == 'Americas':
     pick_bans = pd.read_csv('../champions-tour-2024-americas-kickoff_data/pick_ban_data_champions-tour-2024-americas-kickoff.csv')
 

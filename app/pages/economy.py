@@ -4,7 +4,15 @@ from utils import *
 
 st.set_page_config(page_title="Economic Data", page_icon="$$")
 
-economic_data = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/economy_data_champions-tour-2024-pacific-kickoff.csv')
+region = st.session_state['region']
+
+# "EMEA", "Pacific", "Americas"
+if region == 'Pacific':
+    economic_data = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/economy_data_champions-tour-2024-pacific-kickoff.csv')
+elif region == 'EMEA':
+    economic_data = pd.read_csv('../champions-tour-2024-emea-kickoff_data/economy_data_champions-tour-2024-emea-kickoff.csv')
+elif region == 'Americas':
+    economic_data = pd.read_csv('../champions-tour-2024-americas-kickoff_data/economy_data_champions-tour-2024-americas-kickoff.csv')
 
 st.text('Economic Data')
 st.write(economic_data)
