@@ -1,4 +1,4 @@
-Player Name,Agent Name,R,ACS,K,D,K/D +/–,+/–,ADR,HS%,FK,FK/FD +/–,+/–,Team Name,Map Name,Map #,Stage,Series,winner,rounds,Id
+Player Name,Agent Name,R,ACS,K,D,K/D +/–,+/–,ADR,HS%,FK,FK/FD +/–,+/–.1,Team Name,Map Name,Map #,Stage,Series,winner,rounds,Id
 cNed,Yoru,"1.10
 1.29
 0.91","250
@@ -2320,8 +2320,7 @@ kamo,Yoru,"1.09
 4
 1","+3
 -1
-+4","Movistar KOI						
-							(KOI)",Icebox,1,Group Stage,Opening (B),Team Liquid,"0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",4
++4",Movistar KOI,Icebox,1,Group Stage,Opening (B),Team Liquid,"0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",4
 ShadoW,Sova,"0.90
 1.24
 0.54","219
@@ -2348,8 +2347,7 @@ ShadoW,Sova,"0.90
 0
 2","0
 +2
--2","Movistar KOI						
-							(KOI)",Icebox,1,Group Stage,Opening (B),Team Liquid,"0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",4
+-2",Movistar KOI,Icebox,1,Group Stage,Opening (B),Team Liquid,"0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",4
 grubinho,Viper,"0.89
 0.95
 0.82","198
@@ -2376,8 +2374,7 @@ grubinho,Viper,"0.89
 1
 1","0
 +1
--1","Movistar KOI						
-							(KOI)",Icebox,1,Group Stage,Opening (B),Team Liquid,"0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",4
+-1",Movistar KOI,Icebox,1,Group Stage,Opening (B),Team Liquid,"0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",4
 sheydos,Killjoy,"0.79
 0.82
 0.75","123
@@ -2404,8 +2401,7 @@ sheydos,Killjoy,"0.79
 0
 0","0
 0
-0","Movistar KOI						
-							(KOI)",Icebox,1,Group Stage,Opening (B),Team Liquid,"0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",4
+0",Movistar KOI,Icebox,1,Group Stage,Opening (B),Team Liquid,"0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",4
 starxo,Harbor,"0.74
 0.61
 0.88","171
@@ -2432,8 +2428,7 @@ starxo,Harbor,"0.74
 0
 2","-2
 0
--2","Movistar KOI						
-							(KOI)",Icebox,1,Group Stage,Opening (B),Team Liquid,"0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",4
+-2",Movistar KOI,Icebox,1,Group Stage,Opening (B),Team Liquid,"0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",4
 nAts,Viper,"1.52
 1.83
 1.22","320
@@ -2595,8 +2590,7 @@ sheydos,Viper,"1.27
 0
 0","+2
 0
-+2","Movistar KOI						
-							(KOI)",Bind,2,Group Stage,Opening (B),Team Liquid,"1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",4
++2",Movistar KOI,Bind,2,Group Stage,Opening (B),Team Liquid,"1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",4
 kamo,Raze,"0.98
 0.73
 1.23","192
@@ -2623,8 +2617,7 @@ kamo,Raze,"0.98
 2
 2","+2
 +2
-0","Movistar KOI						
-							(KOI)",Bind,2,Group Stage,Opening (B),Team Liquid,"1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",4
+0",Movistar KOI,Bind,2,Group Stage,Opening (B),Team Liquid,"1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",4
 grubinho,Brimstone,"0.92
 0.98
 0.86","214
@@ -2651,8 +2644,7 @@ grubinho,Brimstone,"0.92
 0
 0","+2
 +2
-0","Movistar KOI						
-							(KOI)",Bind,2,Group Stage,Opening (B),Team Liquid,"1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",4
+0",Movistar KOI,Bind,2,Group Stage,Opening (B),Team Liquid,"1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",4
 ShadoW,Fade,"0.81
 0.86
 0.76","167
@@ -2679,8 +2671,7 @@ ShadoW,Fade,"0.81
 1
 1","-1
 -1
-0","Movistar KOI						
-							(KOI)",Bind,2,Group Stage,Opening (B),Team Liquid,"1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",4
+0",Movistar KOI,Bind,2,Group Stage,Opening (B),Team Liquid,"1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",4
 starxo,Skye,"0.80
 1.25
 0.36","176
@@ -2707,8 +2698,7 @@ starxo,Skye,"0.80
 1
 3","-1
 +1
--2","Movistar KOI						
-							(KOI)",Bind,2,Group Stage,Opening (B),Team Liquid,"1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",4
+-2",Movistar KOI,Bind,2,Group Stage,Opening (B),Team Liquid,"1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",4
 Kicks,Skye,"1.35
 1.43
 1.26","251
@@ -5300,8 +5290,7 @@ ShadoW,Fade,"1.36
 2
 1","-1
 -1
-0","Movistar KOI						
-							(KOI)",Bind,1,Group Stage,Elimination (B),KOI,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",9
+0",Movistar KOI,Bind,1,Group Stage,Elimination (B),KOI,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",9
 starxo,Skye,"1.34
 1.58
 0.86","216
@@ -5328,8 +5317,7 @@ starxo,Skye,"1.34
 0
 0","+2
 +1
-+1","Movistar KOI						
-							(KOI)",Bind,1,Group Stage,Elimination (B),KOI,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",9
++1",Movistar KOI,Bind,1,Group Stage,Elimination (B),KOI,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",9
 sheydos,Viper,"1.27
 1.56
 0.68","203
@@ -5356,8 +5344,7 @@ sheydos,Viper,"1.27
 0
 2","-1
 +1
--2","Movistar KOI						
-							(KOI)",Bind,1,Group Stage,Elimination (B),KOI,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",9
+-2",Movistar KOI,Bind,1,Group Stage,Elimination (B),KOI,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",9
 kamo,Raze,"1.15
 1.18
 1.09","241
@@ -5384,8 +5371,7 @@ kamo,Raze,"1.15
 2
 1","0
 +1
--1","Movistar KOI						
-							(KOI)",Bind,1,Group Stage,Elimination (B),KOI,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",9
+-1",Movistar KOI,Bind,1,Group Stage,Elimination (B),KOI,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",9
 grubinho,Brimstone,"1.09
 0.80
 1.67","179
@@ -5412,8 +5398,7 @@ grubinho,Brimstone,"1.09
 0
 0","+2
 +2
-0","Movistar KOI						
-							(KOI)",Bind,1,Group Stage,Elimination (B),KOI,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",9
+0",Movistar KOI,Bind,1,Group Stage,Elimination (B),KOI,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",9
 reazy,Skye,"1.05
 1.22
 0.90","210
@@ -5575,8 +5560,7 @@ kamo,Raze,"1.43
 3
 1","+2
 +1
-+1","Movistar KOI						
-							(KOI)",Split,2,Group Stage,Elimination (B),KOI,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1",9
++1",Movistar KOI,Split,2,Group Stage,Elimination (B),KOI,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1",9
 starxo,Fade,"1.23
 1.21
 1.25","200
@@ -5603,8 +5587,7 @@ starxo,Fade,"1.23
 0
 1","+2
 +2
-0","Movistar KOI						
-							(KOI)",Split,2,Group Stage,Elimination (B),KOI,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1",9
+0",Movistar KOI,Split,2,Group Stage,Elimination (B),KOI,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1",9
 sheydos,Viper,"1.16
 1.25
 1.07","166
@@ -5631,8 +5614,7 @@ sheydos,Viper,"1.16
 0
 0","+1
 0
-+1","Movistar KOI						
-							(KOI)",Split,2,Group Stage,Elimination (B),KOI,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1",9
++1",Movistar KOI,Split,2,Group Stage,Elimination (B),KOI,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1",9
 ShadoW,Breach,"1.15
 1.25
 1.04","216
@@ -5659,8 +5641,7 @@ ShadoW,Breach,"1.15
 2
 1","-1
 -1
-0","Movistar KOI						
-							(KOI)",Split,2,Group Stage,Elimination (B),KOI,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1",9
+0",Movistar KOI,Split,2,Group Stage,Elimination (B),KOI,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1",9
 grubinho,Omen,"0.69
 0.57
 0.82","137
@@ -5687,8 +5668,7 @@ grubinho,Omen,"0.69
 0
 1","+1
 0
-+1","Movistar KOI						
-							(KOI)",Split,2,Group Stage,Elimination (B),KOI,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1",9
++1",Movistar KOI,Split,2,Group Stage,Elimination (B),KOI,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1",9
 Kicks,Sova,"0.95
 1.14
 0.57","209
@@ -7200,8 +7180,7 @@ starxo,Fade,"1.35
 1
 1","-1
 -1
-0","Movistar KOI						
-							(KOI)",Sunset,1,Group Stage,Decider (B),KOI,"0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1",13
+0",Movistar KOI,Sunset,1,Group Stage,Decider (B),KOI,"0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1",13
 sheydos,Cypher,"1.09
 0.86
 1.32","149
@@ -7228,8 +7207,7 @@ sheydos,Cypher,"1.09
 0
 0","+1
 +1
-0","Movistar KOI						
-							(KOI)",Sunset,1,Group Stage,Decider (B),KOI,"0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1",13
+0",Movistar KOI,Sunset,1,Group Stage,Decider (B),KOI,"0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1",13
 kamo,Raze,"1.06
 0.61
 1.51","212
@@ -7256,8 +7234,7 @@ kamo,Raze,"1.06
 3
 1","+4
 +1
-+3","Movistar KOI						
-							(KOI)",Sunset,1,Group Stage,Decider (B),KOI,"0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1",13
++3",Movistar KOI,Sunset,1,Group Stage,Decider (B),KOI,"0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1",13
 ShadoW,Breach,"1.00
 1.05
 0.94","176
@@ -7284,8 +7261,7 @@ ShadoW,Breach,"1.00
 1
 1","-1
 0
--1","Movistar KOI						
-							(KOI)",Sunset,1,Group Stage,Decider (B),KOI,"0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1",13
+-1",Movistar KOI,Sunset,1,Group Stage,Decider (B),KOI,"0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1",13
 grubinho,Omen,"0.89
 0.71
 1.06","137
@@ -7312,8 +7288,7 @@ grubinho,Omen,"0.89
 1
 2","-1
 -1
-0","Movistar KOI						
-							(KOI)",Sunset,1,Group Stage,Decider (B),KOI,"0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1",13
+0",Movistar KOI,Sunset,1,Group Stage,Decider (B),KOI,"0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1",13
 Jamppi,Viper,"0.99
 1.10
 0.86","241
@@ -7475,8 +7450,7 @@ grubinho,Omen,"1.25
 1
 1","0
 0
-0","Movistar KOI						
-							(KOI)",Split,3,Group Stage,Decider (B),KOI,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1",13
+0",Movistar KOI,Split,3,Group Stage,Decider (B),KOI,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1",13
 kamo,Raze,"1.21
 0.74
 1.64","276
@@ -7503,8 +7477,7 @@ kamo,Raze,"1.21
 3
 3","-2
 +1
--3","Movistar KOI						
-							(KOI)",Split,3,Group Stage,Decider (B),KOI,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1",13
+-3",Movistar KOI,Split,3,Group Stage,Decider (B),KOI,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1",13
 sheydos,Viper,"1.16
 1.04
 1.26","180
@@ -7531,8 +7504,7 @@ sheydos,Viper,"1.16
 2
 1","-3
 -2
--1","Movistar KOI						
-							(KOI)",Split,3,Group Stage,Decider (B),KOI,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1",13
+-1",Movistar KOI,Split,3,Group Stage,Decider (B),KOI,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1",13
 starxo,Fade,"0.90
 0.95
 0.86","187
@@ -7559,8 +7531,7 @@ starxo,Fade,"0.90
 0
 3","-2
 0
--2","Movistar KOI						
-							(KOI)",Split,3,Group Stage,Decider (B),KOI,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1",13
+-2",Movistar KOI,Split,3,Group Stage,Decider (B),KOI,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1",13
 ShadoW,Breach,"0.82
 0.39
 1.22","151
@@ -7587,8 +7558,7 @@ ShadoW,Breach,"0.82
 0
 1","0
 0
-0","Movistar KOI						
-							(KOI)",Split,3,Group Stage,Decider (B),KOI,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1",13
+0",Movistar KOI,Split,3,Group Stage,Decider (B),KOI,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1",13
 marteen,Raze,"1.38
 1.25
 1.47","324
@@ -7885,7 +7855,7 @@ grubinho,Omen,"1.10
 1
 0","+2
 0
-+2",KOI,Sunset,1,Play-In Stage,Play-ins,Team Vitality,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0",15
++2",Movistar KOI,Sunset,1,Play-In Stage,Play-ins,Team Vitality,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0",15
 kamo,Raze,"1.02
 1.46
 0.64","200
@@ -7912,7 +7882,7 @@ kamo,Raze,"1.02
 2
 1","+1
 +1
-0",KOI,Sunset,1,Play-In Stage,Play-ins,Team Vitality,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0",15
+0",Movistar KOI,Sunset,1,Play-In Stage,Play-ins,Team Vitality,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0",15
 sheydos,Cypher,"0.84
 0.94
 0.75","124
@@ -7939,7 +7909,7 @@ sheydos,Cypher,"0.84
 0
 2","-1
 0
--1",KOI,Sunset,1,Play-In Stage,Play-ins,Team Vitality,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0",15
+-1",Movistar KOI,Sunset,1,Play-In Stage,Play-ins,Team Vitality,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0",15
 starxo,Fade,"0.84
 0.76
 0.90","175
@@ -7966,7 +7936,7 @@ starxo,Fade,"0.84
 2
 3","-4
 -1
--3",KOI,Sunset,1,Play-In Stage,Play-ins,Team Vitality,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0",15
+-3",Movistar KOI,Sunset,1,Play-In Stage,Play-ins,Team Vitality,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0",15
 ShadoW,Breach,"0.78
 0.99
 0.60","132
@@ -7993,7 +7963,7 @@ ShadoW,Breach,"0.78
 0
 1","-1
 0
--1",KOI,Sunset,1,Play-In Stage,Play-ins,Team Vitality,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0",15
+-1",Movistar KOI,Sunset,1,Play-In Stage,Play-ins,Team Vitality,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0",15
 runneR,Raze,"1.27
 1.46
 1.04","243
@@ -8155,7 +8125,7 @@ ShadoW,Sova,"1.20
 1
 0","+1
 0
-+1",KOI,Breeze,2,Play-In Stage,Play-ins,Team Vitality,"0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",15
++1",Movistar KOI,Breeze,2,Play-In Stage,Play-ins,Team Vitality,"0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",15
 grubinho,Viper,"0.91
 0.43
 1.19","167
@@ -8182,7 +8152,7 @@ grubinho,Viper,"0.91
 1
 0","-1
 -1
-0",KOI,Breeze,2,Play-In Stage,Play-ins,Team Vitality,"0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",15
+0",Movistar KOI,Breeze,2,Play-In Stage,Play-ins,Team Vitality,"0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",15
 sheydos,Cypher,"0.80
 0.35
 1.07","173
@@ -8209,7 +8179,7 @@ sheydos,Cypher,"0.80
 0
 1","-1
 0
--1",KOI,Breeze,2,Play-In Stage,Play-ins,Team Vitality,"0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",15
+-1",Movistar KOI,Breeze,2,Play-In Stage,Play-ins,Team Vitality,"0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",15
 kamo,Yoru,"0.55
 0.12
 0.81","124
@@ -8236,7 +8206,7 @@ kamo,Yoru,"0.55
 2
 4","-2
 -1
--1",KOI,Breeze,2,Play-In Stage,Play-ins,Team Vitality,"0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",15
+-1",Movistar KOI,Breeze,2,Play-In Stage,Play-ins,Team Vitality,"0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",15
 starxo,Kayo,"0.49
 0.04
 0.76","98
@@ -8263,7 +8233,7 @@ starxo,Kayo,"0.49
 1
 1","0
 -1
-+1",KOI,Breeze,2,Play-In Stage,Play-ins,Team Vitality,"0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",15
++1",Movistar KOI,Breeze,2,Play-In Stage,Play-ins,Team Vitality,"0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",15
 Destrian,Astra,"1.48
 1.42
 1.58","273
@@ -8560,7 +8530,7 @@ grubinho,Omen,"1.08
 2
 0","-1
 -1
-0",KOI,Sunset,1,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0",16
+0",Movistar KOI,Sunset,1,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0",16
 starxo,Fade,"0.76
 0.83
 0.60","193
@@ -8587,7 +8557,7 @@ starxo,Fade,"0.76
 0
 1","0
 0
-0",KOI,Sunset,1,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0",16
+0",Movistar KOI,Sunset,1,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0",16
 kamo,Raze,"0.54
 0.77
 0.03","168
@@ -8614,7 +8584,7 @@ kamo,Raze,"0.54
 4
 3","-4
 -1
--3",KOI,Sunset,1,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0",16
+-3",Movistar KOI,Sunset,1,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0",16
 sheydos,Cypher,"0.50
 0.50
 0.48","127
@@ -8641,7 +8611,7 @@ sheydos,Cypher,"0.50
 0
 0","0
 0
-0",KOI,Sunset,1,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0",16
+0",Movistar KOI,Sunset,1,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0",16
 ShadoW,Breach,"0.33
 0.31
 0.39","108
@@ -8668,7 +8638,7 @@ ShadoW,Breach,"0.33
 1
 0","0
 0
-0",KOI,Sunset,1,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0",16
+0",Movistar KOI,Sunset,1,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0",16
 marteen,Yoru,"1.58
 1.36
 1.90","270
@@ -8830,7 +8800,7 @@ grubinho,Brimstone,"1.22
 0
 0","0
 0
-0",KOI,Bind,2,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0",16
+0",Movistar KOI,Bind,2,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0",16
 sheydos,Viper,"0.95
 1.40
 0.65","188
@@ -8857,7 +8827,7 @@ sheydos,Viper,"0.95
 0
 1","-1
 0
--1",KOI,Bind,2,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0",16
+-1",Movistar KOI,Bind,2,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0",16
 starxo,Skye,"0.85
 0.66
 0.97","185
@@ -8884,7 +8854,7 @@ starxo,Skye,"0.85
 2
 2","-2
 -1
--1",KOI,Bind,2,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0",16
+-1",Movistar KOI,Bind,2,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0",16
 kamo,Raze,"0.60
 0.70
 0.54","136
@@ -8911,7 +8881,7 @@ kamo,Raze,"0.60
 1
 3","-2
 +1
--3",KOI,Bind,2,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0",16
+-3",Movistar KOI,Bind,2,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0",16
 ShadoW,Fade,"0.49
 0.49
 0.49","120
@@ -8938,7 +8908,7 @@ ShadoW,Fade,"0.49
 1
 4","-3
 0
--3",KOI,Bind,2,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0",16
+-3",Movistar KOI,Bind,2,Play-In Stage,Play-ins,Karmine Corp,"0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0",16
 MiniBoo,Yoru,"1.93
 2.15
 1.40","349
