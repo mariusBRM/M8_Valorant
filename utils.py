@@ -707,7 +707,7 @@ def create_ratio_economy_rounds(data):
 def total_individual_exploit(performance):
     """ Function that calculate the total number of individual exploit for each player throughout the tournament."""
     
-    performance.replace(pd.NA, '[]', inplace=True)
+    performance.replace(np.nan, '[]', inplace=True)
     names = set(performance['Player Name'])
 
     total_2K = {name : ( performance[performance['Player Name'] == name]['Team Name'].iloc[0], performance[performance['Player Name'] == name]['2K'].apply(lambda x: len(ast.literal_eval(x))).sum()) for name in names}
@@ -745,7 +745,7 @@ def ratio_individual_exploit(performance, data_type, economy, tot_rounds=False):
         Return:
             Dict : key is Player Name and value is ratio or (ratio, total rounds played) depending on tot_rounds"""
     
-    performance.replace(pd.NA, '[]', inplace=True)
+    performance.replace(np.nan, '[]', inplace=True)
     
     ActionRatio_eco = {name : [performance[performance['Player Name'] == name][data_type].apply(lambda x: len(ast.literal_eval(x))),
                               performance[performance['Player Name'] == name]['Team Name'],
