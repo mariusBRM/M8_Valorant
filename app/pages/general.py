@@ -10,7 +10,7 @@ if st.button("Clear All"):
     # i.e. clear values from both square and cube
     st.cache_data.clear()
 
-st.title('Data visualization of the general data of the Pacific KickOff 2024')
+st.title('Data visualization of the general data of the KickOff 2024')
 region = st.session_state['region']
 
 # "EMEA", "Pacific", "Americas"

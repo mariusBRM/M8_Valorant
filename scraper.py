@@ -48,6 +48,9 @@ def general_data_scraper(list_url):
     for matchnum in range(len(list_url)):
 
         url = list_url[matchnum]
+
+        unique_match_id = url.split('/')[3]
+
         source_match = requests.get(url=url).text
         soup_match = BeautifulSoup(source_match, features="html.parser")
         
@@ -103,6 +106,7 @@ def general_data_scraper(list_url):
                 df_match['Team Name'] = team_name
                 df_match['Map Name'] = map_name
                 df_match['Map #'] = map_num
+                df_match['Unique Enum'] = unique_match_id + str(map_num)
                 df_match['Stage'] = stage
                 df_match['Series'] = series
                 df_match['winner'] = winner
@@ -110,14 +114,18 @@ def general_data_scraper(list_url):
                 try:
                     all_rounds = round_played.find_all('div', class_='vlr-rounds-row-col')
                     scoring_one_by_one_for_all = []
-                    for i,item in enumerate(all_rounds[1:]):
-                        if i != 12:
+                    for i,item in enumerate(all_rounds):
+                        try:
                             title_value = item['title']
                             if len(title_value) > 0:
                                 scoring_one_by_one_for_all.append(title_value)
+                        except:
+                            continue
                     
+                    print(scoring_one_by_one_for_all)
                     scoring_round_per_team = reorganize_rounds_based_on_titles(scoring_one_by_one_for_all)
                     df_match['rounds'] = ', '.join(map(str, scoring_round_per_team[a%2]))
+                    print('yes')
                 except:
                     continue
                 
