@@ -122,10 +122,8 @@ def general_data_scraper(list_url):
                         except:
                             continue
                     
-                    print(scoring_one_by_one_for_all)
                     scoring_round_per_team = reorganize_rounds_based_on_titles(scoring_one_by_one_for_all)
                     df_match['rounds'] = ', '.join(map(str, scoring_round_per_team[a%2]))
-                    print('yes')
                 except:
                     continue
                 

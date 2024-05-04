@@ -1,4 +1,274 @@
-Player Name,Agent Name,R,ACS,K,D,K/D +/–,+/–,ADR,HS%,FK,FK/FD +/–,+/–,Team Name,Map Name,Map #,Stage,Series,winner,Id,rounds
+Player Name,Agent Name,R,ACS,K,D,K/D +/–,+/–,ADR,HS%,FK,FK/FD +/–,+/–,Team Name,Map Name,Map #,Unique Enum,Stage,Series,winner,rounds,Id
+Sayaplayer,Jett,"1.48
+1.71
+1.25","284
+368
+201","36
+23
+13","
+
+21
+11
+10
+
+","1
+0
+1","+15
++12
++3","191
+240
+141","36%
+41%
+30%","8
+3
+5","4
+2
+2","+4
++1
++3",T1,Breeze,1,2967351,Group Stage,Opening (A),T1,"0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1",1
+xccurate,Harbor,"1.22
+0.74
+1.71","254
+149
+360","29
+7
+22","
+
+24
+15
+9
+
+","7
+4
+3","+5
+-8
++13","169
+113
+225","29%
+24%
+32%","1
+0
+1","2
+1
+1","-1
+-1
+0",T1,Breeze,1,2967351,Group Stage,Opening (A),T1,"0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1",1
+Carpe,Sova,"1.12
+0.65
+1.58","203
+126
+280","23
+6
+17","
+
+25
+16
+9
+
+","11
+6
+5","-2
+-10
++8","131
+94
+168","28%
+19%
+37%","3
+2
+1","3
+2
+1","0
+0
+0",T1,Breeze,1,2967351,Group Stage,Opening (A),T1,"0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1",1
+iZu,Yoru,"1.01
+1.21
+0.82","194
+255
+135","22
+15
+7","
+
+24
+13
+11
+
+","9
+5
+4","-2
++2
+-4","136
+181
+91","26%
+25%
+27%","3
+2
+1","8
+4
+4","-5
+-2
+-3",T1,Breeze,1,2967351,Group Stage,Opening (A),T1,"0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1",1
+Rossy,Viper,"0.82
+0.72
+0.93","138
+115
+162","16
+7
+9","
+
+22
+12
+10
+
+","8
+6
+2","-6
+-5
+-1","99
+75
+122","27%
+24%
+30%","0
+0
+0","2
+1
+1","-2
+-1
+-1",T1,Breeze,1,2967351,Group Stage,Opening (A),T1,"0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1",1
+sScary,Viper,"1.14
+0.86
+1.41","215
+185
+247","28
+13
+15","
+
+21
+13
+8
+
+","10
+6
+4","+7
+0
++7","152
+122
+181","27%
+24%
+29%","3
+2
+1","2
+1
+1","+1
++1
+0",BLEED,Breeze,1,2967351,Group Stage,Opening (A),T1,"1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0",1
+Deryeon,Harbor,"0.90
+0.91
+0.89","245
+227
+264","29
+13
+16","
+
+28
+14
+14
+
+","6
+3
+3","+1
+-1
++2","154
+150
+158","27%
+29%
+27%","6
+3
+3","1
+0
+1","+5
++3
++2",BLEED,Breeze,1,2967351,Group Stage,Opening (A),T1,"1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0",1
+yay,Neon,"0.88
+0.89
+0.87","213
+223
+205","27
+14
+13","
+
+26
+14
+12
+
+","6
+4
+2","+1
+0
++1","130
+131
+129","26%
+36%
+13%","6
+3
+3","7
+5
+2","-1
+-2
++1",BLEED,Breeze,1,2967351,Group Stage,Opening (A),T1,"1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0",1
+Egoist,Skye,"0.64
+0.39
+0.90","140
+122
+159","17
+7
+10","
+
+26
+15
+11
+
+","9
+6
+3","-9
+-8
+-1","90
+77
+104","27%
+32%
+24%","2
+1
+1","2
+0
+2","0
++1
+-1",BLEED,Breeze,1,2967351,Group Stage,Opening (A),T1,"1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0",1
+crazyguy,Sova,"0.64
+0.41
+0.88","150
+114
+187","15
+6
+9","
+
+25
+13
+12
+
+","9
+4
+5","-10
+-7
+-3","102
+77
+127","26%
+29%
+24%","2
+0
+2","3
+2
+1","-1
+-2
++1",BLEED,Breeze,1,2967351,Group Stage,Opening (A),T1,"1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0",1
 Carpe,Fade,"1.47
 1.23
 1.89","294
@@ -25,7 +295,7 @@ Carpe,Fade,"1.47
 0
 0","+3
 +1
-+2",T1,Lotus,2,Group Stage,Opening (A),T1,0,"1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1"
++2",T1,Lotus,2,2967352,Group Stage,Opening (A),T1,"1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1",1
 Rossy,Viper,"1.41
 1.29
 1.61","270
@@ -52,7 +322,7 @@ Rossy,Viper,"1.41
 1
 0","+3
 0
-+3",T1,Lotus,2,Group Stage,Opening (A),T1,0,"1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1"
++3",T1,Lotus,2,2967352,Group Stage,Opening (A),T1,"1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1",1
 iZu,Omen,"1.20
 1.27
 1.08","229
@@ -79,7 +349,7 @@ iZu,Omen,"1.20
 2
 0","0
 0
-0",T1,Lotus,2,Group Stage,Opening (A),T1,0,"1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1"
+0",T1,Lotus,2,2967352,Group Stage,Opening (A),T1,"1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1",1
 xccurate,Chamber,"1.04
 1.12
 0.89","187
@@ -106,7 +376,7 @@ xccurate,Chamber,"1.04
 1
 0","-1
 -1
-0",T1,Lotus,2,Group Stage,Opening (A),T1,0,"1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1"
+0",T1,Lotus,2,2967352,Group Stage,Opening (A),T1,"1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1",1
 Sayaplayer,Raze,"0.54
 0.58
 0.48","126
@@ -133,7 +403,7 @@ Sayaplayer,Raze,"0.54
 3
 1","-2
 -2
-0",T1,Lotus,2,Group Stage,Opening (A),T1,0,"1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1"
+0",T1,Lotus,2,2967352,Group Stage,Opening (A),T1,"1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1",1
 crazyguy,Breach,"1.20
 1.29
 1.15","260
@@ -160,7 +430,7 @@ crazyguy,Breach,"1.20
 0
 1","+2
 0
-+2",BLEED,Lotus,2,Group Stage,Opening (A),T1,0,"0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0"
++2",BLEED,Lotus,2,2967352,Group Stage,Opening (A),T1,"0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0",1
 Egoist,Killjoy,"1.03
 1.22
 0.92","200
@@ -187,7 +457,7 @@ Egoist,Killjoy,"1.03
 2
 0","+1
 -2
-+3",BLEED,Lotus,2,Group Stage,Opening (A),T1,0,"0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0"
++3",BLEED,Lotus,2,2967352,Group Stage,Opening (A),T1,"0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0",1
 sScary,Omen,"0.92
 0.65
 1.08","196
@@ -214,7 +484,7 @@ sScary,Omen,"0.92
 0
 2","-2
 0
--2",BLEED,Lotus,2,Group Stage,Opening (A),T1,0,"0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0"
+-2",BLEED,Lotus,2,2967352,Group Stage,Opening (A),T1,"0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0",1
 yay,Skye,"0.81
 0.97
 0.71","183
@@ -241,7 +511,7 @@ yay,Skye,"0.81
 1
 0","-1
 -1
-0",BLEED,Lotus,2,Group Stage,Opening (A),T1,0,"0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0"
+0",BLEED,Lotus,2,2967352,Group Stage,Opening (A),T1,"0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0",1
 Deryeon,Raze,"0.51
 0.23
 0.68","120
@@ -268,7 +538,7 @@ Deryeon,Raze,"0.51
 3
 2","-3
 -2
--1",BLEED,Lotus,2,Group Stage,Opening (A),T1,0,"0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0"
+-1",BLEED,Lotus,2,2967352,Group Stage,Opening (A),T1,"0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0",1
 t3xture,Jett,"1.54
 1.32
 1.75","377
@@ -295,7 +565,7 @@ t3xture,Jett,"1.54
 1
 1","+5
 +2
-+3",Gen.G,Icebox,1,Group Stage,Opening (C),Gen.G,1,"0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1"
++3",Gen.G,Icebox,1,2967451,Group Stage,Opening (C),Gen.G,"0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1",2
 Meteor,Killjoy,"1.17
 0.99
 1.34","238
@@ -322,7 +592,7 @@ Meteor,Killjoy,"1.17
 2
 0","+1
 +1
-0",Gen.G,Icebox,1,Group Stage,Opening (C),Gen.G,1,"0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1"
+0",Gen.G,Icebox,1,2967451,Group Stage,Opening (C),Gen.G,"0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1",2
 Munchkin,Kayo,"1.02
 0.97
 1.08","185
@@ -349,7 +619,7 @@ Munchkin,Kayo,"1.02
 0
 0","0
 0
-0",Gen.G,Icebox,1,Group Stage,Opening (C),Gen.G,1,"0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1"
+0",Gen.G,Icebox,1,2967451,Group Stage,Opening (C),Gen.G,"0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1",2
 Karon,Viper,"0.87
 0.99
 0.74","136
@@ -376,7 +646,7 @@ Karon,Viper,"0.87
 0
 3","+1
 +2
--1",Gen.G,Icebox,1,Group Stage,Opening (C),Gen.G,1,"0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1"
+-1",Gen.G,Icebox,1,2967451,Group Stage,Opening (C),Gen.G,"0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1",2
 Lakia,Gekko,"0.49
 0.40
 0.58","89
@@ -403,7 +673,7 @@ Lakia,Gekko,"0.49
 1
 1","-1
 -1
-0",Gen.G,Icebox,1,Group Stage,Opening (C),Gen.G,1,"0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1"
+0",Gen.G,Icebox,1,2967451,Group Stage,Opening (C),Gen.G,"0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1",2
 xffero,Viper,"1.21
 1.39
 1.03","269
@@ -430,7 +700,7 @@ xffero,Viper,"1.21
 1
 1","-1
 0
--1",Rex Regum Qeon,Icebox,1,Group Stage,Opening (C),Gen.G,1,"1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0"
+-1",Rex Regum Qeon,Icebox,1,2967451,Group Stage,Opening (C),Gen.G,"1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0",2
 Jemkin,Jett,"1.04
 0.78
 1.29","195
@@ -457,7 +727,7 @@ Jemkin,Jett,"1.04
 2
 2","-1
 -1
-0",Rex Regum Qeon,Icebox,1,Group Stage,Opening (C),Gen.G,1,"1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0"
+0",Rex Regum Qeon,Icebox,1,2967451,Group Stage,Opening (C),Gen.G,"1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0",2
 fl1pzjder,Gekko,"0.89
 1.06
 0.72","169
@@ -484,7 +754,7 @@ fl1pzjder,Gekko,"0.89
 2
 2","-2
 0
--2",Rex Regum Qeon,Icebox,1,Group Stage,Opening (C),Gen.G,1,"1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0"
+-2",Rex Regum Qeon,Icebox,1,2967451,Group Stage,Opening (C),Gen.G,"1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0",2
 Lmemore,Killjoy,"0.86
 0.57
 1.16","219
@@ -511,7 +781,7 @@ Lmemore,Killjoy,"0.86
 1
 3","-2
 -1
--1",Rex Regum Qeon,Icebox,1,Group Stage,Opening (C),Gen.G,1,"1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0"
+-1",Rex Regum Qeon,Icebox,1,2967451,Group Stage,Opening (C),Gen.G,"1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0",2
 Estrella,Sova,"0.82
 0.65
 0.99","115
@@ -538,7 +808,7 @@ Estrella,Sova,"0.82
 1
 0","0
 0
-0",Rex Regum Qeon,Icebox,1,Group Stage,Opening (C),Gen.G,1,"1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0"
+0",Rex Regum Qeon,Icebox,1,2967451,Group Stage,Opening (C),Gen.G,"1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0",2
 Meteor,Jett,"1.17
 0.77
 1.57","257
@@ -565,7 +835,7 @@ Meteor,Jett,"1.17
 3
 0","+4
 +1
-+3",Gen.G,Split,2,Group Stage,Opening (C),Gen.G,1,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0"
++3",Gen.G,Split,2,2967452,Group Stage,Opening (C),Gen.G,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0",2
 Karon,Astra,"1.11
 1.10
 1.13","223
@@ -592,7 +862,7 @@ Karon,Astra,"1.11
 0
 1","+2
 +1
-+1",Gen.G,Split,2,Group Stage,Opening (C),Gen.G,1,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0"
++1",Gen.G,Split,2,2967452,Group Stage,Opening (C),Gen.G,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0",2
 Lakia,Skye,"1.08
 0.63
 1.53","180
@@ -619,7 +889,7 @@ Lakia,Skye,"1.08
 1
 1","0
 -1
-+1",Gen.G,Split,2,Group Stage,Opening (C),Gen.G,1,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0"
++1",Gen.G,Split,2,2967452,Group Stage,Opening (C),Gen.G,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0",2
 Munchkin,Viper,"1.01
 0.55
 1.46","205
@@ -646,7 +916,7 @@ Munchkin,Viper,"1.01
 0
 0","+1
 0
-+1",Gen.G,Split,2,Group Stage,Opening (C),Gen.G,1,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0"
++1",Gen.G,Split,2,2967452,Group Stage,Opening (C),Gen.G,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0",2
 t3xture,Raze,"0.83
 0.44
 1.23","202
@@ -673,7 +943,7 @@ t3xture,Raze,"0.83
 2
 1","-1
 -1
-0",Gen.G,Split,2,Group Stage,Opening (C),Gen.G,1,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0"
+0",Gen.G,Split,2,2967452,Group Stage,Opening (C),Gen.G,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0",2
 fl1pzjder,Viper,"1.20
 1.35
 1.06","204
@@ -700,7 +970,7 @@ fl1pzjder,Viper,"1.20
 0
 1","0
 +1
--1",Rex Regum Qeon,Split,2,Group Stage,Opening (C),Gen.G,1,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1"
+-1",Rex Regum Qeon,Split,2,2967452,Group Stage,Opening (C),Gen.G,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1",2
 Lmemore,Cypher,"1.14
 0.43
 1.85","205
@@ -727,7 +997,7 @@ Lmemore,Cypher,"1.14
 5
 0","-1
 -4
-+3",Rex Regum Qeon,Split,2,Group Stage,Opening (C),Gen.G,1,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1"
++3",Rex Regum Qeon,Split,2,2967452,Group Stage,Opening (C),Gen.G,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1",2
 Estrella,Skye,"1.08
 0.66
 1.50","207
@@ -754,7 +1024,7 @@ Estrella,Skye,"1.08
 1
 2","-3
 -1
--2",Rex Regum Qeon,Split,2,Group Stage,Opening (C),Gen.G,1,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1"
+-2",Rex Regum Qeon,Split,2,2967452,Group Stage,Opening (C),Gen.G,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1",2
 xffero,Astra,"0.83
 0.58
 1.08","207
@@ -781,7 +1051,7 @@ xffero,Astra,"0.83
 0
 1","+2
 +1
-+1",Rex Regum Qeon,Split,2,Group Stage,Opening (C),Gen.G,1,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1"
++1",Rex Regum Qeon,Split,2,2967452,Group Stage,Opening (C),Gen.G,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1",2
 Jemkin,Raze,"0.64
 0.23
 1.05","191
@@ -808,7 +1078,7 @@ Jemkin,Raze,"0.64
 3
 2","-4
 -3
--1",Rex Regum Qeon,Split,2,Group Stage,Opening (C),Gen.G,1,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1"
+-1",Rex Regum Qeon,Split,2,2967452,Group Stage,Opening (C),Gen.G,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1",2
 t3xture,Raze,"1.57
 1.07
 1.94","357
@@ -835,7 +1105,7 @@ t3xture,Raze,"1.57
 2
 0","+5
 0
-+5",Gen.G,Sunset,3,Group Stage,Opening (C),Gen.G,1,"0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1"
++5",Gen.G,Sunset,3,2967453,Group Stage,Opening (C),Gen.G,"0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1",2
 Lakia,Skye,"1.28
 0.91
 1.56","240
@@ -862,7 +1132,7 @@ Lakia,Skye,"1.28
 1
 0","+1
 0
-+1",Gen.G,Sunset,3,Group Stage,Opening (C),Gen.G,1,"0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1"
++1",Gen.G,Sunset,3,2967453,Group Stage,Opening (C),Gen.G,"0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1",2
 Munchkin,Viper,"1.07
 1.44
 0.80","181
@@ -889,7 +1159,7 @@ Munchkin,Viper,"1.07
 1
 2","-2
 0
--2",Gen.G,Sunset,3,Group Stage,Opening (C),Gen.G,1,"0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1"
+-2",Gen.G,Sunset,3,2967453,Group Stage,Opening (C),Gen.G,"0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1",2
 Meteor,Cypher,"0.83
 0.82
 0.84","226
@@ -916,7 +1186,7 @@ Meteor,Cypher,"0.83
 0
 0","+3
 +1
-+2",Gen.G,Sunset,3,Group Stage,Opening (C),Gen.G,1,"0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1"
++2",Gen.G,Sunset,3,2967453,Group Stage,Opening (C),Gen.G,"0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1",2
 Karon,Omen,"0.53
 0.83
 0.31","81
@@ -943,7 +1213,7 @@ Karon,Omen,"0.53
 0
 2","-2
 0
--2",Gen.G,Sunset,3,Group Stage,Opening (C),Gen.G,1,"0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1"
+-2",Gen.G,Sunset,3,2967453,Group Stage,Opening (C),Gen.G,"0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1",2
 Estrella,Fade,"1.27
 1.22
 1.35","245
@@ -970,7 +1240,7 @@ Estrella,Fade,"1.27
 0
 1","0
 0
-0",Rex Regum Qeon,Sunset,3,Group Stage,Opening (C),Gen.G,1,"1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0"
+0",Rex Regum Qeon,Sunset,3,2967453,Group Stage,Opening (C),Gen.G,"1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0",2
 Jemkin,Raze,"1.08
 0.84
 1.40","259
@@ -997,7 +1267,7 @@ Jemkin,Raze,"1.08
 3
 0","+3
 +1
-+2",Rex Regum Qeon,Sunset,3,Group Stage,Opening (C),Gen.G,1,"1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0"
++2",Rex Regum Qeon,Sunset,3,2967453,Group Stage,Opening (C),Gen.G,"1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0",2
 xffero,Harbor,"0.92
 1.12
 0.65","175
@@ -1024,7 +1294,7 @@ xffero,Harbor,"0.92
 1
 1","-2
 -1
--1",Rex Regum Qeon,Sunset,3,Group Stage,Opening (C),Gen.G,1,"1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0"
+-1",Rex Regum Qeon,Sunset,3,2967453,Group Stage,Opening (C),Gen.G,"1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0",2
 fl1pzjder,Omen,"0.73
 0.36
 1.22","185
@@ -1051,7 +1321,7 @@ fl1pzjder,Omen,"0.73
 3
 1","-3
 -3
-0",Rex Regum Qeon,Sunset,3,Group Stage,Opening (C),Gen.G,1,"1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0"
+0",Rex Regum Qeon,Sunset,3,2967453,Group Stage,Opening (C),Gen.G,"1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0",2
 Lmemore,Cypher,"0.64
 0.91
 0.28","146
@@ -1078,7 +1348,7 @@ Lmemore,Cypher,"0.64
 1
 2","-3
 -1
--2",Rex Regum Qeon,Sunset,3,Group Stage,Opening (C),Gen.G,1,"1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0"
+-2",Rex Regum Qeon,Sunset,3,2967453,Group Stage,Opening (C),Gen.G,"1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0",2
 SugarZ3ro,Brimstone,"1.23
 1.90
 0.61","228
@@ -1105,7 +1375,7 @@ SugarZ3ro,Brimstone,"1.23
 0
 1","0
 +1
--1",ZETA DIVISION,Bind,1,Group Stage,Opening (A),ZETA DIVISION,2,"1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1"
+-1",ZETA DIVISION,Bind,1,2967301,Group Stage,Opening (A),ZETA DIVISION,"1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1",3
 Dep,Raze,"1.15
 0.73
 1.53","243
@@ -1132,7 +1402,7 @@ Dep,Raze,"1.15
 3
 1","0
 -1
-+1",ZETA DIVISION,Bind,1,Group Stage,Opening (A),ZETA DIVISION,2,"1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1"
++1",ZETA DIVISION,Bind,1,2967301,Group Stage,Opening (A),ZETA DIVISION,"1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1",3
 yuran,Viper,"1.13
 0.94
 1.29","218
@@ -1159,7 +1429,7 @@ yuran,Viper,"1.13
 2
 1","+1
 0
-+1",ZETA DIVISION,Bind,1,Group Stage,Opening (A),ZETA DIVISION,2,"1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1"
++1",ZETA DIVISION,Bind,1,2967301,Group Stage,Opening (A),ZETA DIVISION,"1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1",3
 hiroronn,Skye,"1.05
 1.27
 0.85","181
@@ -1186,7 +1456,7 @@ hiroronn,Skye,"1.05
 0
 1","+1
 +1
-0",ZETA DIVISION,Bind,1,Group Stage,Opening (A),ZETA DIVISION,2,"1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1"
+0",ZETA DIVISION,Bind,1,2967301,Group Stage,Opening (A),ZETA DIVISION,"1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1",3
 Laz,Cypher,"0.85
 0.70
 0.98","176
@@ -1213,7 +1483,7 @@ Laz,Cypher,"0.85
 0
 0","+3
 0
-+3",ZETA DIVISION,Bind,1,Group Stage,Opening (A),ZETA DIVISION,2,"1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1"
++3",ZETA DIVISION,Bind,1,2967301,Group Stage,Opening (A),ZETA DIVISION,"1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1",3
 Benkai,Cypher,"0.92
 0.73
 1.12","156
@@ -1240,7 +1510,7 @@ Benkai,Cypher,"0.92
 1
 1","-2
 -1
--1",Global Esports,Bind,1,Group Stage,Opening (A),ZETA DIVISION,2,"0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0"
+-1",Global Esports,Bind,1,2967301,Group Stage,Opening (A),ZETA DIVISION,"0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0",3
 blaZek1ng,Gekko,"0.87
 0.85
 0.88","185
@@ -1267,7 +1537,7 @@ blaZek1ng,Gekko,"0.87
 1
 2","-2
 -1
--1",Global Esports,Bind,1,Group Stage,Opening (A),ZETA DIVISION,2,"0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0"
+-1",Global Esports,Bind,1,2967301,Group Stage,Opening (A),ZETA DIVISION,"0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0",3
 Lightningfast,Viper,"0.82
 0.56
 1.11","160
@@ -1294,7 +1564,7 @@ Lightningfast,Viper,"0.82
 3
 0","-1
 -3
-+2",Global Esports,Bind,1,Group Stage,Opening (A),ZETA DIVISION,2,"0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0"
++2",Global Esports,Bind,1,2967301,Group Stage,Opening (A),ZETA DIVISION,"0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0",3
 Russ,Kayo,"0.81
 1.15
 0.45","180
@@ -1321,7 +1591,7 @@ Russ,Kayo,"0.81
 0
 1","+1
 +2
--1",Global Esports,Bind,1,Group Stage,Opening (A),ZETA DIVISION,2,"0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0"
+-1",Global Esports,Bind,1,2967301,Group Stage,Opening (A),ZETA DIVISION,"0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0",3
 Polvi,Raze,"0.78
 0.84
 0.71","210
@@ -1348,7 +1618,7 @@ Polvi,Raze,"0.78
 3
 2","-1
 -1
-0",Global Esports,Bind,1,Group Stage,Opening (A),ZETA DIVISION,2,"0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0"
+0",Global Esports,Bind,1,2967301,Group Stage,Opening (A),ZETA DIVISION,"0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0",3
 yuran,Viper,"1.61
 2.00
 1.35","262
@@ -1375,7 +1645,7 @@ yuran,Viper,"1.61
 1
 0","+2
 +2
-0",ZETA DIVISION,Icebox,2,Group Stage,Opening (A),ZETA DIVISION,2,"1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1"
+0",ZETA DIVISION,Icebox,2,2967302,Group Stage,Opening (A),ZETA DIVISION,"1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1",3
 hiroronn,Sova,"1.60
 1.86
 1.43","245
@@ -1402,7 +1672,7 @@ hiroronn,Sova,"1.60
 0
 3","-3
 0
--3",ZETA DIVISION,Icebox,2,Group Stage,Opening (A),ZETA DIVISION,2,"1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1"
+-3",ZETA DIVISION,Icebox,2,2967302,Group Stage,Opening (A),ZETA DIVISION,"1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1",3
 Dep,Jett,"1.26
 2.12
 0.69","231
@@ -1429,7 +1699,7 @@ Dep,Jett,"1.26
 0
 2","+1
 +1
-0",ZETA DIVISION,Icebox,2,Group Stage,Opening (A),ZETA DIVISION,2,"1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1"
+0",ZETA DIVISION,Icebox,2,2967302,Group Stage,Opening (A),ZETA DIVISION,"1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1",3
 SugarZ3ro,Harbor,"1.12
 1.37
 0.96","107
@@ -1456,7 +1726,7 @@ SugarZ3ro,Harbor,"1.12
 1
 2","-3
 -1
--2",ZETA DIVISION,Icebox,2,Group Stage,Opening (A),ZETA DIVISION,2,"1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1"
+-2",ZETA DIVISION,Icebox,2,2967302,Group Stage,Opening (A),ZETA DIVISION,"1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1",3
 Laz,Killjoy,"1.01
 0.62
 1.28","161
@@ -1483,7 +1753,7 @@ Laz,Killjoy,"1.01
 2
 1","-1
 -2
-+1",ZETA DIVISION,Icebox,2,Group Stage,Opening (A),ZETA DIVISION,2,"1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1"
++1",ZETA DIVISION,Icebox,2,2967302,Group Stage,Opening (A),ZETA DIVISION,"1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1",3
 Polvi,Jett,"1.08
 1.45
 0.51","232
@@ -1510,7 +1780,7 @@ Polvi,Jett,"1.08
 0
 3","+4
 +5
--1",Global Esports,Icebox,2,Group Stage,Opening (A),ZETA DIVISION,2,"0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0"
+-1",Global Esports,Icebox,2,2967302,Group Stage,Opening (A),ZETA DIVISION,"0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0",3
 Lightningfast,Viper,"0.76
 0.98
 0.44","203
@@ -1537,7 +1807,7 @@ Lightningfast,Viper,"0.76
 1
 0","+2
 +1
-+1",Global Esports,Icebox,2,Group Stage,Opening (A),ZETA DIVISION,2,"0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0"
++1",Global Esports,Icebox,2,2967302,Group Stage,Opening (A),ZETA DIVISION,"0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0",3
 blaZek1ng,Sova,"0.71
 0.90
 0.43","145
@@ -1564,7 +1834,7 @@ blaZek1ng,Sova,"0.71
 0
 0","+1
 0
-+1",Global Esports,Icebox,2,Group Stage,Opening (A),ZETA DIVISION,2,"0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0"
++1",Global Esports,Icebox,2,2967302,Group Stage,Opening (A),ZETA DIVISION,"0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0",3
 Russ,Kayo,"0.51
 0.68
 0.25","107
@@ -1591,7 +1861,7 @@ Russ,Kayo,"0.51
 0
 1","0
 +1
--1",Global Esports,Icebox,2,Group Stage,Opening (A),ZETA DIVISION,2,"0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0"
+-1",Global Esports,Icebox,2,2967302,Group Stage,Opening (A),ZETA DIVISION,"0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0",3
 Benkai,Killjoy,"0.44
 0.64
 0.14","69
@@ -1618,7 +1888,7 @@ Benkai,Killjoy,"0.44
 3
 0","-3
 -3
-0",Global Esports,Icebox,2,Group Stage,Opening (A),ZETA DIVISION,2,"0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0"
+0",Global Esports,Icebox,2,2967302,Group Stage,Opening (A),ZETA DIVISION,"0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0",3
 Jremy,Jett,"1.09
 0.89
 1.34","230
@@ -1645,7 +1915,7 @@ Jremy,Jett,"1.09
 4
 1","-1
 -2
-+1",Team Secret,Breeze,1,Group Stage,Opening (B),Talon Esports,3,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0"
++1",Team Secret,Breeze,1,2967311,Group Stage,Opening (B),Talon Esports,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0",4
 BORKUM,Viper,"1.03
 0.99
 1.09","191
@@ -1672,7 +1942,7 @@ BORKUM,Viper,"1.03
 0
 0","+2
 0
-+2",Team Secret,Breeze,1,Group Stage,Opening (B),Talon Esports,3,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0"
++2",Team Secret,Breeze,1,2967311,Group Stage,Opening (B),Talon Esports,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0",4
 JessieVash,Sova,"1.01
 0.97
 1.07","202
@@ -1699,7 +1969,7 @@ JessieVash,Sova,"1.01
 2
 0","0
 0
-0",Team Secret,Breeze,1,Group Stage,Opening (B),Talon Esports,3,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0"
+0",Team Secret,Breeze,1,2967311,Group Stage,Opening (B),Talon Esports,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0",4
 invy,Kayo,"0.90
 0.66
 1.23","139
@@ -1726,7 +1996,7 @@ invy,Kayo,"0.90
 2
 0","0
 -2
-+2",Team Secret,Breeze,1,Group Stage,Opening (B),Talon Esports,3,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0"
++2",Team Secret,Breeze,1,2967311,Group Stage,Opening (B),Talon Esports,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0",4
 NDG,Cypher,"0.66
 0.64
 0.68","97
@@ -1753,7 +2023,7 @@ NDG,Cypher,"0.66
 0
 1","0
 0
-0",Team Secret,Breeze,1,Group Stage,Opening (B),Talon Esports,3,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0"
+0",Team Secret,Breeze,1,2967311,Group Stage,Opening (B),Talon Esports,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0",4
 Governor,Neon,"1.35
 0.35
 2.10","282
@@ -1780,7 +2050,7 @@ Governor,Neon,"1.35
 3
 2","-1
 -3
-+2",Talon Esports,Breeze,1,Group Stage,Opening (B),Talon Esports,3,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1"
++2",Talon Esports,Breeze,1,2967311,Group Stage,Opening (B),Talon Esports,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1",4
 ban,Yoru,"1.32
 1.48
 1.20","289
@@ -1807,7 +2077,7 @@ ban,Yoru,"1.32
 1
 0","+2
 +1
-+1",Talon Esports,Breeze,1,Group Stage,Opening (B),Talon Esports,3,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1"
++1",Talon Esports,Breeze,1,2967311,Group Stage,Opening (B),Talon Esports,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1",4
 lenne,Sova,"0.99
 0.97
 1.01","139
@@ -1834,7 +2104,7 @@ lenne,Sova,"0.99
 2
 0","-2
 -2
-0",Talon Esports,Breeze,1,Group Stage,Opening (B),Talon Esports,3,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1"
+0",Talon Esports,Breeze,1,2967311,Group Stage,Opening (B),Talon Esports,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1",4
 Crws,Harbor,"0.98
 1.09
 0.90","175
@@ -1861,7 +2131,7 @@ Crws,Harbor,"0.98
 1
 1","-1
 -1
-0",Talon Esports,Breeze,1,Group Stage,Opening (B),Talon Esports,3,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1"
+0",Talon Esports,Breeze,1,2967311,Group Stage,Opening (B),Talon Esports,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1",4
 JitBoyS,Viper,"0.96
 0.86
 1.03","140
@@ -1888,7 +2158,7 @@ JitBoyS,Viper,"0.96
 0
 1","+1
 0
-+1",Talon Esports,Breeze,1,Group Stage,Opening (B),Talon Esports,3,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1"
++1",Talon Esports,Breeze,1,2967311,Group Stage,Opening (B),Talon Esports,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1",4
 Jremy,Jett,"0.77
 0.84
 0.58","216
@@ -1915,7 +2185,7 @@ Jremy,Jett,"0.77
 2
 1","-2
 -2
-0",Team Secret,Ascent,2,Group Stage,Opening (B),Talon Esports,3,"0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0"
+0",Team Secret,Ascent,2,2967312,Group Stage,Opening (B),Talon Esports,"0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0",4
 JessieVash,Sova,"0.72
 0.76
 0.62","151
@@ -1942,7 +2212,7 @@ JessieVash,Sova,"0.72
 2
 0","-2
 -2
-0",Team Secret,Ascent,2,Group Stage,Opening (B),Talon Esports,3,"0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0"
+0",Team Secret,Ascent,2,2967312,Group Stage,Opening (B),Talon Esports,"0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0",4
 BORKUM,Omen,"0.41
 0.47
 0.25","119
@@ -1969,7 +2239,7 @@ BORKUM,Omen,"0.41
 4
 0","-3
 -3
-0",Team Secret,Ascent,2,Group Stage,Opening (B),Talon Esports,3,"0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0"
+0",Team Secret,Ascent,2,2967312,Group Stage,Opening (B),Talon Esports,"0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0",4
 invy,Kayo,"0.40
 0.50
 0.11","110
@@ -1996,7 +2266,7 @@ invy,Kayo,"0.40
 1
 1","-2
 -1
--1",Team Secret,Ascent,2,Group Stage,Opening (B),Talon Esports,3,"0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0"
+-1",Team Secret,Ascent,2,2967312,Group Stage,Opening (B),Talon Esports,"0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0",4
 NDG,Killjoy,"0.26
 0.36
 0.03","91
@@ -2023,7 +2293,7 @@ NDG,Killjoy,"0.26
 2
 1","-3
 -2
--1",Team Secret,Ascent,2,Group Stage,Opening (B),Talon Esports,3,"0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0"
+-1",Team Secret,Ascent,2,2967312,Group Stage,Opening (B),Talon Esports,"0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0",4
 Governor,Jett,"2.16
 1.65
 2.33","399
@@ -2050,7 +2320,7 @@ Governor,Jett,"2.16
 1
 0","+6
 +1
-+5",Talon Esports,Ascent,2,Group Stage,Opening (B),Talon Esports,3,"1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1"
++5",Talon Esports,Ascent,2,2967312,Group Stage,Opening (B),Talon Esports,"1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1",4
 lenne,Sova,"2.00
 2.61
 1.80","293
@@ -2077,7 +2347,7 @@ lenne,Sova,"2.00
 0
 0","+4
 +1
-+3",Talon Esports,Ascent,2,Group Stage,Opening (B),Talon Esports,3,"1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1"
++3",Talon Esports,Ascent,2,2967312,Group Stage,Opening (B),Talon Esports,"1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1",4
 JitBoyS,Killjoy,"1.51
 1.49
 1.52","230
@@ -2104,7 +2374,7 @@ JitBoyS,Killjoy,"1.51
 0
 0","0
 0
-0",Talon Esports,Ascent,2,Group Stage,Opening (B),Talon Esports,3,"1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1"
+0",Talon Esports,Ascent,2,2967312,Group Stage,Opening (B),Talon Esports,"1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1",4
 ban,Kayo,"1.04
 1.28
 0.96","205
@@ -2131,7 +2401,7 @@ ban,Kayo,"1.04
 0
 0","+2
 0
-+2",Talon Esports,Ascent,2,Group Stage,Opening (B),Talon Esports,3,"1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1"
++2",Talon Esports,Ascent,2,2967312,Group Stage,Opening (B),Talon Esports,"1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1",4
 Crws,Omen,"0.81
 1.30
 0.65","100
@@ -2158,7 +2428,7 @@ Crws,Omen,"0.81
 0
 1","0
 0
-0",Talon Esports,Ascent,2,Group Stage,Opening (B),Talon Esports,3,"1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1"
+0",Talon Esports,Ascent,2,2967312,Group Stage,Opening (B),Talon Esports,"1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1",4
 BuZz,Raze,"1.23
 1.18
 1.27","269
@@ -2185,7 +2455,7 @@ BuZz,Raze,"1.23
 0
 2","+3
 +2
-+1",DRX,Lotus,1,Group Stage,Opening (B),DRX,4,"1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1"
++1",DRX,Lotus,1,2967361,Group Stage,Opening (B),DRX,"1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1",5
 stax,Fade,"1.16
 0.99
 1.28","214
@@ -2212,7 +2482,7 @@ stax,Fade,"1.16
 2
 1","0
 -2
-+2",DRX,Lotus,1,Group Stage,Opening (B),DRX,4,"1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1"
++2",DRX,Lotus,1,2967361,Group Stage,Opening (B),DRX,"1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1",5
 MaKo,Omen,"1.14
 1.27
 1.04","201
@@ -2239,7 +2509,7 @@ MaKo,Omen,"1.14
 0
 0","+3
 +3
-0",DRX,Lotus,1,Group Stage,Opening (B),DRX,4,"1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1"
+0",DRX,Lotus,1,2967361,Group Stage,Opening (B),DRX,"1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1",5
 Foxy9,Viper,"1.06
 1.16
 0.99","230
@@ -2266,7 +2536,7 @@ Foxy9,Viper,"1.06
 1
 1","-1
 -1
-0",DRX,Lotus,1,Group Stage,Opening (B),DRX,4,"1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1"
+0",DRX,Lotus,1,2967361,Group Stage,Opening (B),DRX,"1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1",5
 Flashback,Killjoy,"1.05
 1.47
 0.73","176
@@ -2293,7 +2563,7 @@ Flashback,Killjoy,"1.05
 1
 1","-2
 -1
--1",DRX,Lotus,1,Group Stage,Opening (B),DRX,4,"1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1"
+-1",DRX,Lotus,1,2967361,Group Stage,Opening (B),DRX,"1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1",5
 Meiy,Raze,"1.04
 1.37
 0.61","252
@@ -2320,7 +2590,7 @@ Meiy,Raze,"1.04
 2
 1","+3
 +2
-+1",DetonatioN FocusMe,Lotus,1,Group Stage,Opening (B),DRX,4,"0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0"
++1",DetonatioN FocusMe,Lotus,1,2967361,Group Stage,Opening (B),DRX,"0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0",5
 neth,Viper,"0.87
 0.79
 0.99","176
@@ -2347,7 +2617,7 @@ neth,Viper,"0.87
 2
 1","-2
 -2
-0",DetonatioN FocusMe,Lotus,1,Group Stage,Opening (B),DRX,4,"0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0"
+0",DetonatioN FocusMe,Lotus,1,2967361,Group Stage,Opening (B),DRX,"0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0",5
 SSeeS,Omen,"0.86
 1.11
 0.52","212
@@ -2374,7 +2644,7 @@ SSeeS,Omen,"0.86
 1
 1","-1
 -1
-0",DetonatioN FocusMe,Lotus,1,Group Stage,Opening (B),DRX,4,"0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0"
+0",DetonatioN FocusMe,Lotus,1,2967361,Group Stage,Opening (B),DRX,"0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0",5
 Anthem,Skye,"0.80
 0.86
 0.71","173
@@ -2401,7 +2671,7 @@ Anthem,Skye,"0.80
 1
 1","-1
 0
--1",DetonatioN FocusMe,Lotus,1,Group Stage,Opening (B),DRX,4,"0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0"
+-1",DetonatioN FocusMe,Lotus,1,2967361,Group Stage,Opening (B),DRX,"0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0",5
 Medusa,Killjoy,"0.45
 0.15
 0.84","96
@@ -2428,7 +2698,7 @@ Medusa,Killjoy,"0.45
 1
 1","-2
 -1
--1",DetonatioN FocusMe,Lotus,1,Group Stage,Opening (B),DRX,4,"0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0"
+-1",DetonatioN FocusMe,Lotus,1,2967361,Group Stage,Opening (B),DRX,"0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0",5
 Flashback,Cypher,"1.41
 0.94
 1.77","261
@@ -2455,7 +2725,7 @@ Flashback,Cypher,"1.41
 3
 1","-2
 -2
-0",DRX,Breeze,2,Group Stage,Opening (B),DRX,4,"1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1"
+0",DRX,Breeze,2,2967362,Group Stage,Opening (B),DRX,"1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1",5
 MaKo,Viper,"1.19
 1.26
 1.13","224
@@ -2482,7 +2752,7 @@ MaKo,Viper,"1.19
 0
 0","+2
 0
-+2",DRX,Breeze,2,Group Stage,Opening (B),DRX,4,"1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1"
++2",DRX,Breeze,2,2967362,Group Stage,Opening (B),DRX,"1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1",5
 stax,Sova,"1.07
 1.04
 1.10","149
@@ -2509,7 +2779,7 @@ stax,Sova,"1.07
 0
 0","+1
 +1
-0",DRX,Breeze,2,Group Stage,Opening (B),DRX,4,"1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1"
+0",DRX,Breeze,2,2967362,Group Stage,Opening (B),DRX,"1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1",5
 BuZz,Yoru,"0.97
 0.89
 1.03","217
@@ -2536,7 +2806,7 @@ BuZz,Yoru,"0.97
 0
 2","-2
 0
--2",DRX,Breeze,2,Group Stage,Opening (B),DRX,4,"1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1"
+-2",DRX,Breeze,2,2967362,Group Stage,Opening (B),DRX,"1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1",5
 Foxy9,Jett,"0.96
 1.07
 0.88","187
@@ -2563,7 +2833,7 @@ Foxy9,Jett,"0.96
 1
 3","+2
 +2
-0",DRX,Breeze,2,Group Stage,Opening (B),DRX,4,"1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1"
+0",DRX,Breeze,2,2967362,Group Stage,Opening (B),DRX,"1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1",5
 Medusa,Cypher,"1.30
 1.18
 1.47","240
@@ -2590,7 +2860,7 @@ Medusa,Cypher,"1.30
 1
 0","+2
 +2
-0",DetonatioN FocusMe,Breeze,2,Group Stage,Opening (B),DRX,4,"0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0"
+0",DetonatioN FocusMe,Breeze,2,2967362,Group Stage,Opening (B),DRX,"0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0",5
 Meiy,Yoru,"0.85
 0.80
 0.91","240
@@ -2617,7 +2887,7 @@ Meiy,Yoru,"0.85
 2
 2","0
 0
-0",DetonatioN FocusMe,Breeze,2,Group Stage,Opening (B),DRX,4,"0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0"
+0",DetonatioN FocusMe,Breeze,2,2967362,Group Stage,Opening (B),DRX,"0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0",5
 Anthem,Sova,"0.83
 0.61
 1.13","125
@@ -2644,7 +2914,7 @@ Anthem,Sova,"0.83
 1
 1","-1
 -1
-0",DetonatioN FocusMe,Breeze,2,Group Stage,Opening (B),DRX,4,"0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0"
+0",DetonatioN FocusMe,Breeze,2,2967362,Group Stage,Opening (B),DRX,"0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0",5
 SSeeS,Viper,"0.63
 0.63
 0.64","147
@@ -2671,7 +2941,7 @@ SSeeS,Viper,"0.63
 1
 1","-1
 0
--1",DetonatioN FocusMe,Breeze,2,Group Stage,Opening (B),DRX,4,"0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0"
+-1",DetonatioN FocusMe,Breeze,2,2967362,Group Stage,Opening (B),DRX,"0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0",5
 neth,Harbor,"0.55
 0.54
 0.56","134
@@ -2698,7 +2968,7 @@ neth,Harbor,"0.55
 1
 1","-1
 -1
-0",DetonatioN FocusMe,Breeze,2,Group Stage,Opening (B),DRX,4,"0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0"
+0",DetonatioN FocusMe,Breeze,2,2967362,Group Stage,Opening (B),DRX,"0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0",5
 t3xture,Jett,"1.38
 1.33
 1.43","319
@@ -2725,7 +2995,7 @@ t3xture,Jett,"1.38
 2
 0","+2
 +1
-+1",Gen.G,Breeze,1,Group Stage,Winner's (C),Paper Rex,5,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1"
++1",Gen.G,Breeze,1,2967471,Group Stage,Winner's (C),Paper Rex,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1",6
 Karon,Astra,"1.25
 0.71
 1.75","226
@@ -2752,7 +3022,7 @@ Karon,Astra,"1.25
 0
 0","+1
 0
-+1",Gen.G,Breeze,1,Group Stage,Winner's (C),Paper Rex,5,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1"
++1",Gen.G,Breeze,1,2967471,Group Stage,Winner's (C),Paper Rex,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1",6
 Munchkin,Viper,"1.00
 1.52
 0.51","180
@@ -2779,7 +3049,7 @@ Munchkin,Viper,"1.00
 0
 3","-3
 0
--3",Gen.G,Breeze,1,Group Stage,Winner's (C),Paper Rex,5,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1"
+-3",Gen.G,Breeze,1,2967471,Group Stage,Winner's (C),Paper Rex,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1",6
 Meteor,Cypher,"0.91
 0.94
 0.89","217
@@ -2806,7 +3076,7 @@ Meteor,Cypher,"0.91
 1
 0","+2
 0
-+2",Gen.G,Breeze,1,Group Stage,Winner's (C),Paper Rex,5,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1"
++2",Gen.G,Breeze,1,2967471,Group Stage,Winner's (C),Paper Rex,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1",6
 Lakia,Skye,"0.53
 0.72
 0.36","130
@@ -2833,7 +3103,7 @@ Lakia,Skye,"0.53
 2
 3","-1
 0
--1",Gen.G,Breeze,1,Group Stage,Winner's (C),Paper Rex,5,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1"
+-1",Gen.G,Breeze,1,2967471,Group Stage,Winner's (C),Paper Rex,"1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1",6
 d4v41,Viper,"1.24
 1.77
 0.67","224
@@ -2860,7 +3130,7 @@ d4v41,Viper,"1.24
 1
 2","-2
 -1
--1",Paper Rex,Breeze,1,Group Stage,Winner's (C),Paper Rex,5,"0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0"
+-1",Paper Rex,Breeze,1,2967471,Group Stage,Winner's (C),Paper Rex,"0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0",6
 something,Yoru,"1.00
 1.17
 0.83","233
@@ -2887,7 +3157,7 @@ something,Yoru,"1.00
 1
 1","+2
 +2
-0",Paper Rex,Breeze,1,Group Stage,Winner's (C),Paper Rex,5,"0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0"
+0",Paper Rex,Breeze,1,2967471,Group Stage,Winner's (C),Paper Rex,"0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0",6
 mindfreak,Sova,"0.92
 0.91
 0.94","203
@@ -2914,7 +3184,7 @@ mindfreak,Sova,"0.92
 0
 0","+1
 0
-+1",Paper Rex,Breeze,1,Group Stage,Winner's (C),Paper Rex,5,"0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0"
++1",Paper Rex,Breeze,1,2967471,Group Stage,Winner's (C),Paper Rex,"0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0",6
 f0rsakeN,Harbor,"0.88
 0.76
 1.01","203
@@ -2941,7 +3211,7 @@ f0rsakeN,Harbor,"0.88
 0
 2","0
 +1
--1",Paper Rex,Breeze,1,Group Stage,Winner's (C),Paper Rex,5,"0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0"
+-1",Paper Rex,Breeze,1,2967471,Group Stage,Winner's (C),Paper Rex,"0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0",6
 Monyet,Omen,"0.76
 0.49
 1.05","166
@@ -2968,7 +3238,7 @@ Monyet,Omen,"0.76
 4
 1","-2
 -2
-0",Paper Rex,Breeze,1,Group Stage,Winner's (C),Paper Rex,5,"0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0"
+0",Paper Rex,Breeze,1,2967471,Group Stage,Winner's (C),Paper Rex,"0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0",6
 Meteor,Killjoy,"1.22
 1.34
 1.09","269
@@ -2995,7 +3265,7 @@ Meteor,Killjoy,"1.22
 1
 0","+4
 +3
-+1",Gen.G,Lotus,2,Group Stage,Winner's (C),Paper Rex,5,"0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0"
++1",Gen.G,Lotus,2,2967472,Group Stage,Winner's (C),Paper Rex,"0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",6
 t3xture,Raze,"1.16
 1.24
 1.06","258
@@ -3022,7 +3292,7 @@ t3xture,Raze,"1.16
 0
 2","+3
 +1
-+2",Gen.G,Lotus,2,Group Stage,Winner's (C),Paper Rex,5,"0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0"
++2",Gen.G,Lotus,2,2967472,Group Stage,Winner's (C),Paper Rex,"0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",6
 Karon,Omen,"0.91
 0.84
 0.97","197
@@ -3049,7 +3319,7 @@ Karon,Omen,"0.91
 1
 1","0
 -1
-+1",Gen.G,Lotus,2,Group Stage,Winner's (C),Paper Rex,5,"0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0"
++1",Gen.G,Lotus,2,2967472,Group Stage,Winner's (C),Paper Rex,"0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",6
 Lakia,Fade,"0.79
 0.34
 1.27","142
@@ -3076,7 +3346,7 @@ Lakia,Fade,"0.79
 0
 0","0
 0
-0",Gen.G,Lotus,2,Group Stage,Winner's (C),Paper Rex,5,"0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0"
+0",Gen.G,Lotus,2,2967472,Group Stage,Winner's (C),Paper Rex,"0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",6
 Munchkin,Viper,"0.77
 0.53
 1.03","169
@@ -3103,7 +3373,7 @@ Munchkin,Viper,"0.77
 4
 0","-2
 -3
-+1",Gen.G,Lotus,2,Group Stage,Winner's (C),Paper Rex,5,"0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0"
++1",Gen.G,Lotus,2,2967472,Group Stage,Winner's (C),Paper Rex,"0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",6
 something,Jett,"1.36
 1.58
 1.16","282
@@ -3130,7 +3400,7 @@ something,Jett,"1.36
 3
 2","-1
 -2
-+1",Paper Rex,Lotus,2,Group Stage,Winner's (C),Paper Rex,5,"1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1"
++1",Paper Rex,Lotus,2,2967472,Group Stage,Winner's (C),Paper Rex,"1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",6
 Monyet,Raze,"1.25
 1.15
 1.34","255
@@ -3157,7 +3427,7 @@ Monyet,Raze,"1.25
 0
 1","0
 +1
--1",Paper Rex,Lotus,2,Group Stage,Winner's (C),Paper Rex,5,"1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1"
+-1",Paper Rex,Lotus,2,2967472,Group Stage,Winner's (C),Paper Rex,"1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",6
 d4v41,Skye,"1.19
 1.34
 1.04","220
@@ -3184,7 +3454,7 @@ d4v41,Skye,"1.19
 0
 2","-1
 +1
--2",Paper Rex,Lotus,2,Group Stage,Winner's (C),Paper Rex,5,"1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1"
+-2",Paper Rex,Lotus,2,2967472,Group Stage,Winner's (C),Paper Rex,"1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",6
 f0rsakeN,Cypher,"0.78
 0.30
 1.22","174
@@ -3211,7 +3481,7 @@ f0rsakeN,Cypher,"0.78
 3
 1","-2
 -3
-+1",Paper Rex,Lotus,2,Group Stage,Winner's (C),Paper Rex,5,"1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1"
++1",Paper Rex,Lotus,2,2967472,Group Stage,Winner's (C),Paper Rex,"1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",6
 mindfreak,Omen,"0.67
 0.29
 1.02","86
@@ -3238,7 +3508,7 @@ mindfreak,Omen,"0.67
 2
 0","-1
 -2
-+1",Paper Rex,Lotus,2,Group Stage,Winner's (C),Paper Rex,5,"1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1"
++1",Paper Rex,Lotus,2,2967472,Group Stage,Winner's (C),Paper Rex,"1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",6
 Lakia,Skye,"1.08
 0.49
 1.97","265
@@ -3265,7 +3535,7 @@ Lakia,Skye,"1.08
 1
 1","-1
 -1
-0",Gen.G,Sunset,3,Group Stage,Winner's (C),Paper Rex,5,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0"
+0",Gen.G,Sunset,3,2967473,Group Stage,Winner's (C),Paper Rex,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0",6
 Karon,Omen,"0.93
 0.51
 1.56","233
@@ -3292,7 +3562,7 @@ Karon,Omen,"0.93
 1
 0","0
 -1
-+1",Gen.G,Sunset,3,Group Stage,Winner's (C),Paper Rex,5,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0"
++1",Gen.G,Sunset,3,2967473,Group Stage,Winner's (C),Paper Rex,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0",6
 t3xture,Raze,"0.64
 0.85
 0.32","203
@@ -3319,7 +3589,7 @@ t3xture,Raze,"0.64
 5
 2","-5
 -3
--2",Gen.G,Sunset,3,Group Stage,Winner's (C),Paper Rex,5,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0"
+-2",Gen.G,Sunset,3,2967473,Group Stage,Winner's (C),Paper Rex,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0",6
 Meteor,Cypher,"0.37
 0.27
 0.51","79
@@ -3346,7 +3616,7 @@ Meteor,Cypher,"0.37
 0
 1","-1
 0
--1",Gen.G,Sunset,3,Group Stage,Winner's (C),Paper Rex,5,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0"
+-1",Gen.G,Sunset,3,2967473,Group Stage,Winner's (C),Paper Rex,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0",6
 Munchkin,Viper,"0.29
 0.14
 0.51","97
@@ -3373,7 +3643,7 @@ Munchkin,Viper,"0.29
 3
 2","-5
 -3
--2",Gen.G,Sunset,3,Group Stage,Winner's (C),Paper Rex,5,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0"
+-2",Gen.G,Sunset,3,2967473,Group Stage,Winner's (C),Paper Rex,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0",6
 something,Gekko,"1.75
 1.52
 1.90","284
@@ -3400,7 +3670,7 @@ something,Gekko,"1.75
 0
 0","+5
 +2
-+3",Paper Rex,Sunset,3,Group Stage,Winner's (C),Paper Rex,5,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1"
++3",Paper Rex,Sunset,3,2967473,Group Stage,Winner's (C),Paper Rex,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1",6
 f0rsakeN,Kayo,"1.46
 0.86
 1.86","309
@@ -3427,7 +3697,7 @@ f0rsakeN,Kayo,"1.46
 1
 0","+5
 +2
-+3",Paper Rex,Sunset,3,Group Stage,Winner's (C),Paper Rex,5,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1"
++3",Paper Rex,Sunset,3,2967473,Group Stage,Winner's (C),Paper Rex,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1",6
 d4v41,Sage,"1.30
 0.94
 1.54","246
@@ -3454,7 +3724,7 @@ d4v41,Sage,"1.30
 0
 0","+1
 +1
-0",Paper Rex,Sunset,3,Group Stage,Winner's (C),Paper Rex,5,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1"
+0",Paper Rex,Sunset,3,2967473,Group Stage,Winner's (C),Paper Rex,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1",6
 Monyet,Omen,"1.16
 1.03
 1.24","196
@@ -3481,7 +3751,7 @@ Monyet,Omen,"1.16
 1
 1","+1
 -1
-+2",Paper Rex,Sunset,3,Group Stage,Winner's (C),Paper Rex,5,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1"
++2",Paper Rex,Sunset,3,2967473,Group Stage,Winner's (C),Paper Rex,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1",6
 mindfreak,Viper,"0.92
 0.53
 1.19","158
@@ -3508,7 +3778,7 @@ mindfreak,Viper,"0.92
 0
 1","0
 0
-0",Paper Rex,Sunset,3,Group Stage,Winner's (C),Paper Rex,5,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1"
+0",Paper Rex,Sunset,3,2967473,Group Stage,Winner's (C),Paper Rex,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1",6
 sScary,Omen,"1.14
 1.26
 1.04","190
@@ -3535,7 +3805,7 @@ sScary,Omen,"1.14
 1
 3","-1
 0
--1",BLEED,Sunset,1,Group Stage,Elimination (A),Global Esports,6,"0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0"
+-1",BLEED,Sunset,1,2967381,Group Stage,Elimination (A),Global Esports,"0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0",7
 Egoist,Cypher,"1.07
 0.90
 1.21","174
@@ -3562,7 +3832,7 @@ Egoist,Cypher,"1.07
 1
 0","+1
 0
-+1",BLEED,Sunset,1,Group Stage,Elimination (A),Global Esports,6,"0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0"
++1",BLEED,Sunset,1,2967381,Group Stage,Elimination (A),Global Esports,"0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0",7
 Deryeon,Raze,"1.04
 0.83
 1.22","268
@@ -3589,7 +3859,7 @@ Deryeon,Raze,"1.04
 2
 2","-1
 -1
-0",BLEED,Sunset,1,Group Stage,Elimination (A),Global Esports,6,"0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0"
+0",BLEED,Sunset,1,2967381,Group Stage,Elimination (A),Global Esports,"0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0",7
 yay,Viper,"0.93
 1.14
 0.76","156
@@ -3616,7 +3886,7 @@ yay,Viper,"0.93
 0
 1","0
 +1
--1",BLEED,Sunset,1,Group Stage,Elimination (A),Global Esports,6,"0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0"
+-1",BLEED,Sunset,1,2967381,Group Stage,Elimination (A),Global Esports,"0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0",7
 crazyguy,Sova,"0.74
 0.61
 0.84","150
@@ -3643,7 +3913,7 @@ crazyguy,Sova,"0.74
 0
 1","+1
 +2
--1",BLEED,Sunset,1,Group Stage,Elimination (A),Global Esports,6,"0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0"
+-1",BLEED,Sunset,1,2967381,Group Stage,Elimination (A),Global Esports,"0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0",7
 blaZek1ng,Fade,"1.43
 1.28
 1.62","292
@@ -3670,7 +3940,7 @@ blaZek1ng,Fade,"1.43
 2
 1","-1
 0
--1",Global Esports,Sunset,1,Group Stage,Elimination (A),Global Esports,6,"1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1"
+-1",Global Esports,Sunset,1,2967381,Group Stage,Elimination (A),Global Esports,"1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1",7
 Polvi,Raze,"0.96
 0.97
 0.95","211
@@ -3697,7 +3967,7 @@ Polvi,Raze,"0.96
 2
 4","0
 +1
--1",Global Esports,Sunset,1,Group Stage,Elimination (A),Global Esports,6,"1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1"
+-1",Global Esports,Sunset,1,2967381,Group Stage,Elimination (A),Global Esports,"1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1",7
 Benkai,Viper,"0.89
 0.98
 0.78","197
@@ -3724,7 +3994,7 @@ Benkai,Viper,"0.89
 0
 1","+2
 +2
-0",Global Esports,Sunset,1,Group Stage,Elimination (A),Global Esports,6,"1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1"
+0",Global Esports,Sunset,1,2967381,Group Stage,Elimination (A),Global Esports,"1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1",7
 Russ,Gekko,"0.86
 0.84
 0.88","143
@@ -3751,7 +4021,7 @@ Russ,Gekko,"0.86
 1
 0","-1
 -1
-0",Global Esports,Sunset,1,Group Stage,Elimination (A),Global Esports,6,"1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1"
+0",Global Esports,Sunset,1,2967381,Group Stage,Elimination (A),Global Esports,"1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1",7
 Lightningfast,Omen,"0.83
 0.56
 1.16","117
@@ -3778,7 +4048,7 @@ Lightningfast,Omen,"0.83
 0
 0","0
 0
-0",Global Esports,Sunset,1,Group Stage,Elimination (A),Global Esports,6,"1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1"
+0",Global Esports,Sunset,1,2967381,Group Stage,Elimination (A),Global Esports,"1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1",7
 sScary,Viper,"1.23
 1.16
 1.29","136
@@ -3805,7 +4075,7 @@ sScary,Viper,"1.23
 0
 1","+2
 +1
-+1",BLEED,Icebox,2,Group Stage,Elimination (A),Global Esports,6,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1"
++1",BLEED,Icebox,2,2967382,Group Stage,Elimination (A),Global Esports,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1",7
 Deryeon,Harbor,"1.21
 1.60
 0.85","185
@@ -3832,7 +4102,7 @@ Deryeon,Harbor,"1.21
 2
 0","-2
 -2
-0",BLEED,Icebox,2,Group Stage,Elimination (A),Global Esports,6,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1"
+0",BLEED,Icebox,2,2967382,Group Stage,Elimination (A),Global Esports,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1",7
 Egoist,Killjoy,"1.04
 1.06
 1.01","244
@@ -3859,7 +4129,7 @@ Egoist,Killjoy,"1.04
 1
 0","+1
 0
-+1",BLEED,Icebox,2,Group Stage,Elimination (A),Global Esports,6,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1"
++1",BLEED,Icebox,2,2967382,Group Stage,Elimination (A),Global Esports,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1",7
 crazyguy,Sova,"0.99
 1.03
 0.95","221
@@ -3886,7 +4156,7 @@ crazyguy,Sova,"0.99
 2
 1","+1
 -1
-+2",BLEED,Icebox,2,Group Stage,Elimination (A),Global Esports,6,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1"
++2",BLEED,Icebox,2,2967382,Group Stage,Elimination (A),Global Esports,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1",7
 yay,Jett,"0.94
 1.52
 0.42","204
@@ -3913,7 +4183,7 @@ yay,Jett,"0.94
 0
 4","-1
 +3
--4",BLEED,Icebox,2,Group Stage,Elimination (A),Global Esports,6,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1"
+-4",BLEED,Icebox,2,2967382,Group Stage,Elimination (A),Global Esports,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1",7
 Russ,Kayo,"1.26
 1.63
 0.85","234
@@ -3940,7 +4210,7 @@ Russ,Kayo,"1.26
 1
 2","+2
 +3
--1",Global Esports,Icebox,2,Group Stage,Elimination (A),Global Esports,6,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0"
+-1",Global Esports,Icebox,2,2967382,Group Stage,Elimination (A),Global Esports,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0",7
 blaZek1ng,Sova,"1.02
 1.34
 0.68","196
@@ -3967,7 +4237,7 @@ blaZek1ng,Sova,"1.02
 1
 1","0
 0
-0",Global Esports,Icebox,2,Group Stage,Elimination (A),Global Esports,6,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0"
+0",Global Esports,Icebox,2,2967382,Group Stage,Elimination (A),Global Esports,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0",7
 Benkai,Killjoy,"0.96
 1.01
 0.90","175
@@ -3994,7 +4264,7 @@ Benkai,Killjoy,"0.96
 2
 0","-2
 -2
-0",Global Esports,Icebox,2,Group Stage,Elimination (A),Global Esports,6,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0"
+0",Global Esports,Icebox,2,2967382,Group Stage,Elimination (A),Global Esports,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0",7
 Polvi,Jett,"0.84
 0.96
 0.71","192
@@ -4021,7 +4291,7 @@ Polvi,Jett,"0.84
 2
 2","0
 -1
-+1",Global Esports,Icebox,2,Group Stage,Elimination (A),Global Esports,6,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0"
++1",Global Esports,Icebox,2,2967382,Group Stage,Elimination (A),Global Esports,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0",7
 Lightningfast,Viper,"0.72
 0.99
 0.44","145
@@ -4048,7 +4318,7 @@ Lightningfast,Viper,"0.72
 0
 1","-1
 0
--1",Global Esports,Icebox,2,Group Stage,Elimination (A),Global Esports,6,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0"
+-1",Global Esports,Icebox,2,2967382,Group Stage,Elimination (A),Global Esports,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0",7
 Egoist,Cypher,"1.49
 1.44
 1.54","284
@@ -4075,7 +4345,7 @@ Egoist,Cypher,"1.49
 0
 1","0
 +1
--1",BLEED,Split,3,Group Stage,Elimination (A),Global Esports,6,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0"
+-1",BLEED,Split,3,2967383,Group Stage,Elimination (A),Global Esports,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0",7
 Deryeon,Raze,"1.12
 1.34
 0.90","294
@@ -4102,7 +4372,7 @@ Deryeon,Raze,"1.12
 3
 1","+6
 +4
-+2",BLEED,Split,3,Group Stage,Elimination (A),Global Esports,6,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0"
++2",BLEED,Split,3,2967383,Group Stage,Elimination (A),Global Esports,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0",7
 sScary,Omen,"0.89
 0.75
 1.03","152
@@ -4129,7 +4399,7 @@ sScary,Omen,"0.89
 0
 1","0
 0
-0",BLEED,Split,3,Group Stage,Elimination (A),Global Esports,6,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0"
+0",BLEED,Split,3,2967383,Group Stage,Elimination (A),Global Esports,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0",7
 crazyguy,Skye,"0.66
 0.88
 0.44","94
@@ -4156,7 +4426,7 @@ crazyguy,Skye,"0.66
 1
 3","-4
 -1
--3",BLEED,Split,3,Group Stage,Elimination (A),Global Esports,6,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0"
+-3",BLEED,Split,3,2967383,Group Stage,Elimination (A),Global Esports,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0",7
 yay,Viper,"0.48
 0.65
 0.32","83
@@ -4183,7 +4453,7 @@ yay,Viper,"0.48
 1
 2","-3
 -1
--2",BLEED,Split,3,Group Stage,Elimination (A),Global Esports,6,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0"
+-2",BLEED,Split,3,2967383,Group Stage,Elimination (A),Global Esports,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0",7
 Benkai,Cypher,"1.48
 1.35
 1.60","279
@@ -4210,7 +4480,7 @@ Benkai,Cypher,"1.48
 0
 1","0
 +1
--1",Global Esports,Split,3,Group Stage,Elimination (A),Global Esports,6,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1"
+-1",Global Esports,Split,3,2967383,Group Stage,Elimination (A),Global Esports,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1",7
 Polvi,Raze,"0.97
 1.29
 0.65","215
@@ -4237,7 +4507,7 @@ Polvi,Raze,"0.97
 1
 2","+4
 +4
-0",Global Esports,Split,3,Group Stage,Elimination (A),Global Esports,6,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1"
+0",Global Esports,Split,3,2967383,Group Stage,Elimination (A),Global Esports,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1",7
 Russ,Breach,"0.97
 1.11
 0.83","167
@@ -4264,7 +4534,7 @@ Russ,Breach,"0.97
 1
 2","-2
 0
--2",Global Esports,Split,3,Group Stage,Elimination (A),Global Esports,6,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1"
+-2",Global Esports,Split,3,2967383,Group Stage,Elimination (A),Global Esports,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1",7
 blaZek1ng,Gekko,"0.94
 0.77
 1.10","196
@@ -4291,7 +4561,7 @@ blaZek1ng,Gekko,"0.94
 1
 1","-2
 -1
--1",Global Esports,Split,3,Group Stage,Elimination (A),Global Esports,6,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1"
+-1",Global Esports,Split,3,2967383,Group Stage,Elimination (A),Global Esports,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1",7
 Lightningfast,Omen,"0.92
 1.13
 0.71","155
@@ -4318,7 +4588,7 @@ Lightningfast,Omen,"0.92
 0
 2","+1
 +1
-0",Global Esports,Split,3,Group Stage,Elimination (A),Global Esports,6,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1"
+0",Global Esports,Split,3,2967383,Group Stage,Elimination (A),Global Esports,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1",7
 Rossy,Viper,"1.09
 1.21
 0.97","203
@@ -4345,7 +4615,7 @@ Rossy,Viper,"1.09
 0
 0","0
 0
-0",T1,Ascent,1,Group Stage,Winner's (A),T1,7,"0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0"
+0",T1,Ascent,1,2967371,Group Stage,Winner's (A),T1,"0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0",8
 Sayaplayer,Jett,"1.09
 1.17
 1.02","221
@@ -4372,7 +4642,7 @@ Sayaplayer,Jett,"1.09
 3
 1","-1
 -1
-0",T1,Ascent,1,Group Stage,Winner's (A),T1,7,"0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0"
+0",T1,Ascent,1,2967371,Group Stage,Winner's (A),T1,"0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0",8
 iZu,Omen,"1.06
 0.97
 1.15","208
@@ -4399,7 +4669,7 @@ iZu,Omen,"1.06
 1
 1","+1
 0
-+1",T1,Ascent,1,Group Stage,Winner's (A),T1,7,"0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0"
++1",T1,Ascent,1,2967371,Group Stage,Winner's (A),T1,"0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0",8
 xccurate,Cypher,"0.96
 0.64
 1.28","207
@@ -4426,7 +4696,7 @@ xccurate,Cypher,"0.96
 2
 0","+1
 -1
-+2",T1,Ascent,1,Group Stage,Winner's (A),T1,7,"0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0"
++2",T1,Ascent,1,2967371,Group Stage,Winner's (A),T1,"0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0",8
 Carpe,Fade,"0.54
 0.62
 0.45","123
@@ -4453,7 +4723,7 @@ Carpe,Fade,"0.54
 1
 4","-3
 0
--3",T1,Ascent,1,Group Stage,Winner's (A),T1,7,"0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0"
+-3",T1,Ascent,1,2967371,Group Stage,Winner's (A),T1,"0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0",8
 SugarZ3ro,Omen,"1.22
 1.35
 1.10","166
@@ -4480,7 +4750,7 @@ SugarZ3ro,Omen,"1.22
 0
 1","-1
 0
--1",ZETA DIVISION,Ascent,1,Group Stage,Winner's (A),T1,7,"1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1"
+-1",ZETA DIVISION,Ascent,1,2967371,Group Stage,Winner's (A),T1,"1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1",8
 Dep,Jett,"1.15
 0.70
 1.59","265
@@ -4507,7 +4777,7 @@ Dep,Jett,"1.15
 2
 0","+7
 +3
-+4",ZETA DIVISION,Ascent,1,Group Stage,Winner's (A),T1,7,"1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1"
++4",ZETA DIVISION,Ascent,1,2967371,Group Stage,Winner's (A),T1,"1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1",8
 yuran,Sova,"1.07
 1.26
 0.88","208
@@ -4534,7 +4804,7 @@ yuran,Sova,"1.07
 1
 0","+1
 -1
-+2",ZETA DIVISION,Ascent,1,Group Stage,Winner's (A),T1,7,"1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1"
++2",ZETA DIVISION,Ascent,1,2967371,Group Stage,Winner's (A),T1,"1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1",8
 Laz,Killjoy,"1.06
 1.03
 1.10","207
@@ -4561,7 +4831,7 @@ Laz,Killjoy,"1.06
 1
 1","-2
 -1
--1",ZETA DIVISION,Ascent,1,Group Stage,Winner's (A),T1,7,"1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1"
+-1",ZETA DIVISION,Ascent,1,2967371,Group Stage,Winner's (A),T1,"1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1",8
 hiroronn,Kayo,"0.85
 1.12
 0.58","201
@@ -4588,7 +4858,7 @@ hiroronn,Kayo,"0.85
 2
 3","-3
 -1
--2",ZETA DIVISION,Ascent,1,Group Stage,Winner's (A),T1,7,"1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1"
+-2",ZETA DIVISION,Ascent,1,2967371,Group Stage,Winner's (A),T1,"1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1",8
 xccurate,Chamber,"1.71
 1.86
 1.65","359
@@ -4615,7 +4885,7 @@ xccurate,Chamber,"1.71
 0
 0","+6
 +3
-+3",T1,Lotus,2,Group Stage,Winner's (A),T1,7,"0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1"
++3",T1,Lotus,2,2967372,Group Stage,Winner's (A),T1,"0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1",8
 Rossy,Viper,"1.47
 0.95
 1.69","278
@@ -4642,7 +4912,7 @@ Rossy,Viper,"1.47
 0
 0","+3
 0
-+3",T1,Lotus,2,Group Stage,Winner's (A),T1,7,"0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1"
++3",T1,Lotus,2,2967372,Group Stage,Winner's (A),T1,"0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1",8
 iZu,Omen,"1.33
 1.35
 1.32","188
@@ -4669,7 +4939,7 @@ iZu,Omen,"1.33
 0
 0","+1
 0
-+1",T1,Lotus,2,Group Stage,Winner's (A),T1,7,"0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1"
++1",T1,Lotus,2,2967372,Group Stage,Winner's (A),T1,"0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1",8
 Sayaplayer,Raze,"1.24
 1.92
 0.96","206
@@ -4696,7 +4966,7 @@ Sayaplayer,Raze,"1.24
 1
 1","+1
 0
-+1",T1,Lotus,2,Group Stage,Winner's (A),T1,7,"0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1"
++1",T1,Lotus,2,2967372,Group Stage,Winner's (A),T1,"0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1",8
 Carpe,Fade,"1.09
 0.50
 1.33","165
@@ -4723,7 +4993,7 @@ Carpe,Fade,"1.09
 0
 1","0
 0
-0",T1,Lotus,2,Group Stage,Winner's (A),T1,7,"0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1"
+0",T1,Lotus,2,2967372,Group Stage,Winner's (A),T1,"0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1",8
 Dep,Raze,"0.88
 0.76
 1.17","195
@@ -4750,7 +5020,7 @@ Dep,Raze,"0.88
 3
 1","-3
 -2
--1",ZETA DIVISION,Lotus,2,Group Stage,Winner's (A),T1,7,"1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0"
+-1",ZETA DIVISION,Lotus,2,2967372,Group Stage,Winner's (A),T1,"1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0",8
 Laz,Killjoy,"0.79
 0.66
 1.12","188
@@ -4777,7 +5047,7 @@ Laz,Killjoy,"0.79
 1
 0","0
 -1
-+1",ZETA DIVISION,Lotus,2,Group Stage,Winner's (A),T1,7,"1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0"
++1",ZETA DIVISION,Lotus,2,2967372,Group Stage,Winner's (A),T1,"1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0",8
 SugarZ3ro,Omen,"0.65
 0.85
 0.17","143
@@ -4804,7 +5074,7 @@ SugarZ3ro,Omen,"0.65
 1
 1","-2
 -1
--1",ZETA DIVISION,Lotus,2,Group Stage,Winner's (A),T1,7,"1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0"
+-1",ZETA DIVISION,Lotus,2,2967372,Group Stage,Winner's (A),T1,"1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0",8
 hiroronn,Fade,"0.42
 0.46
 0.32","104
@@ -4831,7 +5101,7 @@ hiroronn,Fade,"0.42
 2
 2","-3
 -1
--2",ZETA DIVISION,Lotus,2,Group Stage,Winner's (A),T1,7,"1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0"
+-2",ZETA DIVISION,Lotus,2,2967372,Group Stage,Winner's (A),T1,"1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0",8
 yuran,Viper,"0.38
 0.48
 0.15","132
@@ -4858,7 +5128,7 @@ yuran,Viper,"0.38
 3
 0","-3
 -3
-0",ZETA DIVISION,Lotus,2,Group Stage,Winner's (A),T1,7,"1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0"
+0",ZETA DIVISION,Lotus,2,2967372,Group Stage,Winner's (A),T1,"1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0",8
 Sayaplayer,Raze,"1.40
 0.95
 1.70","238
@@ -4885,7 +5155,7 @@ Sayaplayer,Raze,"1.40
 2
 1","+1
 -2
-+3",T1,Sunset,3,Group Stage,Winner's (A),T1,7,"1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1"
++3",T1,Sunset,3,2967373,Group Stage,Winner's (A),T1,"1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1",8
 xccurate,Cypher,"1.21
 1.00
 1.35","224
@@ -4912,7 +5182,7 @@ xccurate,Cypher,"1.21
 0
 1","0
 0
-0",T1,Sunset,3,Group Stage,Winner's (A),T1,7,"1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1"
+0",T1,Sunset,3,2967373,Group Stage,Winner's (A),T1,"1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1",8
 Carpe,Sova,"1.09
 1.36
 0.91","238
@@ -4939,7 +5209,7 @@ Carpe,Sova,"1.09
 0
 1","+2
 +1
-+1",T1,Sunset,3,Group Stage,Winner's (A),T1,7,"1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1"
++1",T1,Sunset,3,2967373,Group Stage,Winner's (A),T1,"1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1",8
 iZu,Omen,"0.97
 0.91
 1.01","187
@@ -4966,7 +5236,7 @@ iZu,Omen,"0.97
 1
 0","+1
 +1
-0",T1,Sunset,3,Group Stage,Winner's (A),T1,7,"1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1"
+0",T1,Sunset,3,2967373,Group Stage,Winner's (A),T1,"1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1",8
 Rossy,Viper,"0.91
 0.84
 0.95","151
@@ -4993,7 +5263,7 @@ Rossy,Viper,"0.91
 2
 1","-2
 -2
-0",T1,Sunset,3,Group Stage,Winner's (A),T1,7,"1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1"
+0",T1,Sunset,3,2967373,Group Stage,Winner's (A),T1,"1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1",8
 hiroronn,Fade,"1.03
 1.07
 0.96","220
@@ -5020,7 +5290,7 @@ hiroronn,Fade,"1.03
 1
 2","0
 +1
--1",ZETA DIVISION,Sunset,3,Group Stage,Winner's (A),T1,7,"0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0"
+-1",ZETA DIVISION,Sunset,3,2967373,Group Stage,Winner's (A),T1,"0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0",8
 Dep,Raze,"0.99
 0.58
 1.61","240
@@ -5047,7 +5317,7 @@ Dep,Raze,"0.99
 6
 1","-2
 -4
-+2",ZETA DIVISION,Sunset,3,Group Stage,Winner's (A),T1,7,"0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0"
++2",ZETA DIVISION,Sunset,3,2967373,Group Stage,Winner's (A),T1,"0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0",8
 SugarZ3ro,Omen,"0.94
 0.96
 0.89","180
@@ -5074,7 +5344,7 @@ SugarZ3ro,Omen,"0.94
 0
 0","0
 0
-0",ZETA DIVISION,Sunset,3,Group Stage,Winner's (A),T1,7,"0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0"
+0",ZETA DIVISION,Sunset,3,2967373,Group Stage,Winner's (A),T1,"0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0",8
 yuran,Breach,"0.85
 0.77
 0.97","158
@@ -5101,7 +5371,7 @@ yuran,Breach,"0.85
 0
 0","+1
 0
-+1",ZETA DIVISION,Sunset,3,Group Stage,Winner's (A),T1,7,"0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0"
++1",ZETA DIVISION,Sunset,3,2967373,Group Stage,Winner's (A),T1,"0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0",8
 Laz,Cypher,"0.54
 0.56
 0.49","117
@@ -5128,7 +5398,7 @@ Laz,Cypher,"0.54
 1
 0","-1
 -1
-0",ZETA DIVISION,Sunset,3,Group Stage,Winner's (A),T1,7,"0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0"
+0",ZETA DIVISION,Sunset,3,2967373,Group Stage,Winner's (A),T1,"0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0",8
 Meiy,Raze,"1.28
 1.47
 1.15","278
@@ -5155,7 +5425,7 @@ Meiy,Raze,"1.28
 3
 2","-1
 -2
-+1",DetonatioN FocusMe,Lotus,1,Group Stage,Elimination (B),Team Secret,8,"0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0"
++1",DetonatioN FocusMe,Lotus,1,2967331,Group Stage,Elimination (B),Team Secret,"0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0",9
 neth,Viper,"1.03
 1.14
 0.96","221
@@ -5182,7 +5452,7 @@ neth,Viper,"1.03
 0
 0","+1
 0
-+1",DetonatioN FocusMe,Lotus,1,Group Stage,Elimination (B),Team Secret,8,"0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0"
++1",DetonatioN FocusMe,Lotus,1,2967331,Group Stage,Elimination (B),Team Secret,"0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0",9
 SSeeS,Omen,"0.93
 0.69
 1.09","150
@@ -5209,7 +5479,7 @@ SSeeS,Omen,"0.93
 0
 2","-1
 +1
--2",DetonatioN FocusMe,Lotus,1,Group Stage,Elimination (B),Team Secret,8,"0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0"
+-2",DetonatioN FocusMe,Lotus,1,2967331,Group Stage,Elimination (B),Team Secret,"0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0",9
 Medusa,Killjoy,"0.80
 1.18
 0.55","185
@@ -5236,7 +5506,7 @@ Medusa,Killjoy,"0.80
 0
 2","+1
 +3
--2",DetonatioN FocusMe,Lotus,1,Group Stage,Elimination (B),Team Secret,8,"0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0"
+-2",DetonatioN FocusMe,Lotus,1,2967331,Group Stage,Elimination (B),Team Secret,"0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0",9
 Anthem,Skye,"0.57
 0.86
 0.38","91
@@ -5263,7 +5533,7 @@ Anthem,Skye,"0.57
 0
 2","-2
 0
--2",DetonatioN FocusMe,Lotus,1,Group Stage,Elimination (B),Team Secret,8,"0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0"
+-2",DetonatioN FocusMe,Lotus,1,2967331,Group Stage,Elimination (B),Team Secret,"0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0",9
 Jremy,Raze,"1.31
 1.11
 1.62","237
@@ -5290,7 +5560,7 @@ Jremy,Raze,"1.31
 3
 1","+1
 0
-+1",Team Secret,Lotus,1,Group Stage,Elimination (B),Team Secret,8,"1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1"
++1",Team Secret,Lotus,1,2967331,Group Stage,Elimination (B),Team Secret,"1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1",9
 NDG,Killjoy,"1.24
 1.74
 0.47","253
@@ -5317,7 +5587,7 @@ NDG,Killjoy,"1.24
 0
 1","+1
 +2
--1",Team Secret,Lotus,1,Group Stage,Elimination (B),Team Secret,8,"1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1"
+-1",Team Secret,Lotus,1,2967331,Group Stage,Elimination (B),Team Secret,"1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1",9
 BORKUM,Omen,"1.00
 1.20
 0.68","188
@@ -5344,7 +5614,7 @@ BORKUM,Omen,"1.00
 1
 0","0
 0
-0",Team Secret,Lotus,1,Group Stage,Elimination (B),Team Secret,8,"1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1"
+0",Team Secret,Lotus,1,2967331,Group Stage,Elimination (B),Team Secret,"1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1",9
 JessieVash,Skye,"0.98
 0.67
 1.44","139
@@ -5371,7 +5641,7 @@ JessieVash,Skye,"0.98
 0
 1","+1
 +1
-0",Team Secret,Lotus,1,Group Stage,Elimination (B),Team Secret,8,"1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1"
+0",Team Secret,Lotus,1,2967331,Group Stage,Elimination (B),Team Secret,"1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1",9
 invy,Viper,"0.93
 0.97
 0.87","174
@@ -5398,7 +5668,7 @@ invy,Viper,"0.93
 0
 2","-1
 +1
--2",Team Secret,Lotus,1,Group Stage,Elimination (B),Team Secret,8,"1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1"
+-2",Team Secret,Lotus,1,2967331,Group Stage,Elimination (B),Team Secret,"1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1",9
 SSeeS,Viper,"1.16
 1.40
 0.92","169
@@ -5425,7 +5695,7 @@ SSeeS,Viper,"1.16
 1
 0","-1
 -1
-0",DetonatioN FocusMe,Breeze,2,Group Stage,Elimination (B),Team Secret,8,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0"
+0",DetonatioN FocusMe,Breeze,2,2967332,Group Stage,Elimination (B),Team Secret,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0",9
 Meiy,Yoru,"1.12
 0.87
 1.37","244
@@ -5452,7 +5722,7 @@ Meiy,Yoru,"1.12
 2
 0","+2
 +1
-+1",DetonatioN FocusMe,Breeze,2,Group Stage,Elimination (B),Team Secret,8,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0"
++1",DetonatioN FocusMe,Breeze,2,2967332,Group Stage,Elimination (B),Team Secret,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0",9
 Medusa,Cypher,"0.98
 0.78
 1.18","187
@@ -5479,7 +5749,7 @@ Medusa,Cypher,"0.98
 0
 2","+2
 +2
-0",DetonatioN FocusMe,Breeze,2,Group Stage,Elimination (B),Team Secret,8,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0"
+0",DetonatioN FocusMe,Breeze,2,2967332,Group Stage,Elimination (B),Team Secret,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0",9
 Anthem,Sova,"0.80
 0.84
 0.75","165
@@ -5506,7 +5776,7 @@ Anthem,Sova,"0.80
 0
 2","+1
 +1
-0",DetonatioN FocusMe,Breeze,2,Group Stage,Elimination (B),Team Secret,8,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0"
+0",DetonatioN FocusMe,Breeze,2,2967332,Group Stage,Elimination (B),Team Secret,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0",9
 neth,Harbor,"0.77
 0.73
 0.82","156
@@ -5533,7 +5803,7 @@ neth,Harbor,"0.77
 3
 2","-4
 -3
--1",DetonatioN FocusMe,Breeze,2,Group Stage,Elimination (B),Team Secret,8,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0"
+-1",DetonatioN FocusMe,Breeze,2,2967332,Group Stage,Elimination (B),Team Secret,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0",9
 Jremy,Jett,"1.19
 1.49
 0.89","287
@@ -5560,7 +5830,7 @@ Jremy,Jett,"1.19
 2
 2","+1
 +1
-0",Team Secret,Breeze,2,Group Stage,Elimination (B),Team Secret,8,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1"
+0",Team Secret,Breeze,2,2967332,Group Stage,Elimination (B),Team Secret,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1",9
 invy,Kayo,"1.11
 1.31
 0.92","189
@@ -5587,7 +5857,7 @@ invy,Kayo,"1.11
 0
 0","+1
 +1
-0",Team Secret,Breeze,2,Group Stage,Elimination (B),Team Secret,8,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1"
+0",Team Secret,Breeze,2,2967332,Group Stage,Elimination (B),Team Secret,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1",9
 JessieVash,Sova,"1.03
 0.94
 1.11","169
@@ -5614,7 +5884,7 @@ JessieVash,Sova,"1.03
 1
 0","-1
 -1
-0",Team Secret,Breeze,2,Group Stage,Elimination (B),Team Secret,8,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1"
+0",Team Secret,Breeze,2,2967332,Group Stage,Elimination (B),Team Secret,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1",9
 BORKUM,Viper,"1.02
 0.81
 1.22","190
@@ -5641,7 +5911,7 @@ BORKUM,Viper,"1.02
 1
 2","+1
 -1
-+2",Team Secret,Breeze,2,Group Stage,Elimination (B),Team Secret,8,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1"
++2",Team Secret,Breeze,2,2967332,Group Stage,Elimination (B),Team Secret,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1",9
 NDG,Cypher,"0.90
 0.62
 1.18","153
@@ -5668,7 +5938,7 @@ NDG,Cypher,"0.90
 2
 2","-2
 0
--2",Team Secret,Breeze,2,Group Stage,Elimination (B),Team Secret,8,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1"
+-2",Team Secret,Breeze,2,2967332,Group Stage,Elimination (B),Team Secret,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1",9
 stax,Breach,"1.28
 1.31
 1.24","242
@@ -5695,7 +5965,7 @@ stax,Breach,"1.28
 1
 0","+1
 0
-+1",DRX,Split,1,Group Stage,Winner's (B),DRX,9,"1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1"
++1",DRX,Split,1,2967321,Group Stage,Winner's (B),DRX,"1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1",10
 MaKo,Omen,"1.08
 0.87
 1.31","191
@@ -5722,7 +5992,7 @@ MaKo,Omen,"1.08
 0
 1","0
 +1
--1",DRX,Split,1,Group Stage,Winner's (B),DRX,9,"1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1"
+-1",DRX,Split,1,2967321,Group Stage,Winner's (B),DRX,"1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1",10
 Flashback,Cypher,"1.08
 1.08
 1.08","165
@@ -5749,7 +6019,7 @@ Flashback,Cypher,"1.08
 0
 2","-2
 0
--2",DRX,Split,1,Group Stage,Winner's (B),DRX,9,"1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1"
+-2",DRX,Split,1,2967321,Group Stage,Winner's (B),DRX,"1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1",10
 Foxy9,Viper,"1.07
 1.34
 0.78","250
@@ -5776,7 +6046,7 @@ Foxy9,Viper,"1.07
 1
 2","+2
 +2
-0",DRX,Split,1,Group Stage,Winner's (B),DRX,9,"1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1"
+0",DRX,Split,1,2967321,Group Stage,Winner's (B),DRX,"1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1",10
 BuZz,Raze,"0.92
 1.07
 0.75","198
@@ -5803,7 +6073,7 @@ BuZz,Raze,"0.92
 2
 2","0
 +1
--1",DRX,Split,1,Group Stage,Winner's (B),DRX,9,"1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1"
+-1",DRX,Split,1,2967321,Group Stage,Winner's (B),DRX,"1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1",10
 JitBoyS,Cypher,"1.39
 1.40
 1.38","282
@@ -5830,7 +6100,7 @@ JitBoyS,Cypher,"1.39
 1
 0","0
 0
-0",Talon Esports,Split,1,Group Stage,Winner's (B),DRX,9,"0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0"
+0",Talon Esports,Split,1,2967321,Group Stage,Winner's (B),DRX,"0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0",10
 Governor,Raze,"0.98
 0.93
 1.03","248
@@ -5857,7 +6127,7 @@ Governor,Raze,"0.98
 2
 2","+1
 +1
-0",Talon Esports,Split,1,Group Stage,Winner's (B),DRX,9,"0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0"
+0",Talon Esports,Split,1,2967321,Group Stage,Winner's (B),DRX,"0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0",10
 ban,Skye,"0.82
 0.97
 0.69","150
@@ -5884,7 +6154,7 @@ ban,Skye,"0.82
 0
 2","+1
 +2
--1",Talon Esports,Split,1,Group Stage,Winner's (B),DRX,9,"0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0"
+-1",Talon Esports,Split,1,2967321,Group Stage,Winner's (B),DRX,"0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0",10
 Crws,Astra,"0.76
 0.91
 0.62","154
@@ -5911,7 +6181,7 @@ Crws,Astra,"0.76
 1
 2","-2
 -1
--1",Talon Esports,Split,1,Group Stage,Winner's (B),DRX,9,"0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0"
+-1",Talon Esports,Split,1,2967321,Group Stage,Winner's (B),DRX,"0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0",10
 lenne,Sova,"0.49
 0.48
 0.50","104
@@ -5938,7 +6208,7 @@ lenne,Sova,"0.49
 0
 2","-1
 +1
--2",Talon Esports,Split,1,Group Stage,Winner's (B),DRX,9,"0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0"
+-2",Talon Esports,Split,1,2967321,Group Stage,Winner's (B),DRX,"0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0",10
 Foxy9,Kayo,"1.50
 1.63
 1.41","225
@@ -5965,7 +6235,7 @@ Foxy9,Kayo,"1.50
 1
 1","+1
 +1
-0",DRX,Ascent,2,Group Stage,Winner's (B),DRX,9,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1"
+0",DRX,Ascent,2,2967322,Group Stage,Winner's (B),DRX,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1",10
 BuZz,Jett,"1.36
 1.19
 1.48","294
@@ -5992,7 +6262,7 @@ BuZz,Jett,"1.36
 0
 0","+7
 +4
-+3",DRX,Ascent,2,Group Stage,Winner's (B),DRX,9,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1"
++3",DRX,Ascent,2,2967322,Group Stage,Winner's (B),DRX,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1",10
 MaKo,Omen,"1.25
 1.54
 1.03","159
@@ -6019,7 +6289,7 @@ MaKo,Omen,"1.25
 0
 0","+1
 0
-+1",DRX,Ascent,2,Group Stage,Winner's (B),DRX,9,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1"
++1",DRX,Ascent,2,2967322,Group Stage,Winner's (B),DRX,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1",10
 Flashback,Killjoy,"1.06
 1.45
 0.77","251
@@ -6046,7 +6316,7 @@ Flashback,Killjoy,"1.06
 0
 2","+1
 +1
-0",DRX,Ascent,2,Group Stage,Winner's (B),DRX,9,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1"
+0",DRX,Ascent,2,2967322,Group Stage,Winner's (B),DRX,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1",10
 stax,Sova,"0.82
 1.11
 0.60","86
@@ -6073,7 +6343,7 @@ stax,Sova,"0.82
 1
 2","-3
 -1
--2",DRX,Ascent,2,Group Stage,Winner's (B),DRX,9,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1"
+-2",DRX,Ascent,2,2967322,Group Stage,Winner's (B),DRX,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1",10
 JitBoyS,Killjoy,"1.03
 1.36
 0.58","233
@@ -6100,7 +6370,7 @@ JitBoyS,Killjoy,"1.03
 2
 0","0
 0
-0",Talon Esports,Ascent,2,Group Stage,Winner's (B),DRX,9,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0"
+0",Talon Esports,Ascent,2,2967322,Group Stage,Winner's (B),DRX,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0",10
 Crws,Omen,"0.90
 0.88
 0.92","151
@@ -6127,7 +6397,7 @@ Crws,Omen,"0.90
 1
 2","-3
 -1
--2",Talon Esports,Ascent,2,Group Stage,Winner's (B),DRX,9,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0"
+-2",Talon Esports,Ascent,2,2967322,Group Stage,Winner's (B),DRX,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0",10
 ban,Kayo,"0.88
 0.93
 0.81","126
@@ -6154,7 +6424,7 @@ ban,Kayo,"0.88
 1
 1","-2
 -1
--1",Talon Esports,Ascent,2,Group Stage,Winner's (B),DRX,9,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0"
+-1",Talon Esports,Ascent,2,2967322,Group Stage,Winner's (B),DRX,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0",10
 lenne,Sova,"0.72
 0.62
 0.86","129
@@ -6181,7 +6451,7 @@ lenne,Sova,"0.72
 0
 2","-1
 0
--1",Talon Esports,Ascent,2,Group Stage,Winner's (B),DRX,9,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0"
+-1",Talon Esports,Ascent,2,2967322,Group Stage,Winner's (B),DRX,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0",10
 Governor,Jett,"0.67
 0.99
 0.25","175
@@ -6208,7 +6478,7 @@ Governor,Jett,"0.67
 3
 2","-1
 0
--1",Talon Esports,Ascent,2,Group Stage,Winner's (B),DRX,9,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0"
+-1",Talon Esports,Ascent,2,2967322,Group Stage,Winner's (B),DRX,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0",10
 Meteor,Killjoy,"1.27
 0.98
 1.71","246
@@ -6235,7 +6505,7 @@ Meteor,Killjoy,"1.27
 1
 0","+1
 0
-+1",Gen.G,Lotus,1,Group Stage,Decider (C),Gen.G,10,"1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1"
++1",Gen.G,Lotus,1,2967491,Group Stage,Decider (C),Gen.G,"1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1",11
 Karon,Omen,"1.22
 0.73
 1.96","206
@@ -6262,7 +6532,7 @@ Karon,Omen,"1.22
 3
 0","-1
 -3
-+2",Gen.G,Lotus,1,Group Stage,Decider (C),Gen.G,10,"1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1"
++2",Gen.G,Lotus,1,2967491,Group Stage,Decider (C),Gen.G,"1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1",11
 t3xture,Raze,"1.16
 0.64
 1.95","222
@@ -6289,7 +6559,7 @@ t3xture,Raze,"1.16
 2
 0","+2
 -1
-+3",Gen.G,Lotus,1,Group Stage,Decider (C),Gen.G,10,"1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1"
++3",Gen.G,Lotus,1,2967491,Group Stage,Decider (C),Gen.G,"1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1",11
 Munchkin,Viper,"0.93
 0.35
 1.80","177
@@ -6316,7 +6586,7 @@ Munchkin,Viper,"0.93
 1
 0","0
 0
-0",Gen.G,Lotus,1,Group Stage,Decider (C),Gen.G,10,"1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1"
+0",Gen.G,Lotus,1,2967491,Group Stage,Decider (C),Gen.G,"1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1",11
 Lakia,Fade,"0.88
 0.75
 1.07","171
@@ -6343,7 +6613,7 @@ Lakia,Fade,"0.88
 2
 1","-2
 -2
-0",Gen.G,Lotus,1,Group Stage,Decider (C),Gen.G,10,"1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1"
+0",Gen.G,Lotus,1,2967491,Group Stage,Decider (C),Gen.G,"1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1",11
 Jemkin,Raze,"1.10
 0.51
 1.49","258
@@ -6370,7 +6640,7 @@ Jemkin,Raze,"1.10
 0
 0","+5
 0
-+5",Rex Regum Qeon,Lotus,1,Group Stage,Decider (C),Gen.G,10,"0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0"
++5",Rex Regum Qeon,Lotus,1,2967491,Group Stage,Decider (C),Gen.G,"0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0",11
 fl1pzjder,Viper,"0.90
 0.30
 1.29","153
@@ -6397,7 +6667,7 @@ fl1pzjder,Viper,"0.90
 1
 0","0
 0
-0",Rex Regum Qeon,Lotus,1,Group Stage,Decider (C),Gen.G,10,"0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0"
+0",Rex Regum Qeon,Lotus,1,2967491,Group Stage,Decider (C),Gen.G,"0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0",11
 xffero,Omen,"0.87
 0.35
 1.22","157
@@ -6424,7 +6694,7 @@ xffero,Omen,"0.87
 1
 1","-2
 -1
--1",Rex Regum Qeon,Lotus,1,Group Stage,Decider (C),Gen.G,10,"0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0"
+-1",Rex Regum Qeon,Lotus,1,2967491,Group Stage,Decider (C),Gen.G,"0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0",11
 Estrella,Fade,"0.78
 0.29
 1.10","152
@@ -6451,7 +6721,7 @@ Estrella,Fade,"0.78
 2
 1","-1
 -2
-+1",Rex Regum Qeon,Lotus,1,Group Stage,Decider (C),Gen.G,10,"0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0"
++1",Rex Regum Qeon,Lotus,1,2967491,Group Stage,Decider (C),Gen.G,"0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0",11
 Lmemore,Chamber,"0.78
 0.07
 1.25","172
@@ -6478,7 +6748,7 @@ Lmemore,Chamber,"0.78
 3
 1","-2
 -3
-+1",Rex Regum Qeon,Lotus,1,Group Stage,Decider (C),Gen.G,10,"0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0"
++1",Rex Regum Qeon,Lotus,1,2967491,Group Stage,Decider (C),Gen.G,"0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0",11
 t3xture,Jett,"1.26
 1.25
 1.28","266
@@ -6505,7 +6775,7 @@ t3xture,Jett,"1.26
 1
 1","+2
 +2
-0",Gen.G,Breeze,2,Group Stage,Decider (C),Gen.G,10,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0"
+0",Gen.G,Breeze,2,2967492,Group Stage,Decider (C),Gen.G,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0",11
 Karon,Astra,"0.95
 1.14
 0.78","163
@@ -6532,7 +6802,7 @@ Karon,Astra,"0.95
 1
 0","+1
 -1
-+2",Gen.G,Breeze,2,Group Stage,Decider (C),Gen.G,10,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0"
++2",Gen.G,Breeze,2,2967492,Group Stage,Decider (C),Gen.G,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0",11
 Meteor,Cypher,"0.94
 1.10
 0.80","197
@@ -6559,7 +6829,7 @@ Meteor,Cypher,"0.94
 2
 1","-2
 -2
-0",Gen.G,Breeze,2,Group Stage,Decider (C),Gen.G,10,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0"
+0",Gen.G,Breeze,2,2967492,Group Stage,Decider (C),Gen.G,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0",11
 Lakia,Skye,"0.80
 1.19
 0.44","168
@@ -6586,7 +6856,7 @@ Lakia,Skye,"0.80
 2
 2","-2
 0
--2",Gen.G,Breeze,2,Group Stage,Decider (C),Gen.G,10,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0"
+-2",Gen.G,Breeze,2,2967492,Group Stage,Decider (C),Gen.G,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0",11
 Munchkin,Viper,"0.78
 0.98
 0.59","148
@@ -6613,7 +6883,7 @@ Munchkin,Viper,"0.78
 0
 3","-2
 0
--2",Gen.G,Breeze,2,Group Stage,Decider (C),Gen.G,10,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0"
+-2",Gen.G,Breeze,2,2967492,Group Stage,Decider (C),Gen.G,"0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0",11
 xffero,Viper,"1.29
 1.25
 1.33","233
@@ -6640,7 +6910,7 @@ xffero,Viper,"1.29
 0
 2","+2
 +1
-+1",Rex Regum Qeon,Breeze,2,Group Stage,Decider (C),Gen.G,10,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1"
++1",Rex Regum Qeon,Breeze,2,2967492,Group Stage,Decider (C),Gen.G,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1",11
 Jemkin,Jett,"1.27
 1.52
 1.00","253
@@ -6667,7 +6937,7 @@ Jemkin,Jett,"1.27
 1
 1","-1
 0
--1",Rex Regum Qeon,Breeze,2,Group Stage,Decider (C),Gen.G,10,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1"
+-1",Rex Regum Qeon,Breeze,2,2967492,Group Stage,Decider (C),Gen.G,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1",11
 Estrella,Sova,"1.08
 1.20
 0.96","216
@@ -6694,7 +6964,7 @@ Estrella,Sova,"1.08
 1
 0","+1
 -1
-+2",Rex Regum Qeon,Breeze,2,Group Stage,Decider (C),Gen.G,10,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1"
++2",Rex Regum Qeon,Breeze,2,2967492,Group Stage,Decider (C),Gen.G,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1",11
 Lmemore,Cypher,"0.78
 0.98
 0.57","155
@@ -6721,7 +6991,7 @@ Lmemore,Cypher,"0.78
 2
 1","+1
 +1
-0",Rex Regum Qeon,Breeze,2,Group Stage,Decider (C),Gen.G,10,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1"
+0",Rex Regum Qeon,Breeze,2,2967492,Group Stage,Decider (C),Gen.G,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1",11
 fl1pzjder,Yoru,"0.67
 0.92
 0.41","111
@@ -6748,7 +7018,7 @@ fl1pzjder,Yoru,"0.67
 1
 1","0
 +1
--1",Rex Regum Qeon,Breeze,2,Group Stage,Decider (C),Gen.G,10,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1"
+-1",Rex Regum Qeon,Breeze,2,2967492,Group Stage,Decider (C),Gen.G,"1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1",11
 t3xture,Jett,"1.30
 1.43
 1.16","277
@@ -6775,7 +7045,7 @@ t3xture,Jett,"1.30
 1
 2","+1
 0
-+1",Gen.G,Icebox,3,Group Stage,Decider (C),Gen.G,10,"1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1"
++1",Gen.G,Icebox,3,2967493,Group Stage,Decider (C),Gen.G,"1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1",11
 Lakia,Gekko,"1.27
 1.40
 1.14","217
@@ -6802,7 +7072,7 @@ Lakia,Gekko,"1.27
 0
 0","+4
 +3
-+1",Gen.G,Icebox,3,Group Stage,Decider (C),Gen.G,10,"1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1"
++1",Gen.G,Icebox,3,2967493,Group Stage,Decider (C),Gen.G,"1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1",11
 Karon,Viper,"1.27
 1.15
 1.40","190
@@ -6829,7 +7099,7 @@ Karon,Viper,"1.27
 0
 1","+2
 +1
-+1",Gen.G,Icebox,3,Group Stage,Decider (C),Gen.G,10,"1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1"
++1",Gen.G,Icebox,3,2967493,Group Stage,Decider (C),Gen.G,"1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1",11
 Meteor,Killjoy,"1.03
 0.78
 1.29","226
@@ -6856,7 +7126,7 @@ Meteor,Killjoy,"1.03
 1
 1","0
 0
-0",Gen.G,Icebox,3,Group Stage,Decider (C),Gen.G,10,"1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1"
+0",Gen.G,Icebox,3,2967493,Group Stage,Decider (C),Gen.G,"1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1",11
 Munchkin,Kayo,"0.87
 1.13
 0.61","148
@@ -6883,7 +7153,7 @@ Munchkin,Kayo,"0.87
 2
 1","-1
 0
--1",Gen.G,Icebox,3,Group Stage,Decider (C),Gen.G,10,"1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1"
+-1",Gen.G,Icebox,3,2967493,Group Stage,Decider (C),Gen.G,"1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1",11
 Jemkin,Jett,"1.08
 0.88
 1.27","262
@@ -6910,7 +7180,7 @@ Jemkin,Jett,"1.08
 2
 0","0
 -1
-+1",Rex Regum Qeon,Icebox,3,Group Stage,Decider (C),Gen.G,10,"0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0"
++1",Rex Regum Qeon,Icebox,3,2967493,Group Stage,Decider (C),Gen.G,"0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0",11
 fl1pzjder,Gekko,"0.89
 1.17
 0.61","165
@@ -6937,7 +7207,7 @@ fl1pzjder,Gekko,"0.89
 0
 1","0
 +1
--1",Rex Regum Qeon,Icebox,3,Group Stage,Decider (C),Gen.G,10,"0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0"
+-1",Rex Regum Qeon,Icebox,3,2967493,Group Stage,Decider (C),Gen.G,"0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0",11
 xffero,Viper,"0.79
 0.97
 0.60","161
@@ -6964,7 +7234,7 @@ xffero,Viper,"0.79
 1
 1","+1
 0
-+1",Rex Regum Qeon,Icebox,3,Group Stage,Decider (C),Gen.G,10,"0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0"
++1",Rex Regum Qeon,Icebox,3,2967493,Group Stage,Decider (C),Gen.G,"0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0",11
 Estrella,Sova,"0.78
 0.71
 0.84","123
@@ -6991,7 +7261,7 @@ Estrella,Sova,"0.78
 0
 2","-1
 +1
--2",Rex Regum Qeon,Icebox,3,Group Stage,Decider (C),Gen.G,10,"0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0"
+-2",Rex Regum Qeon,Icebox,3,2967493,Group Stage,Decider (C),Gen.G,"0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0",11
 Lmemore,Killjoy,"0.69
 0.71
 0.68","210
@@ -7018,7 +7288,7 @@ Lmemore,Killjoy,"0.69
 4
 4","-6
 -3
--3",Rex Regum Qeon,Icebox,3,Group Stage,Decider (C),Gen.G,10,"0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0"
+-3",Rex Regum Qeon,Icebox,3,2967493,Group Stage,Decider (C),Gen.G,"0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0",11
 JitBoyS,Viper,"1.04
 1.35
 0.63","266
@@ -7045,7 +7315,7 @@ JitBoyS,Viper,"1.04
 0
 1","-1
 0
--1",Talon Esports,Breeze,1,Group Stage,Decider (B),Team Secret,11,"0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0"
+-1",Talon Esports,Breeze,1,2967341,Group Stage,Decider (B),Team Secret,"0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0",12
 ban,Yoru,"0.91
 0.70
 1.20","228
@@ -7072,7 +7342,7 @@ ban,Yoru,"0.91
 2
 2","+1
 +1
-0",Talon Esports,Breeze,1,Group Stage,Decider (B),Team Secret,11,"0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0"
+0",Talon Esports,Breeze,1,2967341,Group Stage,Decider (B),Team Secret,"0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0",12
 Governor,Neon,"0.87
 0.49
 1.38","190
@@ -7099,7 +7369,7 @@ Governor,Neon,"0.87
 5
 1","-5
 -5
-0",Talon Esports,Breeze,1,Group Stage,Decider (B),Team Secret,11,"0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0"
+0",Talon Esports,Breeze,1,2967341,Group Stage,Decider (B),Team Secret,"0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0",12
 lenne,Sova,"0.48
 0.39
 0.60","128
@@ -7126,7 +7396,7 @@ lenne,Sova,"0.48
 1
 0","-1
 -1
-0",Talon Esports,Breeze,1,Group Stage,Decider (B),Team Secret,11,"0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0"
+0",Talon Esports,Breeze,1,2967341,Group Stage,Decider (B),Team Secret,"0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0",12
 Crws,Harbor,"0.37
 0.21
 0.59","75
@@ -7153,7 +7423,7 @@ Crws,Harbor,"0.37
 1
 2","-3
 -1
--2",Talon Esports,Breeze,1,Group Stage,Decider (B),Team Secret,11,"0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0"
+-2",Talon Esports,Breeze,1,2967341,Group Stage,Decider (B),Team Secret,"0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0",12
 BORKUM,Viper,"1.56
 1.02
 1.97","308
@@ -7180,7 +7450,7 @@ BORKUM,Viper,"1.56
 2
 0","+3
 -1
-+4",Team Secret,Breeze,1,Group Stage,Decider (B),Team Secret,11,"1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1"
++4",Team Secret,Breeze,1,2967341,Group Stage,Decider (B),Team Secret,"1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1",12
 Jremy,Jett,"1.29
 1.02
 1.49","227
@@ -7207,7 +7477,7 @@ Jremy,Jett,"1.29
 0
 0","+4
 +3
-+1",Team Secret,Breeze,1,Group Stage,Decider (B),Team Secret,11,"1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1"
++1",Team Secret,Breeze,1,2967341,Group Stage,Decider (B),Team Secret,"1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1",12
 invy,Kayo,"1.27
 1.23
 1.31","236
@@ -7234,7 +7504,7 @@ invy,Kayo,"1.27
 0
 1","+3
 +1
-+2",Team Secret,Breeze,1,Group Stage,Decider (B),Team Secret,11,"1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1"
++2",Team Secret,Breeze,1,2967341,Group Stage,Decider (B),Team Secret,"1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1",12
 JessieVash,Sova,"1.15
 0.98
 1.27","201
@@ -7261,7 +7531,7 @@ JessieVash,Sova,"1.15
 0
 1","0
 +1
--1",Team Secret,Breeze,1,Group Stage,Decider (B),Team Secret,11,"1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1"
+-1",Team Secret,Breeze,1,2967341,Group Stage,Decider (B),Team Secret,"1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1",12
 NDG,Cypher,"1.09
 1.17
 1.02","185
@@ -7288,7 +7558,7 @@ NDG,Cypher,"1.09
 1
 1","-1
 -1
-0",Team Secret,Breeze,1,Group Stage,Decider (B),Team Secret,11,"1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1"
+0",Team Secret,Breeze,1,2967341,Group Stage,Decider (B),Team Secret,"1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1",12
 JitBoyS,Killjoy,"1.01
 1.39
 0.44","220
@@ -7315,7 +7585,7 @@ JitBoyS,Killjoy,"1.01
 2
 1","-1
 -1
-0",Talon Esports,Ascent,2,Group Stage,Decider (B),Team Secret,11,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0"
+0",Talon Esports,Ascent,2,2967342,Group Stage,Decider (B),Team Secret,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0",12
 lenne,Sova,"0.83
 1.06
 0.48","180
@@ -7342,7 +7612,7 @@ lenne,Sova,"0.83
 0
 2","-1
 0
--1",Talon Esports,Ascent,2,Group Stage,Decider (B),Team Secret,11,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0"
+-1",Talon Esports,Ascent,2,2967342,Group Stage,Decider (B),Team Secret,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0",12
 ban,Kayo,"0.76
 0.81
 0.68","175
@@ -7369,7 +7639,7 @@ ban,Kayo,"0.76
 2
 0","0
 0
-0",Talon Esports,Ascent,2,Group Stage,Decider (B),Team Secret,11,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0"
+0",Talon Esports,Ascent,2,2967342,Group Stage,Decider (B),Team Secret,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0",12
 Governor,Jett,"0.71
 0.73
 0.68","188
@@ -7396,7 +7666,7 @@ Governor,Jett,"0.71
 3
 2","-3
 -1
--2",Talon Esports,Ascent,2,Group Stage,Decider (B),Team Secret,11,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0"
+-2",Talon Esports,Ascent,2,2967342,Group Stage,Decider (B),Team Secret,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0",12
 Crws,Omen,"0.64
 0.89
 0.25","120
@@ -7423,7 +7693,7 @@ Crws,Omen,"0.64
 0
 0","+1
 0
-+1",Talon Esports,Ascent,2,Group Stage,Decider (B),Team Secret,11,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0"
++1",Talon Esports,Ascent,2,2967342,Group Stage,Decider (B),Team Secret,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0",12
 invy,Kayo,"1.71
 2.18
 1.39","315
@@ -7450,7 +7720,7 @@ invy,Kayo,"1.71
 0
 0","+1
 0
-+1",Team Secret,Ascent,2,Group Stage,Decider (B),Team Secret,11,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1"
++1",Team Secret,Ascent,2,2967342,Group Stage,Decider (B),Team Secret,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1",12
 BORKUM,Omen,"1.28
 1.51
 1.13","158
@@ -7477,7 +7747,7 @@ BORKUM,Omen,"1.28
 0
 0","0
 0
-0",Team Secret,Ascent,2,Group Stage,Decider (B),Team Secret,11,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1"
+0",Team Secret,Ascent,2,2967342,Group Stage,Decider (B),Team Secret,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1",12
 NDG,Killjoy,"1.16
 0.75
 1.44","222
@@ -7504,7 +7774,7 @@ NDG,Killjoy,"1.16
 1
 0","0
 -1
-+1",Team Secret,Ascent,2,Group Stage,Decider (B),Team Secret,11,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1"
++1",Team Secret,Ascent,2,2967342,Group Stage,Decider (B),Team Secret,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1",12
 JessieVash,Sova,"1.10
 1.76
 0.66","185
@@ -7531,7 +7801,7 @@ JessieVash,Sova,"1.10
 0
 3","+1
 +1
-0",Team Secret,Ascent,2,Group Stage,Decider (B),Team Secret,11,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1"
+0",Team Secret,Ascent,2,2967342,Group Stage,Decider (B),Team Secret,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1",12
 Jremy,Jett,"1.08
 1.54
 0.78","213
@@ -7558,7 +7828,7 @@ Jremy,Jett,"1.08
 2
 2","+2
 +2
-0",Team Secret,Ascent,2,Group Stage,Decider (B),Team Secret,11,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1"
+0",Team Secret,Ascent,2,2967342,Group Stage,Decider (B),Team Secret,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1",12
 Dep,Raze,"1.57
 1.53
 1.59","350
@@ -7585,7 +7855,7 @@ Dep,Raze,"1.57
 2
 0","+5
 0
-+5",ZETA DIVISION,Bind,1,Group Stage,Decider (A),ZETA DIVISION,12,"1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1"
++5",ZETA DIVISION,Bind,1,2967391,Group Stage,Decider (A),ZETA DIVISION,"1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1",13
 yuran,Viper,"1.36
 1.40
 1.33","221
@@ -7612,7 +7882,7 @@ yuran,Viper,"1.36
 0
 1","+1
 +1
-0",ZETA DIVISION,Bind,1,Group Stage,Decider (A),ZETA DIVISION,12,"1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1"
+0",ZETA DIVISION,Bind,1,2967391,Group Stage,Decider (A),ZETA DIVISION,"1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1",13
 Laz,Cypher,"1.29
 1.51
 1.13","190
@@ -7639,7 +7909,7 @@ Laz,Cypher,"1.29
 0
 1","0
 +1
--1",ZETA DIVISION,Bind,1,Group Stage,Decider (A),ZETA DIVISION,12,"1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1"
+-1",ZETA DIVISION,Bind,1,2967391,Group Stage,Decider (A),ZETA DIVISION,"1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1",13
 hiroronn,Skye,"1.17
 0.82
 1.44","207
@@ -7666,7 +7936,7 @@ hiroronn,Skye,"1.17
 1
 0","0
 -1
-+1",ZETA DIVISION,Bind,1,Group Stage,Decider (A),ZETA DIVISION,12,"1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1"
++1",ZETA DIVISION,Bind,1,2967391,Group Stage,Decider (A),ZETA DIVISION,"1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1",13
 SugarZ3ro,Brimstone,"0.73
 0.67
 0.77","104
@@ -7693,7 +7963,7 @@ SugarZ3ro,Brimstone,"0.73
 2
 2","-3
 -2
--1",ZETA DIVISION,Bind,1,Group Stage,Decider (A),ZETA DIVISION,12,"1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1"
+-1",ZETA DIVISION,Bind,1,2967391,Group Stage,Decider (A),ZETA DIVISION,"1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1",13
 blaZek1ng,Gekko,"0.90
 0.75
 1.09","149
@@ -7720,7 +7990,7 @@ blaZek1ng,Gekko,"0.90
 0
 1","+1
 +1
-0",Global Esports,Bind,1,Group Stage,Decider (A),ZETA DIVISION,12,"0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0"
+0",Global Esports,Bind,1,2967391,Group Stage,Decider (A),ZETA DIVISION,"0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0",13
 Polvi,Raze,"0.81
 0.79
 0.84","186
@@ -7747,7 +8017,7 @@ Polvi,Raze,"0.81
 4
 2","0
 -1
-+1",Global Esports,Bind,1,Group Stage,Decider (A),ZETA DIVISION,12,"0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0"
++1",Global Esports,Bind,1,2967391,Group Stage,Decider (A),ZETA DIVISION,"0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0",13
 Lightningfast,Viper,"0.80
 1.01
 0.52","197
@@ -7774,7 +8044,7 @@ Lightningfast,Viper,"0.80
 1
 0","-1
 -1
-0",Global Esports,Bind,1,Group Stage,Decider (A),ZETA DIVISION,12,"0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0"
+0",Global Esports,Bind,1,2967391,Group Stage,Decider (A),ZETA DIVISION,"0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0",13
 Russ,Kayo,"0.68
 0.62
 0.76","137
@@ -7801,7 +8071,7 @@ Russ,Kayo,"0.68
 1
 1","-1
 -1
-0",Global Esports,Bind,1,Group Stage,Decider (A),ZETA DIVISION,12,"0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0"
+0",Global Esports,Bind,1,2967391,Group Stage,Decider (A),ZETA DIVISION,"0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0",13
 Benkai,Cypher,"0.60
 0.52
 0.70","87
@@ -7828,7 +8098,7 @@ Benkai,Cypher,"0.60
 2
 0","-2
 -2
-0",Global Esports,Bind,1,Group Stage,Decider (A),ZETA DIVISION,12,"0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0"
+0",Global Esports,Bind,1,2967391,Group Stage,Decider (A),ZETA DIVISION,"0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0",13
 Laz,Killjoy,"1.40
 1.19
 2.01","252
@@ -7855,7 +8125,7 @@ Laz,Killjoy,"1.40
 0
 1","+1
 +1
-0",ZETA DIVISION,Lotus,2,Group Stage,Decider (A),ZETA DIVISION,12,"1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1"
+0",ZETA DIVISION,Lotus,2,2967392,Group Stage,Decider (A),ZETA DIVISION,"1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1",13
 hiroronn,Fade,"1.33
 1.18
 1.79","141
@@ -7882,7 +8152,7 @@ hiroronn,Fade,"1.33
 1
 0","+1
 +1
-0",ZETA DIVISION,Lotus,2,Group Stage,Decider (A),ZETA DIVISION,12,"1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1"
+0",ZETA DIVISION,Lotus,2,2967392,Group Stage,Decider (A),ZETA DIVISION,"1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1",13
 Dep,Raze,"1.31
 1.58
 0.51","327
@@ -7909,7 +8179,7 @@ Dep,Raze,"1.31
 1
 0","+5
 +5
-0",ZETA DIVISION,Lotus,2,Group Stage,Decider (A),ZETA DIVISION,12,"1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1"
+0",ZETA DIVISION,Lotus,2,2967392,Group Stage,Decider (A),ZETA DIVISION,"1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1",13
 yuran,Viper,"1.22
 0.87
 2.27","274
@@ -7936,7 +8206,7 @@ yuran,Viper,"1.22
 0
 0","+3
 +1
-+2",ZETA DIVISION,Lotus,2,Group Stage,Decider (A),ZETA DIVISION,12,"1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1"
++2",ZETA DIVISION,Lotus,2,2967392,Group Stage,Decider (A),ZETA DIVISION,"1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1",13
 SugarZ3ro,Omen,"1.21
 1.10
 1.55","118
@@ -7963,7 +8233,7 @@ SugarZ3ro,Omen,"1.21
 0
 0","0
 0
-0",ZETA DIVISION,Lotus,2,Group Stage,Decider (A),ZETA DIVISION,12,"1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1"
+0",ZETA DIVISION,Lotus,2,2967392,Group Stage,Decider (A),ZETA DIVISION,"1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1",13
 Benkai,Cypher,"0.93
 0.94
 0.93","238
@@ -7990,7 +8260,7 @@ Benkai,Cypher,"0.93
 0
 4","-4
 0
--4",Global Esports,Lotus,2,Group Stage,Decider (A),ZETA DIVISION,12,"0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0"
+-4",Global Esports,Lotus,2,2967392,Group Stage,Decider (A),ZETA DIVISION,"0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0",13
 blaZek1ng,Fade,"0.84
 0.80
 0.85","152
@@ -8017,7 +8287,7 @@ blaZek1ng,Fade,"0.84
 0
 2","-2
 0
--2",Global Esports,Lotus,2,Group Stage,Decider (A),ZETA DIVISION,12,"0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0"
+-2",Global Esports,Lotus,2,2967392,Group Stage,Decider (A),ZETA DIVISION,"0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0",13
 Russ,Gekko,"0.68
 0.39
 0.78","176
@@ -8044,7 +8314,7 @@ Russ,Gekko,"0.68
 2
 1","-2
 -1
--1",Global Esports,Lotus,2,Group Stage,Decider (A),ZETA DIVISION,12,"0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0"
+-1",Global Esports,Lotus,2,2967392,Group Stage,Decider (A),ZETA DIVISION,"0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0",13
 Lightningfast,Omen,"0.59
 0.02
 0.83","97
@@ -8071,7 +8341,7 @@ Lightningfast,Omen,"0.59
 0
 1","0
 0
-0",Global Esports,Lotus,2,Group Stage,Decider (A),ZETA DIVISION,12,"0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0"
+0",Global Esports,Lotus,2,2967392,Group Stage,Decider (A),ZETA DIVISION,"0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0",13
 Polvi,Raze,"0.41
 0.02
 0.60","135
@@ -8098,7 +8368,7 @@ Polvi,Raze,"0.41
 1
 2","-2
 -1
--1",Global Esports,Lotus,2,Group Stage,Decider (A),ZETA DIVISION,12,"0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0"
+-1",Global Esports,Lotus,2,2967392,Group Stage,Decider (A),ZETA DIVISION,"0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0",13
 Jremy,Jett,"1.51
 1.38
 1.57","327
@@ -8125,7 +8395,7 @@ Jremy,Jett,"1.51
 2
 0","+5
 -1
-+6",Team Secret,Breeze,1,Play-Ins,Play-ins,Gen.G,13,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1"
++6",Team Secret,Breeze,1,2972541,Play-Ins,Play-ins,Gen.G,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1",14
 invy,Kayo,"1.49
 1.76
 1.36","251
@@ -8152,7 +8422,7 @@ invy,Kayo,"1.49
 0
 1","+2
 +1
-+1",Team Secret,Breeze,1,Play-Ins,Play-ins,Gen.G,13,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1"
++1",Team Secret,Breeze,1,2972541,Play-Ins,Play-ins,Gen.G,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1",14
 JessieVash,Sova,"1.24
 1.35
 1.18","255
@@ -8179,7 +8449,7 @@ JessieVash,Sova,"1.24
 0
 0","+1
 +1
-0",Team Secret,Breeze,1,Play-Ins,Play-ins,Gen.G,13,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1"
+0",Team Secret,Breeze,1,2972541,Play-Ins,Play-ins,Gen.G,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1",14
 NDG,Cypher,"1.13
 1.15
 1.11","192
@@ -8206,7 +8476,7 @@ NDG,Cypher,"1.13
 0
 1","+1
 +1
-0",Team Secret,Breeze,1,Play-Ins,Play-ins,Gen.G,13,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1"
+0",Team Secret,Breeze,1,2972541,Play-Ins,Play-ins,Gen.G,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1",14
 BORKUM,Viper,"1.00
 0.96
 1.03","140
@@ -8233,7 +8503,7 @@ BORKUM,Viper,"1.00
 0
 1","-1
 0
--1",Team Secret,Breeze,1,Play-Ins,Play-ins,Gen.G,13,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1"
+-1",Team Secret,Breeze,1,2972541,Play-Ins,Play-ins,Gen.G,"0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1",14
 Munchkin,Viper,"0.97
 1.15
 0.60","185
@@ -8260,7 +8530,7 @@ Munchkin,Viper,"0.97
 1
 0","-1
 -1
-0",Gen.G,Breeze,1,Play-Ins,Play-ins,Gen.G,13,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0"
+0",Gen.G,Breeze,1,2972541,Play-Ins,Play-ins,Gen.G,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0",14
 Karon,Astra,"0.71
 0.65
 0.83","177
@@ -8287,7 +8557,7 @@ Karon,Astra,"0.71
 1
 0","+2
 0
-+2",Gen.G,Breeze,1,Play-Ins,Play-ins,Gen.G,13,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0"
++2",Gen.G,Breeze,1,2972541,Play-Ins,Play-ins,Gen.G,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0",14
 Lakia,Skye,"0.66
 0.67
 0.64","158
@@ -8314,7 +8584,7 @@ Lakia,Skye,"0.66
 3
 1","-3
 -2
--1",Gen.G,Breeze,1,Play-Ins,Play-ins,Gen.G,13,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0"
+-1",Gen.G,Breeze,1,2972541,Play-Ins,Play-ins,Gen.G,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0",14
 t3xture,Jett,"0.63
 0.75
 0.38","147
@@ -8341,7 +8611,7 @@ t3xture,Jett,"0.63
 2
 1","-3
 -2
--1",Gen.G,Breeze,1,Play-Ins,Play-ins,Gen.G,13,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0"
+-1",Gen.G,Breeze,1,2972541,Play-Ins,Play-ins,Gen.G,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0",14
 Meteor,Cypher,"0.63
 0.63
 0.65","145
@@ -8368,7 +8638,7 @@ Meteor,Cypher,"0.63
 2
 2","-3
 -1
--2",Gen.G,Breeze,1,Play-Ins,Play-ins,Gen.G,13,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0"
+-2",Gen.G,Breeze,1,2972541,Play-Ins,Play-ins,Gen.G,"1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0",14
 invy,Viper,"1.26
 1.47
 0.99","231
@@ -8395,7 +8665,7 @@ invy,Viper,"1.26
 0
 1","-1
 0
--1",Team Secret,Lotus,2,Play-Ins,Play-ins,Gen.G,13,"1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0"
+-1",Team Secret,Lotus,2,2972542,Play-Ins,Play-ins,Gen.G,"1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0",14
 Jremy,Raze,"1.20
 1.14
 1.27","264
@@ -8422,7 +8692,7 @@ Jremy,Raze,"1.20
 4
 1","+2
 0
-+2",Team Secret,Lotus,2,Play-Ins,Play-ins,Gen.G,13,"1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0"
++2",Team Secret,Lotus,2,2972542,Play-Ins,Play-ins,Gen.G,"1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0",14
 JessieVash,Skye,"1.01
 1.05
 0.97","213
@@ -8449,7 +8719,7 @@ JessieVash,Skye,"1.01
 1
 1","-2
 -1
--1",Team Secret,Lotus,2,Play-Ins,Play-ins,Gen.G,13,"1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0"
+-1",Team Secret,Lotus,2,2972542,Play-Ins,Play-ins,Gen.G,"1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0",14
 NDG,Killjoy,"0.96
 1.22
 0.65","141
@@ -8476,7 +8746,7 @@ NDG,Killjoy,"0.96
 0
 3","-3
 0
--3",Team Secret,Lotus,2,Play-Ins,Play-ins,Gen.G,13,"1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0"
+-3",Team Secret,Lotus,2,2972542,Play-Ins,Play-ins,Gen.G,"1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0",14
 BORKUM,Omen,"0.72
 1.03
 0.35","136
@@ -8503,7 +8773,7 @@ BORKUM,Omen,"0.72
 1
 0","+2
 +1
-+1",Team Secret,Lotus,2,Play-Ins,Play-ins,Gen.G,13,"1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0"
++1",Team Secret,Lotus,2,2972542,Play-Ins,Play-ins,Gen.G,"1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0",14
 Meteor,Killjoy,"1.47
 1.80
 1.20","297
@@ -8530,7 +8800,7 @@ Meteor,Killjoy,"1.47
 0
 0","+6
 +2
-+4",Gen.G,Lotus,2,Play-Ins,Play-ins,Gen.G,13,"0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1"
++4",Gen.G,Lotus,2,2972542,Play-Ins,Play-ins,Gen.G,"0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1",14
 t3xture,Raze,"0.96
 1.64
 0.39","223
@@ -8557,7 +8827,7 @@ t3xture,Raze,"0.96
 1
 3","0
 +3
--3",Gen.G,Lotus,2,Play-Ins,Play-ins,Gen.G,13,"0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1"
+-3",Gen.G,Lotus,2,2972542,Play-Ins,Play-ins,Gen.G,"0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1",14
 Munchkin,Viper,"0.89
 1.18
 0.65","149
@@ -8584,7 +8854,7 @@ Munchkin,Viper,"0.89
 1
 2","-3
 -1
--2",Gen.G,Lotus,2,Play-Ins,Play-ins,Gen.G,13,"0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1"
+-2",Gen.G,Lotus,2,2972542,Play-Ins,Play-ins,Gen.G,"0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1",14
 Karon,Omen,"0.83
 0.78
 0.87","139
@@ -8611,7 +8881,7 @@ Karon,Omen,"0.83
 0
 1","+1
 0
-+1",Gen.G,Lotus,2,Play-Ins,Play-ins,Gen.G,13,"0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1"
++1",Gen.G,Lotus,2,2972542,Play-Ins,Play-ins,Gen.G,"0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1",14
 Lakia,Fade,"0.82
 0.51
 1.08","139
@@ -8638,7 +8908,277 @@ Lakia,Fade,"0.82
 2
 0","-2
 -2
-0",Gen.G,Lotus,2,Play-Ins,Play-ins,Gen.G,13,"0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1"
+0",Gen.G,Lotus,2,2972542,Play-Ins,Play-ins,Gen.G,"0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1",14
+BORKUM,Viper,"1.19
+0.62
+1.77","218
+99
+339","22
+4
+18","
+
+20
+11
+9
+
+","8
+3
+5","+2
+-7
++9","154
+93
+216","23%
+17%
+26%","5
+0
+5","2
+2
+0","+3
+-2
++5",Team Secret,Icebox,3,2972543,Play-Ins,Play-ins,Gen.G,"0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0",14
+invy,Sage,"1.12
+1.04
+1.21","228
+203
+254","24
+11
+13","
+
+21
+11
+10
+
+","8
+2
+6","+3
+0
++3","156
+150
+162","37%
+38%
+36%","1
+0
+1","3
+2
+1","-2
+-2
+0",Team Secret,Icebox,3,2972543,Play-Ins,Play-ins,Gen.G,"0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0",14
+NDG,Killjoy,"1.10
+1.04
+1.15","216
+207
+225","23
+11
+12","
+
+19
+10
+9
+
+","2
+0
+2","+4
++1
++3","149
+143
+154","17%
+21%
+14%","1
+0
+1","3
+1
+2","-2
+-1
+-1",Team Secret,Icebox,3,2972543,Play-Ins,Play-ins,Gen.G,"0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0",14
+Jremy,Jett,"0.88
+0.88
+0.87","187
+247
+128","16
+10
+6","
+
+23
+16
+7
+
+","7
+3
+4","-7
+-6
+-1","130
+165
+96","23%
+31%
+15%","4
+3
+1","6
+5
+1","-2
+-2
+0",Team Secret,Icebox,3,2972543,Play-Ins,Play-ins,Gen.G,"0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0",14
+JessieVash,Sova,"0.74
+0.28
+1.20","120
+39
+202","9
+0
+9","
+
+17
+13
+4
+
+","9
+2
+7","-8
+-13
++5","87
+39
+134","11%
+0%
+16%","2
+0
+2","1
+1
+0","+1
+-1
++2",Team Secret,Icebox,3,2972543,Play-Ins,Play-ins,Gen.G,"0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0",14
+Munchkin,Kayo,"1.38
+1.07
+1.69","297
+205
+390","27
+9
+18","
+
+18
+10
+8
+
+","12
+4
+8","+9
+-1
++10","193
+134
+252","22%
+10%
+33%","5
+0
+5","3
+1
+2","+2
+-1
++3",Gen.G,Icebox,3,2972543,Play-Ins,Play-ins,Gen.G,"1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1",14
+Karon,Viper,"1.20
+1.10
+1.29","239
+315
+164","23
+15
+8","
+
+16
+11
+5
+
+","8
+1
+7","+7
++4
++3","154
+198
+110","43%
+56%
+29%","4
+3
+1","0
+0
+0","+4
++3
++1",Gen.G,Icebox,3,2972543,Play-Ins,Play-ins,Gen.G,"1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1",14
+Meteor,Killjoy,"0.95
+0.80
+1.11","230
+264
+198","22
+11
+11","
+
+21
+14
+7
+
+","4
+3
+1","+1
+-3
++4","161
+189
+133","37%
+47%
+27%","1
+1
+0","2
+2
+0","-1
+-1
+0",Gen.G,Icebox,3,2972543,Play-Ins,Play-ins,Gen.G,"1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1",14
+t3xture,Jett,"0.87
+0.39
+1.35","166
+68
+265","17
+3
+14","
+
+19
+12
+7
+
+","6
+3
+3","-2
+-9
++7","115
+50
+180","16%
+19%
+15%","4
+0
+4","6
+5
+1","-2
+-5
++3",Gen.G,Icebox,3,2972543,Play-Ins,Play-ins,Gen.G,"1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1",14
+Lakia,Gekko,"0.69
+0.48
+0.90","122
+71
+175","11
+3
+8","
+
+20
+11
+9
+
+","10
+3
+7","-9
+-8
+-1","77
+42
+111","26%
+18%
+28%","1
+0
+1","2
+2
+0","-1
+-2
++1",Gen.G,Icebox,3,2972543,Play-Ins,Play-ins,Gen.G,"1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1",14
 Dep,Jett,"1.05
 0.01
 1.28","326
@@ -8665,7 +9205,7 @@ Dep,Jett,"1.05
 2
 2","-2
 -2
-0",ZETA DIVISION,Icebox,1,Play-Ins,Play-ins,Team Secret,14,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0"
+0",ZETA DIVISION,Icebox,1,2972531,Play-Ins,Play-ins,Team Secret,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0",15
 yuran,Viper,"0.74
 0.35
 0.80","187
@@ -8692,7 +9232,7 @@ yuran,Viper,"0.74
 0
 0","+1
 0
-+1",ZETA DIVISION,Icebox,1,Play-Ins,Play-ins,Team Secret,14,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0"
++1",ZETA DIVISION,Icebox,1,2972531,Play-Ins,Play-ins,Team Secret,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0",15
 SugarZ3ro,Harbor,"0.56
 0.51
 0.56","134
@@ -8719,7 +9259,7 @@ SugarZ3ro,Harbor,"0.56
 0
 3","-3
 0
--3",ZETA DIVISION,Icebox,1,Play-Ins,Play-ins,Team Secret,14,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0"
+-3",ZETA DIVISION,Icebox,1,2972531,Play-Ins,Play-ins,Team Secret,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0",15
 Laz,Killjoy,"0.43
 0.50
 0.41","118
@@ -8746,7 +9286,7 @@ Laz,Killjoy,"0.43
 0
 2","0
 0
-0",ZETA DIVISION,Icebox,1,Play-Ins,Play-ins,Team Secret,14,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0"
+0",ZETA DIVISION,Icebox,1,2972531,Play-Ins,Play-ins,Team Secret,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0",15
 hiroronn,Sova,"0.40
 0.02
 0.48","112
@@ -8773,7 +9313,7 @@ hiroronn,Sova,"0.40
 0
 0","0
 0
-0",ZETA DIVISION,Icebox,1,Play-Ins,Play-ins,Team Secret,14,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0"
+0",ZETA DIVISION,Icebox,1,2972531,Play-Ins,Play-ins,Team Secret,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0",15
 Jremy,Jett,"1.65
 1.47
 2.69","380
@@ -8800,7 +9340,7 @@ Jremy,Jett,"1.65
 1
 0","+4
 +3
-+1",Team Secret,Icebox,1,Play-Ins,Play-ins,Team Secret,14,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1"
++1",Team Secret,Icebox,1,2972531,Play-Ins,Play-ins,Team Secret,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1",15
 BORKUM,Viper,"1.36
 1.42
 0.96","253
@@ -8827,7 +9367,7 @@ BORKUM,Viper,"1.36
 0
 0","+2
 +2
-0",Team Secret,Icebox,1,Play-Ins,Play-ins,Team Secret,14,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1"
+0",Team Secret,Icebox,1,2972531,Play-Ins,Play-ins,Team Secret,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1",15
 invy,Sage,"1.35
 1.40
 1.04","182
@@ -8854,7 +9394,7 @@ invy,Sage,"1.35
 1
 0","-1
 -1
-0",Team Secret,Icebox,1,Play-Ins,Play-ins,Team Secret,14,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1"
+0",Team Secret,Icebox,1,2972531,Play-Ins,Play-ins,Team Secret,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1",15
 JessieVash,Sova,"1.32
 0.98
 3.37","212
@@ -8881,7 +9421,7 @@ JessieVash,Sova,"1.32
 2
 0","0
 -1
-+1",Team Secret,Icebox,1,Play-Ins,Play-ins,Team Secret,14,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1"
++1",Team Secret,Icebox,1,2972531,Play-Ins,Play-ins,Team Secret,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1",15
 NDG,Killjoy,"1.23
 1.30
 0.80","208
@@ -8908,7 +9448,7 @@ NDG,Killjoy,"1.23
 1
 0","-1
 -1
-0",Team Secret,Icebox,1,Play-Ins,Play-ins,Team Secret,14,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1"
+0",Team Secret,Icebox,1,2972531,Play-Ins,Play-ins,Team Secret,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1",15
 SugarZ3ro,Omen,"0.94
 0.95
 0.93","237
@@ -8935,7 +9475,7 @@ SugarZ3ro,Omen,"0.94
 0
 0","+1
 0
-+1",ZETA DIVISION,Ascent,2,Play-Ins,Play-ins,Team Secret,14,"1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0"
++1",ZETA DIVISION,Ascent,2,2972532,Play-Ins,Play-ins,Team Secret,"1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0",15
 hiroronn,Kayo,"0.92
 0.93
 0.92","211
@@ -8962,7 +9502,7 @@ hiroronn,Kayo,"0.92
 1
 3","-2
 0
--2",ZETA DIVISION,Ascent,2,Play-Ins,Play-ins,Team Secret,14,"1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0"
+-2",ZETA DIVISION,Ascent,2,2972532,Play-Ins,Play-ins,Team Secret,"1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0",15
 Laz,Killjoy,"0.80
 1.21
 0.26","157
@@ -8989,7 +9529,7 @@ Laz,Killjoy,"0.80
 0
 2","-1
 +1
--2",ZETA DIVISION,Ascent,2,Play-Ins,Play-ins,Team Secret,14,"1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0"
+-2",ZETA DIVISION,Ascent,2,2972532,Play-Ins,Play-ins,Team Secret,"1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0",15
 yuran,Sova,"0.72
 0.93
 0.45","180
@@ -9016,7 +9556,7 @@ yuran,Sova,"0.72
 4
 0","-4
 -4
-0",ZETA DIVISION,Ascent,2,Play-Ins,Play-ins,Team Secret,14,"1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0"
+0",ZETA DIVISION,Ascent,2,2972532,Play-Ins,Play-ins,Team Secret,"1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0",15
 Dep,Jett,"0.69
 0.58
 0.83","187
@@ -9043,7 +9583,7 @@ Dep,Jett,"0.69
 1
 2","+1
 +3
--2",ZETA DIVISION,Ascent,2,Play-Ins,Play-ins,Team Secret,14,"1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0"
+-2",ZETA DIVISION,Ascent,2,2972532,Play-Ins,Play-ins,Team Secret,"1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0",15
 invy,Kayo,"1.44
 1.85
 1.14","274
@@ -9070,7 +9610,7 @@ invy,Kayo,"1.44
 0
 0","+3
 0
-+3",Team Secret,Ascent,2,Play-Ins,Play-ins,Team Secret,14,"0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1"
++3",Team Secret,Ascent,2,2972532,Play-Ins,Play-ins,Team Secret,"0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1",15
 JessieVash,Sova,"1.32
 1.25
 1.38","207
@@ -9097,7 +9637,7 @@ JessieVash,Sova,"1.32
 0
 2","-2
 0
--2",Team Secret,Ascent,2,Play-Ins,Play-ins,Team Secret,14,"0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1"
+-2",Team Secret,Ascent,2,2972532,Play-Ins,Play-ins,Team Secret,"0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1",15
 NDG,Killjoy,"1.29
 1.48
 1.14","207
@@ -9124,7 +9664,7 @@ NDG,Killjoy,"1.29
 0
 0","+1
 +1
-0",Team Secret,Ascent,2,Play-Ins,Play-ins,Team Secret,14,"0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1"
+0",Team Secret,Ascent,2,2972532,Play-Ins,Play-ins,Team Secret,"0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1",15
 Jremy,Jett,"1.09
 0.99
 1.17","255
@@ -9151,7 +9691,7 @@ Jremy,Jett,"1.09
 2
 2","+4
 +3
-+1",Team Secret,Ascent,2,Play-Ins,Play-ins,Team Secret,14,"0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1"
++1",Team Secret,Ascent,2,2972532,Play-Ins,Play-ins,Team Secret,"0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1",15
 BORKUM,Omen,"1.02
 1.22
 0.87","203
@@ -9178,7 +9718,7 @@ BORKUM,Omen,"1.02
 0
 2","-1
 +1
--2",Team Secret,Ascent,2,Play-Ins,Play-ins,Team Secret,14,"0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1"
+-2",Team Secret,Ascent,2,2972532,Play-Ins,Play-ins,Team Secret,"0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1",15
 Meteor,Killjoy,"1.44
 1.36
 1.59","290
@@ -9205,7 +9745,7 @@ Meteor,Killjoy,"1.44
 1
 2","-1
 +1
--2",Gen.G,Icebox,1,Play-Ins,Play-ins,Gen.G,15,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1"
+-2",Gen.G,Icebox,1,2972551,Play-Ins,Play-ins,Gen.G,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1",16
 Karon,Viper,"1.41
 1.46
 1.32","224
@@ -9232,7 +9772,7 @@ Karon,Viper,"1.41
 0
 0","+2
 +2
-0",Gen.G,Icebox,1,Play-Ins,Play-ins,Gen.G,15,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1"
+0",Gen.G,Icebox,1,2972551,Play-Ins,Play-ins,Gen.G,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1",16
 t3xture,Jett,"1.32
 1.50
 1.02","283
@@ -9259,7 +9799,7 @@ t3xture,Jett,"1.32
 0
 0","+5
 +4
-+1",Gen.G,Icebox,1,Play-Ins,Play-ins,Gen.G,15,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1"
++1",Gen.G,Icebox,1,2972551,Play-Ins,Play-ins,Gen.G,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1",16
 Lakia,Gekko,"1.14
 1.07
 1.26","238
@@ -9286,7 +9826,7 @@ Lakia,Gekko,"1.14
 1
 1","-2
 -1
--1",Gen.G,Icebox,1,Play-Ins,Play-ins,Gen.G,15,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1"
+-1",Gen.G,Icebox,1,2972551,Play-Ins,Play-ins,Gen.G,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1",16
 Munchkin,Kayo,"0.85
 0.74
 1.04","163
@@ -9313,7 +9853,7 @@ Munchkin,Kayo,"0.85
 2
 1","-1
 -2
-+1",Gen.G,Icebox,1,Play-Ins,Play-ins,Gen.G,15,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1"
++1",Gen.G,Icebox,1,2972551,Play-Ins,Play-ins,Gen.G,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1",16
 Laz,Killjoy,"0.95
 0.74
 1.08","212
@@ -9340,7 +9880,7 @@ Laz,Killjoy,"0.95
 1
 0","+2
 -1
-+3",ZETA DIVISION,Icebox,1,Play-Ins,Play-ins,Gen.G,15,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0"
++3",ZETA DIVISION,Icebox,1,2972551,Play-Ins,Play-ins,Gen.G,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0",16
 yuran,Viper,"0.90
 1.28
 0.68","213
@@ -9367,7 +9907,7 @@ yuran,Viper,"0.90
 0
 4","-2
 +2
--4",ZETA DIVISION,Icebox,1,Play-Ins,Play-ins,Gen.G,15,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0"
+-4",ZETA DIVISION,Icebox,1,2972551,Play-Ins,Play-ins,Gen.G,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0",16
 hiroronn,Sova,"0.74
 0.38
 0.94","174
@@ -9394,7 +9934,7 @@ hiroronn,Sova,"0.74
 0
 1","-1
 0
--1",ZETA DIVISION,Icebox,1,Play-Ins,Play-ins,Gen.G,15,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0"
+-1",ZETA DIVISION,Icebox,1,2972551,Play-Ins,Play-ins,Gen.G,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0",16
 SugarZ3ro,Harbor,"0.51
 0.69
 0.41","83
@@ -9421,7 +9961,7 @@ SugarZ3ro,Harbor,"0.51
 0
 1","-1
 0
--1",ZETA DIVISION,Icebox,1,Play-Ins,Play-ins,Gen.G,15,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0"
+-1",ZETA DIVISION,Icebox,1,2972551,Play-Ins,Play-ins,Gen.G,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0",16
 Dep,Jett,"0.49
 0.19
 0.66","162
@@ -9448,7 +9988,7 @@ Dep,Jett,"0.49
 2
 2","-1
 0
--1",ZETA DIVISION,Icebox,1,Play-Ins,Play-ins,Gen.G,15,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0"
+-1",ZETA DIVISION,Icebox,1,2972551,Play-Ins,Play-ins,Gen.G,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0",16
 Karon,Omen,"1.68
 1.50
 1.76","247
@@ -9475,7 +10015,7 @@ Karon,Omen,"1.68
 1
 0","-1
 -1
-0",Gen.G,Ascent,2,Play-Ins,Play-ins,Gen.G,15,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1"
+0",Gen.G,Ascent,2,2972552,Play-Ins,Play-ins,Gen.G,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1",16
 Meteor,Killjoy,"1.44
 1.87
 1.26","311
@@ -9502,7 +10042,7 @@ Meteor,Killjoy,"1.44
 0
 3","-2
 +1
--3",Gen.G,Ascent,2,Play-Ins,Play-ins,Gen.G,15,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1"
+-3",Gen.G,Ascent,2,2972552,Play-Ins,Play-ins,Gen.G,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1",16
 Lakia,Sova,"1.24
 0.97
 1.35","197
@@ -9529,7 +10069,7 @@ Lakia,Sova,"1.24
 0
 0","+3
 0
-+3",Gen.G,Ascent,2,Play-Ins,Play-ins,Gen.G,15,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1"
++3",Gen.G,Ascent,2,2972552,Play-Ins,Play-ins,Gen.G,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1",16
 t3xture,Jett,"1.23
 1.45
 1.13","195
@@ -9556,7 +10096,7 @@ t3xture,Jett,"1.23
 0
 2","0
 +1
--1",Gen.G,Ascent,2,Play-Ins,Play-ins,Gen.G,15,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1"
+-1",Gen.G,Ascent,2,2972552,Play-Ins,Play-ins,Gen.G,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1",16
 Munchkin,Kayo,"1.00
 0.28
 1.30","185
@@ -9583,7 +10123,7 @@ Munchkin,Kayo,"1.00
 1
 1","+1
 0
-+1",Gen.G,Ascent,2,Play-Ins,Play-ins,Gen.G,15,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1"
++1",Gen.G,Ascent,2,2972552,Play-Ins,Play-ins,Gen.G,"1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1",16
 Laz,Killjoy,"0.97
 0.91
 1.10","207
@@ -9610,7 +10150,7 @@ Laz,Killjoy,"0.97
 0
 1","+1
 +2
--1",ZETA DIVISION,Ascent,2,Play-Ins,Play-ins,Gen.G,15,"0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0"
+-1",ZETA DIVISION,Ascent,2,2972552,Play-Ins,Play-ins,Gen.G,"0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0",16
 SugarZ3ro,Omen,"0.86
 0.82
 0.93","218
@@ -9637,7 +10177,7 @@ SugarZ3ro,Omen,"0.86
 1
 0","-1
 -1
-0",ZETA DIVISION,Ascent,2,Play-Ins,Play-ins,Gen.G,15,"0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0"
+0",ZETA DIVISION,Ascent,2,2972552,Play-Ins,Play-ins,Gen.G,"0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0",16
 hiroronn,Kayo,"0.79
 0.70
 1.01","175
@@ -9664,7 +10204,7 @@ hiroronn,Kayo,"0.79
 1
 0","+2
 0
-+2",ZETA DIVISION,Ascent,2,Play-Ins,Play-ins,Gen.G,15,"0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0"
++2",ZETA DIVISION,Ascent,2,2972552,Play-Ins,Play-ins,Gen.G,"0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0",16
 Dep,Jett,"0.67
 0.81
 0.33","169
@@ -9691,7 +10231,7 @@ Dep,Jett,"0.67
 4
 2","-4
 -2
--2",ZETA DIVISION,Ascent,2,Play-Ins,Play-ins,Gen.G,15,"0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0"
+-2",ZETA DIVISION,Ascent,2,2972552,Play-Ins,Play-ins,Gen.G,"0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0",16
 yuran,Sova,"0.35
 0.33
 0.42","64
@@ -9716,7 +10256,277 @@ yuran,Sova,"0.35
 0
 0","+1
 +1
-0",ZETA DIVISION,Ascent,2,Play-Ins,Play-ins,Gen.G,15,"0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0"
+0",ZETA DIVISION,Ascent,2,2972552,Play-Ins,Play-ins,Gen.G,"0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0",16
+Rossy,Viper,"1.13
+1.22
+1.03","221
+228
+214","23
+12
+11","
+
+19
+7
+12
+
+","8
+3
+5","+4
++5
+-1","136
+133
+140","23%
+26%
+20%","2
+0
+2","1
+0
+1","+1
+0
++1",T1,Split,1,2972561,Playoffs,Semifinals,Paper Rex,"1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0",17
+iZu,Raze,"1.09
+1.08
+1.09","255
+278
+233","27
+14
+13","
+
+24
+12
+12
+
+","2
+2
+0","+3
++2
++1","170
+170
+169","33%
+40%
+27%","6
+4
+2","4
+3
+1","+2
++1
++1",T1,Split,1,2972561,Playoffs,Semifinals,Paper Rex,"1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0",17
+Sayaplayer,Jett,"1.07
+1.15
+0.99","238
+228
+250","26
+13
+13","
+
+20
+9
+11
+
+","1
+0
+1","+6
++4
++2","135
+135
+134","15%
+38%
+5%","8
+5
+3","4
+3
+1","+4
++2
++2",T1,Split,1,2972561,Playoffs,Semifinals,Paper Rex,"1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0",17
+xccurate,Astra,"0.83
+0.78
+0.88","176
+151
+202","18
+7
+11","
+
+24
+12
+12
+
+","8
+6
+2","-6
+-5
+-1","118
+91
+145","30%
+19%
+41%","2
+0
+2","0
+0
+0","+2
+0
++2",T1,Split,1,2972561,Playoffs,Semifinals,Paper Rex,"1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0",17
+Carpe,Skye,"0.54
+0.63
+0.46","129
+166
+93","14
+9
+5","
+
+25
+12
+13
+
+","5
+3
+2","-11
+-3
+-8","89
+105
+72","26%
+30%
+21%","1
+0
+1","2
+0
+2","-1
+0
+-1",T1,Split,1,2972561,Playoffs,Semifinals,Paper Rex,"1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0",17
+mindfreak,Omen,"1.32
+1.51
+1.13","246
+306
+187","29
+18
+11","
+
+18
+8
+10
+
+","6
+3
+3","+11
++10
++1","156
+201
+111","27%
+21%
+37%","1
+1
+0","0
+0
+0","+1
++1
+0",Paper Rex,Split,1,2972561,Playoffs,Semifinals,Paper Rex,"0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1",17
+f0rsakeN,Yoru,"1.18
+1.04
+1.31","297
+282
+313","33
+15
+18","
+
+24
+13
+11
+
+","5
+3
+2","+9
++2
++7","186
+184
+188","42%
+38%
+46%","3
+1
+2","7
+3
+4","-4
+-2
+-2",Paper Rex,Split,1,2972561,Playoffs,Semifinals,Paper Rex,"0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1",17
+d4v41,Viper,"1.07
+1.06
+1.07","188
+164
+213","16
+7
+9","
+
+20
+9
+11
+
+","19
+12
+7","-4
+-2
+-2","133
+119
+147","25%
+28%
+24%","2
+0
+2","1
+1
+0","+1
+-1
++2",Paper Rex,Split,1,2972561,Playoffs,Semifinals,Paper Rex,"0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1",17
+something,Jett,"0.84
+0.81
+0.87","165
+172
+159","19
+11
+8","
+
+21
+11
+10
+
+","3
+1
+2","-2
+0
+-2","99
+95
+104","19%
+9%
+32%","2
+1
+1","6
+4
+2","-4
+-3
+-1",Paper Rex,Split,1,2972561,Playoffs,Semifinals,Paper Rex,"0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1",17
+Monyet,Raze,"0.79
+1.00
+0.57","156
+181
+133","15
+9
+6","
+
+25
+12
+13
+
+","8
+6
+2","-10
+-3
+-7","115
+126
+105","15%
+15%
+14%","3
+2
+1","5
+2
+3","-2
+0
+-2",Paper Rex,Split,1,2972561,Playoffs,Semifinals,Paper Rex,"0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1",17
 xccurate,Cypher,"1.23
 1.48
 1.09","228
@@ -9743,7 +10553,7 @@ xccurate,Cypher,"1.23
 0
 0","0
 0
-0",T1,Ascent,2,Playoffs,Semifinals,Paper Rex,16,"1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0"
+0",T1,Ascent,2,2972562,Playoffs,Semifinals,Paper Rex,"1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0",17
 Rossy,Viper,"1.01
 0.58
 1.27","233
@@ -9770,7 +10580,7 @@ Rossy,Viper,"1.01
 1
 1","0
 -1
-+1",T1,Ascent,2,Playoffs,Semifinals,Paper Rex,16,"1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0"
++1",T1,Ascent,2,2972562,Playoffs,Semifinals,Paper Rex,"1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0",17
 Sayaplayer,Jett,"0.85
 1.30
 0.58","193
@@ -9797,7 +10607,7 @@ Sayaplayer,Jett,"0.85
 1
 0","+5
 +2
-+3",T1,Ascent,2,Playoffs,Semifinals,Paper Rex,16,"1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0"
++3",T1,Ascent,2,2972562,Playoffs,Semifinals,Paper Rex,"1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0",17
 iZu,Omen,"0.81
 0.67
 0.89","161
@@ -9824,7 +10634,7 @@ iZu,Omen,"0.81
 1
 0","-1
 -1
-0",T1,Ascent,2,Playoffs,Semifinals,Paper Rex,16,"1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0"
+0",T1,Ascent,2,2972562,Playoffs,Semifinals,Paper Rex,"1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0",17
 Carpe,Fade,"0.50
 0.32
 0.61","110
@@ -9851,7 +10661,7 @@ Carpe,Fade,"0.50
 1
 4","-3
 -1
--2",T1,Ascent,2,Playoffs,Semifinals,Paper Rex,16,"1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0"
+-2",T1,Ascent,2,2972562,Playoffs,Semifinals,Paper Rex,"1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0",17
 f0rsakeN,Fade,"1.52
 1.35
 1.80","286
@@ -9878,7 +10688,7 @@ f0rsakeN,Fade,"1.52
 1
 0","+2
 +1
-+1",Paper Rex,Ascent,2,Playoffs,Semifinals,Paper Rex,16,"0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1"
++1",Paper Rex,Ascent,2,2972562,Playoffs,Semifinals,Paper Rex,"0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1",17
 something,Gekko,"1.36
 1.83
 0.54","205
@@ -9905,7 +10715,7 @@ something,Gekko,"1.36
 0
 2","0
 0
-0",Paper Rex,Ascent,2,Playoffs,Semifinals,Paper Rex,16,"0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1"
+0",Paper Rex,Ascent,2,2972562,Playoffs,Semifinals,Paper Rex,"0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1",17
 mindfreak,Viper,"1.22
 0.79
 1.98","148
@@ -9932,7 +10742,7 @@ mindfreak,Viper,"1.22
 1
 0","-1
 -1
-0",Paper Rex,Ascent,2,Playoffs,Semifinals,Paper Rex,16,"0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1"
+0",Paper Rex,Ascent,2,2972562,Playoffs,Semifinals,Paper Rex,"0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1",17
 d4v41,Omen,"1.07
 1.23
 0.80","197
@@ -9959,7 +10769,7 @@ d4v41,Omen,"1.07
 2
 1","-3
 -2
--1",Paper Rex,Ascent,2,Playoffs,Semifinals,Paper Rex,16,"0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1"
+-1",Paper Rex,Ascent,2,2972562,Playoffs,Semifinals,Paper Rex,"0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1",17
 Monyet,Raze,"0.68
 0.67
 0.70","163
@@ -9986,7 +10796,277 @@ Monyet,Raze,"0.68
 3
 0","+1
 0
-+1",Paper Rex,Ascent,2,Playoffs,Semifinals,Paper Rex,16,"0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1"
++1",Paper Rex,Ascent,2,2972562,Playoffs,Semifinals,Paper Rex,"0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1",17
+Flashback,Cypher,"1.04
+1.30
+0.79","199
+231
+169","21
+12
+9","
+
+19
+7
+12
+
+","4
+0
+4","+2
++5
+-3","133
+155
+111","28%
+27%
+29%","3
+2
+1","4
+1
+3","-1
++1
+-2",DRX,Bind,1,2972571,Playoffs,Semifinals,Gen.G,"1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0",18
+MaKo,Brimstone,"1.02
+1.25
+0.79","202
+245
+160","16
+10
+6","
+
+20
+9
+11
+
+","18
+12
+6","-4
++1
+-5","134
+152
+115","17%
+15%
+22%","1
+1
+0","2
+1
+1","-1
+0
+-1",DRX,Bind,1,2972571,Playoffs,Semifinals,Gen.G,"1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0",18
+BuZz,Yoru,"0.92
+1.05
+0.79","246
+252
+241","22
+12
+10","
+
+22
+10
+12
+
+","10
+2
+8","0
++2
+-2","150
+148
+151","26%
+25%
+26%","2
+2
+0","1
+1
+0","+1
++1
+0",DRX,Bind,1,2972571,Playoffs,Semifinals,Gen.G,"1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0",18
+stax,Gekko,"0.78
+0.73
+0.84","149
+96
+204","12
+3
+9","
+
+19
+9
+10
+
+","14
+7
+7","-7
+-6
+-1","106
+73
+140","26%
+25%
+27%","3
+0
+3","0
+0
+0","+3
+0
++3",DRX,Bind,1,2972571,Playoffs,Semifinals,Gen.G,"1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0",18
+Foxy9,Viper,"0.67
+0.57
+0.76","159
+134
+186","14
+6
+8","
+
+22
+10
+12
+
+","6
+3
+3","-8
+-4
+-4","101
+86
+116","38%
+55%
+30%","4
+1
+3","6
+4
+2","-2
+-3
++1",DRX,Bind,1,2972571,Playoffs,Semifinals,Gen.G,"1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0",18
+Karon,Brimstone,"1.46
+1.51
+1.41","250
+277
+224","23
+14
+9","
+
+14
+7
+7
+
+","10
+5
+5","+9
++7
++2","180
+195
+166","23%
+39%
+13%","0
+0
+0","1
+1
+0","-1
+-1
+0",Gen.G,Bind,1,2972571,Playoffs,Semifinals,Gen.G,"0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1",18
+t3xture,Raze,"1.42
+1.38
+1.46","297
+341
+255","28
+15
+13","
+
+18
+11
+7
+
+","5
+4
+1","+10
++4
++6","191
+221
+160","30%
+31%
+28%","4
+2
+2","2
+2
+0","+2
+0
++2",Gen.G,Bind,1,2972571,Playoffs,Semifinals,Gen.G,"0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1",18
+Munchkin,Viper,"1.21
+1.41
+1.01","221
+248
+194","20
+12
+8","
+
+14
+6
+8
+
+","10
+5
+5","+6
++6
+0","145
+167
+123","15%
+16%
+13%","6
+3
+3","2
+1
+1","+4
++2
++2",Gen.G,Bind,1,2972571,Playoffs,Semifinals,Gen.G,"0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1",18
+Meteor,Cypher,"0.89
+1.00
+0.79","176
+142
+211","18
+7
+11","
+
+21
+9
+12
+
+","5
+2
+3","-3
+-2
+-1","115
+100
+129","34%
+50%
+26%","2
+1
+1","2
+1
+1","0
+0
+0",Gen.G,Bind,1,2972571,Playoffs,Semifinals,Gen.G,"0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1",18
+Lakia,Skye,"0.84
+1.00
+0.68","146
+176
+116","13
+9
+4","
+
+18
+9
+9
+
+","11
+6
+5","-5
+0
+-5","100
+116
+83","15%
+18%
+12%","1
+0
+1","6
+2
+4","-5
+-2
+-3",Gen.G,Bind,1,2972571,Playoffs,Semifinals,Gen.G,"0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1",18
 MaKo,Omen,"1.27
 1.35
 1.20","270
@@ -10013,7 +11093,7 @@ MaKo,Omen,"1.27
 0
 0","+5
 +3
-+2",DRX,Lotus,2,Playoffs,Semifinals,Gen.G,17,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0"
++2",DRX,Lotus,2,2972572,Playoffs,Semifinals,Gen.G,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0",18
 stax,Fade,"1.12
 1.27
 1.00","206
@@ -10040,7 +11120,7 @@ stax,Fade,"1.12
 0
 0","+1
 +1
-0",DRX,Lotus,2,Playoffs,Semifinals,Gen.G,17,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0"
+0",DRX,Lotus,2,2972572,Playoffs,Semifinals,Gen.G,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0",18
 Foxy9,Viper,"0.92
 1.33
 0.62","153
@@ -10067,7 +11147,7 @@ Foxy9,Viper,"0.92
 0
 1","+1
 0
-+1",DRX,Lotus,2,Playoffs,Semifinals,Gen.G,17,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0"
++1",DRX,Lotus,2,2972572,Playoffs,Semifinals,Gen.G,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0",18
 BuZz,Raze,"0.80
 0.83
 0.77","184
@@ -10094,7 +11174,7 @@ BuZz,Raze,"0.80
 1
 2","+2
 +1
-+1",DRX,Lotus,2,Playoffs,Semifinals,Gen.G,17,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0"
++1",DRX,Lotus,2,2972572,Playoffs,Semifinals,Gen.G,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0",18
 Flashback,Cypher,"0.77
 0.92
 0.66","150
@@ -10121,7 +11201,7 @@ Flashback,Cypher,"0.77
 2
 1","-2
 -2
-0",DRX,Lotus,2,Playoffs,Semifinals,Gen.G,17,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0"
+0",DRX,Lotus,2,2972572,Playoffs,Semifinals,Gen.G,"0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0",18
 Karon,Omen,"1.16
 1.33
 0.95","198
@@ -10148,7 +11228,7 @@ Karon,Omen,"1.16
 0
 0","0
 0
-0",Gen.G,Lotus,2,Playoffs,Semifinals,Gen.G,17,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1"
+0",Gen.G,Lotus,2,2972572,Playoffs,Semifinals,Gen.G,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1",18
 Meteor,Killjoy,"1.14
 1.25
 1.00","216
@@ -10175,7 +11255,7 @@ Meteor,Killjoy,"1.14
 0
 1","0
 +1
--1",Gen.G,Lotus,2,Playoffs,Semifinals,Gen.G,17,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1"
+-1",Gen.G,Lotus,2,2972572,Playoffs,Semifinals,Gen.G,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1",18
 Munchkin,Viper,"1.01
 0.87
 1.19","191
@@ -10202,7 +11282,7 @@ Munchkin,Viper,"1.01
 2
 0","+3
 0
-+3",Gen.G,Lotus,2,Playoffs,Semifinals,Gen.G,17,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1"
++3",Gen.G,Lotus,2,2972572,Playoffs,Semifinals,Gen.G,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1",18
 t3xture,Raze,"0.89
 0.80
 1.00","229
@@ -10229,7 +11309,7 @@ t3xture,Raze,"0.89
 5
 4","-8
 -4
--4",Gen.G,Lotus,2,Playoffs,Semifinals,Gen.G,17,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1"
+-4",Gen.G,Lotus,2,2972572,Playoffs,Semifinals,Gen.G,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1",18
 Lakia,Fade,"0.87
 1.36
 0.22","172
@@ -10256,7 +11336,7 @@ Lakia,Fade,"0.87
 1
 1","-2
 -1
--1",Gen.G,Lotus,2,Playoffs,Semifinals,Gen.G,17,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1"
+-1",Gen.G,Lotus,2,2972572,Playoffs,Semifinals,Gen.G,"1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1",18
 something,Gekko,"0.98
 1.25
 0.45","213
@@ -10283,7 +11363,7 @@ something,Gekko,"0.98
 1
 2","0
 +1
--1",Paper Rex,Ascent,1,Playoffs,Grand Final,Gen.G,18,"1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0"
+-1",Paper Rex,Ascent,1,2972581,Playoffs,Grand Final,Gen.G,"1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0",19
 mindfreak,Viper,"0.98
 1.08
 0.80","236
@@ -10310,7 +11390,7 @@ mindfreak,Viper,"0.98
 1
 0","0
 0
-0",Paper Rex,Ascent,1,Playoffs,Grand Final,Gen.G,18,"1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0"
+0",Paper Rex,Ascent,1,2972581,Playoffs,Grand Final,Gen.G,"1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0",19
 d4v41,Omen,"0.90
 0.99
 0.73","137
@@ -10337,7 +11417,7 @@ d4v41,Omen,"0.90
 0
 0","+1
 +1
-0",Paper Rex,Ascent,1,Playoffs,Grand Final,Gen.G,18,"1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0"
+0",Paper Rex,Ascent,1,2972581,Playoffs,Grand Final,Gen.G,"1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0",19
 f0rsakeN,Fade,"0.67
 0.92
 0.15","124
@@ -10364,7 +11444,7 @@ f0rsakeN,Fade,"0.67
 1
 1","-1
 0
--1",Paper Rex,Ascent,1,Playoffs,Grand Final,Gen.G,18,"1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0"
+-1",Paper Rex,Ascent,1,2972581,Playoffs,Grand Final,Gen.G,"1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0",19
 Monyet,Raze,"0.50
 0.61
 0.28","164
@@ -10391,7 +11471,7 @@ Monyet,Raze,"0.50
 3
 2","-4
 -2
--2",Paper Rex,Ascent,1,Playoffs,Grand Final,Gen.G,18,"1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0"
+-2",Paper Rex,Ascent,1,2972581,Playoffs,Grand Final,Gen.G,"1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0",19
 t3xture,Jett,"1.59
 2.19
 1.29","335
@@ -10418,7 +11498,7 @@ t3xture,Jett,"1.59
 1
 3","-1
 0
--1",Gen.G,Ascent,1,Playoffs,Grand Final,Gen.G,18,"0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1"
+-1",Gen.G,Ascent,1,2972581,Playoffs,Grand Final,Gen.G,"0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1",19
 Karon,Omen,"1.49
 1.38
 1.54","224
@@ -10445,7 +11525,7 @@ Karon,Omen,"1.49
 0
 1","0
 0
-0",Gen.G,Ascent,1,Playoffs,Grand Final,Gen.G,18,"0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1"
+0",Gen.G,Ascent,1,2972581,Playoffs,Grand Final,Gen.G,"0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1",19
 Munchkin,Kayo,"1.19
 1.75
 0.91","193
@@ -10472,7 +11552,7 @@ Munchkin,Kayo,"1.19
 0
 1","+2
 +2
-0",Gen.G,Ascent,1,Playoffs,Grand Final,Gen.G,18,"0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1"
+0",Gen.G,Ascent,1,2972581,Playoffs,Grand Final,Gen.G,"0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1",19
 Meteor,Killjoy,"0.91
 1.15
 0.79","227
@@ -10499,7 +11579,7 @@ Meteor,Killjoy,"0.91
 0
 0","+3
 +1
-+2",Gen.G,Ascent,1,Playoffs,Grand Final,Gen.G,18,"0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1"
++2",Gen.G,Ascent,1,2972581,Playoffs,Grand Final,Gen.G,"0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1",19
 Lakia,Sova,"0.78
 0.83
 0.75","154
@@ -10526,7 +11606,7 @@ Lakia,Sova,"0.78
 0
 1","0
 +1
--1",Gen.G,Ascent,1,Playoffs,Grand Final,Gen.G,18,"0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1"
+-1",Gen.G,Ascent,1,2972581,Playoffs,Grand Final,Gen.G,"0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1",19
 mindfreak,Omen,"1.32
 1.14
 1.75","215
@@ -10553,7 +11633,7 @@ mindfreak,Omen,"1.32
 0
 1","0
 +1
--1",Paper Rex,Split,2,Playoffs,Grand Final,Gen.G,18,"1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1"
+-1",Paper Rex,Split,2,2972582,Playoffs,Grand Final,Gen.G,"1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1",19
 something,Jett,"1.30
 1.33
 1.22","264
@@ -10580,7 +11660,7 @@ something,Jett,"1.30
 1
 0","+5
 +3
-+2",Paper Rex,Split,2,Playoffs,Grand Final,Gen.G,18,"1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1"
++2",Paper Rex,Split,2,2972582,Playoffs,Grand Final,Gen.G,"1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1",19
 f0rsakeN,Yoru,"1.26
 0.99
 1.90","242
@@ -10607,7 +11687,7 @@ f0rsakeN,Yoru,"1.26
 1
 0","+2
 +1
-+1",Paper Rex,Split,2,Playoffs,Grand Final,Gen.G,18,"1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1"
++1",Paper Rex,Split,2,2972582,Playoffs,Grand Final,Gen.G,"1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1",19
 Monyet,Raze,"1.19
 0.81
 2.09","199
@@ -10634,7 +11714,7 @@ Monyet,Raze,"1.19
 2
 0","0
 -1
-+1",Paper Rex,Split,2,Playoffs,Grand Final,Gen.G,18,"1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1"
++1",Paper Rex,Split,2,2972582,Playoffs,Grand Final,Gen.G,"1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1",19
 d4v41,Viper,"0.94
 0.91
 1.01","198
@@ -10661,7 +11741,7 @@ d4v41,Viper,"0.94
 0
 0","0
 0
-0",Paper Rex,Split,2,Playoffs,Grand Final,Gen.G,18,"1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1"
+0",Paper Rex,Split,2,2972582,Playoffs,Grand Final,Gen.G,"1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1",19
 Karon,Astra,"1.05
 0.42
 1.31","214
@@ -10688,7 +11768,7 @@ Karon,Astra,"1.05
 0
 1","-1
 0
--1",Gen.G,Split,2,Playoffs,Grand Final,Gen.G,18,"0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0"
+-1",Gen.G,Split,2,2972582,Playoffs,Grand Final,Gen.G,"0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0",19
 Munchkin,Viper,"0.93
 0.42
 1.14","190
@@ -10715,7 +11795,7 @@ Munchkin,Viper,"0.93
 0
 1","-1
 0
--1",Gen.G,Split,2,Playoffs,Grand Final,Gen.G,18,"0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0"
+-1",Gen.G,Split,2,2972582,Playoffs,Grand Final,Gen.G,"0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0",19
 t3xture,Raze,"0.77
 0.19
 1.01","194
@@ -10742,7 +11822,7 @@ t3xture,Raze,"0.77
 1
 1","+1
 0
-+1",Gen.G,Split,2,Playoffs,Grand Final,Gen.G,18,"0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0"
++1",Gen.G,Split,2,2972582,Playoffs,Grand Final,Gen.G,"0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0",19
 Lakia,Skye,"0.56
 0.69
 0.50","157
@@ -10769,7 +11849,7 @@ Lakia,Skye,"0.56
 1
 3","-2
 -1
--1",Gen.G,Split,2,Playoffs,Grand Final,Gen.G,18,"0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0"
+-1",Gen.G,Split,2,2972582,Playoffs,Grand Final,Gen.G,"0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0",19
 Meteor,Jett,"0.55
 0.34
 0.64","168
@@ -10796,7 +11876,7 @@ Meteor,Jett,"0.55
 2
 2","-4
 -2
--2",Gen.G,Split,2,Playoffs,Grand Final,Gen.G,18,"0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0"
+-2",Gen.G,Split,2,2972582,Playoffs,Grand Final,Gen.G,"0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0",19
 d4v41,Skye,"1.12
 1.22
 1.01","204
@@ -10823,7 +11903,7 @@ d4v41,Skye,"1.12
 2
 0","0
 0
-0",Paper Rex,Lotus,3,Playoffs,Grand Final,Gen.G,18,"0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0"
+0",Paper Rex,Lotus,3,2972583,Playoffs,Grand Final,Gen.G,"0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",19
 something,Reyna,"1.12
 0.98
 1.25","253
@@ -10850,7 +11930,7 @@ something,Reyna,"1.12
 0
 1","+6
 +3
-+3",Paper Rex,Lotus,3,Playoffs,Grand Final,Gen.G,18,"0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0"
++3",Paper Rex,Lotus,3,2972583,Playoffs,Grand Final,Gen.G,"0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",19
 mindfreak,Omen,"1.03
 1.18
 0.88","180
@@ -10877,7 +11957,7 @@ mindfreak,Omen,"1.03
 0
 1","0
 +1
--1",Paper Rex,Lotus,3,Playoffs,Grand Final,Gen.G,18,"0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0"
+-1",Paper Rex,Lotus,3,2972583,Playoffs,Grand Final,Gen.G,"0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",19
 f0rsakeN,Cypher,"0.74
 0.95
 0.53","166
@@ -10904,7 +11984,7 @@ f0rsakeN,Cypher,"0.74
 2
 0","-1
 -2
-+1",Paper Rex,Lotus,3,Playoffs,Grand Final,Gen.G,18,"0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0"
++1",Paper Rex,Lotus,3,2972583,Playoffs,Grand Final,Gen.G,"0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",19
 Monyet,Raze,"0.52
 0.70
 0.34","146
@@ -10931,7 +12011,7 @@ Monyet,Raze,"0.52
 2
 3","-3
 -2
--1",Paper Rex,Lotus,3,Playoffs,Grand Final,Gen.G,18,"0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0"
+-1",Paper Rex,Lotus,3,2972583,Playoffs,Grand Final,Gen.G,"0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",19
 Munchkin,Viper,"1.38
 1.45
 1.30","290
@@ -10958,7 +12038,7 @@ Munchkin,Viper,"1.38
 1
 0","+2
 +2
-0",Gen.G,Lotus,3,Playoffs,Grand Final,Gen.G,18,"1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1"
+0",Gen.G,Lotus,3,2972583,Playoffs,Grand Final,Gen.G,"1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",19
 Karon,Omen,"1.22
 1.40
 1.04","199
@@ -10985,7 +12065,7 @@ Karon,Omen,"1.22
 2
 1","-1
 -1
-0",Gen.G,Lotus,3,Playoffs,Grand Final,Gen.G,18,"1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1"
+0",Gen.G,Lotus,3,2972583,Playoffs,Grand Final,Gen.G,"1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",19
 Lakia,Fade,"1.12
 1.06
 1.17","246
@@ -11012,7 +12092,7 @@ Lakia,Fade,"1.12
 0
 2","+1
 0
-+1",Gen.G,Lotus,3,Playoffs,Grand Final,Gen.G,18,"1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1"
++1",Gen.G,Lotus,3,2972583,Playoffs,Grand Final,Gen.G,"1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",19
 t3xture,Raze,"0.89
 1.22
 0.56","174
@@ -11039,7 +12119,7 @@ t3xture,Raze,"0.89
 2
 1","-3
 -2
--1",Gen.G,Lotus,3,Playoffs,Grand Final,Gen.G,18,"1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1"
+-1",Gen.G,Lotus,3,2972583,Playoffs,Grand Final,Gen.G,"1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",19
 Meteor,Killjoy,"0.86
 0.81
 0.92","155
@@ -11066,7 +12146,7 @@ Meteor,Killjoy,"0.86
 2
 2","-1
 -1
-0",Gen.G,Lotus,3,Playoffs,Grand Final,Gen.G,18,"1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1"
+0",Gen.G,Lotus,3,2972583,Playoffs,Grand Final,Gen.G,"1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",19
 mindfreak,Brimstone,"1.22
 1.42
 1.14","233
@@ -11093,7 +12173,7 @@ mindfreak,Brimstone,"1.22
 0
 1","-1
 0
--1",Paper Rex,Bind,4,Playoffs,Grand Final,Gen.G,18,"0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0"
+-1",Paper Rex,Bind,4,2972584,Playoffs,Grand Final,Gen.G,"0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0",19
 d4v41,Fade,"0.79
 0.84
 0.77","149
@@ -11120,7 +12200,7 @@ d4v41,Fade,"0.79
 0
 2","-1
 0
--1",Paper Rex,Bind,4,Playoffs,Grand Final,Gen.G,18,"0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0"
+-1",Paper Rex,Bind,4,2972584,Playoffs,Grand Final,Gen.G,"0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0",19
 something,Gekko,"0.70
 0.58
 0.75","123
@@ -11147,7 +12227,7 @@ something,Gekko,"0.70
 0
 1","-1
 0
--1",Paper Rex,Bind,4,Playoffs,Grand Final,Gen.G,18,"0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0"
+-1",Paper Rex,Bind,4,2972584,Playoffs,Grand Final,Gen.G,"0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0",19
 Monyet,Raze,"0.65
 0.42
 0.75","137
@@ -11174,7 +12254,7 @@ Monyet,Raze,"0.65
 3
 3","-6
 -3
--3",Paper Rex,Bind,4,Playoffs,Grand Final,Gen.G,18,"0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0"
+-3",Paper Rex,Bind,4,2972584,Playoffs,Grand Final,Gen.G,"0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0",19
 f0rsakeN,Yoru,"0.50
 0.12
 0.67","182
@@ -11201,7 +12281,7 @@ f0rsakeN,Yoru,"0.50
 2
 1","0
 -2
-+2",Paper Rex,Bind,4,Playoffs,Grand Final,Gen.G,18,"0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0"
++2",Paper Rex,Bind,4,2972584,Playoffs,Grand Final,Gen.G,"0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0",19
 t3xture,Raze,"1.60
 1.49
 1.86","291
@@ -11228,7 +12308,7 @@ t3xture,Raze,"1.60
 2
 0","+3
 +3
-0",Gen.G,Bind,4,Playoffs,Grand Final,Gen.G,18,"1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1"
+0",Gen.G,Bind,4,2972584,Playoffs,Grand Final,Gen.G,"1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1",19
 Meteor,Cypher,"1.43
 1.61
 1.01","269
@@ -11255,7 +12335,7 @@ Meteor,Cypher,"1.43
 0
 0","+3
 +2
-+1",Gen.G,Bind,4,Playoffs,Grand Final,Gen.G,18,"1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1"
++1",Gen.G,Bind,4,2972584,Playoffs,Grand Final,Gen.G,"1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1",19
 Karon,Brimstone,"1.20
 0.96
 1.78","217
@@ -11282,7 +12362,7 @@ Karon,Brimstone,"1.20
 0
 0","+1
 0
-+1",Gen.G,Bind,4,Playoffs,Grand Final,Gen.G,18,"1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1"
++1",Gen.G,Bind,4,2972584,Playoffs,Grand Final,Gen.G,"1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1",19
 Munchkin,Viper,"1.04
 1.05
 1.00","196
@@ -11309,7 +12389,7 @@ Munchkin,Viper,"1.04
 2
 0","+1
 -1
-+2",Gen.G,Bind,4,Playoffs,Grand Final,Gen.G,18,"1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1"
++2",Gen.G,Bind,4,2972584,Playoffs,Grand Final,Gen.G,"1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1",19
 Lakia,Skye,"1.02
 1.00
 1.06","147
@@ -11336,4 +12416,4 @@ Lakia,Skye,"1.02
 0
 0","+1
 0
-+1",Gen.G,Bind,4,Playoffs,Grand Final,Gen.G,18,"1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1"
++1",Gen.G,Bind,4,2972584,Playoffs,Grand Final,Gen.G,"1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1",19

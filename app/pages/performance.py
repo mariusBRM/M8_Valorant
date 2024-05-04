@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 import pandas as pd
 from utils import *
 
@@ -23,6 +24,8 @@ display_option = st.radio("Select Display Option", ("Total individual action", "
 
 
 def display_individual_total_action():
+
+    performance_data.replace(np.nan, '[]', inplace=True)
 
     total_2K, total_3K, total_4K, total_5K, total_1v1, total_1v2, total_1v3, total_1v4, total_1v5 = total_individual_exploit(performance_data)
     # 2Ks

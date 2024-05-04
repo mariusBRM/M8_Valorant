@@ -1,4 +1,4 @@
-Player Name,Agent Name,R,ACS,K,D,K/D +/–,+/–,ADR,HS%,FK,FK/FD +/–,+/–,Team Name,Map Name,Map #,Stage,Series,winner,rounds,Id
+Player Name,Agent Name,R,ACS,K,D,K/D +/–,+/–,ADR,HS%,FK,FK/FD +/–,+/–,Team Name,Map Name,Map #,Unique Enum,Stage,Series,winner,rounds,Id
 Victor,Cypher,"1.26
 1.49
 1.05","218
@@ -25,7 +25,7 @@ Victor,Cypher,"1.26
 1
 0","+3
 +1
-+2",NRG Esports,Breeze,1,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1",1
++2",NRG Esports,Breeze,1,2956051,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1",1
 Ethan,Kayo,"1.24
 0.75
 1.68","205
@@ -52,7 +52,7 @@ Ethan,Kayo,"1.24
 1
 1","-2
 -1
--1",NRG Esports,Breeze,1,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1",1
+-1",NRG Esports,Breeze,1,2956051,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1",1
 crashies,Sova,"1.12
 1.09
 1.15","200
@@ -79,7 +79,7 @@ crashies,Sova,"1.12
 0
 0","+2
 0
-+2",NRG Esports,Breeze,1,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1",1
++2",NRG Esports,Breeze,1,2956051,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1",1
 Demon1,Jett,"1.10
 0.87
 1.32","238
@@ -106,7 +106,7 @@ Demon1,Jett,"1.10
 2
 1","+5
 +2
-+3",NRG Esports,Breeze,1,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1",1
++3",NRG Esports,Breeze,1,2956051,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1",1
 Marved,Viper,"0.90
 0.57
 1.20","187
@@ -133,7 +133,7 @@ Marved,Viper,"0.90
 1
 1","-1
 -1
-0",NRG Esports,Breeze,1,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1",1
+0",NRG Esports,Breeze,1,2956051,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1",1
 mwzera,Jett,"1.48
 1.58
 1.37","289
@@ -160,7 +160,7 @@ mwzera,Jett,"1.48
 1
 3","0
 +2
--2",FURIA,Breeze,1,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0",1
+-2",FURIA,Breeze,1,2956051,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0",1
 liazzi,Viper,"1.08
 0.72
 1.47","242
@@ -187,7 +187,7 @@ liazzi,Viper,"1.08
 1
 1","0
 -1
-+1",FURIA,Breeze,1,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0",1
++1",FURIA,Breeze,1,2956051,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0",1
 Khalil,Cypher,"0.86
 0.64
 1.11","193
@@ -214,7 +214,7 @@ Khalil,Cypher,"0.86
 2
 0","-1
 -2
-+1",FURIA,Breeze,1,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0",1
++1",FURIA,Breeze,1,2956051,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0",1
 kon4n,Sova,"0.85
 0.78
 0.93","174
@@ -241,7 +241,7 @@ kon4n,Sova,"0.85
 1
 0","0
 -1
-+1",FURIA,Breeze,1,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0",1
++1",FURIA,Breeze,1,2956051,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0",1
 havoc,Kayo,"0.19
 0.06
 0.32","44
@@ -268,7 +268,7 @@ havoc,Kayo,"0.19
 4
 2","-6
 -4
--2",FURIA,Breeze,1,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0",1
+-2",FURIA,Breeze,1,2956051,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0",1
 Ethan,Kayo,"1.40
 1.08
 1.82","284
@@ -295,7 +295,7 @@ Ethan,Kayo,"1.40
 2
 1","0
 -1
-+1",NRG Esports,Ascent,2,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1",1
++1",NRG Esports,Ascent,2,2956052,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1",1
 Demon1,Jett,"1.31
 1.06
 1.65","189
@@ -322,7 +322,7 @@ Demon1,Jett,"1.31
 2
 0","+2
 0
-+2",NRG Esports,Ascent,2,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1",1
++2",NRG Esports,Ascent,2,2956052,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1",1
 crashies,Sova,"1.00
 0.87
 1.19","165
@@ -349,7 +349,7 @@ crashies,Sova,"1.00
 1
 0","0
 0
-0",NRG Esports,Ascent,2,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1",1
+0",NRG Esports,Ascent,2,2956052,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1",1
 Victor,Killjoy,"1.00
 1.02
 0.97","227
@@ -376,7 +376,7 @@ Victor,Killjoy,"1.00
 1
 1","+2
 +1
-+1",NRG Esports,Ascent,2,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1",1
++1",NRG Esports,Ascent,2,2956052,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1",1
 Marved,Omen,"0.81
 0.79
 0.84","118
@@ -403,7 +403,7 @@ Marved,Omen,"0.81
 0
 1","-1
 0
--1",NRG Esports,Ascent,2,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1",1
+-1",NRG Esports,Ascent,2,2956052,Group Stage,Opening (A),NRG Esports,"1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1",1
 kon4n,Sova,"1.09
 0.59
 1.47","186
@@ -430,7 +430,7 @@ kon4n,Sova,"1.09
 0
 0","+1
 0
-+1",FURIA,Ascent,2,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0",1
++1",FURIA,Ascent,2,2956052,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0",1
 Khalil,Killjoy,"1.03
 0.90
 1.13","166
@@ -457,7 +457,7 @@ Khalil,Killjoy,"1.03
 0
 1","-1
 0
--1",FURIA,Ascent,2,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0",1
+-1",FURIA,Ascent,2,2956052,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0",1
 mwzera,Jett,"0.99
 0.69
 1.22","171
@@ -484,7 +484,7 @@ mwzera,Jett,"0.99
 3
 1","+1
 -2
-+3",FURIA,Ascent,2,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0",1
++3",FURIA,Ascent,2,2956052,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0",1
 liazzi,Omen,"0.78
 1.01
 0.60","130
@@ -511,7 +511,7 @@ liazzi,Omen,"0.78
 1
 1","-1
 0
--1",FURIA,Ascent,2,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0",1
+-1",FURIA,Ascent,2,2956052,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0",1
 havoc,Kayo,"0.70
 0.28
 1.02","185
@@ -538,7 +538,7 @@ havoc,Kayo,"0.70
 2
 3","-3
 -1
--2",FURIA,Ascent,2,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0",1
+-2",FURIA,Ascent,2,2956052,Group Stage,Opening (A),NRG Esports,"0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0",1
 wippie,Viper,"1.48
 1.54
 1.41","253
@@ -565,7 +565,7 @@ wippie,Viper,"1.48
 1
 0","+1
 -1
-+2",Cloud9,Bind,1,Group Stage,Opening (A),Cloud9,"1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1",2
++2",Cloud9,Bind,1,2956061,Group Stage,Opening (A),Cloud9,"1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1",2
 jakee,Brimstone,"1.34
 1.64
 1.03","236
@@ -592,7 +592,7 @@ jakee,Brimstone,"1.34
 1
 0","0
 -1
-+1",Cloud9,Bind,1,Group Stage,Opening (A),Cloud9,"1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1",2
++1",Cloud9,Bind,1,2956061,Group Stage,Opening (A),Cloud9,"1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1",2
 OXY,Yoru,"1.19
 1.27
 1.11","261
@@ -619,7 +619,7 @@ OXY,Yoru,"1.19
 2
 0","+4
 +1
-+3",Cloud9,Bind,1,Group Stage,Opening (A),Cloud9,"1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1",2
++3",Cloud9,Bind,1,2956061,Group Stage,Opening (A),Cloud9,"1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1",2
 Xeppaa,Raze,"1.03
 0.81
 1.24","223
@@ -646,7 +646,7 @@ Xeppaa,Raze,"1.03
 1
 2","+3
 +2
-+1",Cloud9,Bind,1,Group Stage,Opening (A),Cloud9,"1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1",2
++1",Cloud9,Bind,1,2956061,Group Stage,Opening (A),Cloud9,"1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1",2
 vanity,Skye,"1.00
 1.20
 0.80","125
@@ -673,7 +673,7 @@ vanity,Skye,"1.00
 1
 1","-2
 -1
--1",Cloud9,Bind,1,Group Stage,Opening (A),Cloud9,"1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1",2
+-1",Cloud9,Bind,1,2956061,Group Stage,Opening (A),Cloud9,"1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1",2
 RgLMeister,Brimstone,"1.16
 1.06
 1.25","200
@@ -700,7 +700,7 @@ RgLMeister,Brimstone,"1.16
 0
 1","+1
 0
-+1",MIBR,Bind,1,Group Stage,Opening (A),Cloud9,"0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0",2
++1",MIBR,Bind,1,2956061,Group Stage,Opening (A),Cloud9,"0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0",2
 frz,Viper,"0.81
 1.03
 0.59","176
@@ -727,7 +727,7 @@ frz,Viper,"0.81
 0
 0","+1
 +1
-0",MIBR,Bind,1,Group Stage,Opening (A),Cloud9,"0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0",2
+0",MIBR,Bind,1,2956061,Group Stage,Opening (A),Cloud9,"0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0",2
 artzin,Jett,"0.79
 1.19
 0.39","192
@@ -754,7 +754,7 @@ artzin,Jett,"0.79
 2
 0","+1
 -1
-+2",MIBR,Bind,1,Group Stage,Opening (A),Cloud9,"0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0",2
++2",MIBR,Bind,1,2956061,Group Stage,Opening (A),Cloud9,"0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0",2
 mazin,Skye,"0.76
 0.86
 0.66","158
@@ -781,7 +781,7 @@ mazin,Skye,"0.76
 0
 1","-1
 0
--1",MIBR,Bind,1,Group Stage,Opening (A),Cloud9,"0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0",2
+-1",MIBR,Bind,1,2956061,Group Stage,Opening (A),Cloud9,"0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0",2
 jzz,Raze,"0.52
 0.22
 0.82","162
@@ -808,7 +808,7 @@ jzz,Raze,"0.52
 7
 4","-8
 -6
--2",MIBR,Bind,1,Group Stage,Opening (A),Cloud9,"0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0",2
+-2",MIBR,Bind,1,2956061,Group Stage,Opening (A),Cloud9,"0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0",2
 OXY,Raze,"1.03
 0.45
 1.47","265
@@ -835,7 +835,7 @@ OXY,Raze,"1.03
 4
 2","-1
 -2
-+1",Cloud9,Split,2,Group Stage,Opening (A),Cloud9,"0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0",2
++1",Cloud9,Split,2,2956062,Group Stage,Opening (A),Cloud9,"0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0",2
 Xeppaa,Skye,"1.02
 1.16
 0.91","199
@@ -862,7 +862,7 @@ Xeppaa,Skye,"1.02
 0
 3","-3
 0
--3",Cloud9,Split,2,Group Stage,Opening (A),Cloud9,"0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0",2
+-3",Cloud9,Split,2,2956062,Group Stage,Opening (A),Cloud9,"0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0",2
 vanity,Viper,"0.96
 0.83
 1.06","200
@@ -889,7 +889,7 @@ vanity,Viper,"0.96
 2
 3","-5
 -2
--3",Cloud9,Split,2,Group Stage,Opening (A),Cloud9,"0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0",2
+-3",Cloud9,Split,2,2956062,Group Stage,Opening (A),Cloud9,"0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0",2
 wippie,Killjoy,"0.85
 0.35
 1.22","163
@@ -916,7 +916,7 @@ wippie,Killjoy,"0.85
 1
 0","0
 -1
-+1",Cloud9,Split,2,Group Stage,Opening (A),Cloud9,"0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0",2
++1",Cloud9,Split,2,2956062,Group Stage,Opening (A),Cloud9,"0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0",2
 jakee,Astra,"0.77
 0.72
 0.81","147
@@ -943,7 +943,7 @@ jakee,Astra,"0.77
 0
 0","0
 0
-0",Cloud9,Split,2,Group Stage,Opening (A),Cloud9,"0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0",2
+0",Cloud9,Split,2,2956062,Group Stage,Opening (A),Cloud9,"0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0",2
 jzz,Raze,"1.24
 1.05
 1.50","264
@@ -970,7 +970,7 @@ jzz,Raze,"1.24
 1
 0","+3
 +3
-0",MIBR,Split,2,Group Stage,Opening (A),Cloud9,"1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1",2
+0",MIBR,Split,2,2956062,Group Stage,Opening (A),Cloud9,"1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1",2
 RgLMeister,Astra,"1.12
 1.10
 1.15","185
@@ -997,7 +997,7 @@ RgLMeister,Astra,"1.12
 0
 0","0
 0
-0",MIBR,Split,2,Group Stage,Opening (A),Cloud9,"1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1",2
+0",MIBR,Split,2,2956062,Group Stage,Opening (A),Cloud9,"1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1",2
 mazin,Skye,"1.08
 1.05
 1.12","173
@@ -1024,7 +1024,7 @@ mazin,Skye,"1.08
 0
 0","+1
 +1
-0",MIBR,Split,2,Group Stage,Opening (A),Cloud9,"1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1",2
+0",MIBR,Split,2,2956062,Group Stage,Opening (A),Cloud9,"1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1",2
 artzin,Jett,"0.90
 0.46
 1.48","196
@@ -1051,7 +1051,7 @@ artzin,Jett,"0.90
 1
 1","+6
 +1
-+5",MIBR,Split,2,Group Stage,Opening (A),Cloud9,"1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1",2
++5",MIBR,Split,2,2956062,Group Stage,Opening (A),Cloud9,"1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1",2
 frz,Viper,"0.87
 0.74
 1.04","157
@@ -1078,7 +1078,7 @@ frz,Viper,"0.87
 2
 1","-1
 -1
-0",MIBR,Split,2,Group Stage,Opening (A),Cloud9,"1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1",2
+0",MIBR,Split,2,2956062,Group Stage,Opening (A),Cloud9,"1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1",2
 vanity,Gekko,"1.27
 1.03
 1.54","197
@@ -1105,7 +1105,7 @@ vanity,Gekko,"1.27
 2
 1","-2
 -1
--1",Cloud9,Lotus,3,Group Stage,Opening (A),Cloud9,"0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1",2
+-1",Cloud9,Lotus,3,2956063,Group Stage,Opening (A),Cloud9,"0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1",2
 Xeppaa,Fade,"1.11
 1.15
 1.06","215
@@ -1132,7 +1132,7 @@ Xeppaa,Fade,"1.11
 0
 2","0
 +1
--1",Cloud9,Lotus,3,Group Stage,Opening (A),Cloud9,"0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1",2
+-1",Cloud9,Lotus,3,2956063,Group Stage,Opening (A),Cloud9,"0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1",2
 OXY,Raze,"1.02
 0.42
 1.67","301
@@ -1159,7 +1159,7 @@ OXY,Raze,"1.02
 2
 3","+1
 +2
--1",Cloud9,Lotus,3,Group Stage,Opening (A),Cloud9,"0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1",2
+-1",Cloud9,Lotus,3,2956063,Group Stage,Opening (A),Cloud9,"0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1",2
 wippie,Killjoy,"1.02
 0.91
 1.13","156
@@ -1186,7 +1186,7 @@ wippie,Killjoy,"1.02
 1
 0","+1
 0
-+1",Cloud9,Lotus,3,Group Stage,Opening (A),Cloud9,"0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1",2
++1",Cloud9,Lotus,3,2956063,Group Stage,Opening (A),Cloud9,"0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1",2
 jakee,Omen,"0.85
 0.66
 1.06","122
@@ -1213,7 +1213,7 @@ jakee,Omen,"0.85
 0
 1","-1
 0
--1",Cloud9,Lotus,3,Group Stage,Opening (A),Cloud9,"0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1",2
+-1",Cloud9,Lotus,3,2956063,Group Stage,Opening (A),Cloud9,"0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1",2
 jzz,Skye,"1.17
 0.77
 1.55","222
@@ -1240,7 +1240,7 @@ jzz,Skye,"1.17
 0
 0","+4
 0
-+4",MIBR,Lotus,3,Group Stage,Opening (A),Cloud9,"1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0",2
++4",MIBR,Lotus,3,2956063,Group Stage,Opening (A),Cloud9,"1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0",2
 mazin,Viper,"1.00
 0.80
 1.19","202
@@ -1267,7 +1267,7 @@ mazin,Viper,"1.00
 1
 1","+2
 +2
-0",MIBR,Lotus,3,Group Stage,Opening (A),Cloud9,"1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0",2
+0",MIBR,Lotus,3,2956063,Group Stage,Opening (A),Cloud9,"1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0",2
 artzin,Raze,"0.99
 0.59
 1.35","220
@@ -1294,7 +1294,7 @@ artzin,Raze,"0.99
 2
 1","-2
 -1
--1",MIBR,Lotus,3,Group Stage,Opening (A),Cloud9,"1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0",2
+-1",MIBR,Lotus,3,2956063,Group Stage,Opening (A),Cloud9,"1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0",2
 RgLMeister,Omen,"0.99
 0.83
 1.14","181
@@ -1321,7 +1321,7 @@ RgLMeister,Omen,"0.99
 1
 2","-3
 -1
--2",MIBR,Lotus,3,Group Stage,Opening (A),Cloud9,"1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0",2
+-2",MIBR,Lotus,3,2956063,Group Stage,Opening (A),Cloud9,"1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0",2
 frz,Killjoy,"0.87
 0.74
 0.99","161
@@ -1348,7 +1348,7 @@ frz,Killjoy,"0.87
 0
 3","0
 +3
--3",MIBR,Lotus,3,Group Stage,Opening (A),Cloud9,"1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0",2
+-3",MIBR,Lotus,3,2956063,Group Stage,Opening (A),Cloud9,"1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0",2
 Quick,Raze,"1.17
 0.59
 1.76","261
@@ -1375,7 +1375,7 @@ Quick,Raze,"1.17
 6
 0","-1
 -6
-+5",LOUD,Split,1,Group Stage,Opening (B),LOUD,"0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1",3
++5",LOUD,Split,1,2956101,Group Stage,Opening (B),LOUD,"0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1",3
 cauanzin,Breach,"1.10
 1.07
 1.14","212
@@ -1402,7 +1402,7 @@ cauanzin,Breach,"1.10
 0
 0","+2
 0
-+2",LOUD,Split,1,Group Stage,Opening (B),LOUD,"0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1",3
++2",LOUD,Split,1,2956101,Group Stage,Opening (B),LOUD,"0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1",3
 tuyz,Omen,"1.10
 0.94
 1.26","177
@@ -1429,7 +1429,7 @@ tuyz,Omen,"1.10
 1
 0","-1
 -1
-0",LOUD,Split,1,Group Stage,Opening (B),LOUD,"0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1",3
+0",LOUD,Split,1,2956101,Group Stage,Opening (B),LOUD,"0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1",3
 saadhak,Skye,"1.09
 0.40
 1.77","226
@@ -1456,7 +1456,7 @@ saadhak,Skye,"1.09
 2
 2","-3
 -2
--1",LOUD,Split,1,Group Stage,Opening (B),LOUD,"0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1",3
+-1",LOUD,Split,1,2956101,Group Stage,Opening (B),LOUD,"0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1",3
 Less,Viper,"0.96
 0.88
 1.03","157
@@ -1483,7 +1483,7 @@ Less,Viper,"0.96
 2
 1","-1
 -1
-0",LOUD,Split,1,Group Stage,Opening (B),LOUD,"0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1",3
+0",LOUD,Split,1,2956101,Group Stage,Opening (B),LOUD,"0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1",3
 zekken,Raze,"1.23
 0.83
 1.63","257
@@ -1510,7 +1510,7 @@ zekken,Raze,"1.23
 3
 1","+3
 -1
-+4",Sentinels,Split,1,Group Stage,Opening (B),LOUD,"1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0",3
++4",Sentinels,Split,1,2956101,Group Stage,Opening (B),LOUD,"1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0",3
 TenZ,Omen,"1.13
 0.83
 1.44","234
@@ -1537,7 +1537,7 @@ TenZ,Omen,"1.13
 0
 0","+3
 0
-+3",Sentinels,Split,1,Group Stage,Opening (B),LOUD,"1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0",3
++3",Sentinels,Split,1,2956101,Group Stage,Opening (B),LOUD,"1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0",3
 johnqt,Cypher,"0.95
 0.74
 1.16","170
@@ -1564,7 +1564,7 @@ johnqt,Cypher,"0.95
 3
 0","-1
 -2
-+1",Sentinels,Split,1,Group Stage,Opening (B),LOUD,"1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0",3
++1",Sentinels,Split,1,2956101,Group Stage,Opening (B),LOUD,"1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0",3
 Zellsis,Viper,"0.81
 0.43
 1.18","204
@@ -1591,7 +1591,7 @@ Zellsis,Viper,"0.81
 1
 0","0
 -1
-+1",Sentinels,Split,1,Group Stage,Opening (B),LOUD,"1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0",3
++1",Sentinels,Split,1,2956101,Group Stage,Opening (B),LOUD,"1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0",3
 Sacy,Skye,"0.63
 0.58
 0.67","105
@@ -1618,7 +1618,7 @@ Sacy,Skye,"0.63
 2
 0","-1
 -2
-+1",Sentinels,Split,1,Group Stage,Opening (B),LOUD,"1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0",3
++1",Sentinels,Split,1,2956101,Group Stage,Opening (B),LOUD,"1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0",3
 cauanzin,Breach,"1.26
 0.88
 1.72","212
@@ -1645,7 +1645,7 @@ cauanzin,Breach,"1.26
 3
 0","0
 -1
-+1",LOUD,Ascent,2,Group Stage,Opening (B),LOUD,"1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1",3
++1",LOUD,Ascent,2,2956102,Group Stage,Opening (B),LOUD,"1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1",3
 Quick,Phoenix,"1.16
 0.76
 1.64","207
@@ -1672,7 +1672,7 @@ Quick,Phoenix,"1.16
 1
 0","+3
 +1
-+2",LOUD,Ascent,2,Group Stage,Opening (B),LOUD,"1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1",3
++2",LOUD,Ascent,2,2956102,Group Stage,Opening (B),LOUD,"1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1",3
 Less,Viper,"1.09
 0.82
 1.41","208
@@ -1699,7 +1699,7 @@ Less,Viper,"1.09
 0
 1","+2
 +1
-+1",LOUD,Ascent,2,Group Stage,Opening (B),LOUD,"1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1",3
++1",LOUD,Ascent,2,2956102,Group Stage,Opening (B),LOUD,"1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1",3
 saadhak,Kayo,"1.02
 0.39
 1.78","170
@@ -1726,7 +1726,7 @@ saadhak,Kayo,"1.02
 2
 1","-1
 -2
-+1",LOUD,Ascent,2,Group Stage,Opening (B),LOUD,"1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1",3
++1",LOUD,Ascent,2,2956102,Group Stage,Opening (B),LOUD,"1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1",3
 tuyz,Omen,"0.70
 0.52
 0.91","89
@@ -1753,7 +1753,7 @@ tuyz,Omen,"0.70
 1
 1","-2
 -1
--1",LOUD,Ascent,2,Group Stage,Opening (B),LOUD,"1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1",3
+-1",LOUD,Ascent,2,2956102,Group Stage,Opening (B),LOUD,"1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1",3
 Sacy,Sova,"1.50
 0.56
 2.29","331
@@ -1780,7 +1780,7 @@ Sacy,Sova,"1.50
 1
 1","+1
 -1
-+2",Sentinels,Ascent,2,Group Stage,Opening (B),LOUD,"0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0",3
++2",Sentinels,Ascent,2,2956102,Group Stage,Opening (B),LOUD,"0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0",3
 johnqt,Killjoy,"1.09
 0.95
 1.20","202
@@ -1807,7 +1807,7 @@ johnqt,Killjoy,"1.09
 0
 0","+1
 0
-+1",Sentinels,Ascent,2,Group Stage,Opening (B),LOUD,"0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0",3
++1",Sentinels,Ascent,2,2956102,Group Stage,Opening (B),LOUD,"0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0",3
 zekken,Jett,"0.94
 0.70
 1.15","190
@@ -1834,7 +1834,7 @@ zekken,Jett,"0.94
 3
 1","0
 -2
-+2",Sentinels,Ascent,2,Group Stage,Opening (B),LOUD,"0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0",3
++2",Sentinels,Ascent,2,2956102,Group Stage,Opening (B),LOUD,"0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0",3
 TenZ,Omen,"0.90
 0.57
 1.17","109
@@ -1861,7 +1861,7 @@ TenZ,Omen,"0.90
 1
 1","-1
 0
--1",Sentinels,Ascent,2,Group Stage,Opening (B),LOUD,"0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0",3
+-1",Sentinels,Ascent,2,2956102,Group Stage,Opening (B),LOUD,"0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0",3
 Zellsis,Kayo,"0.85
 0.52
 1.11","139
@@ -1888,7 +1888,7 @@ Zellsis,Kayo,"0.85
 2
 2","-3
 -1
--2",Sentinels,Ascent,2,Group Stage,Opening (B),LOUD,"0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0",3
+-2",Sentinels,Ascent,2,2956102,Group Stage,Opening (B),LOUD,"0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0",3
 aspas,Raze,"1.77
 1.64
 1.93","374
@@ -1915,7 +1915,7 @@ aspas,Raze,"1.77
 0
 1","+9
 +6
-+3",Leviatán,Bind,1,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1",4
++3",Leviatán,Bind,1,2956111,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1",4
 Mazino,Harbor,"1.30
 1.29
 1.32","233
@@ -1942,7 +1942,7 @@ Mazino,Harbor,"1.30
 1
 0","+1
 0
-+1",Leviatán,Bind,1,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1",4
++1",Leviatán,Bind,1,2956111,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1",4
 C0M,Skye,"1.27
 1.17
 1.39","202
@@ -1969,7 +1969,7 @@ C0M,Skye,"1.27
 0
 0","+4
 +1
-+3",Leviatán,Bind,1,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1",4
++3",Leviatán,Bind,1,2956111,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1",4
 tex,Gekko,"0.97
 0.99
 0.96","124
@@ -1996,7 +1996,7 @@ tex,Gekko,"0.97
 2
 1","-3
 -2
--1",Leviatán,Bind,1,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1",4
+-1",Leviatán,Bind,1,2956111,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1",4
 kiNgg,Viper,"0.86
 0.52
 1.27","145
@@ -2023,7 +2023,7 @@ kiNgg,Viper,"0.86
 1
 0","-1
 -1
-0",Leviatán,Bind,1,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1",4
+0",Leviatán,Bind,1,2956111,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1",4
 Boostio,Gekko,"1.11
 0.86
 1.33","274
@@ -2050,7 +2050,7 @@ Boostio,Gekko,"1.11
 2
 0","+2
 0
-+2",100 Thieves,Bind,1,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0",4
++2",100 Thieves,Bind,1,2956111,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0",4
 Cryocells,Brimstone,"0.85
 0.93
 0.79","204
@@ -2077,7 +2077,7 @@ Cryocells,Brimstone,"0.85
 2
 4","-5
 -2
--3",100 Thieves,Bind,1,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0",4
+-3",100 Thieves,Bind,1,2956111,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0",4
 eeiu,Fade,"0.72
 0.63
 0.79","151
@@ -2104,7 +2104,7 @@ eeiu,Fade,"0.72
 1
 0","-1
 -1
-0",100 Thieves,Bind,1,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0",4
+0",100 Thieves,Bind,1,2956111,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0",4
 Asuna,Raze,"0.70
 0.56
 0.81","147
@@ -2131,7 +2131,7 @@ Asuna,Raze,"0.70
 2
 2","-3
 -2
--1",100 Thieves,Bind,1,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0",4
+-1",100 Thieves,Bind,1,2956111,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0",4
 bang,Viper,"0.61
 0.45
 0.74","95
@@ -2158,7 +2158,7 @@ bang,Viper,"0.61
 1
 2","-3
 -1
--2",100 Thieves,Bind,1,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0",4
+-2",100 Thieves,Bind,1,2956111,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0",4
 aspas,Raze,"0.80
 0.76
 0.90","203
@@ -2185,7 +2185,7 @@ aspas,Raze,"0.80
 6
 1","-5
 -4
--1",Leviatán,Split,2,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",4
+-1",Leviatán,Split,2,2956112,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",4
 kiNgg,Breach,"0.71
 0.91
 0.11","185
@@ -2212,7 +2212,7 @@ kiNgg,Breach,"0.71
 1
 0","-1
 -1
-0",Leviatán,Split,2,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",4
+0",Leviatán,Split,2,2956112,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",4
 Mazino,Omen,"0.60
 0.80
 0.03","139
@@ -2239,7 +2239,7 @@ Mazino,Omen,"0.60
 2
 1","-3
 -2
--1",Leviatán,Split,2,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",4
+-1",Leviatán,Split,2,2956112,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",4
 tex,Cypher,"0.49
 0.35
 0.91","120
@@ -2266,7 +2266,7 @@ tex,Cypher,"0.49
 1
 0","-1
 -1
-0",Leviatán,Split,2,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",4
+0",Leviatán,Split,2,2956112,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",4
 C0M,Sova,"0.45
 0.41
 0.55","146
@@ -2293,7 +2293,7 @@ C0M,Sova,"0.45
 0
 1","0
 0
-0",Leviatán,Split,2,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",4
+0",Leviatán,Split,2,2956112,Group Stage,Opening (B),Leviatán,"0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",4
 eeiu,Fade,"1.61
 1.42
 1.67","259
@@ -2320,7 +2320,7 @@ eeiu,Fade,"1.61
 0
 0","+1
 0
-+1",100 Thieves,Split,2,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",4
++1",100 Thieves,Split,2,2956112,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",4
 Cryocells,Astra,"1.48
 2.38
 1.17","232
@@ -2347,7 +2347,7 @@ Cryocells,Astra,"1.48
 0
 1","+2
 +2
-0",100 Thieves,Split,2,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",4
+0",100 Thieves,Split,2,2956112,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",4
 Asuna,Raze,"1.39
 0.54
 1.67","286
@@ -2374,7 +2374,7 @@ Asuna,Raze,"1.39
 0
 1","+2
 +1
-+1",100 Thieves,Split,2,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",4
++1",100 Thieves,Split,2,2956112,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",4
 Boostio,Gekko,"1.29
 1.71
 1.15","194
@@ -2401,7 +2401,7 @@ Boostio,Gekko,"1.29
 0
 0","+2
 0
-+2",100 Thieves,Split,2,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",4
++2",100 Thieves,Split,2,2956112,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",4
 bang,Viper,"1.12
 1.43
 1.02","239
@@ -2428,7 +2428,7 @@ bang,Viper,"1.12
 1
 0","+3
 -1
-+4",100 Thieves,Split,2,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",4
++4",100 Thieves,Split,2,2956112,Group Stage,Opening (B),Leviatán,"1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",4
 C0M,Sova,"1.56
 1.47
 1.64","278
@@ -2455,7 +2455,7 @@ C0M,Sova,"1.56
 0
 1","+3
 +1
-+2",Leviatán,Icebox,3,Group Stage,Opening (B),Leviatán,"1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1",4
++2",Leviatán,Icebox,3,2956113,Group Stage,Opening (B),Leviatán,"1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1",4
 aspas,Reyna,"1.44
 1.41
 1.47","302
@@ -2482,7 +2482,7 @@ aspas,Reyna,"1.44
 1
 0","+3
 0
-+3",Leviatán,Icebox,3,Group Stage,Opening (B),Leviatán,"1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1",4
++3",Leviatán,Icebox,3,2956113,Group Stage,Opening (B),Leviatán,"1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1",4
 tex,Killjoy,"0.87
 0.98
 0.76","163
@@ -2509,7 +2509,7 @@ tex,Killjoy,"0.87
 3
 0","0
 -2
-+2",Leviatán,Icebox,3,Group Stage,Opening (B),Leviatán,"1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1",4
++2",Leviatán,Icebox,3,2956113,Group Stage,Opening (B),Leviatán,"1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1",4
 Mazino,Harbor,"0.86
 0.79
 0.93","200
@@ -2536,7 +2536,7 @@ Mazino,Harbor,"0.86
 2
 1","-2
 -1
--1",Leviatán,Icebox,3,Group Stage,Opening (B),Leviatán,"1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1",4
+-1",Leviatán,Icebox,3,2956113,Group Stage,Opening (B),Leviatán,"1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1",4
 kiNgg,Viper,"0.85
 0.69
 1.00","164
@@ -2563,7 +2563,7 @@ kiNgg,Viper,"0.85
 1
 2","-2
 0
--2",Leviatán,Icebox,3,Group Stage,Opening (B),Leviatán,"1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1",4
+-2",Leviatán,Icebox,3,2956113,Group Stage,Opening (B),Leviatán,"1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1",4
 Cryocells,Jett,"1.07
 0.70
 1.43","250
@@ -2590,7 +2590,7 @@ Cryocells,Jett,"1.07
 2
 1","+2
 0
-+2",100 Thieves,Icebox,3,Group Stage,Opening (B),Leviatán,"0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0",4
++2",100 Thieves,Icebox,3,2956113,Group Stage,Opening (B),Leviatán,"0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0",4
 Boostio,Killjoy,"0.99
 0.89
 1.09","246
@@ -2617,7 +2617,7 @@ Boostio,Killjoy,"0.99
 6
 3","-6
 -5
--1",100 Thieves,Icebox,3,Group Stage,Opening (B),Leviatán,"0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0",4
+-1",100 Thieves,Icebox,3,2956113,Group Stage,Opening (B),Leviatán,"0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0",4
 bang,Viper,"0.87
 0.94
 0.80","217
@@ -2644,7 +2644,7 @@ bang,Viper,"0.87
 0
 0","+1
 +1
-0",100 Thieves,Icebox,3,Group Stage,Opening (B),Leviatán,"0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0",4
+0",100 Thieves,Icebox,3,2956113,Group Stage,Opening (B),Leviatán,"0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0",4
 eeiu,Sova,"0.68
 0.82
 0.55","151
@@ -2671,7 +2671,7 @@ eeiu,Sova,"0.68
 0
 1","0
 0
-0",100 Thieves,Icebox,3,Group Stage,Opening (B),Leviatán,"0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0",4
+0",100 Thieves,Icebox,3,2956113,Group Stage,Opening (B),Leviatán,"0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0",4
 Asuna,Gekko,"0.66
 0.60
 0.72","114
@@ -2698,7 +2698,7 @@ Asuna,Gekko,"0.66
 0
 0","+1
 0
-+1",100 Thieves,Icebox,3,Group Stage,Opening (B),Leviatán,"0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0",4
++1",100 Thieves,Icebox,3,2956113,Group Stage,Opening (B),Leviatán,"0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0",4
 Shyy,Killjoy,"1.52
 1.42
 1.60","225
@@ -2725,7 +2725,7 @@ Shyy,Killjoy,"1.52
 1
 1","0
 0
-0",KRÜ Esports,Icebox,1,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1",5
+0",KRÜ Esports,Icebox,1,2956151,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1",5
 Klaus,Sova,"1.24
 1.15
 1.33","198
@@ -2752,7 +2752,7 @@ Klaus,Sova,"1.24
 0
 0","+4
 +1
-+3",KRÜ Esports,Icebox,1,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1",5
++3",KRÜ Esports,Icebox,1,2956151,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1",5
 keznit,Jett,"1.07
 1.53
 0.68","234
@@ -2779,7 +2779,7 @@ keznit,Jett,"1.07
 3
 2","-2
 -2
-0",KRÜ Esports,Icebox,1,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1",5
+0",KRÜ Esports,Icebox,1,2956151,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1",5
 Melser,Viper,"0.94
 1.40
 0.55","169
@@ -2806,7 +2806,7 @@ Melser,Viper,"0.94
 1
 1","-2
 -1
--1",KRÜ Esports,Icebox,1,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1",5
+-1",KRÜ Esports,Icebox,1,2956151,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1",5
 mta,Kayo,"0.91
 0.44
 1.30","211
@@ -2833,7 +2833,7 @@ mta,Kayo,"0.91
 1
 0","+2
 0
-+2",KRÜ Esports,Icebox,1,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1",5
++2",KRÜ Esports,Icebox,1,2956151,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1",5
 valyn,Brimstone,"1.34
 1.40
 1.25","314
@@ -2860,7 +2860,7 @@ valyn,Brimstone,"1.34
 0
 1","+3
 +1
-+2",G2 Esports,Icebox,1,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0",5
++2",G2 Esports,Icebox,1,2956151,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0",5
 trent,Viper,"0.88
 0.88
 0.89","204
@@ -2887,7 +2887,7 @@ trent,Viper,"0.88
 1
 0","0
 0
-0",G2 Esports,Icebox,1,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0",5
+0",G2 Esports,Icebox,1,2956151,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0",5
 leaf,Jett,"0.77
 0.58
 1.00","193
@@ -2914,7 +2914,7 @@ leaf,Jett,"0.77
 4
 0","0
 -2
-+2",G2 Esports,Icebox,1,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0",5
++2",G2 Esports,Icebox,1,2956151,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0",5
 JonahP,Sova,"0.75
 0.99
 0.46","145
@@ -2941,7 +2941,7 @@ JonahP,Sova,"0.75
 2
 3","-4
 -2
--2",G2 Esports,Icebox,1,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0",5
+-2",G2 Esports,Icebox,1,2956151,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0",5
 neT,Killjoy,"0.51
 0.43
 0.62","97
@@ -2968,7 +2968,7 @@ neT,Killjoy,"0.51
 1
 0","-1
 -1
-0",G2 Esports,Icebox,1,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0",5
+0",G2 Esports,Icebox,1,2956151,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0",5
 Klaus,Fade,"1.01
 1.11
 0.89","230
@@ -2995,7 +2995,7 @@ Klaus,Fade,"1.01
 1
 0","+3
 0
-+3",KRÜ Esports,Sunset,2,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0",5
++3",KRÜ Esports,Sunset,2,2956152,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0",5
 keznit,Chamber,"0.88
 0.97
 0.78","196
@@ -3022,7 +3022,7 @@ keznit,Chamber,"0.88
 0
 0","+5
 +4
-+1",KRÜ Esports,Sunset,2,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0",5
++1",KRÜ Esports,Sunset,2,2956152,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0",5
 mta,Kayo,"0.87
 0.95
 0.77","162
@@ -3049,7 +3049,7 @@ mta,Kayo,"0.87
 1
 1","+1
 0
-+1",KRÜ Esports,Sunset,2,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0",5
++1",KRÜ Esports,Sunset,2,2956152,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0",5
 Melser,Omen,"0.77
 1.05
 0.43","156
@@ -3076,7 +3076,7 @@ Melser,Omen,"0.77
 1
 1","+1
 +1
-0",KRÜ Esports,Sunset,2,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0",5
+0",KRÜ Esports,Sunset,2,2956152,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0",5
 Shyy,Viper,"0.53
 0.43
 0.65","96
@@ -3103,7 +3103,7 @@ Shyy,Viper,"0.53
 1
 1","-2
 -1
--1",KRÜ Esports,Sunset,2,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0",5
+-1",KRÜ Esports,Sunset,2,2956152,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0",5
 JonahP,Sova,"1.58
 1.19
 1.90","297
@@ -3130,7 +3130,7 @@ JonahP,Sova,"1.58
 1
 0","+1
 -1
-+2",G2 Esports,Sunset,2,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1",5
++2",G2 Esports,Sunset,2,2956152,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1",5
 valyn,Omen,"1.32
 1.93
 0.81","223
@@ -3157,7 +3157,7 @@ valyn,Omen,"1.32
 0
 2","-2
 0
--2",G2 Esports,Sunset,2,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1",5
+-2",G2 Esports,Sunset,2,2956152,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1",5
 leaf,Raze,"1.19
 1.03
 1.32","238
@@ -3184,7 +3184,7 @@ leaf,Raze,"1.19
 4
 1","-1
 -1
-0",G2 Esports,Sunset,2,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1",5
+0",G2 Esports,Sunset,2,2956152,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1",5
 trent,Viper,"1.02
 1.38
 0.72","190
@@ -3211,7 +3211,7 @@ trent,Viper,"1.02
 2
 4","-5
 -2
--3",G2 Esports,Sunset,2,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1",5
+-3",G2 Esports,Sunset,2,2956152,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1",5
 neT,Cypher,"0.98
 1.12
 0.87","133
@@ -3238,7 +3238,7 @@ neT,Cypher,"0.98
 0
 1","-1
 0
--1",G2 Esports,Sunset,2,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1",5
+-1",G2 Esports,Sunset,2,2956152,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1",5
 keznit,Jett,"1.52
 1.60
 1.43","358
@@ -3265,7 +3265,7 @@ keznit,Jett,"1.52
 1
 2","+5
 +3
-+2",KRÜ Esports,Ascent,3,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0",5
++2",KRÜ Esports,Ascent,3,2956153,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0",5
 Shyy,Killjoy,"1.18
 1.51
 0.85","229
@@ -3292,7 +3292,7 @@ Shyy,Killjoy,"1.18
 0
 1","0
 +1
--1",KRÜ Esports,Ascent,3,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0",5
+-1",KRÜ Esports,Ascent,3,2956153,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0",5
 Klaus,Sova,"0.92
 0.80
 1.05","201
@@ -3319,7 +3319,7 @@ Klaus,Sova,"0.92
 0
 1","0
 0
-0",KRÜ Esports,Ascent,3,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0",5
+0",KRÜ Esports,Ascent,3,2956153,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0",5
 mta,Kayo,"0.88
 0.95
 0.81","164
@@ -3346,7 +3346,7 @@ mta,Kayo,"0.88
 3
 1","-2
 -2
-0",KRÜ Esports,Ascent,3,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0",5
+0",KRÜ Esports,Ascent,3,2956153,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0",5
 Melser,Omen,"0.54
 0.51
 0.56","88
@@ -3373,7 +3373,7 @@ Melser,Omen,"0.54
 2
 1","-3
 -2
--1",KRÜ Esports,Ascent,3,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0",5
+-1",KRÜ Esports,Ascent,3,2956153,Group Stage,Opening (C),G2 Esports,"1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0",5
 JonahP,Kayo,"1.38
 1.41
 1.35","267
@@ -3400,7 +3400,7 @@ JonahP,Kayo,"1.38
 0
 1","-1
 0
--1",G2 Esports,Ascent,3,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1",5
+-1",G2 Esports,Ascent,3,2956153,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1",5
 trent,Viper,"1.05
 0.86
 1.24","194
@@ -3427,7 +3427,7 @@ trent,Viper,"1.05
 0
 0","0
 0
-0",G2 Esports,Ascent,3,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1",5
+0",G2 Esports,Ascent,3,2956153,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1",5
 valyn,Omen,"0.93
 1.13
 0.73","172
@@ -3454,7 +3454,7 @@ valyn,Omen,"0.93
 1
 1","+2
 0
-+2",G2 Esports,Ascent,3,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1",5
++2",G2 Esports,Ascent,3,2956153,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1",5
 leaf,Jett,"0.89
 1.33
 0.45","197
@@ -3481,7 +3481,7 @@ leaf,Jett,"0.89
 4
 4","-3
 +1
--4",G2 Esports,Ascent,3,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1",5
+-4",G2 Esports,Ascent,3,2956153,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1",5
 neT,Cypher,"0.84
 0.61
 1.07","185
@@ -3508,7 +3508,7 @@ neT,Cypher,"0.84
 1
 0","+2
 -1
-+3",G2 Esports,Ascent,3,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1",5
++3",G2 Esports,Ascent,3,2956153,Group Stage,Opening (C),G2 Esports,"0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1",5
 mwzera,Jett,"1.29
 1.27
 1.32","305
@@ -3535,7 +3535,7 @@ mwzera,Jett,"1.29
 1
 2","+2
 +1
-+1",FURIA,Split,1,Group Stage,Elimination (A),MIBR,"0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",6
++1",FURIA,Split,1,2956081,Group Stage,Elimination (A),MIBR,"0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",6
 havoc,Raze,"0.98
 0.88
 1.11","221
@@ -3562,7 +3562,7 @@ havoc,Raze,"0.98
 3
 1","+1
 0
-+1",FURIA,Split,1,Group Stage,Elimination (A),MIBR,"0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",6
++1",FURIA,Split,1,2956081,Group Stage,Elimination (A),MIBR,"0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",6
 Khalil,Viper,"0.90
 1.05
 0.72","163
@@ -3589,7 +3589,7 @@ Khalil,Viper,"0.90
 0
 1","-1
 0
--1",FURIA,Split,1,Group Stage,Elimination (A),MIBR,"0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",6
+-1",FURIA,Split,1,2956081,Group Stage,Elimination (A),MIBR,"0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",6
 kon4n,Skye,"0.82
 1.02
 0.58","146
@@ -3616,7 +3616,7 @@ kon4n,Skye,"0.82
 0
 0","+1
 +1
-0",FURIA,Split,1,Group Stage,Elimination (A),MIBR,"0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",6
+0",FURIA,Split,1,2956081,Group Stage,Elimination (A),MIBR,"0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",6
 liazzi,Astra,"0.70
 0.81
 0.56","91
@@ -3643,7 +3643,7 @@ liazzi,Astra,"0.70
 1
 1","-1
 0
--1",FURIA,Split,1,Group Stage,Elimination (A),MIBR,"0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",6
+-1",FURIA,Split,1,2956081,Group Stage,Elimination (A),MIBR,"0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",6
 frz,Viper,"1.46
 2.01
 1.00","277
@@ -3670,7 +3670,7 @@ frz,Viper,"1.46
 1
 4","-4
 -1
--3",MIBR,Split,1,Group Stage,Elimination (A),MIBR,"1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",6
+-3",MIBR,Split,1,2956081,Group Stage,Elimination (A),MIBR,"1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",6
 mazin,Skye,"1.01
 1.20
 0.86","126
@@ -3697,7 +3697,7 @@ mazin,Skye,"1.01
 0
 0","+1
 0
-+1",MIBR,Split,1,Group Stage,Elimination (A),MIBR,"1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",6
++1",MIBR,Split,1,2956081,Group Stage,Elimination (A),MIBR,"1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",6
 artzin,Jett,"1.01
 1.23
 0.83","193
@@ -3724,7 +3724,7 @@ artzin,Jett,"1.01
 1
 2","+1
 +3
--2",MIBR,Split,1,Group Stage,Elimination (A),MIBR,"1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",6
+-2",MIBR,Split,1,2956081,Group Stage,Elimination (A),MIBR,"1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",6
 jzz,Raze,"0.97
 0.91
 1.03","237
@@ -3751,7 +3751,7 @@ jzz,Raze,"0.97
 2
 1","+1
 -1
-+2",MIBR,Split,1,Group Stage,Elimination (A),MIBR,"1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",6
++2",MIBR,Split,1,2956081,Group Stage,Elimination (A),MIBR,"1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",6
 RgLMeister,Astra,"0.91
 0.60
 1.16","143
@@ -3778,7 +3778,7 @@ RgLMeister,Astra,"0.91
 1
 0","-1
 -1
-0",MIBR,Split,1,Group Stage,Elimination (A),MIBR,"1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",6
+0",MIBR,Split,1,2956081,Group Stage,Elimination (A),MIBR,"1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",6
 havoc,Kayo,"1.14
 0.72
 1.55","235
@@ -3805,7 +3805,7 @@ havoc,Kayo,"1.14
 3
 2","0
 -1
-+1",FURIA,Breeze,2,Group Stage,Elimination (A),MIBR,"0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0",6
++1",FURIA,Breeze,2,2956082,Group Stage,Elimination (A),MIBR,"0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0",6
 kon4n,Sova,"1.02
 0.77
 1.27","174
@@ -3832,7 +3832,7 @@ kon4n,Sova,"1.02
 0
 1","+2
 +1
-+1",FURIA,Breeze,2,Group Stage,Elimination (A),MIBR,"0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0",6
++1",FURIA,Breeze,2,2956082,Group Stage,Elimination (A),MIBR,"0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0",6
 liazzi,Viper,"1.02
 0.89
 1.15","205
@@ -3859,7 +3859,7 @@ liazzi,Viper,"1.02
 0
 0","+1
 0
-+1",FURIA,Breeze,2,Group Stage,Elimination (A),MIBR,"0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0",6
++1",FURIA,Breeze,2,2956082,Group Stage,Elimination (A),MIBR,"0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0",6
 mwzera,Jett,"0.99
 0.57
 1.40","183
@@ -3886,7 +3886,7 @@ mwzera,Jett,"0.99
 4
 0","-2
 -3
-+1",FURIA,Breeze,2,Group Stage,Elimination (A),MIBR,"0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0",6
++1",FURIA,Breeze,2,2956082,Group Stage,Elimination (A),MIBR,"0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0",6
 Khalil,Cypher,"0.92
 0.89
 0.95","160
@@ -3913,7 +3913,7 @@ Khalil,Cypher,"0.92
 1
 0","+1
 -1
-+2",FURIA,Breeze,2,Group Stage,Elimination (A),MIBR,"0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0",6
++2",FURIA,Breeze,2,2956082,Group Stage,Elimination (A),MIBR,"0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0",6
 artzin,Jett,"1.20
 0.73
 1.68","278
@@ -3940,7 +3940,7 @@ artzin,Jett,"1.20
 2
 2","+3
 0
-+3",MIBR,Breeze,2,Group Stage,Elimination (A),MIBR,"1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1",6
++3",MIBR,Breeze,2,2956082,Group Stage,Elimination (A),MIBR,"1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1",6
 RgLMeister,Viper,"1.15
 0.81
 1.48","194
@@ -3967,7 +3967,7 @@ RgLMeister,Viper,"1.15
 1
 1","-1
 -1
-0",MIBR,Breeze,2,Group Stage,Elimination (A),MIBR,"1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1",6
+0",MIBR,Breeze,2,2956082,Group Stage,Elimination (A),MIBR,"1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1",6
 jzz,Sova,"0.99
 0.75
 1.23","189
@@ -3994,7 +3994,7 @@ jzz,Sova,"0.99
 2
 0","0
 -1
-+1",MIBR,Breeze,2,Group Stage,Elimination (A),MIBR,"1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1",6
++1",MIBR,Breeze,2,2956082,Group Stage,Elimination (A),MIBR,"1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1",6
 frz,Cypher,"0.91
 0.83
 0.98","186
@@ -4021,7 +4021,7 @@ frz,Cypher,"0.91
 3
 0","-2
 -3
-+1",MIBR,Breeze,2,Group Stage,Elimination (A),MIBR,"1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1",6
++1",MIBR,Breeze,2,2956082,Group Stage,Elimination (A),MIBR,"1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1",6
 mazin,Kayo,"0.73
 0.51
 0.94","124
@@ -4048,7 +4048,7 @@ mazin,Kayo,"0.73
 1
 1","-2
 -1
--1",MIBR,Breeze,2,Group Stage,Elimination (A),MIBR,"1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1",6
+-1",MIBR,Breeze,2,2956082,Group Stage,Elimination (A),MIBR,"1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1",6
 zekken,Raze,"1.55
 1.71
 1.24","308
@@ -4075,7 +4075,7 @@ zekken,Raze,"1.55
 2
 0","+3
 +2
-+1",Sentinels,Lotus,1,Group Stage,Elimination (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1",7
++1",Sentinels,Lotus,1,2956131,Group Stage,Elimination (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1",7
 TenZ,Omen,"1.41
 1.37
 1.51","207
@@ -4102,7 +4102,7 @@ TenZ,Omen,"1.41
 0
 1","+1
 +2
--1",Sentinels,Lotus,1,Group Stage,Elimination (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1",7
+-1",Sentinels,Lotus,1,2956131,Group Stage,Elimination (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1",7
 Zellsis,Killjoy,"1.30
 1.40
 1.09","208
@@ -4129,7 +4129,7 @@ Zellsis,Killjoy,"1.30
 0
 1","+1
 +1
-0",Sentinels,Lotus,1,Group Stage,Elimination (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1",7
+0",Sentinels,Lotus,1,2956131,Group Stage,Elimination (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1",7
 johnqt,Viper,"1.29
 1.26
 1.35","211
@@ -4156,7 +4156,7 @@ johnqt,Viper,"1.29
 1
 1","-1
 0
--1",Sentinels,Lotus,1,Group Stage,Elimination (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1",7
+-1",Sentinels,Lotus,1,2956131,Group Stage,Elimination (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1",7
 Sacy,Fade,"1.28
 1.47
 0.90","190
@@ -4183,7 +4183,7 @@ Sacy,Fade,"1.28
 1
 1","-2
 -1
--1",Sentinels,Lotus,1,Group Stage,Elimination (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1",7
+-1",Sentinels,Lotus,1,2956131,Group Stage,Elimination (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1",7
 Cryocells,Chamber,"0.91
 1.17
 0.78","221
@@ -4210,7 +4210,7 @@ Cryocells,Chamber,"0.91
 0
 2","+1
 +1
-0",100 Thieves,Lotus,1,Group Stage,Elimination (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0",7
+0",100 Thieves,Lotus,1,2956131,Group Stage,Elimination (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0",7
 bang,Viper,"0.84
 0.65
 0.93","190
@@ -4237,7 +4237,7 @@ bang,Viper,"0.84
 0
 2","+1
 +1
-0",100 Thieves,Lotus,1,Group Stage,Elimination (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0",7
+0",100 Thieves,Lotus,1,2956131,Group Stage,Elimination (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0",7
 Asuna,Raze,"0.64
 1.06
 0.43","179
@@ -4264,7 +4264,7 @@ Asuna,Raze,"0.64
 1
 2","-2
 0
--2",100 Thieves,Lotus,1,Group Stage,Elimination (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0",7
+-2",100 Thieves,Lotus,1,2956131,Group Stage,Elimination (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0",7
 eeiu,Fade,"0.64
 0.39
 0.76","97
@@ -4291,7 +4291,7 @@ eeiu,Fade,"0.64
 1
 1","-2
 -1
--1",100 Thieves,Lotus,1,Group Stage,Elimination (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0",7
+-1",100 Thieves,Lotus,1,2956131,Group Stage,Elimination (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0",7
 Boostio,Omen,"0.37
 0.68
 0.22","115
@@ -4318,7 +4318,7 @@ Boostio,Omen,"0.37
 0
 1","0
 +1
--1",100 Thieves,Lotus,1,Group Stage,Elimination (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0",7
+-1",100 Thieves,Lotus,1,2956131,Group Stage,Elimination (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0",7
 TenZ,Yoru,"0.98
 0.81
 1.09","240
@@ -4345,7 +4345,7 @@ TenZ,Yoru,"0.98
 1
 2","0
 0
-0",Sentinels,Bind,2,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0",7
+0",Sentinels,Bind,2,2956132,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0",7
 johnqt,Viper,"0.94
 0.97
 0.92","197
@@ -4372,7 +4372,7 @@ johnqt,Viper,"0.94
 0
 1","+1
 +1
-0",Sentinels,Bind,2,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0",7
+0",Sentinels,Bind,2,2956132,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0",7
 Zellsis,Brimstone,"0.88
 1.24
 0.66","187
@@ -4399,7 +4399,7 @@ Zellsis,Brimstone,"0.88
 1
 1","-2
 -1
--1",Sentinels,Bind,2,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0",7
+-1",Sentinels,Bind,2,2956132,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0",7
 Sacy,Skye,"0.82
 1.06
 0.68","168
@@ -4426,7 +4426,7 @@ Sacy,Skye,"0.82
 1
 2","-2
 -1
--1",Sentinels,Bind,2,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0",7
+-1",Sentinels,Bind,2,2956132,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0",7
 zekken,Raze,"0.75
 0.34
 0.98","194
@@ -4453,7 +4453,7 @@ zekken,Raze,"0.75
 2
 1","-2
 -2
-0",Sentinels,Bind,2,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0",7
+0",Sentinels,Bind,2,2956132,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0",7
 Boostio,Gekko,"1.30
 1.22
 1.43","209
@@ -4480,7 +4480,7 @@ Boostio,Gekko,"1.30
 2
 0","+2
 +1
-+1",100 Thieves,Bind,2,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1",7
++1",100 Thieves,Bind,2,2956132,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1",7
 Asuna,Raze,"1.18
 1.30
 0.97","261
@@ -4507,7 +4507,7 @@ Asuna,Raze,"1.18
 3
 1","+3
 +1
-+2",100 Thieves,Bind,2,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1",7
++2",100 Thieves,Bind,2,2956132,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1",7
 bang,Viper,"1.17
 0.90
 1.62","204
@@ -4534,7 +4534,7 @@ bang,Viper,"1.17
 0
 0","+1
 0
-+1",100 Thieves,Bind,2,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1",7
++1",100 Thieves,Bind,2,2956132,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1",7
 eeiu,Fade,"1.11
 1.08
 1.18","193
@@ -4561,7 +4561,7 @@ eeiu,Fade,"1.11
 0
 0","0
 0
-0",100 Thieves,Bind,2,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1",7
+0",100 Thieves,Bind,2,2956132,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1",7
 Cryocells,Brimstone,"1.09
 1.26
 0.81","158
@@ -4588,7 +4588,7 @@ Cryocells,Brimstone,"1.09
 0
 1","-1
 0
--1",100 Thieves,Bind,2,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1",7
+-1",100 Thieves,Bind,2,2956132,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1",7
 Sacy,Skye,"1.37
 0.99
 1.88","225
@@ -4615,7 +4615,7 @@ Sacy,Skye,"1.37
 0
 0","+2
 0
-+2",Sentinels,Split,3,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1",7
++2",Sentinels,Split,3,2956133,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1",7
 johnqt,Cypher,"1.31
 1.25
 1.39","245
@@ -4642,7 +4642,7 @@ johnqt,Cypher,"1.31
 0
 1","+1
 +1
-0",Sentinels,Split,3,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1",7
+0",Sentinels,Split,3,2956133,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1",7
 zekken,Raze,"1.24
 1.33
 1.11","255
@@ -4669,7 +4669,7 @@ zekken,Raze,"1.24
 2
 1","+3
 +3
-0",Sentinels,Split,3,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1",7
+0",Sentinels,Split,3,2956133,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1",7
 Zellsis,Viper,"1.12
 0.97
 1.32","171
@@ -4696,7 +4696,7 @@ Zellsis,Viper,"1.12
 2
 0","0
 -1
-+1",Sentinels,Split,3,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1",7
++1",Sentinels,Split,3,2956133,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1",7
 TenZ,Omen,"1.08
 1.08
 1.08","199
@@ -4723,7 +4723,7 @@ TenZ,Omen,"1.08
 0
 0","+3
 +1
-+2",Sentinels,Split,3,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1",7
++2",Sentinels,Split,3,2956133,Group Stage,Elimination (B),Sentinels,"1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1",7
 eeiu,Fade,"0.93
 0.41
 1.32","169
@@ -4750,7 +4750,7 @@ eeiu,Fade,"0.93
 1
 0","0
 0
-0",100 Thieves,Split,3,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0",7
+0",100 Thieves,Split,3,2956133,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0",7
 bang,Viper,"0.93
 0.81
 1.02","210
@@ -4777,7 +4777,7 @@ bang,Viper,"0.93
 2
 3","-3
 -1
--2",100 Thieves,Split,3,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0",7
+-2",100 Thieves,Split,3,2956133,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0",7
 Cryocells,Astra,"0.74
 1.22
 0.39","173
@@ -4804,7 +4804,7 @@ Cryocells,Astra,"0.74
 0
 1","0
 0
-0",100 Thieves,Split,3,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0",7
+0",100 Thieves,Split,3,2956133,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0",7
 Asuna,Raze,"0.71
 0.45
 0.90","150
@@ -4831,7 +4831,7 @@ Asuna,Raze,"0.71
 3
 3","-6
 -3
--3",100 Thieves,Split,3,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0",7
+-3",100 Thieves,Split,3,2956133,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0",7
 Boostio,Gekko,"0.69
 0.36
 0.93","173
@@ -4858,7 +4858,7 @@ Boostio,Gekko,"0.69
 1
 1","0
 -1
-+1",100 Thieves,Split,3,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0",7
++1",100 Thieves,Split,3,2956133,Group Stage,Elimination (B),Sentinels,"0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0",7
 Demon1,Jett,"1.59
 1.77
 1.47","316
@@ -4885,7 +4885,7 @@ Demon1,Jett,"1.59
 1
 1","+2
 +1
-+1",NRG Esports,Sunset,1,Group Stage,Winner's (A),NRG Esports,"0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1",8
++1",NRG Esports,Sunset,1,2956071,Group Stage,Winner's (A),NRG Esports,"0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1",8
 Victor,Cypher,"1.27
 1.42
 1.17","217
@@ -4912,7 +4912,7 @@ Victor,Cypher,"1.27
 1
 2","-2
 -1
--1",NRG Esports,Sunset,1,Group Stage,Winner's (A),NRG Esports,"0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1",8
+-1",NRG Esports,Sunset,1,2956071,Group Stage,Winner's (A),NRG Esports,"0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1",8
 Ethan,Skye,"1.16
 0.76
 1.43","213
@@ -4939,7 +4939,7 @@ Ethan,Skye,"1.16
 0
 1","+2
 0
-+2",NRG Esports,Sunset,1,Group Stage,Winner's (A),NRG Esports,"0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1",8
++2",NRG Esports,Sunset,1,2956071,Group Stage,Winner's (A),NRG Esports,"0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1",8
 Marved,Omen,"1.16
 1.24
 1.12","229
@@ -4966,7 +4966,7 @@ Marved,Omen,"1.16
 1
 0","+2
 +1
-+1",NRG Esports,Sunset,1,Group Stage,Winner's (A),NRG Esports,"0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1",8
++1",NRG Esports,Sunset,1,2956071,Group Stage,Winner's (A),NRG Esports,"0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1",8
 crashies,Viper,"1.05
 0.56
 1.38","136
@@ -4993,7 +4993,7 @@ crashies,Viper,"1.05
 1
 0","0
 -1
-+1",NRG Esports,Sunset,1,Group Stage,Winner's (A),NRG Esports,"0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1",8
++1",NRG Esports,Sunset,1,2956071,Group Stage,Winner's (A),NRG Esports,"0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1",8
 wippie,Viper,"1.04
 0.86
 1.31","177
@@ -5020,7 +5020,7 @@ wippie,Viper,"1.04
 3
 0","-2
 -2
-0",Cloud9,Sunset,1,Group Stage,Winner's (A),NRG Esports,"1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0",8
+0",Cloud9,Sunset,1,2956071,Group Stage,Winner's (A),NRG Esports,"1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0",8
 Xeppaa,Raze,"0.85
 0.91
 0.76","233
@@ -5047,7 +5047,7 @@ Xeppaa,Raze,"0.85
 1
 0","0
 -1
-+1",Cloud9,Sunset,1,Group Stage,Winner's (A),NRG Esports,"1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0",8
++1",Cloud9,Sunset,1,2956071,Group Stage,Winner's (A),NRG Esports,"1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0",8
 OXY,Yoru,"0.69
 0.78
 0.55","166
@@ -5074,7 +5074,7 @@ OXY,Yoru,"0.69
 3
 2","-2
 -2
-0",Cloud9,Sunset,1,Group Stage,Winner's (A),NRG Esports,"1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0",8
+0",Cloud9,Sunset,1,2956071,Group Stage,Winner's (A),NRG Esports,"1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0",8
 vanity,Skye,"0.63
 0.78
 0.39","174
@@ -5101,7 +5101,7 @@ vanity,Skye,"0.63
 0
 1","0
 +1
--1",Cloud9,Sunset,1,Group Stage,Winner's (A),NRG Esports,"1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0",8
+-1",Cloud9,Sunset,1,2956071,Group Stage,Winner's (A),NRG Esports,"1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0",8
 jakee,Omen,"0.62
 0.43
 0.90","157
@@ -5128,7 +5128,277 @@ jakee,Omen,"0.62
 1
 1","0
 0
-0",Cloud9,Sunset,1,Group Stage,Winner's (A),NRG Esports,"1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0",8
+0",Cloud9,Sunset,1,2956071,Group Stage,Winner's (A),NRG Esports,"1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0",8
+Victor,Killjoy,"1.31
+1.54
+1.08","248
+332
+164","22
+15
+7","
+
+18
+10
+8
+
+","9
+4
+5","+4
++5
+-1","177
+226
+129","24%
+28%
+20%","3
+3
+0","3
+1
+2","0
++2
+-2",NRG Esports,Ascent,2,2956072,Group Stage,Winner's (A),NRG Esports,"1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1",8
+crashies,Sova,"1.14
+0.88
+1.39","187
+166
+208","17
+8
+9","
+
+13
+8
+5
+
+","7
+2
+5","+4
+0
++4","121
+97
+145","18%
+31%
+14%","2
+1
+1","1
+1
+0","+1
+0
++1",NRG Esports,Ascent,2,2956072,Group Stage,Winner's (A),NRG Esports,"1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1",8
+Demon1,Jett,"1.03
+0.54
+1.52","183
+90
+276","19
+4
+15","
+
+20
+11
+9
+
+","2
+2
+0","-1
+-7
++6","129
+72
+185","41%
+50%
+35%","5
+1
+4","4
+3
+1","+1
+-2
++3",NRG Esports,Ascent,2,2956072,Group Stage,Winner's (A),NRG Esports,"1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1",8
+Marved,Omen,"1.00
+1.33
+0.66","208
+264
+152","20
+13
+7","
+
+20
+8
+12
+
+","13
+2
+11","0
++5
+-5","129
+180
+78","26%
+43%
+7%","1
+0
+1","3
+1
+2","-2
+-1
+-1",NRG Esports,Ascent,2,2956072,Group Stage,Winner's (A),NRG Esports,"1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1",8
+Ethan,Kayo,"0.82
+0.31
+1.33","184
+82
+287","14
+2
+12","
+
+22
+12
+10
+
+","15
+8
+7","-8
+-10
++2","113
+54
+173","7%
+6%
+7%","2
+0
+2","2
+2
+0","0
+-2
++2",NRG Esports,Ascent,2,2956072,Group Stage,Winner's (A),NRG Esports,"1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1",8
+vanity,Sova,"1.28
+1.23
+1.34","259
+255
+264","23
+12
+11","
+
+16
+9
+7
+
+","10
+7
+3","+7
++3
++4","183
+181
+186","21%
+28%
+17%","2
+1
+1","0
+0
+0","+2
++1
++1",Cloud9,Ascent,2,2956072,Group Stage,Winner's (A),NRG Esports,"0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0",8
+Xeppaa,Kayo,"1.01
+1.00
+1.03","192
+165
+220","17
+7
+10","
+
+18
+10
+8
+
+","19
+10
+9","-1
+-3
++2","124
+116
+131","20%
+15%
+27%","1
+0
+1","4
+3
+1","-3
+-3
+0",Cloud9,Ascent,2,2956072,Group Stage,Winner's (A),NRG Esports,"0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0",8
+OXY,Jett,"1.00
+1.00
+1.00","255
+239
+272","23
+10
+13","
+
+23
+12
+11
+
+","3
+2
+1","0
+-2
++2","162
+156
+169","23%
+24%
+22%","9
+3
+6","6
+5
+1","+3
+-2
++5",Cloud9,Ascent,2,2956072,Group Stage,Winner's (A),NRG Esports,"0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0",8
+jakee,Omen,"0.80
+0.22
+1.37","145
+57
+234","14
+2
+12","
+
+18
+11
+7
+
+","11
+2
+9","-4
+-9
++5","100
+36
+163","26%
+10%
+30%","1
+1
+0","3
+0
+3","-2
++1
+-3",Cloud9,Ascent,2,2956072,Group Stage,Winner's (A),NRG Esports,"0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0",8
+wippie,Killjoy,"0.80
+0.95
+0.65","164
+250
+80","16
+13
+3","
+
+17
+11
+6
+
+","3
+2
+1","-1
++2
+-3","109
+153
+65","30%
+42%
+15%","0
+0
+0","0
+0
+0","0
+0
+0",Cloud9,Ascent,2,2956072,Group Stage,Winner's (A),NRG Esports,"0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0",8
 Less,Viper,"1.11
 1.14
 1.08","169
@@ -5155,7 +5425,7 @@ Less,Viper,"1.11
 0
 3","-2
 0
--2",LOUD,Bind,1,Group Stage,Winner's (B),LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0",9
+-2",LOUD,Bind,1,2956121,Group Stage,Winner's (B),LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0",9
 tuyz,Brimstone,"1.09
 1.40
 0.77","173
@@ -5182,7 +5452,7 @@ tuyz,Brimstone,"1.09
 0
 0","+2
 0
-+2",LOUD,Bind,1,Group Stage,Winner's (B),LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0",9
++2",LOUD,Bind,1,2956121,Group Stage,Winner's (B),LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0",9
 saadhak,Kayo,"1.07
 0.89
 1.25","247
@@ -5209,7 +5479,7 @@ saadhak,Kayo,"1.07
 3
 1","-3
 -3
-0",LOUD,Bind,1,Group Stage,Winner's (B),LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0",9
+0",LOUD,Bind,1,2956121,Group Stage,Winner's (B),LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0",9
 cauanzin,Breach,"1.00
 1.30
 0.70","186
@@ -5236,7 +5506,7 @@ cauanzin,Breach,"1.00
 1
 1","0
 0
-0",LOUD,Bind,1,Group Stage,Winner's (B),LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0",9
+0",LOUD,Bind,1,2956121,Group Stage,Winner's (B),LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0",9
 Quick,Phoenix,"0.87
 1.08
 0.66","188
@@ -5263,7 +5533,7 @@ Quick,Phoenix,"0.87
 3
 2","-1
 +1
--2",LOUD,Bind,1,Group Stage,Winner's (B),LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0",9
+-2",LOUD,Bind,1,2956121,Group Stage,Winner's (B),LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0",9
 kiNgg,Viper,"1.30
 1.34
 1.27","248
@@ -5290,7 +5560,7 @@ kiNgg,Viper,"1.30
 1
 0","0
 0
-0",Leviatán,Bind,1,Group Stage,Winner's (B),LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1",9
+0",Leviatán,Bind,1,2956121,Group Stage,Winner's (B),LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1",9
 Mazino,Harbor,"1.25
 1.46
 1.03","197
@@ -5317,7 +5587,7 @@ Mazino,Harbor,"1.25
 1
 1","0
 -1
-+1",Leviatán,Bind,1,Group Stage,Winner's (B),LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1",9
++1",Leviatán,Bind,1,2956121,Group Stage,Winner's (B),LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1",9
 tex,Gekko,"1.09
 1.20
 0.98","242
@@ -5344,7 +5614,7 @@ tex,Gekko,"1.09
 0
 2","+5
 +3
-+2",Leviatán,Bind,1,Group Stage,Winner's (B),LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1",9
++2",Leviatán,Bind,1,2956121,Group Stage,Winner's (B),LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1",9
 C0M,Skye,"0.84
 0.86
 0.82","163
@@ -5371,7 +5641,7 @@ C0M,Skye,"0.84
 1
 1","-1
 -1
-0",Leviatán,Bind,1,Group Stage,Winner's (B),LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1",9
+0",Leviatán,Bind,1,2956121,Group Stage,Winner's (B),LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1",9
 aspas,Raze,"0.72
 0.87
 0.57","181
@@ -5398,7 +5668,7 @@ aspas,Raze,"0.72
 2
 1","0
 +1
--1",Leviatán,Bind,1,Group Stage,Winner's (B),LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1",9
+-1",Leviatán,Bind,1,2956121,Group Stage,Winner's (B),LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1",9
 Less,Viper,"1.70
 1.98
 1.44","284
@@ -5425,7 +5695,7 @@ Less,Viper,"1.70
 0
 1","+1
 +1
-0",LOUD,Split,2,Group Stage,Winner's (B),LOUD,"1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1",9
+0",LOUD,Split,2,2956122,Group Stage,Winner's (B),LOUD,"1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1",9
 cauanzin,Breach,"1.18
 1.32
 1.05","208
@@ -5452,7 +5722,7 @@ cauanzin,Breach,"1.18
 0
 0","+4
 +1
-+3",LOUD,Split,2,Group Stage,Winner's (B),LOUD,"1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1",9
++3",LOUD,Split,2,2956122,Group Stage,Winner's (B),LOUD,"1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1",9
 tuyz,Omen,"1.12
 0.97
 1.26","213
@@ -5479,7 +5749,7 @@ tuyz,Omen,"1.12
 1
 0","+2
 0
-+2",LOUD,Split,2,Group Stage,Winner's (B),LOUD,"1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1",9
++2",LOUD,Split,2,2956122,Group Stage,Winner's (B),LOUD,"1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1",9
 Quick,Raze,"0.85
 0.49
 1.19","190
@@ -5506,7 +5776,7 @@ Quick,Raze,"0.85
 1
 0","+3
 0
-+3",LOUD,Split,2,Group Stage,Winner's (B),LOUD,"1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1",9
++3",LOUD,Split,2,2956122,Group Stage,Winner's (B),LOUD,"1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1",9
 saadhak,Skye,"0.80
 0.81
 0.79","159
@@ -5533,7 +5803,7 @@ saadhak,Skye,"0.80
 2
 1","0
 0
-0",LOUD,Split,2,Group Stage,Winner's (B),LOUD,"1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1",9
+0",LOUD,Split,2,2956122,Group Stage,Winner's (B),LOUD,"1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1",9
 kiNgg,Viper,"1.10
 1.05
 1.16","255
@@ -5560,7 +5830,7 @@ kiNgg,Viper,"1.10
 1
 1","0
 0
-0",Leviatán,Split,2,Group Stage,Winner's (B),LOUD,"0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0",9
+0",Leviatán,Split,2,2956122,Group Stage,Winner's (B),LOUD,"0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0",9
 aspas,Jett,"0.95
 0.99
 0.90","148
@@ -5587,7 +5857,7 @@ aspas,Jett,"0.95
 2
 1","-2
 -2
-0",Leviatán,Split,2,Group Stage,Winner's (B),LOUD,"0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0",9
+0",Leviatán,Split,2,2956122,Group Stage,Winner's (B),LOUD,"0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0",9
 C0M,Skye,"0.81
 0.81
 0.80","185
@@ -5614,7 +5884,7 @@ C0M,Skye,"0.81
 3
 1","-3
 -3
-0",Leviatán,Split,2,Group Stage,Winner's (B),LOUD,"0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0",9
+0",Leviatán,Split,2,2956122,Group Stage,Winner's (B),LOUD,"0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0",9
 tex,Raze,"0.66
 0.54
 0.78","163
@@ -5641,7 +5911,7 @@ tex,Raze,"0.66
 4
 1","-3
 -3
-0",Leviatán,Split,2,Group Stage,Winner's (B),LOUD,"0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0",9
+0",Leviatán,Split,2,2956122,Group Stage,Winner's (B),LOUD,"0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0",9
 Mazino,Astra,"0.55
 0.79
 0.29","118
@@ -5668,7 +5938,7 @@ Mazino,Astra,"0.55
 1
 2","-2
 -1
--1",Leviatán,Split,2,Group Stage,Winner's (B),LOUD,"0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0",9
+-1",Leviatán,Split,2,2956122,Group Stage,Winner's (B),LOUD,"0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0",9
 Less,Viper,"1.69
 1.68
 1.70","310
@@ -5695,7 +5965,7 @@ Less,Viper,"1.69
 0
 0","+5
 +1
-+4",LOUD,Ascent,3,Group Stage,Winner's (B),LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1",9
++4",LOUD,Ascent,3,2956123,Group Stage,Winner's (B),LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1",9
 tuyz,Omen,"1.35
 1.46
 1.18","197
@@ -5722,7 +5992,7 @@ tuyz,Omen,"1.35
 0
 0","+1
 +1
-0",LOUD,Ascent,3,Group Stage,Winner's (B),LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1",9
+0",LOUD,Ascent,3,2956123,Group Stage,Winner's (B),LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1",9
 Quick,Phoenix,"1.18
 1.27
 1.05","234
@@ -5749,7 +6019,7 @@ Quick,Phoenix,"1.18
 2
 0","+1
 0
-+1",LOUD,Ascent,3,Group Stage,Winner's (B),LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1",9
++1",LOUD,Ascent,3,2956123,Group Stage,Winner's (B),LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1",9
 saadhak,Kayo,"0.83
 0.87
 0.76","170
@@ -5776,7 +6046,7 @@ saadhak,Kayo,"0.83
 2
 0","+1
 0
-+1",LOUD,Ascent,3,Group Stage,Winner's (B),LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1",9
++1",LOUD,Ascent,3,2956123,Group Stage,Winner's (B),LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1",9
 cauanzin,Breach,"0.81
 0.78
 0.86","152
@@ -5803,7 +6073,7 @@ cauanzin,Breach,"0.81
 0
 0","+4
 +2
-+2",LOUD,Ascent,3,Group Stage,Winner's (B),LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1",9
++2",LOUD,Ascent,3,2956123,Group Stage,Winner's (B),LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1",9
 C0M,Sova,"1.21
 1.11
 1.28","253
@@ -5830,7 +6100,7 @@ C0M,Sova,"1.21
 1
 0","+1
 -1
-+2",Leviatán,Ascent,3,Group Stage,Winner's (B),LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0",9
++2",Leviatán,Ascent,3,2956123,Group Stage,Winner's (B),LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0",9
 aspas,Jett,"1.08
 1.73
 0.64","214
@@ -5857,7 +6127,7 @@ aspas,Jett,"1.08
 1
 1","-2
 -1
--1",Leviatán,Ascent,3,Group Stage,Winner's (B),LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0",9
+-1",Leviatán,Ascent,3,2956123,Group Stage,Winner's (B),LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0",9
 kiNgg,Kayo,"0.75
 0.48
 0.93","191
@@ -5884,7 +6154,7 @@ kiNgg,Kayo,"0.75
 2
 0","-2
 -2
-0",Leviatán,Ascent,3,Group Stage,Winner's (B),LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0",9
+0",Leviatán,Ascent,3,2956123,Group Stage,Winner's (B),LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0",9
 Mazino,Omen,"0.58
 0.65
 0.53","127
@@ -5911,7 +6181,7 @@ Mazino,Omen,"0.58
 0
 5","-5
 0
--5",Leviatán,Ascent,3,Group Stage,Winner's (B),LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0",9
+-5",Leviatán,Ascent,3,2956123,Group Stage,Winner's (B),LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0",9
 tex,Killjoy,"0.52
 0.39
 0.60","134
@@ -5938,7 +6208,277 @@ tex,Killjoy,"0.52
 4
 2","-4
 -4
-0",Leviatán,Ascent,3,Group Stage,Winner's (B),LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0",9
+0",Leviatán,Ascent,3,2956123,Group Stage,Winner's (B),LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0",9
+JonahP,Sova,"1.04
+1.24
+0.84","201
+212
+190","20
+12
+8","
+
+19
+8
+11
+
+","7
+2
+5","+1
++4
+-3","142
+146
+139","39%
+58%
+24%","1
+1
+0","2
+0
+2","-1
++1
+-2",G2 Esports,Sunset,1,2956171,Group Stage,Winner's (C),Evil Geniuses,"1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0",10
+leaf,Raze,"1.03
+0.73
+1.33","264
+243
+286","24
+11
+13","
+
+21
+12
+9
+
+","5
+2
+3","+3
+-1
++4","167
+153
+182","28%
+23%
+35%","6
+1
+5","7
+4
+3","-1
+-3
++2",G2 Esports,Sunset,1,2956171,Group Stage,Winner's (C),Evil Geniuses,"1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0",10
+trent,Viper,"0.97
+1.06
+0.89","192
+222
+163","19
+10
+9","
+
+20
+10
+10
+
+","8
+5
+3","-1
+0
+-1","124
+156
+91","19%
+18%
+19%","1
+1
+0","4
+4
+0","-3
+-3
+0",G2 Esports,Sunset,1,2956171,Group Stage,Winner's (C),Evil Geniuses,"1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0",10
+valyn,Omen,"0.83
+0.84
+0.82","161
+173
+151","16
+9
+7","
+
+21
+10
+11
+
+","13
+4
+9","-5
+-1
+-4","94
+100
+89","26%
+30%
+22%","3
+2
+1","1
+0
+1","+2
++2
+0",G2 Esports,Sunset,1,2956171,Group Stage,Winner's (C),Evil Geniuses,"1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0",10
+neT,Cypher,"0.82
+0.84
+0.81","201
+228
+175","22
+13
+9","
+
+20
+10
+10
+
+","5
+4
+1","+2
++3
+-1","137
+157
+117","40%
+39%
+42%","1
+0
+1","2
+1
+1","-1
+-1
+0",G2 Esports,Sunset,1,2956171,Group Stage,Winner's (C),Evil Geniuses,"1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0",10
+jawgemo,Raze,"1.18
+1.14
+1.23","242
+225
+260","20
+9
+11","
+
+20
+9
+11
+
+","12
+5
+7","0
+0
+0","168
+154
+182","17%
+21%
+13%","5
+4
+1","1
+0
+1","+4
++4
+0",Evil Geniuses,Sunset,1,2956171,Group Stage,Winner's (C),Evil Geniuses,"0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1",10
+supamen,Omen,"1.09
+0.60
+1.58","207
+101
+314","20
+5
+15","
+
+21
+11
+10
+
+","6
+2
+4","-1
+-6
++5","116
+55
+178","38%
+42%
+37%","4
+1
+3","3
+2
+1","+1
+-1
++2",Evil Geniuses,Sunset,1,2956171,Group Stage,Winner's (C),Evil Geniuses,"0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1",10
+NaturE,Breach,"1.02
+1.15
+0.90","181
+229
+133","18
+11
+7","
+
+19
+9
+10
+
+","10
+5
+5","-1
++2
+-3","113
+137
+90","35%
+35%
+35%","2
+1
+1","0
+0
+0","+2
++1
++1",Evil Geniuses,Sunset,1,2956171,Group Stage,Winner's (C),Evil Geniuses,"0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1",10
+Derrek,Fade,"1.00
+1.34
+0.66","197
+258
+138","22
+15
+7","
+
+20
+9
+11
+
+","2
+1
+1","+2
++6
+-4","131
+168
+94","46%
+49%
+42%","3
+1
+2","1
+1
+0","+2
+0
++2",Evil Geniuses,Sunset,1,2956171,Group Stage,Winner's (C),Evil Geniuses,"0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1",10
+Apoth,Cypher,"0.95
+1.00
+0.90","191
+181
+202","21
+11
+10","
+
+21
+9
+12
+
+","8
+1
+7","0
++2
+-2","144
+138
+149","38%
+35%
+41%","2
+0
+2","7
+4
+3","-5
+-4
+-1",Evil Geniuses,Sunset,1,2956171,Group Stage,Winner's (C),Evil Geniuses,"0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1",10
 leaf,Jett,"1.22
 1.31
 1.13","241
@@ -5965,7 +6505,7 @@ leaf,Jett,"1.22
 3
 2","0
 -2
-+2",G2 Esports,Icebox,2,Group Stage,Winner's (C),Evil Geniuses,"0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0",10
++2",G2 Esports,Icebox,2,2956172,Group Stage,Winner's (C),Evil Geniuses,"0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0",10
 JonahP,Sova,"1.06
 0.70
 1.43","188
@@ -5992,7 +6532,7 @@ JonahP,Sova,"1.06
 1
 2","-2
 -1
--1",G2 Esports,Icebox,2,Group Stage,Winner's (C),Evil Geniuses,"0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0",10
+-1",G2 Esports,Icebox,2,2956172,Group Stage,Winner's (C),Evil Geniuses,"0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0",10
 trent,Viper,"0.98
 0.99
 0.97","188
@@ -6019,7 +6559,7 @@ trent,Viper,"0.98
 1
 0","0
 0
-0",G2 Esports,Icebox,2,Group Stage,Winner's (C),Evil Geniuses,"0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0",10
+0",G2 Esports,Icebox,2,2956172,Group Stage,Winner's (C),Evil Geniuses,"0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0",10
 valyn,Brimstone,"0.97
 0.43
 1.52","214
@@ -6046,7 +6586,7 @@ valyn,Brimstone,"0.97
 3
 0","0
 -2
-+2",G2 Esports,Icebox,2,Group Stage,Winner's (C),Evil Geniuses,"0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0",10
++2",G2 Esports,Icebox,2,2956172,Group Stage,Winner's (C),Evil Geniuses,"0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0",10
 neT,Killjoy,"0.63
 0.71
 0.54","109
@@ -6073,7 +6613,7 @@ neT,Killjoy,"0.63
 1
 1","-2
 -1
--1",G2 Esports,Icebox,2,Group Stage,Winner's (C),Evil Geniuses,"0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0",10
+-1",G2 Esports,Icebox,2,2956172,Group Stage,Winner's (C),Evil Geniuses,"0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0",10
 supamen,Viper,"1.34
 1.51
 1.16","290
@@ -6100,7 +6640,7 @@ supamen,Viper,"1.34
 0
 0","+3
 +1
-+2",Evil Geniuses,Icebox,2,Group Stage,Winner's (C),Evil Geniuses,"1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1",10
++2",Evil Geniuses,Icebox,2,2956172,Group Stage,Winner's (C),Evil Geniuses,"1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1",10
 Apoth,Killjoy,"1.21
 1.14
 1.27","238
@@ -6127,7 +6667,7 @@ Apoth,Killjoy,"1.21
 2
 1","-1
 0
--1",Evil Geniuses,Icebox,2,Group Stage,Winner's (C),Evil Geniuses,"1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1",10
+-1",Evil Geniuses,Icebox,2,2956172,Group Stage,Winner's (C),Evil Geniuses,"1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1",10
 Derrek,Gekko,"1.05
 0.62
 1.47","207
@@ -6154,7 +6694,7 @@ Derrek,Gekko,"1.05
 1
 1","+2
 0
-+2",Evil Geniuses,Icebox,2,Group Stage,Winner's (C),Evil Geniuses,"1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1",10
++2",Evil Geniuses,Icebox,2,2956172,Group Stage,Winner's (C),Evil Geniuses,"1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1",10
 NaturE,Kayo,"0.91
 0.67
 1.14","129
@@ -6181,7 +6721,7 @@ NaturE,Kayo,"0.91
 1
 0","+1
 -1
-+2",Evil Geniuses,Icebox,2,Group Stage,Winner's (C),Evil Geniuses,"1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1",10
++2",Evil Geniuses,Icebox,2,2956172,Group Stage,Winner's (C),Evil Geniuses,"1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1",10
 jawgemo,Deadlock,"0.77
 0.49
 1.05","151
@@ -6208,7 +6748,277 @@ jawgemo,Deadlock,"0.77
 3
 1","-1
 -2
-+1",Evil Geniuses,Icebox,2,Group Stage,Winner's (C),Evil Geniuses,"1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1",10
++1",Evil Geniuses,Icebox,2,2956172,Group Stage,Winner's (C),Evil Geniuses,"1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1",10
+vanity,Skye,"1.28
+1.51
+1.04","239
+285
+195","23
+13
+10","
+
+16
+8
+8
+
+","10
+7
+3","+7
++5
++2","150
+185
+115","25%
+27%
+23%","3
+1
+2","0
+0
+0","+3
++1
++2",Cloud9,Bind,1,2956091,Group Stage,Decider (A),MIBR,"1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0",11
+OXY,Yoru,"1.16
+1.28
+1.04","219
+229
+210","21
+11
+10","
+
+16
+8
+8
+
+","6
+2
+4","+5
++3
++2","147
+164
+131","26%
+21%
+32%","5
+3
+2","3
+1
+2","+2
++2
+0",Cloud9,Bind,1,2956091,Group Stage,Decider (A),MIBR,"1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0",11
+jakee,Brimstone,"1.02
+0.96
+1.07","162
+153
+172","16
+7
+9","
+
+17
+8
+9
+
+","9
+6
+3","-1
+-1
+0","107
+97
+116","48%
+47%
+50%","2
+2
+0","0
+0
+0","+2
++2
+0",Cloud9,Bind,1,2956091,Group Stage,Decider (A),MIBR,"1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0",11
+Xeppaa,Raze,"0.95
+1.04
+0.86","168
+184
+154","14
+8
+6","
+
+16
+7
+9
+
+","7
+5
+2","-2
++1
+-3","118
+135
+101","12%
+11%
+14%","1
+1
+0","6
+3
+3","-5
+-2
+-3",Cloud9,Bind,1,2956091,Group Stage,Decider (A),MIBR,"1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0",11
+wippie,Viper,"0.95
+0.98
+0.91","177
+183
+173","15
+8
+7","
+
+16
+7
+9
+
+","7
+3
+4","-1
++1
+-2","106
+101
+111","23%
+25%
+22%","4
+2
+2","2
+0
+2","+2
++2
+0",Cloud9,Bind,1,2956091,Group Stage,Decider (A),MIBR,"1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0",11
+RgLMeister,Brimstone,"1.18
+1.07
+1.29","216
+129
+304","18
+5
+13","
+
+17
+7
+10
+
+","8
+6
+2","+1
+-2
++3","157
+105
+210","33%
+39%
+31%","1
+1
+0","0
+0
+0","+1
++1
+0",MIBR,Bind,1,2956091,Group Stage,Decider (A),MIBR,"0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1",11
+frz,Viper,"1.03
+1.24
+0.81","188
+292
+86","19
+14
+5","
+
+17
+10
+7
+
+","0
+0
+0","+2
++4
+-2","112
+165
+59","33%
+32%
+33%","4
+4
+0","2
+1
+1","+2
++3
+-1",MIBR,Bind,1,2956091,Group Stage,Decider (A),MIBR,"0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1",11
+mazin,Kayo,"1.01
+1.11
+0.91","221
+218
+224","19
+10
+9","
+
+20
+8
+12
+
+","8
+3
+5","-1
++2
+-3","136
+135
+137","37%
+47%
+30%","5
+2
+3","3
+2
+1","+2
+0
++2",MIBR,Bind,1,2956091,Group Stage,Decider (A),MIBR,"0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1",11
+jzz,Skye,"0.84
+0.79
+0.88","153
+146
+161","14
+6
+8","
+
+17
+9
+8
+
+","7
+5
+2","-3
+-3
+0","100
+93
+106","37%
+24%
+50%","1
+0
+1","1
+1
+0","0
+-1
++1",MIBR,Bind,1,2956091,Group Stage,Decider (A),MIBR,"0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1",11
+artzin,Raze,"0.62
+0.79
+0.44","115
+162
+70","11
+8
+3","
+
+18
+9
+9
+
+","4
+1
+3","-7
+-1
+-6","77
+104
+51","11%
+19%
+0%","0
+0
+0","9
+2
+7","-9
+-2
+-7",MIBR,Bind,1,2956091,Group Stage,Decider (A),MIBR,"0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1",11
 Xeppaa,Kayo,"1.37
 0.82
 1.83","248
@@ -6235,7 +7045,7 @@ Xeppaa,Kayo,"1.37
 0
 0","+2
 0
-+2",Cloud9,Ascent,2,Group Stage,Decider (A),MIBR,"0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0",11
++2",Cloud9,Ascent,2,2956092,Group Stage,Decider (A),MIBR,"0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0",11
 jakee,Omen,"1.36
 1.46
 1.27","226
@@ -6262,7 +7072,7 @@ jakee,Omen,"1.36
 1
 1","-1
 -1
-0",Cloud9,Ascent,2,Group Stage,Decider (A),MIBR,"0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0",11
+0",Cloud9,Ascent,2,2956092,Group Stage,Decider (A),MIBR,"0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0",11
 vanity,Sova,"0.78
 0.92
 0.67","196
@@ -6289,7 +7099,7 @@ vanity,Sova,"0.78
 1
 1","+1
 +1
-0",Cloud9,Ascent,2,Group Stage,Decider (A),MIBR,"0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0",11
+0",Cloud9,Ascent,2,2956092,Group Stage,Decider (A),MIBR,"0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0",11
 wippie,Killjoy,"0.74
 0.64
 0.83","163
@@ -6316,7 +7126,7 @@ wippie,Killjoy,"0.74
 1
 2","-2
 -1
--1",Cloud9,Ascent,2,Group Stage,Decider (A),MIBR,"0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0",11
+-1",Cloud9,Ascent,2,2956092,Group Stage,Decider (A),MIBR,"0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0",11
 OXY,Jett,"0.49
 0.43
 0.53","128
@@ -6343,7 +7153,7 @@ OXY,Jett,"0.49
 3
 1","0
 -1
-+1",Cloud9,Ascent,2,Group Stage,Decider (A),MIBR,"0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0",11
++1",Cloud9,Ascent,2,2956092,Group Stage,Decider (A),MIBR,"0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0",11
 jzz,Skye,"1.23
 1.48
 0.92","290
@@ -6370,7 +7180,7 @@ jzz,Skye,"1.23
 2
 0","+5
 +3
-+2",MIBR,Ascent,2,Group Stage,Decider (A),MIBR,"1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1",11
++2",MIBR,Ascent,2,2956092,Group Stage,Decider (A),MIBR,"1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1",11
 frz,Cypher,"1.22
 1.18
 1.26","224
@@ -6397,7 +7207,7 @@ frz,Cypher,"1.22
 1
 1","0
 -1
-+1",MIBR,Ascent,2,Group Stage,Decider (A),MIBR,"1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1",11
++1",MIBR,Ascent,2,2956092,Group Stage,Decider (A),MIBR,"1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1",11
 RgLMeister,Omen,"1.21
 1.39
 0.98","249
@@ -6424,7 +7234,7 @@ RgLMeister,Omen,"1.21
 0
 1","-1
 0
--1",MIBR,Ascent,2,Group Stage,Decider (A),MIBR,"1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1",11
+-1",MIBR,Ascent,2,2956092,Group Stage,Decider (A),MIBR,"1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1",11
 artzin,Jett,"1.06
 0.68
 1.51","216
@@ -6451,7 +7261,7 @@ artzin,Jett,"1.06
 2
 0","0
 -2
-+2",MIBR,Ascent,2,Group Stage,Decider (A),MIBR,"1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1",11
++2",MIBR,Ascent,2,2956092,Group Stage,Decider (A),MIBR,"1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1",11
 mazin,Viper,"0.87
 0.56
 1.24","155
@@ -6478,7 +7288,7 @@ mazin,Viper,"0.87
 2
 2","-4
 -2
--2",MIBR,Ascent,2,Group Stage,Decider (A),MIBR,"1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1",11
+-2",MIBR,Ascent,2,2956092,Group Stage,Decider (A),MIBR,"1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1",11
 kiNgg,Viper,"1.08
 1.18
 0.77","286
@@ -6505,7 +7315,7 @@ kiNgg,Viper,"1.08
 1
 0","-1
 -1
-0",Leviatán,Split,1,Group Stage,Decider (B),Sentinels,"1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",12
+0",Leviatán,Split,1,2956141,Group Stage,Decider (B),Sentinels,"1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",12
 aspas,Jett,"0.96
 1.16
 0.38","247
@@ -6532,7 +7342,7 @@ aspas,Jett,"0.96
 2
 0","-1
 -1
-0",Leviatán,Split,1,Group Stage,Decider (B),Sentinels,"1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",12
+0",Leviatán,Split,1,2956141,Group Stage,Decider (B),Sentinels,"1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",12
 C0M,Skye,"0.68
 0.64
 0.79","148
@@ -6559,7 +7369,7 @@ C0M,Skye,"0.68
 2
 0","-1
 -2
-+1",Leviatán,Split,1,Group Stage,Decider (B),Sentinels,"1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",12
++1",Leviatán,Split,1,2956141,Group Stage,Decider (B),Sentinels,"1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",12
 tex,Raze,"0.58
 0.73
 0.11","155
@@ -6586,7 +7396,7 @@ tex,Raze,"0.58
 4
 1","-3
 -2
--1",Leviatán,Split,1,Group Stage,Decider (B),Sentinels,"1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",12
+-1",Leviatán,Split,1,2956141,Group Stage,Decider (B),Sentinels,"1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",12
 Mazino,Astra,"0.51
 0.48
 0.59","104
@@ -6613,7 +7423,7 @@ Mazino,Astra,"0.51
 0
 1","0
 0
-0",Leviatán,Split,1,Group Stage,Decider (B),Sentinels,"1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",12
+0",Leviatán,Split,1,2956141,Group Stage,Decider (B),Sentinels,"1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0",12
 zekken,Raze,"1.85
 2.08
 1.77","339
@@ -6640,7 +7450,7 @@ zekken,Raze,"1.85
 0
 0","+2
 0
-+2",Sentinels,Split,1,Group Stage,Decider (B),Sentinels,"0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",12
++2",Sentinels,Split,1,2956141,Group Stage,Decider (B),Sentinels,"0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",12
 Zellsis,Viper,"1.46
 0.74
 1.70","265
@@ -6667,7 +7477,7 @@ Zellsis,Viper,"1.46
 1
 2","0
 -1
-+1",Sentinels,Split,1,Group Stage,Decider (B),Sentinels,"0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",12
++1",Sentinels,Split,1,2956141,Group Stage,Decider (B),Sentinels,"0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",12
 johnqt,Cypher,"1.39
 1.94
 1.21","254
@@ -6694,7 +7504,7 @@ johnqt,Cypher,"1.39
 0
 0","+3
 0
-+3",Sentinels,Split,1,Group Stage,Decider (B),Sentinels,"0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",12
++3",Sentinels,Split,1,2956141,Group Stage,Decider (B),Sentinels,"0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",12
 TenZ,Omen,"0.94
 0.65
 1.03","172
@@ -6721,7 +7531,7 @@ TenZ,Omen,"0.94
 0
 1","+1
 +1
-0",Sentinels,Split,1,Group Stage,Decider (B),Sentinels,"0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",12
+0",Sentinels,Split,1,2956141,Group Stage,Decider (B),Sentinels,"0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",12
 Sacy,Skye,"0.83
 1.68
 0.55","168
@@ -6748,7 +7558,7 @@ Sacy,Skye,"0.83
 1
 0","0
 0
-0",Sentinels,Split,1,Group Stage,Decider (B),Sentinels,"0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",12
+0",Sentinels,Split,1,2956141,Group Stage,Decider (B),Sentinels,"0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1",12
 kiNgg,Viper,"1.43
 1.52
 1.29","224
@@ -6775,7 +7585,7 @@ kiNgg,Viper,"1.43
 1
 0","0
 0
-0",Leviatán,Breeze,2,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1",12
+0",Leviatán,Breeze,2,2956142,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1",12
 aspas,Jett,"1.39
 1.57
 1.08","285
@@ -6802,7 +7612,7 @@ aspas,Jett,"1.39
 1
 1","+3
 +1
-+2",Leviatán,Breeze,2,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1",12
++2",Leviatán,Breeze,2,2956142,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1",12
 Mazino,Kayo,"1.26
 1.00
 1.69","204
@@ -6829,7 +7639,7 @@ Mazino,Kayo,"1.26
 3
 0","-1
 -3
-+2",Leviatán,Breeze,2,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1",12
++2",Leviatán,Breeze,2,2956142,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1",12
 tex,Cypher,"1.11
 0.97
 1.37","242
@@ -6856,7 +7666,7 @@ tex,Cypher,"1.11
 0
 0","+2
 +2
-0",Leviatán,Breeze,2,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1",12
+0",Leviatán,Breeze,2,2956142,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1",12
 C0M,Sova,"0.88
 0.90
 0.84","114
@@ -6883,7 +7693,7 @@ C0M,Sova,"0.88
 2
 1","-3
 -2
--1",Leviatán,Breeze,2,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1",12
+-1",Leviatán,Breeze,2,2956142,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1",12
 zekken,Jett,"0.90
 0.65
 1.05","215
@@ -6910,7 +7720,7 @@ zekken,Jett,"0.90
 3
 2","0
 -2
-+2",Sentinels,Breeze,2,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0",12
++2",Sentinels,Breeze,2,2956142,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0",12
 Sacy,Sova,"0.90
 0.73
 0.99","190
@@ -6937,7 +7747,7 @@ Sacy,Sova,"0.90
 0
 0","+2
 0
-+2",Sentinels,Breeze,2,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0",12
++2",Sentinels,Breeze,2,2956142,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0",12
 johnqt,Cypher,"0.72
 0.41
 0.90","163
@@ -6964,7 +7774,7 @@ johnqt,Cypher,"0.72
 2
 1","-2
 -2
-0",Sentinels,Breeze,2,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0",12
+0",Sentinels,Breeze,2,2956142,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0",12
 TenZ,Kayo,"0.66
 0.86
 0.53","154
@@ -6991,7 +7801,7 @@ TenZ,Kayo,"0.66
 0
 2","-2
 0
--2",Sentinels,Breeze,2,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0",12
+-2",Sentinels,Breeze,2,2956142,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0",12
 Zellsis,Viper,"0.62
 0.59
 0.64","136
@@ -7018,7 +7828,7 @@ Zellsis,Viper,"0.62
 0
 0","+1
 +1
-0",Sentinels,Breeze,2,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0",12
+0",Sentinels,Breeze,2,2956142,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0",12
 aspas,Raze,"1.24
 0.87
 1.54","225
@@ -7045,7 +7855,7 @@ aspas,Raze,"1.24
 2
 2","-3
 -1
--2",Leviatán,Bind,3,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0",12
+-2",Leviatán,Bind,3,2956143,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0",12
 C0M,Skye,"0.91
 1.00
 0.83","199
@@ -7072,7 +7882,7 @@ C0M,Skye,"0.91
 2
 3","-4
 -2
--2",Leviatán,Bind,3,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0",12
+-2",Leviatán,Bind,3,2956143,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0",12
 kiNgg,Viper,"0.87
 0.92
 0.82","169
@@ -7099,7 +7909,7 @@ kiNgg,Viper,"0.87
 1
 0","0
 0
-0",Leviatán,Bind,3,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0",12
+0",Leviatán,Bind,3,2956143,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0",12
 Mazino,Harbor,"0.63
 0.21
 0.98","150
@@ -7126,7 +7936,7 @@ Mazino,Harbor,"0.63
 2
 0","0
 -2
-+2",Leviatán,Bind,3,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0",12
++2",Leviatán,Bind,3,2956143,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0",12
 tex,Gekko,"0.57
 0.44
 0.67","160
@@ -7153,7 +7963,7 @@ tex,Gekko,"0.57
 1
 2","-1
 -1
-0",Leviatán,Bind,3,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0",12
+0",Leviatán,Bind,3,2956143,Group Stage,Decider (B),Sentinels,"1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0",12
 Sacy,Skye,"1.35
 1.50
 1.18","229
@@ -7180,7 +7990,7 @@ Sacy,Skye,"1.35
 1
 0","+2
 +2
-0",Sentinels,Bind,3,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",12
+0",Sentinels,Bind,3,2956143,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",12
 zekken,Raze,"1.34
 1.12
 1.60","298
@@ -7207,7 +8017,7 @@ zekken,Raze,"1.34
 1
 1","+3
 0
-+3",Sentinels,Bind,3,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",12
++3",Sentinels,Bind,3,2956143,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",12
 Zellsis,Brimstone,"1.14
 1.02
 1.29","191
@@ -7234,7 +8044,7 @@ Zellsis,Brimstone,"1.14
 1
 0","+1
 0
-+1",Sentinels,Bind,3,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",12
++1",Sentinels,Bind,3,2956143,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",12
 johnqt,Viper,"1.09
 0.93
 1.28","155
@@ -7261,7 +8071,7 @@ johnqt,Viper,"1.09
 0
 1","+1
 +1
-0",Sentinels,Bind,3,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",12
+0",Sentinels,Bind,3,2956143,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",12
 TenZ,Yoru,"1.03
 0.72
 1.40","206
@@ -7288,7 +8098,7 @@ TenZ,Yoru,"1.03
 2
 0","+1
 -1
-+2",Sentinels,Bind,3,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",12
++2",Sentinels,Bind,3,2956143,Group Stage,Decider (B),Sentinels,"0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1",12
 leaf,Raze,"1.37
 1.10
 1.58","287
@@ -7315,7 +8125,7 @@ leaf,Raze,"1.37
 3
 3","-1
 -1
-0",G2 Esports,Split,1,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1",13
+0",G2 Esports,Split,1,2956191,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1",13
 neT,Cypher,"1.26
 1.62
 0.98","277
@@ -7342,7 +8152,7 @@ neT,Cypher,"1.26
 0
 0","+2
 0
-+2",G2 Esports,Split,1,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1",13
++2",G2 Esports,Split,1,2956191,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1",13
 trent,Viper,"1.21
 1.19
 1.22","237
@@ -7369,7 +8179,7 @@ trent,Viper,"1.21
 0
 1","+2
 +1
-+1",G2 Esports,Split,1,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1",13
++1",G2 Esports,Split,1,2956191,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1",13
 valyn,Omen,"1.06
 0.99
 1.12","141
@@ -7396,7 +8206,7 @@ valyn,Omen,"1.06
 1
 0","-1
 -1
-0",G2 Esports,Split,1,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1",13
+0",G2 Esports,Split,1,2956191,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1",13
 JonahP,Breach,"0.79
 0.66
 0.88","98
@@ -7423,7 +8233,7 @@ JonahP,Breach,"0.79
 2
 1","-3
 -2
--1",G2 Esports,Split,1,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1",13
+-1",G2 Esports,Split,1,2956191,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1",13
 Shyy,Viper,"1.30
 1.58
 0.93","232
@@ -7450,7 +8260,7 @@ Shyy,Viper,"1.30
 0
 0","+2
 +1
-+1",KRÜ Esports,Split,1,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0",13
++1",KRÜ Esports,Split,1,2956191,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0",13
 mta,Kayo,"0.90
 0.73
 1.12","186
@@ -7477,7 +8287,7 @@ mta,Kayo,"0.90
 2
 1","-1
 -2
-+1",KRÜ Esports,Split,1,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0",13
++1",KRÜ Esports,Split,1,2956191,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0",13
 Klaus,Skye,"0.89
 1.15
 0.54","127
@@ -7504,7 +8314,7 @@ Klaus,Skye,"0.89
 1
 1","0
 +1
--1",KRÜ Esports,Split,1,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0",13
+-1",KRÜ Esports,Split,1,2956191,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0",13
 keznit,Jett,"0.83
 0.84
 0.81","180
@@ -7531,7 +8341,7 @@ keznit,Jett,"0.83
 1
 0","+3
 +1
-+2",KRÜ Esports,Split,1,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0",13
++2",KRÜ Esports,Split,1,2956191,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0",13
 Melser,Astra,"0.80
 0.58
 1.10","147
@@ -7558,7 +8368,7 @@ Melser,Astra,"0.80
 3
 1","-3
 -3
-0",KRÜ Esports,Split,1,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0",13
+0",KRÜ Esports,Split,1,2956191,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0",13
 leaf,Raze,"1.31
 1.43
 1.22","232
@@ -7585,7 +8395,7 @@ leaf,Raze,"1.31
 2
 3","0
 +1
--1",G2 Esports,Sunset,2,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1",13
+-1",G2 Esports,Sunset,2,2956192,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1",13
 trent,Viper,"1.28
 1.78
 0.91","223
@@ -7612,7 +8422,7 @@ trent,Viper,"1.28
 0
 1","+1
 +1
-0",G2 Esports,Sunset,2,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1",13
+0",G2 Esports,Sunset,2,2956192,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1",13
 JonahP,Sova,"1.27
 1.41
 1.16","207
@@ -7639,7 +8449,7 @@ JonahP,Sova,"1.27
 0
 2","-2
 0
--2",G2 Esports,Sunset,2,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1",13
+-2",G2 Esports,Sunset,2,2956192,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1",13
 neT,Cypher,"1.09
 1.34
 0.90","233
@@ -7666,7 +8476,7 @@ neT,Cypher,"1.09
 0
 1","-1
 0
--1",G2 Esports,Sunset,2,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1",13
+-1",G2 Esports,Sunset,2,2956192,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1",13
 valyn,Omen,"0.88
 1.40
 0.49","181
@@ -7693,7 +8503,7 @@ valyn,Omen,"0.88
 0
 1","+3
 +3
-0",G2 Esports,Sunset,2,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1",13
+0",G2 Esports,Sunset,2,2956192,Group Stage,Decider (C),G2 Esports,"0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1",13
 keznit,Chamber,"1.17
 1.65
 0.52","288
@@ -7720,7 +8530,7 @@ keznit,Chamber,"1.17
 0
 2","+3
 +4
--1",KRÜ Esports,Sunset,2,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",13
+-1",KRÜ Esports,Sunset,2,2956192,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",13
 mta,Kayo,"0.88
 0.85
 0.91","174
@@ -7747,7 +8557,7 @@ mta,Kayo,"0.88
 1
 3","-2
 +1
--3",KRÜ Esports,Sunset,2,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",13
+-3",KRÜ Esports,Sunset,2,2956192,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",13
 Klaus,Fade,"0.84
 0.99
 0.65","158
@@ -7774,7 +8584,7 @@ Klaus,Fade,"0.84
 1
 0","0
 -1
-+1",KRÜ Esports,Sunset,2,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",13
++1",KRÜ Esports,Sunset,2,2956192,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",13
 Shyy,Viper,"0.83
 1.14
 0.41","170
@@ -7801,7 +8611,7 @@ Shyy,Viper,"0.83
 1
 1","-1
 0
--1",KRÜ Esports,Sunset,2,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",13
+-1",KRÜ Esports,Sunset,2,2956192,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",13
 Melser,Omen,"0.59
 0.84
 0.26","127
@@ -7828,7 +8638,7 @@ Melser,Omen,"0.59
 1
 1","-1
 0
--1",KRÜ Esports,Sunset,2,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",13
+-1",KRÜ Esports,Sunset,2,2956192,Group Stage,Decider (C),G2 Esports,"1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0",13
 frz,Viper,"1.03
 0.91
 1.20","261
@@ -7855,7 +8665,7 @@ frz,Viper,"1.03
 0
 0","+2
 0
-+2",MIBR,Split,1,Play-Ins,Play-ins,Sentinels,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0",14
++2",MIBR,Split,1,3075721,Play-Ins,Play-ins,Sentinels,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0",14
 artzin,Jett,"0.86
 0.55
 1.32","206
@@ -7882,7 +8692,7 @@ artzin,Jett,"0.86
 2
 0","-1
 -2
-+1",MIBR,Split,1,Play-Ins,Play-ins,Sentinels,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0",14
++1",MIBR,Split,1,3075721,Play-Ins,Play-ins,Sentinels,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0",14
 RgLMeister,Astra,"0.74
 0.32
 1.37","180
@@ -7909,7 +8719,7 @@ RgLMeister,Astra,"0.74
 0
 0","+1
 0
-+1",MIBR,Split,1,Play-Ins,Play-ins,Sentinels,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0",14
++1",MIBR,Split,1,3075721,Play-Ins,Play-ins,Sentinels,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0",14
 mazin,Skye,"0.72
 0.61
 0.89","131
@@ -7936,7 +8746,7 @@ mazin,Skye,"0.72
 3
 1","-4
 -3
--1",MIBR,Split,1,Play-Ins,Play-ins,Sentinels,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0",14
+-1",MIBR,Split,1,3075721,Play-Ins,Play-ins,Sentinels,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0",14
 jzz,Raze,"0.71
 0.36
 1.24","175
@@ -7963,7 +8773,7 @@ jzz,Raze,"0.71
 5
 1","-2
 -3
-+1",MIBR,Split,1,Play-Ins,Play-ins,Sentinels,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0",14
++1",MIBR,Split,1,3075721,Play-Ins,Play-ins,Sentinels,"0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0",14
 zekken,Raze,"1.52
 1.03
 1.85","285
@@ -7990,7 +8800,7 @@ zekken,Raze,"1.52
 3
 0","0
 -3
-+3",Sentinels,Split,1,Play-Ins,Play-ins,Sentinels,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1",14
++3",Sentinels,Split,1,3075721,Play-Ins,Play-ins,Sentinels,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1",14
 TenZ,Omen,"1.26
 0.79
 1.58","224
@@ -8017,7 +8827,7 @@ TenZ,Omen,"1.26
 1
 0","0
 -1
-+1",Sentinels,Split,1,Play-Ins,Play-ins,Sentinels,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1",14
++1",Sentinels,Split,1,3075721,Play-Ins,Play-ins,Sentinels,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1",14
 johnqt,Cypher,"1.26
 0.98
 1.44","203
@@ -8044,7 +8854,7 @@ johnqt,Cypher,"1.26
 1
 0","+1
 0
-+1",Sentinels,Split,1,Play-Ins,Play-ins,Sentinels,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1",14
++1",Sentinels,Split,1,3075721,Play-Ins,Play-ins,Sentinels,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1",14
 Zellsis,Viper,"1.13
 0.83
 1.33","229
@@ -8071,7 +8881,7 @@ Zellsis,Viper,"1.13
 1
 1","+2
 -1
-+3",Sentinels,Split,1,Play-Ins,Play-ins,Sentinels,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1",14
++3",Sentinels,Split,1,3075721,Play-Ins,Play-ins,Sentinels,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1",14
 Sacy,Skye,"1.03
 0.64
 1.29","146
@@ -8098,7 +8908,7 @@ Sacy,Skye,"1.03
 0
 1","+1
 +1
-0",Sentinels,Split,1,Play-Ins,Play-ins,Sentinels,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1",14
+0",Sentinels,Split,1,3075721,Play-Ins,Play-ins,Sentinels,"1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1",14
 artzin,Jett,"0.98
 0.92
 1.08","274
@@ -8125,7 +8935,7 @@ artzin,Jett,"0.98
 2
 0","0
 -1
-+1",MIBR,Ascent,2,Play-Ins,Play-ins,Sentinels,"1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",14
++1",MIBR,Ascent,2,3075722,Play-Ins,Play-ins,Sentinels,"1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",14
 frz,Cypher,"0.76
 0.87
 0.57","143
@@ -8152,7 +8962,7 @@ frz,Cypher,"0.76
 1
 1","-2
 -1
--1",MIBR,Ascent,2,Play-Ins,Play-ins,Sentinels,"1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",14
+-1",MIBR,Ascent,2,3075722,Play-Ins,Play-ins,Sentinels,"1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",14
 mazin,Viper,"0.74
 0.66
 0.89","167
@@ -8179,7 +8989,7 @@ mazin,Viper,"0.74
 3
 0","0
 -2
-+2",MIBR,Ascent,2,Play-Ins,Play-ins,Sentinels,"1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",14
++2",MIBR,Ascent,2,3075722,Play-Ins,Play-ins,Sentinels,"1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",14
 RgLMeister,Omen,"0.67
 0.81
 0.44","133
@@ -8206,7 +9016,7 @@ RgLMeister,Omen,"0.67
 1
 1","0
 0
-0",MIBR,Ascent,2,Play-Ins,Play-ins,Sentinels,"1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",14
+0",MIBR,Ascent,2,3075722,Play-Ins,Play-ins,Sentinels,"1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",14
 jzz,Skye,"0.63
 0.77
 0.38","128
@@ -8233,7 +9043,7 @@ jzz,Skye,"0.63
 2
 1","-3
 -2
--1",MIBR,Ascent,2,Play-Ins,Play-ins,Sentinels,"1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",14
+-1",MIBR,Ascent,2,3075722,Play-Ins,Play-ins,Sentinels,"1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0",14
 zekken,Jett,"1.41
 1.60
 1.30","308
@@ -8260,7 +9070,7 @@ zekken,Jett,"1.41
 1
 2","+3
 0
-+3",Sentinels,Ascent,2,Play-Ins,Play-ins,Sentinels,"0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",14
++3",Sentinels,Ascent,2,3075722,Play-Ins,Play-ins,Sentinels,"0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",14
 Sacy,Sova,"1.35
 1.53
 1.24","237
@@ -8287,7 +9097,7 @@ Sacy,Sova,"1.35
 0
 0","+2
 +1
-+1",Sentinels,Ascent,2,Play-Ins,Play-ins,Sentinels,"0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",14
++1",Sentinels,Ascent,2,3075722,Play-Ins,Play-ins,Sentinels,"0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",14
 Zellsis,Kayo,"1.29
 1.12
 1.39","190
@@ -8314,7 +9124,7 @@ Zellsis,Kayo,"1.29
 0
 0","+1
 0
-+1",Sentinels,Ascent,2,Play-Ins,Play-ins,Sentinels,"0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",14
++1",Sentinels,Ascent,2,3075722,Play-Ins,Play-ins,Sentinels,"0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",14
 TenZ,Omen,"1.12
 1.05
 1.17","245
@@ -8341,7 +9151,7 @@ TenZ,Omen,"1.12
 3
 1","-2
 -3
-+1",Sentinels,Ascent,2,Play-Ins,Play-ins,Sentinels,"0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",14
++1",Sentinels,Ascent,2,3075722,Play-Ins,Play-ins,Sentinels,"0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",14
 johnqt,Killjoy,"0.89
 1.27
 0.66","139
@@ -8368,7 +9178,7 @@ johnqt,Killjoy,"0.89
 0
 0","+1
 +1
-0",Sentinels,Ascent,2,Play-Ins,Play-ins,Sentinels,"0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",14
+0",Sentinels,Ascent,2,3075722,Play-Ins,Play-ins,Sentinels,"0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1",14
 trent,Viper,"1.27
 1.04
 1.46","212
@@ -8395,7 +9205,7 @@ trent,Viper,"1.27
 2
 1","-1
 -2
-+1",G2 Esports,Sunset,1,Play-Ins,Play-ins,MIBR,"1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0",15
++1",G2 Esports,Sunset,1,3075731,Play-Ins,Play-ins,MIBR,"1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0",15
 leaf,Raze,"1.04
 0.60
 1.41","229
@@ -8422,7 +9232,7 @@ leaf,Raze,"1.04
 2
 1","-1
 -1
-0",G2 Esports,Sunset,1,Play-Ins,Play-ins,MIBR,"1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0",15
+0",G2 Esports,Sunset,1,3075731,Play-Ins,Play-ins,MIBR,"1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0",15
 valyn,Omen,"0.90
 0.61
 1.13","183
@@ -8449,7 +9259,7 @@ valyn,Omen,"0.90
 1
 0","+3
 0
-+3",G2 Esports,Sunset,1,Play-Ins,Play-ins,MIBR,"1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0",15
++3",G2 Esports,Sunset,1,3075731,Play-Ins,Play-ins,MIBR,"1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0",15
 JonahP,Sova,"0.73
 0.43
 0.98","147
@@ -8476,7 +9286,7 @@ JonahP,Sova,"0.73
 2
 1","-2
 -2
-0",G2 Esports,Sunset,1,Play-Ins,Play-ins,MIBR,"1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0",15
+0",G2 Esports,Sunset,1,3075731,Play-Ins,Play-ins,MIBR,"1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0",15
 neT,Cypher,"0.66
 0.83
 0.51","182
@@ -8503,7 +9313,7 @@ neT,Cypher,"0.66
 1
 2","-3
 -1
--2",G2 Esports,Sunset,1,Play-Ins,Play-ins,MIBR,"1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0",15
+-2",G2 Esports,Sunset,1,3075731,Play-Ins,Play-ins,MIBR,"1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0",15
 frz,Cypher,"1.38
 1.35
 1.40","225
@@ -8530,7 +9340,7 @@ frz,Cypher,"1.38
 2
 0","0
 -1
-+1",MIBR,Sunset,1,Play-Ins,Play-ins,MIBR,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1",15
++1",MIBR,Sunset,1,3075731,Play-Ins,Play-ins,MIBR,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1",15
 jzz,Skye,"1.29
 0.72
 1.98","273
@@ -8557,7 +9367,7 @@ jzz,Skye,"1.29
 1
 1","+4
 0
-+4",MIBR,Sunset,1,Play-Ins,Play-ins,MIBR,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1",15
++4",MIBR,Sunset,1,3075731,Play-Ins,Play-ins,MIBR,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1",15
 artzin,Raze,"1.03
 0.81
 1.29","218
@@ -8584,7 +9394,7 @@ artzin,Raze,"1.03
 3
 0","-1
 -2
-+1",MIBR,Sunset,1,Play-Ins,Play-ins,MIBR,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1",15
++1",MIBR,Sunset,1,3075731,Play-Ins,Play-ins,MIBR,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1",15
 mazin,Viper,"0.98
 0.91
 1.07","200
@@ -8611,7 +9421,7 @@ mazin,Viper,"0.98
 1
 1","-1
 0
--1",MIBR,Sunset,1,Play-Ins,Play-ins,MIBR,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1",15
+-1",MIBR,Sunset,1,3075731,Play-Ins,Play-ins,MIBR,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1",15
 RgLMeister,Omen,"0.71
 0.55
 0.90","135
@@ -8638,7 +9448,277 @@ RgLMeister,Omen,"0.71
 0
 0","+2
 +1
-+1",MIBR,Sunset,1,Play-Ins,Play-ins,MIBR,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1",15
++1",MIBR,Sunset,1,3075731,Play-Ins,Play-ins,MIBR,"0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1",15
+leaf,Raze,"1.29
+1.58
+1.00","267
+367
+168","26
+19
+7","
+
+17
+7
+10
+
+","3
+0
+3","+9
++12
+-3","193
+274
+113","32%
+38%
+22%","7
+4
+3","4
+1
+3","+3
++3
+0",G2 Esports,Split,2,3075732,Play-Ins,Play-ins,MIBR,"0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1",15
+trent,Viper,"1.05
+0.92
+1.18","230
+156
+305","22
+9
+13","
+
+21
+10
+11
+
+","8
+4
+4","+1
+-1
++2","170
+118
+223","26%
+44%
+20%","4
+2
+2","2
+1
+1","+2
++1
++1",G2 Esports,Split,2,3075732,Play-Ins,Play-ins,MIBR,"0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1",15
+JonahP,Breach,"1.04
+0.82
+1.26","170
+130
+210","18
+7
+11","
+
+19
+11
+8
+
+","8
+3
+5","-1
+-4
++3","104
+86
+122","33%
+33%
+33%","2
+0
+2","1
+1
+0","+1
+-1
++2",G2 Esports,Split,2,3075732,Play-Ins,Play-ins,MIBR,"0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1",15
+neT,Cypher,"0.95
+1.00
+0.90","150
+167
+134","15
+10
+5","
+
+17
+6
+11
+
+","8
+2
+6","-2
++4
+-6","105
+120
+91","56%
+59%
+53%","4
+1
+3","2
+2
+0","+2
+-1
++3",G2 Esports,Split,2,3075732,Play-Ins,Play-ins,MIBR,"0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1",15
+valyn,Omen,"0.90
+1.01
+0.79","152
+170
+136","14
+7
+7","
+
+19
+9
+10
+
+","10
+10
+0","-5
+-2
+-3","94
+107
+82","13%
+13%
+12%","1
+1
+0","1
+1
+0","0
+0
+0",G2 Esports,Split,2,3075732,Play-Ins,Play-ins,MIBR,"0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1",15
+RgLMeister,Astra,"1.18
+1.22
+1.13","222
+227
+219","23
+13
+10","
+
+18
+8
+10
+
+","13
+6
+7","+5
++5
+0","144
+143
+145","30%
+31%
+29%","1
+0
+1","3
+1
+2","-2
+-1
+-1",MIBR,Split,2,3075732,Play-Ins,Play-ins,MIBR,"1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0",15
+jzz,Raze,"1.13
+1.14
+1.11","294
+327
+261","28
+16
+12","
+
+21
+11
+10
+
+","2
+2
+0","+7
++5
++2","191
+212
+169","29%
+29%
+29%","4
+3
+1","3
+3
+0","+1
+0
++1",MIBR,Split,2,3075732,Play-Ins,Play-ins,MIBR,"1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0",15
+frz,Viper,"0.97
+1.02
+0.93","161
+178
+144","16
+10
+6","
+
+16
+7
+9
+
+","5
+0
+5","0
++3
+-3","111
+99
+124","24%
+32%
+20%","2
+1
+1","3
+1
+2","-1
+0
+-1",MIBR,Split,2,3075732,Play-Ins,Play-ins,MIBR,"1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0",15
+artzin,Jett,"0.77
+0.75
+0.78","152
+177
+128","14
+8
+6","
+
+21
+11
+10
+
+","5
+5
+0","-7
+-3
+-4","101
+117
+84","21%
+20%
+25%","2
+0
+2","6
+4
+2","-4
+-4
+0",MIBR,Split,2,3075732,Play-Ins,Play-ins,MIBR,"1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0",15
+mazin,Skye,"0.65
+0.56
+0.74","131
+117
+146","12
+6
+6","
+
+19
+9
+10
+
+","6
+4
+2","-7
+-3
+-4","90
+85
+94","28%
+26%
+29%","1
+0
+1","3
+1
+2","-2
+-1
+-1",MIBR,Split,2,3075732,Play-Ins,Play-ins,MIBR,"1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0",15
 neT,Cypher,"1.12
 1.17
 1.07","285
@@ -8665,7 +9745,7 @@ neT,Cypher,"1.12
 1
 1","0
 +1
--1",G2 Esports,Breeze,3,Play-Ins,Play-ins,MIBR,"0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0",15
+-1",G2 Esports,Breeze,3,3075733,Play-Ins,Play-ins,MIBR,"0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0",15
 JonahP,Sova,"0.91
 0.67
 1.13","170
@@ -8692,7 +9772,7 @@ JonahP,Sova,"0.91
 1
 1","-1
 0
--1",G2 Esports,Breeze,3,Play-Ins,Play-ins,MIBR,"0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0",15
+-1",G2 Esports,Breeze,3,3075733,Play-Ins,Play-ins,MIBR,"0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0",15
 trent,Viper,"0.80
 1.00
 0.62","172
@@ -8719,7 +9799,7 @@ trent,Viper,"0.80
 1
 0","+2
 0
-+2",G2 Esports,Breeze,3,Play-Ins,Play-ins,MIBR,"0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0",15
++2",G2 Esports,Breeze,3,3075733,Play-Ins,Play-ins,MIBR,"0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0",15
 leaf,Yoru,"0.79
 0.70
 0.88","189
@@ -8746,7 +9826,7 @@ leaf,Yoru,"0.79
 1
 3","0
 0
-0",G2 Esports,Breeze,3,Play-Ins,Play-ins,MIBR,"0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0",15
+0",G2 Esports,Breeze,3,3075733,Play-Ins,Play-ins,MIBR,"0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0",15
 valyn,Harbor,"0.44
 0.18
 0.68","112
@@ -8773,7 +9853,7 @@ valyn,Harbor,"0.44
 2
 2","-4
 -2
--2",G2 Esports,Breeze,3,Play-Ins,Play-ins,MIBR,"0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0",15
+-2",G2 Esports,Breeze,3,3075733,Play-Ins,Play-ins,MIBR,"0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0",15
 artzin,Jett,"1.55
 1.70
 1.38","336
@@ -8800,7 +9880,7 @@ artzin,Jett,"1.55
 1
 1","+4
 +2
-+2",MIBR,Breeze,3,Play-Ins,Play-ins,MIBR,"1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1",15
++2",MIBR,Breeze,3,3075733,Play-Ins,Play-ins,MIBR,"1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1",15
 jzz,Sova,"1.31
 0.78
 1.89","208
@@ -8827,7 +9907,7 @@ jzz,Sova,"1.31
 1
 2","0
 0
-0",MIBR,Breeze,3,Play-Ins,Play-ins,MIBR,"1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1",15
+0",MIBR,Breeze,3,3075733,Play-Ins,Play-ins,MIBR,"1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1",15
 RgLMeister,Viper,"1.16
 1.20
 1.12","216
@@ -8854,7 +9934,7 @@ RgLMeister,Viper,"1.16
 0
 1","-1
 0
--1",MIBR,Breeze,3,Play-Ins,Play-ins,MIBR,"1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1",15
+-1",MIBR,Breeze,3,3075733,Play-Ins,Play-ins,MIBR,"1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1",15
 mazin,Kayo,"0.95
 0.87
 1.03","151
@@ -8881,7 +9961,7 @@ mazin,Kayo,"0.95
 1
 0","+2
 +1
-+1",MIBR,Breeze,3,Play-Ins,Play-ins,MIBR,"1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1",15
++1",MIBR,Breeze,3,3075733,Play-Ins,Play-ins,MIBR,"1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1",15
 frz,Cypher,"0.85
 0.83
 0.87","147
@@ -8908,7 +9988,7 @@ frz,Cypher,"0.85
 2
 1","-2
 -1
--1",MIBR,Breeze,3,Play-Ins,Play-ins,MIBR,"1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1",15
+-1",MIBR,Breeze,3,3075733,Play-Ins,Play-ins,MIBR,"1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1",15
 Zellsis,Kayo,"1.44
 1.26
 1.68","231
@@ -8935,7 +10015,7 @@ Zellsis,Kayo,"1.44
 2
 0","-1
 -2
-+1",Sentinels,Sunset,1,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1",16
++1",Sentinels,Sunset,1,3075741,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1",16
 Sacy,Gekko,"1.30
 0.82
 1.95","273
@@ -8962,7 +10042,7 @@ Sacy,Gekko,"1.30
 0
 0","0
 0
-0",Sentinels,Sunset,1,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1",16
+0",Sentinels,Sunset,1,3075741,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1",16
 zekken,Raze,"1.19
 0.89
 1.59","266
@@ -8989,7 +10069,7 @@ zekken,Raze,"1.19
 4
 1","+1
 -1
-+2",Sentinels,Sunset,1,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1",16
++2",Sentinels,Sunset,1,3075741,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1",16
 TenZ,Omen,"1.09
 0.80
 1.48","211
@@ -9016,7 +10096,7 @@ TenZ,Omen,"1.09
 1
 0","+3
 0
-+3",Sentinels,Sunset,1,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1",16
++3",Sentinels,Sunset,1,3075741,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1",16
 johnqt,Cypher,"0.90
 0.59
 1.31","121
@@ -9043,7 +10123,7 @@ johnqt,Cypher,"0.90
 1
 0","0
 -1
-+1",Sentinels,Sunset,1,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1",16
++1",Sentinels,Sunset,1,3075741,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1",16
 leaf,Raze,"1.18
 0.47
 1.71","247
@@ -9070,7 +10150,7 @@ leaf,Raze,"1.18
 4
 3","-3
 -4
-+1",G2 Esports,Sunset,1,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0",16
++1",G2 Esports,Sunset,1,3075741,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0",16
 neT,Cypher,"0.82
 0.74
 0.88","164
@@ -9097,7 +10177,7 @@ neT,Cypher,"0.82
 1
 0","0
 -1
-+1",G2 Esports,Sunset,1,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0",16
++1",G2 Esports,Sunset,1,3075741,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0",16
 JonahP,Sova,"0.81
 0.29
 1.20","187
@@ -9124,7 +10204,7 @@ JonahP,Sova,"0.81
 0
 1","-1
 0
--1",G2 Esports,Sunset,1,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0",16
+-1",G2 Esports,Sunset,1,3075741,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0",16
 trent,Viper,"0.77
 0.38
 1.06","171
@@ -9151,7 +10231,7 @@ trent,Viper,"0.77
 2
 0","-1
 -2
-+1",G2 Esports,Sunset,1,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0",16
++1",G2 Esports,Sunset,1,3075741,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0",16
 valyn,Omen,"0.61
 0.27
 0.87","165
@@ -9178,7 +10258,7 @@ valyn,Omen,"0.61
 1
 0","+2
 0
-+2",G2 Esports,Sunset,1,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0",16
++2",G2 Esports,Sunset,1,3075741,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0",16
 Zellsis,Viper,"1.05
 1.68
 0.52","184
@@ -9205,7 +10285,7 @@ Zellsis,Viper,"1.05
 0
 0","+1
 0
-+1",Sentinels,Breeze,2,Play-Ins,Play-ins,G2 Esports,"0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0",16
++1",Sentinels,Breeze,2,3075742,Play-Ins,Play-ins,G2 Esports,"0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0",16
 TenZ,Kayo,"0.93
 1.13
 0.76","185
@@ -9232,7 +10312,7 @@ TenZ,Kayo,"0.93
 0
 2","-1
 +1
--2",Sentinels,Breeze,2,Play-Ins,Play-ins,G2 Esports,"0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0",16
+-2",Sentinels,Breeze,2,3075742,Play-Ins,Play-ins,G2 Esports,"0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0",16
 johnqt,Cypher,"0.91
 1.17
 0.69","189
@@ -9259,7 +10339,7 @@ johnqt,Cypher,"0.91
 2
 1","-2
 -2
-0",Sentinels,Breeze,2,Play-Ins,Play-ins,G2 Esports,"0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0",16
+0",Sentinels,Breeze,2,3075742,Play-Ins,Play-ins,G2 Esports,"0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0",16
 zekken,Jett,"0.64
 0.51
 0.74","205
@@ -9286,7 +10366,7 @@ zekken,Jett,"0.64
 5
 2","-4
 -3
--1",Sentinels,Breeze,2,Play-Ins,Play-ins,G2 Esports,"0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0",16
+-1",Sentinels,Breeze,2,3075742,Play-Ins,Play-ins,G2 Esports,"0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0",16
 Sacy,Sova,"0.63
 0.45
 0.78","142
@@ -9313,7 +10393,7 @@ Sacy,Sova,"0.63
 0
 2","0
 0
-0",Sentinels,Breeze,2,Play-Ins,Play-ins,G2 Esports,"0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0",16
+0",Sentinels,Breeze,2,3075742,Play-Ins,Play-ins,G2 Esports,"0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0",16
 neT,Cypher,"1.58
 1.72
 1.41","306
@@ -9340,7 +10420,7 @@ neT,Cypher,"1.58
 1
 0","+2
 +2
-0",G2 Esports,Breeze,2,Play-Ins,Play-ins,G2 Esports,"1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1",16
+0",G2 Esports,Breeze,2,3075742,Play-Ins,Play-ins,G2 Esports,"1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1",16
 trent,Viper,"1.17
 1.67
 0.57","193
@@ -9367,7 +10447,7 @@ trent,Viper,"1.17
 2
 1","-2
 -2
-0",G2 Esports,Breeze,2,Play-Ins,Play-ins,G2 Esports,"1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1",16
+0",G2 Esports,Breeze,2,3075742,Play-Ins,Play-ins,G2 Esports,"1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1",16
 leaf,Yoru,"1.16
 1.01
 1.35","295
@@ -9394,7 +10474,7 @@ leaf,Yoru,"1.16
 0
 0","+5
 +2
-+3",G2 Esports,Breeze,2,Play-Ins,Play-ins,G2 Esports,"1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1",16
++3",G2 Esports,Breeze,2,3075742,Play-Ins,Play-ins,G2 Esports,"1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1",16
 JonahP,Sova,"0.98
 1.02
 0.93","154
@@ -9421,7 +10501,7 @@ JonahP,Sova,"0.98
 1
 1","+1
 0
-+1",G2 Esports,Breeze,2,Play-Ins,Play-ins,G2 Esports,"1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1",16
++1",G2 Esports,Breeze,2,3075742,Play-Ins,Play-ins,G2 Esports,"1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1",16
 valyn,Harbor,"0.85
 0.94
 0.75","154
@@ -9448,7 +10528,7 @@ valyn,Harbor,"0.85
 1
 1","0
 0
-0",G2 Esports,Breeze,2,Play-Ins,Play-ins,G2 Esports,"1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1",16
+0",G2 Esports,Breeze,2,3075742,Play-Ins,Play-ins,G2 Esports,"1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1",16
 Zellsis,Viper,"1.24
 0.94
 1.49","239
@@ -9475,7 +10555,7 @@ Zellsis,Viper,"1.24
 1
 0","+2
 0
-+2",Sentinels,Split,3,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",16
++2",Sentinels,Split,3,3075743,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",16
 johnqt,Cypher,"1.10
 0.52
 1.59","174
@@ -9502,7 +10582,7 @@ johnqt,Cypher,"1.10
 0
 0","+3
 0
-+3",Sentinels,Split,3,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",16
++3",Sentinels,Split,3,3075743,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",16
 Sacy,Skye,"1.01
 0.92
 1.09","194
@@ -9529,7 +10609,7 @@ Sacy,Skye,"1.01
 1
 1","0
 0
-0",Sentinels,Split,3,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",16
+0",Sentinels,Split,3,3075743,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",16
 TenZ,Omen,"0.95
 0.71
 1.14","129
@@ -9556,7 +10636,7 @@ TenZ,Omen,"0.95
 1
 1","-1
 -1
-0",Sentinels,Split,3,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",16
+0",Sentinels,Split,3,3075743,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",16
 zekken,Raze,"0.80
 0.29
 1.22","177
@@ -9583,7 +10663,7 @@ zekken,Raze,"0.80
 5
 2","-6
 -5
--1",Sentinels,Split,3,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",16
+-1",Sentinels,Split,3,3075743,Play-Ins,Play-ins,G2 Esports,"0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0",16
 neT,Cypher,"1.20
 1.17
 1.24","258
@@ -9610,7 +10690,7 @@ neT,Cypher,"1.20
 1
 0","+4
 +2
-+2",G2 Esports,Split,3,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1",16
++2",G2 Esports,Split,3,3075743,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1",16
 valyn,Omen,"1.15
 0.80
 1.58","178
@@ -9637,7 +10717,7 @@ valyn,Omen,"1.15
 2
 0","-1
 -2
-+1",G2 Esports,Split,3,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1",16
++1",G2 Esports,Split,3,3075743,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1",16
 trent,Viper,"1.02
 0.76
 1.32","155
@@ -9664,7 +10744,7 @@ trent,Viper,"1.02
 0
 1","+1
 0
-+1",G2 Esports,Split,3,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1",16
++1",G2 Esports,Split,3,3075743,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1",16
 leaf,Raze,"0.85
 0.63
 1.10","206
@@ -9691,7 +10771,7 @@ leaf,Raze,"0.85
 4
 1","-2
 -3
-+1",G2 Esports,Split,3,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1",16
++1",G2 Esports,Split,3,3075743,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1",16
 JonahP,Breach,"0.82
 0.20
 1.57","91
@@ -9718,7 +10798,7 @@ JonahP,Breach,"0.82
 1
 0","0
 -1
-+1",G2 Esports,Split,3,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1",16
++1",G2 Esports,Split,3,3075743,Play-Ins,Play-ins,G2 Esports,"1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1",16
 supamen,Omen,"1.72
 1.36
 1.95","256
@@ -9745,7 +10825,7 @@ supamen,Omen,"1.72
 0
 0","+4
 +1
-+3",Evil Geniuses,Ascent,1,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1",17
++3",Evil Geniuses,Ascent,1,3030871,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1",17
 jawgemo,Jett,"1.36
 1.12
 1.52","287
@@ -9772,7 +10852,7 @@ jawgemo,Jett,"1.36
 2
 3","-2
 -1
--1",Evil Geniuses,Ascent,1,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1",17
+-1",Evil Geniuses,Ascent,1,3030871,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1",17
 Derrek,Sova,"1.30
 1.30
 1.30","231
@@ -9799,7 +10879,7 @@ Derrek,Sova,"1.30
 0
 0","+1
 0
-+1",Evil Geniuses,Ascent,1,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1",17
++1",Evil Geniuses,Ascent,1,3030871,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1",17
 Apoth,Cypher,"1.18
 0.58
 1.58","200
@@ -9826,7 +10906,7 @@ Apoth,Cypher,"1.18
 2
 1","-2
 -1
--1",Evil Geniuses,Ascent,1,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1",17
+-1",Evil Geniuses,Ascent,1,3030871,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1",17
 NaturE,Kayo,"0.82
 0.54
 1.00","174
@@ -9853,7 +10933,7 @@ NaturE,Kayo,"0.82
 0
 0","+3
 +1
-+2",Evil Geniuses,Ascent,1,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1",17
++2",Evil Geniuses,Ascent,1,3030871,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1",17
 cauanzin,Breach,"0.97
 0.74
 1.31","182
@@ -9880,7 +10960,7 @@ cauanzin,Breach,"0.97
 0
 0","+1
 0
-+1",LOUD,Ascent,1,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0",17
++1",LOUD,Ascent,1,3030871,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0",17
 tuyz,Omen,"0.89
 0.94
 0.82","220
@@ -9907,7 +10987,7 @@ tuyz,Omen,"0.89
 0
 0","0
 0
-0",LOUD,Ascent,1,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0",17
+0",LOUD,Ascent,1,3030871,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0",17
 saadhak,Kayo,"0.83
 0.67
 1.07","214
@@ -9934,7 +11014,7 @@ saadhak,Kayo,"0.83
 3
 0","0
 -1
-+1",LOUD,Ascent,1,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0",17
++1",LOUD,Ascent,1,3030871,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0",17
 Less,Viper,"0.61
 0.31
 1.07","161
@@ -9961,7 +11041,7 @@ Less,Viper,"0.61
 2
 1","-2
 -2
-0",LOUD,Ascent,1,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0",17
+0",LOUD,Ascent,1,3030871,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0",17
 Quick,Phoenix,"0.56
 0.39
 0.80","93
@@ -9988,7 +11068,7 @@ Quick,Phoenix,"0.56
 3
 3","-3
 -1
--2",LOUD,Ascent,1,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0",17
+-2",LOUD,Ascent,1,3030871,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0",17
 Apoth,Killjoy,"1.11
 0.83
 1.29","271
@@ -10015,7 +11095,7 @@ Apoth,Killjoy,"1.11
 1
 3","-3
 -1
--2",Evil Geniuses,Icebox,2,Playoffs,Semifinals,LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",17
+-2",Evil Geniuses,Icebox,2,3030872,Playoffs,Semifinals,LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",17
 jawgemo,Deadlock,"0.90
 0.58
 1.11","242
@@ -10042,7 +11122,7 @@ jawgemo,Deadlock,"0.90
 2
 1","+2
 -2
-+4",Evil Geniuses,Icebox,2,Playoffs,Semifinals,LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",17
++4",Evil Geniuses,Icebox,2,3030872,Playoffs,Semifinals,LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",17
 Derrek,Gekko,"0.80
 0.79
 0.81","141
@@ -10069,7 +11149,7 @@ Derrek,Gekko,"0.80
 1
 0","+1
 +1
-0",Evil Geniuses,Icebox,2,Playoffs,Semifinals,LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",17
+0",Evil Geniuses,Icebox,2,3030872,Playoffs,Semifinals,LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",17
 supamen,Viper,"0.77
 0.88
 0.70","130
@@ -10096,7 +11176,7 @@ supamen,Viper,"0.77
 2
 1","-3
 -2
--1",Evil Geniuses,Icebox,2,Playoffs,Semifinals,LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",17
+-1",Evil Geniuses,Icebox,2,3030872,Playoffs,Semifinals,LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",17
 NaturE,Kayo,"0.59
 0.61
 0.58","118
@@ -10123,7 +11203,7 @@ NaturE,Kayo,"0.59
 0
 1","-1
 0
--1",Evil Geniuses,Icebox,2,Playoffs,Semifinals,LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",17
+-1",Evil Geniuses,Icebox,2,3030872,Playoffs,Semifinals,LOUD,"0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0",17
 tuyz,Harbor,"1.36
 1.48
 1.18","225
@@ -10150,7 +11230,7 @@ tuyz,Harbor,"1.36
 0
 0","+1
 +1
-0",LOUD,Icebox,2,Playoffs,Semifinals,LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",17
+0",LOUD,Icebox,2,3030872,Playoffs,Semifinals,LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",17
 Less,Viper,"1.25
 1.29
 1.20","235
@@ -10177,7 +11257,7 @@ Less,Viper,"1.25
 0
 0","+2
 +2
-0",LOUD,Icebox,2,Playoffs,Semifinals,LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",17
+0",LOUD,Icebox,2,3030872,Playoffs,Semifinals,LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",17
 cauanzin,Sova,"1.22
 1.21
 1.23","251
@@ -10204,7 +11284,7 @@ cauanzin,Sova,"1.22
 2
 0","+1
 0
-+1",LOUD,Icebox,2,Playoffs,Semifinals,LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",17
++1",LOUD,Icebox,2,3030872,Playoffs,Semifinals,LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",17
 Quick,Jett,"0.97
 0.93
 1.04","182
@@ -10231,7 +11311,7 @@ Quick,Jett,"0.97
 2
 1","+2
 -1
-+3",LOUD,Icebox,2,Playoffs,Semifinals,LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",17
++3",LOUD,Icebox,2,3030872,Playoffs,Semifinals,LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",17
 saadhak,Killjoy,"0.86
 0.54
 1.33","168
@@ -10258,7 +11338,7 @@ saadhak,Killjoy,"0.86
 2
 1","-2
 -2
-0",LOUD,Icebox,2,Playoffs,Semifinals,LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",17
+0",LOUD,Icebox,2,3030872,Playoffs,Semifinals,LOUD,"1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1",17
 Derrek,Fade,"1.23
 1.38
 0.92","319
@@ -10285,7 +11365,7 @@ Derrek,Fade,"1.23
 1
 0","+2
 0
-+2",Evil Geniuses,Sunset,3,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0",17
++2",Evil Geniuses,Sunset,3,3030873,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0",17
 Apoth,Cypher,"0.70
 0.99
 0.13","185
@@ -10312,7 +11392,7 @@ Apoth,Cypher,"0.70
 3
 1","-2
 -1
--1",Evil Geniuses,Sunset,3,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0",17
+-1",Evil Geniuses,Sunset,3,3030873,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0",17
 NaturE,Breach,"0.66
 0.43
 1.14","140
@@ -10339,7 +11419,7 @@ NaturE,Breach,"0.66
 0
 0","0
 0
-0",Evil Geniuses,Sunset,3,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0",17
+0",Evil Geniuses,Sunset,3,3030873,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0",17
 jawgemo,Raze,"0.55
 0.45
 0.74","108
@@ -10366,7 +11446,7 @@ jawgemo,Raze,"0.55
 2
 2","-4
 -2
--2",Evil Geniuses,Sunset,3,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0",17
+-2",Evil Geniuses,Sunset,3,3030873,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0",17
 supamen,Omen,"0.45
 0.49
 0.35","70
@@ -10393,7 +11473,7 @@ supamen,Omen,"0.45
 2
 1","-2
 -1
--1",Evil Geniuses,Sunset,3,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0",17
+-1",Evil Geniuses,Sunset,3,3030873,Playoffs,Semifinals,LOUD,"0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0",17
 Less,Viper,"1.55
 2.23
 1.22","287
@@ -10420,7 +11500,7 @@ Less,Viper,"1.55
 0
 0","+1
 0
-+1",LOUD,Sunset,3,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1",17
++1",LOUD,Sunset,3,3030873,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1",17
 saadhak,Sova,"1.35
 1.17
 1.43","236
@@ -10447,7 +11527,7 @@ saadhak,Sova,"1.35
 0
 1","0
 +1
--1",LOUD,Sunset,3,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1",17
+-1",LOUD,Sunset,3,3030873,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1",17
 tuyz,Omen,"1.33
 1.25
 1.37","188
@@ -10474,7 +11554,7 @@ tuyz,Omen,"1.33
 0
 0","+2
 0
-+2",LOUD,Sunset,3,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1",17
++2",LOUD,Sunset,3,3030873,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1",17
 cauanzin,Breach,"1.03
 0.99
 1.05","222
@@ -10501,7 +11581,7 @@ cauanzin,Breach,"1.03
 2
 1","+3
 +1
-+2",LOUD,Sunset,3,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1",17
++2",LOUD,Sunset,3,3030873,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1",17
 Quick,Phoenix,"1.03
 0.45
 1.32","199
@@ -10528,7 +11608,277 @@ Quick,Phoenix,"1.03
 0
 2","0
 0
-0",LOUD,Sunset,3,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1",17
+0",LOUD,Sunset,3,3030873,Playoffs,Semifinals,LOUD,"1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1",17
+Marved,Omen,"1.07
+0.98
+1.17","199
+176
+222","22
+10
+12","
+
+21
+11
+10
+
+","7
+3
+4","+1
+-1
++2","126
+110
+142","31%
+38%
+26%","2
+0
+2","4
+2
+2","-2
+-2
+0",NRG Esports,Sunset,1,3030881,Playoffs,Semifinals,Sentinels,"1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0",18
+crashies,Viper,"0.96
+0.66
+1.25","203
+188
+218","22
+9
+13","
+
+23
+14
+9
+
+","7
+4
+3","-1
+-5
++4","118
+116
+120","27%
+17%
+47%","1
+1
+0","2
+2
+0","-1
+-1
+0",NRG Esports,Sunset,1,3030881,Playoffs,Semifinals,Sentinels,"1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0",18
+Victor,Cypher,"0.91
+0.86
+0.96","176
+202
+150","19
+11
+8","
+
+19
+11
+8
+
+","5
+1
+4","0
+0
+0","103
+113
+93","44%
+58%
+30%","3
+1
+2","1
+1
+0","+2
+0
++2",NRG Esports,Sunset,1,3030881,Playoffs,Semifinals,Sentinels,"1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0",18
+Demon1,Jett,"0.84
+0.64
+1.05","182
+172
+192","17
+8
+9","
+
+23
+13
+10
+
+","5
+3
+2","-6
+-5
+-1","127
+114
+141","39%
+35%
+44%","5
+1
+4","8
+5
+3","-3
+-4
++1",NRG Esports,Sunset,1,3030881,Playoffs,Semifinals,Sentinels,"1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0",18
+Ethan,Skye,"0.66
+0.45
+0.87","111
+49
+174","9
+1
+8","
+
+22
+11
+11
+
+","16
+8
+8","-13
+-10
+-3","82
+38
+126","28%
+13%
+36%","0
+0
+0","4
+2
+2","-4
+-2
+-2",NRG Esports,Sunset,1,3030881,Playoffs,Semifinals,Sentinels,"1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0",18
+TenZ,Omen,"1.45
+1.05
+1.84","287
+180
+395","30
+10
+20","
+
+17
+9
+8
+
+","15
+6
+9","+13
++1
++12","185
+120
+251","43%
+73%
+34%","5
+1
+4","2
+1
+1","+3
+0
++3",Sentinels,Sunset,1,3030881,Playoffs,Semifinals,Sentinels,"0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1",18
+zekken,Raze,"1.43
+1.21
+1.65","294
+285
+305","31
+14
+17","
+
+18
+11
+7
+
+","3
+3
+0","+13
++3
++10","196
+170
+223","39%
+38%
+40%","10
+5
+5","7
+6
+1","+3
+-1
++4",Sentinels,Sunset,1,3030881,Playoffs,Semifinals,Sentinels,"0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1",18
+Zellsis,Kayo,"1.07
+0.85
+1.30","156
+165
+148","14
+7
+7","
+
+16
+10
+6
+
+","18
+5
+13","-2
+-3
++1","109
+123
+95","25%
+29%
+21%","1
+0
+1","0
+0
+0","+1
+0
++1",Sentinels,Sunset,1,3030881,Playoffs,Semifinals,Sentinels,"0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1",18
+Sacy,Gekko,"1.04
+0.88
+1.19","153
+101
+206","15
+5
+10","
+
+19
+10
+9
+
+","8
+4
+4","-4
+-5
++1","117
+84
+149","38%
+35%
+40%","2
+0
+2","1
+1
+0","+1
+-1
++2",Sentinels,Sunset,1,3030881,Playoffs,Semifinals,Sentinels,"0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1",18
+johnqt,Cypher,"0.92
+0.94
+0.90","175
+211
+140","18
+12
+6","
+
+19
+10
+9
+
+","8
+2
+6","-1
++2
+-3","119
+125
+113","30%
+37%
+23%","1
+1
+0","1
+0
+1","0
++1
+-1",Sentinels,Sunset,1,3030881,Playoffs,Semifinals,Sentinels,"0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1",18
 Ethan,Kayo,"1.43
 1.51
 1.32","333
@@ -10555,7 +11905,7 @@ Ethan,Kayo,"1.43
 0
 0","+1
 +1
-0",NRG Esports,Ascent,2,Playoffs,Semifinals,Sentinels,"0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1",18
+0",NRG Esports,Ascent,2,3030882,Playoffs,Semifinals,Sentinels,"0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1",18
 Victor,Killjoy,"1.16
 1.06
 1.28","191
@@ -10582,7 +11932,7 @@ Victor,Killjoy,"1.16
 0
 1","+1
 +1
-0",NRG Esports,Ascent,2,Playoffs,Semifinals,Sentinels,"0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1",18
+0",NRG Esports,Ascent,2,3030882,Playoffs,Semifinals,Sentinels,"0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1",18
 Demon1,Jett,"0.96
 0.73
 1.25","216
@@ -10609,7 +11959,7 @@ Demon1,Jett,"0.96
 2
 2","0
 +1
--1",NRG Esports,Ascent,2,Playoffs,Semifinals,Sentinels,"0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1",18
+-1",NRG Esports,Ascent,2,3030882,Playoffs,Semifinals,Sentinels,"0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1",18
 crashies,Sova,"0.95
 0.78
 1.17","147
@@ -10636,7 +11986,7 @@ crashies,Sova,"0.95
 3
 1","-2
 -2
-0",NRG Esports,Ascent,2,Playoffs,Semifinals,Sentinels,"0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1",18
+0",NRG Esports,Ascent,2,3030882,Playoffs,Semifinals,Sentinels,"0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1",18
 Marved,Omen,"0.75
 1.03
 0.38","129
@@ -10663,7 +12013,7 @@ Marved,Omen,"0.75
 0
 2","-1
 +1
--2",NRG Esports,Ascent,2,Playoffs,Semifinals,Sentinels,"0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1",18
+-2",NRG Esports,Ascent,2,3030882,Playoffs,Semifinals,Sentinels,"0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1",18
 Zellsis,Kayo,"1.24
 1.45
 1.07","213
@@ -10690,7 +12040,7 @@ Zellsis,Kayo,"1.24
 0
 3","0
 +2
--2",Sentinels,Ascent,2,Playoffs,Semifinals,Sentinels,"1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0",18
+-2",Sentinels,Ascent,2,3030882,Playoffs,Semifinals,Sentinels,"1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0",18
 zekken,Jett,"0.96
 0.98
 0.95","225
@@ -10717,7 +12067,7 @@ zekken,Jett,"0.96
 1
 2","+3
 +2
-+1",Sentinels,Ascent,2,Playoffs,Semifinals,Sentinels,"1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0",18
++1",Sentinels,Ascent,2,3030882,Playoffs,Semifinals,Sentinels,"1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0",18
 Sacy,Sova,"0.95
 0.72
 1.12","208
@@ -10744,7 +12094,7 @@ Sacy,Sova,"0.95
 1
 1","-2
 -1
--1",Sentinels,Ascent,2,Playoffs,Semifinals,Sentinels,"1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0",18
+-1",Sentinels,Ascent,2,3030882,Playoffs,Semifinals,Sentinels,"1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0",18
 TenZ,Omen,"0.91
 1.07
 0.79","210
@@ -10771,7 +12121,7 @@ TenZ,Omen,"0.91
 0
 0","+2
 +1
-+1",Sentinels,Ascent,2,Playoffs,Semifinals,Sentinels,"1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0",18
++1",Sentinels,Ascent,2,3030882,Playoffs,Semifinals,Sentinels,"1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0",18
 johnqt,Cypher,"0.66
 0.64
 0.68","78
@@ -10798,7 +12148,7 @@ johnqt,Cypher,"0.66
 1
 1","-2
 -1
--1",Sentinels,Ascent,2,Playoffs,Semifinals,Sentinels,"1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0",18
+-1",Sentinels,Ascent,2,3030882,Playoffs,Semifinals,Sentinels,"1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0",18
 Marved,Viper,"0.93
 0.59
 1.95","281
@@ -10825,7 +12175,7 @@ Marved,Viper,"0.93
 2
 0","-1
 -2
-+1",NRG Esports,Split,3,Playoffs,Semifinals,Sentinels,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0",18
++1",NRG Esports,Split,3,3030883,Playoffs,Semifinals,Sentinels,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0",18
 Demon1,Omen,"0.70
 0.74
 0.58","183
@@ -10852,7 +12202,7 @@ Demon1,Omen,"0.70
 0
 3","-1
 +2
--3",NRG Esports,Split,3,Playoffs,Semifinals,Sentinels,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0",18
+-3",NRG Esports,Split,3,3030883,Playoffs,Semifinals,Sentinels,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0",18
 Victor,Raze,"0.69
 0.56
 1.06","200
@@ -10879,7 +12229,7 @@ Victor,Raze,"0.69
 6
 0","-6
 -6
-0",NRG Esports,Split,3,Playoffs,Semifinals,Sentinels,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0",18
+0",NRG Esports,Split,3,3030883,Playoffs,Semifinals,Sentinels,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0",18
 crashies,Breach,"0.69
 0.42
 1.52","137
@@ -10906,7 +12256,7 @@ crashies,Breach,"0.69
 2
 0","-2
 -2
-0",NRG Esports,Split,3,Playoffs,Semifinals,Sentinels,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0",18
+0",NRG Esports,Split,3,3030883,Playoffs,Semifinals,Sentinels,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0",18
 Ethan,Skye,"0.54
 0.57
 0.47","145
@@ -10933,7 +12283,7 @@ Ethan,Skye,"0.54
 0
 0","0
 0
-0",NRG Esports,Split,3,Playoffs,Semifinals,Sentinels,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0",18
+0",NRG Esports,Split,3,3030883,Playoffs,Semifinals,Sentinels,"0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0",18
 johnqt,Cypher,"1.78
 0.41
 2.24","287
@@ -10960,7 +12310,7 @@ johnqt,Cypher,"1.78
 0
 0","0
 0
-0",Sentinels,Split,3,Playoffs,Semifinals,Sentinels,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1",18
+0",Sentinels,Split,3,3030883,Playoffs,Semifinals,Sentinels,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1",18
 Zellsis,Viper,"1.56
 1.27
 1.65","273
@@ -10987,7 +12337,7 @@ Zellsis,Viper,"1.56
 0
 0","+4
 +1
-+3",Sentinels,Split,3,Playoffs,Semifinals,Sentinels,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1",18
++3",Sentinels,Split,3,3030883,Playoffs,Semifinals,Sentinels,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1",18
 TenZ,Omen,"1.27
 0.67
 1.47","229
@@ -11014,7 +12364,7 @@ TenZ,Omen,"1.27
 0
 0","+5
 +1
-+4",Sentinels,Split,3,Playoffs,Semifinals,Sentinels,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1",18
++4",Sentinels,Split,3,3030883,Playoffs,Semifinals,Sentinels,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1",18
 Sacy,Skye,"1.26
 1.61
 1.15","224
@@ -11041,7 +12391,7 @@ Sacy,Skye,"1.26
 0
 1","-1
 0
--1",Sentinels,Split,3,Playoffs,Semifinals,Sentinels,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1",18
+-1",Sentinels,Split,3,3030883,Playoffs,Semifinals,Sentinels,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1",18
 zekken,Raze,"0.67
 0.03
 0.91","181
@@ -11068,7 +12418,7 @@ zekken,Raze,"0.67
 1
 1","+2
 0
-+2",Sentinels,Split,3,Playoffs,Semifinals,Sentinels,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1",18
++2",Sentinels,Split,3,3030883,Playoffs,Semifinals,Sentinels,"1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1",18
 Less,Viper,"0.94
 0.67
 1.16","190
@@ -11095,7 +12445,7 @@ Less,Viper,"0.94
 0
 0","0
 0
-0",LOUD,Sunset,1,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0",19
+0",LOUD,Sunset,1,3030861,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0",19
 tuyz,Omen,"0.91
 1.37
 0.52","219
@@ -11122,7 +12472,7 @@ tuyz,Omen,"0.91
 0
 2","0
 +1
--1",LOUD,Sunset,1,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0",19
+-1",LOUD,Sunset,1,3030861,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0",19
 cauanzin,Breach,"0.73
 0.62
 0.83","161
@@ -11149,7 +12499,7 @@ cauanzin,Breach,"0.73
 1
 1","0
 0
-0",LOUD,Sunset,1,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0",19
+0",LOUD,Sunset,1,3030861,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0",19
 Quick,Phoenix,"0.72
 0.68
 0.76","202
@@ -11176,7 +12526,7 @@ Quick,Phoenix,"0.72
 2
 3","0
 +1
--1",LOUD,Sunset,1,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0",19
+-1",LOUD,Sunset,1,3030861,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0",19
 saadhak,Sova,"0.63
 0.56
 0.69","164
@@ -11203,7 +12553,7 @@ saadhak,Sova,"0.63
 2
 2","-4
 -2
--2",LOUD,Sunset,1,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0",19
+-2",LOUD,Sunset,1,3030861,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0",19
 TenZ,Omen,"1.48
 1.48
 1.48","289
@@ -11230,7 +12580,7 @@ TenZ,Omen,"1.48
 1
 2","-2
 -1
--1",Sentinels,Sunset,1,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1",19
+-1",Sentinels,Sunset,1,3030861,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1",19
 Sacy,Gekko,"1.41
 1.78
 0.97","276
@@ -11257,7 +12607,7 @@ Sacy,Gekko,"1.41
 0
 0","+2
 +2
-0",Sentinels,Sunset,1,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1",19
+0",Sentinels,Sunset,1,3030861,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1",19
 zekken,Raze,"1.17
 1.64
 0.62","235
@@ -11284,7 +12634,7 @@ zekken,Raze,"1.17
 1
 2","+4
 +5
--1",Sentinels,Sunset,1,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1",19
+-1",Sentinels,Sunset,1,3030861,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1",19
 johnqt,Cypher,"1.01
 0.77
 1.29","180
@@ -11311,7 +12661,7 @@ johnqt,Cypher,"1.01
 1
 1","-1
 -1
-0",Sentinels,Sunset,1,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1",19
+0",Sentinels,Sunset,1,3030861,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1",19
 Zellsis,Kayo,"0.99
 0.52
 1.57","183
@@ -11338,7 +12688,7 @@ Zellsis,Kayo,"0.99
 1
 0","+1
 -1
-+2",Sentinels,Sunset,1,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1",19
++2",Sentinels,Sunset,1,3030861,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1",19
 Less,Viper,"1.09
 1.25
 0.60","225
@@ -11365,7 +12715,7 @@ Less,Viper,"1.09
 1
 1","-1
 0
--1",LOUD,Split,2,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0",19
+-1",LOUD,Split,2,3030862,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0",19
 tuyz,Omen,"0.84
 1.07
 0.17","147
@@ -11392,7 +12742,7 @@ tuyz,Omen,"0.84
 0
 0","+1
 +1
-0",LOUD,Split,2,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0",19
+0",LOUD,Split,2,3030862,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0",19
 cauanzin,Breach,"0.79
 0.76
 0.87","139
@@ -11419,7 +12769,7 @@ cauanzin,Breach,"0.79
 1
 0","+1
 0
-+1",LOUD,Split,2,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0",19
++1",LOUD,Split,2,3030862,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0",19
 Quick,Raze,"0.55
 0.69
 0.10","136
@@ -11443,7 +12793,7 @@ Quick,Raze,"0.55
 3
 1","-3
 -2
--1",LOUD,Split,2,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0",19
+-1",LOUD,Split,2,3030862,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0",19
 saadhak,Skye,"0.31
 0.33
 0.24","72
@@ -11470,7 +12820,7 @@ saadhak,Skye,"0.31
 2
 1","-2
 -1
--1",LOUD,Split,2,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0",19
+-1",LOUD,Split,2,3030862,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0",19
 zekken,Raze,"1.49
 1.68
 1.43","275
@@ -11497,7 +12847,7 @@ zekken,Raze,"1.49
 0
 0","+3
 0
-+3",Sentinels,Split,2,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1",19
++3",Sentinels,Split,2,3030862,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1",19
 TenZ,Omen,"1.39
 1.64
 1.31","272
@@ -11524,7 +12874,7 @@ TenZ,Omen,"1.39
 0
 1","+2
 +1
-+1",Sentinels,Split,2,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1",19
++1",Sentinels,Split,2,3030862,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1",19
 Zellsis,Viper,"1.21
 1.86
 0.99","178
@@ -11551,7 +12901,7 @@ Zellsis,Viper,"1.21
 0
 3","-2
 0
--2",Sentinels,Split,2,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1",19
+-2",Sentinels,Split,2,3030862,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1",19
 Sacy,Skye,"1.21
 1.65
 1.06","239
@@ -11578,7 +12928,7 @@ Sacy,Skye,"1.21
 0
 1","+1
 +1
-0",Sentinels,Split,2,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1",19
+0",Sentinels,Split,2,3030862,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1",19
 johnqt,Cypher,"1.17
 0.88
 1.26","133
@@ -11605,7 +12955,7 @@ johnqt,Cypher,"1.17
 1
 0","0
 0
-0",Sentinels,Split,2,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1",19
+0",Sentinels,Split,2,3030862,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1",19
 tuyz,Harbor,"1.28
 1.41
 1.15","173
@@ -11632,7 +12982,7 @@ tuyz,Harbor,"1.28
 0
 2","-2
 0
--2",LOUD,Icebox,3,Playoffs,Grand Final,Sentinels,"0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1",19
+-2",LOUD,Icebox,3,3030863,Playoffs,Grand Final,Sentinels,"0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1",19
 Less,Viper,"1.24
 0.96
 1.52","216
@@ -11659,7 +13009,7 @@ Less,Viper,"1.24
 1
 0","+2
 0
-+2",LOUD,Icebox,3,Playoffs,Grand Final,Sentinels,"0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1",19
++2",LOUD,Icebox,3,3030863,Playoffs,Grand Final,Sentinels,"0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1",19
 cauanzin,Sova,"1.19
 1.36
 1.03","218
@@ -11686,7 +13036,7 @@ cauanzin,Sova,"1.19
 2
 3","-4
 -1
--3",LOUD,Icebox,3,Playoffs,Grand Final,Sentinels,"0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1",19
+-3",LOUD,Icebox,3,3030863,Playoffs,Grand Final,Sentinels,"0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1",19
 saadhak,Killjoy,"1.07
 1.11
 1.04","214
@@ -11713,7 +13063,7 @@ saadhak,Killjoy,"1.07
 0
 1","+2
 +1
-+1",LOUD,Icebox,3,Playoffs,Grand Final,Sentinels,"0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1",19
++1",LOUD,Icebox,3,3030863,Playoffs,Grand Final,Sentinels,"0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1",19
 Quick,Jett,"0.93
 0.68
 1.17","188
@@ -11740,7 +13090,7 @@ Quick,Jett,"0.93
 2
 1","+2
 +2
-0",LOUD,Icebox,3,Playoffs,Grand Final,Sentinels,"0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1",19
+0",LOUD,Icebox,3,3030863,Playoffs,Grand Final,Sentinels,"0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1",19
 TenZ,Kayo,"1.15
 1.18
 1.13","210
@@ -11767,7 +13117,7 @@ TenZ,Kayo,"1.15
 1
 3","-2
 0
--2",Sentinels,Icebox,3,Playoffs,Grand Final,Sentinels,"1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0",19
+-2",Sentinels,Icebox,3,3030863,Playoffs,Grand Final,Sentinels,"1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0",19
 johnqt,Viper,"1.10
 0.85
 1.35","230
@@ -11794,7 +13144,7 @@ johnqt,Viper,"1.10
 3
 0","-1
 -3
-+2",Sentinels,Icebox,3,Playoffs,Grand Final,Sentinels,"1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0",19
++2",Sentinels,Icebox,3,3030863,Playoffs,Grand Final,Sentinels,"1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0",19
 Zellsis,Killjoy,"0.95
 1.09
 0.82","174
@@ -11821,7 +13171,7 @@ Zellsis,Killjoy,"0.95
 0
 1","+2
 +3
--1",Sentinels,Icebox,3,Playoffs,Grand Final,Sentinels,"1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0",19
+-1",Sentinels,Icebox,3,3030863,Playoffs,Grand Final,Sentinels,"1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0",19
 zekken,Jett,"0.63
 0.69
 0.57","192
@@ -11848,7 +13198,7 @@ zekken,Jett,"0.63
 0
 1","+2
 +2
-0",Sentinels,Icebox,3,Playoffs,Grand Final,Sentinels,"1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0",19
+0",Sentinels,Icebox,3,3030863,Playoffs,Grand Final,Sentinels,"1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0",19
 Sacy,Gekko,"0.53
 0.47
 0.60","106
@@ -11875,7 +13225,7 @@ Sacy,Gekko,"0.53
 1
 2","-1
 0
--1",Sentinels,Icebox,3,Playoffs,Grand Final,Sentinels,"1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0",19
+-1",Sentinels,Icebox,3,3030863,Playoffs,Grand Final,Sentinels,"1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0",19
 tuyz,Brimstone,"1.43
 1.23
 1.70","251
@@ -11902,7 +13252,7 @@ tuyz,Brimstone,"1.43
 0
 0","+1
 +1
-0",LOUD,Bind,4,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1",19
+0",LOUD,Bind,4,3030864,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1",19
 Quick,Phoenix,"1.41
 1.64
 1.11","297
@@ -11929,7 +13279,7 @@ Quick,Phoenix,"1.41
 1
 1","+2
 +2
-0",LOUD,Bind,4,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1",19
+0",LOUD,Bind,4,3030864,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1",19
 cauanzin,Breach,"1.07
 1.27
 0.81","198
@@ -11956,7 +13306,7 @@ cauanzin,Breach,"1.07
 0
 1","+3
 +3
-0",LOUD,Bind,4,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1",19
+0",LOUD,Bind,4,3030864,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1",19
 saadhak,Kayo,"1.03
 0.99
 1.09","216
@@ -11983,7 +13333,7 @@ saadhak,Kayo,"1.03
 0
 1","+3
 +3
-0",LOUD,Bind,4,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1",19
+0",LOUD,Bind,4,3030864,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1",19
 Less,Viper,"0.73
 1.20
 0.11","98
@@ -12010,7 +13360,7 @@ Less,Viper,"0.73
 1
 2","-2
 -1
--1",LOUD,Bind,4,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1",19
+-1",LOUD,Bind,4,3030864,Playoffs,Grand Final,Sentinels,"1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1",19
 zekken,Raze,"1.06
 1.39
 0.81","222
@@ -12037,7 +13387,7 @@ zekken,Raze,"1.06
 3
 1","-2
 -2
-0",Sentinels,Bind,4,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0",19
+0",Sentinels,Bind,4,3030864,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0",19
 johnqt,Viper,"1.02
 0.69
 1.27","202
@@ -12064,7 +13414,7 @@ johnqt,Viper,"1.02
 0
 2","-2
 0
--2",Sentinels,Bind,4,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0",19
+-2",Sentinels,Bind,4,3030864,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0",19
 TenZ,Yoru,"0.90
 1.47
 0.48","220
@@ -12091,7 +13441,7 @@ TenZ,Yoru,"0.90
 0
 5","0
 +4
--4",Sentinels,Bind,4,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0",19
+-4",Sentinels,Bind,4,3030864,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0",19
 Zellsis,Brimstone,"0.89
 1.27
 0.61","183
@@ -12118,7 +13468,7 @@ Zellsis,Brimstone,"0.89
 0
 2","-2
 0
--2",Sentinels,Bind,4,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0",19
+-2",Sentinels,Bind,4,3030864,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0",19
 Sacy,Skye,"0.69
 0.76
 0.64","154
@@ -12145,7 +13495,7 @@ Sacy,Skye,"0.69
 1
 0","-1
 -1
-0",Sentinels,Bind,4,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0",19
+0",Sentinels,Bind,4,3030864,Playoffs,Grand Final,Sentinels,"0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0",19
 Quick,Phoenix,"1.05
 0.56
 1.25","262
@@ -12172,7 +13522,7 @@ Quick,Phoenix,"1.05
 1
 1","+1
 -1
-+2",LOUD,Lotus,5,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0",19
++2",LOUD,Lotus,5,3030865,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0",19
 Less,Viper,"1.01
 0.39
 1.26","233
@@ -12199,7 +13549,7 @@ Less,Viper,"1.01
 1
 1","-2
 -1
--1",LOUD,Lotus,5,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0",19
+-1",LOUD,Lotus,5,3030865,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0",19
 tuyz,Omen,"0.89
 1.89
 0.48","208
@@ -12226,7 +13576,7 @@ tuyz,Omen,"0.89
 0
 2","-1
 +1
--2",LOUD,Lotus,5,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0",19
+-2",LOUD,Lotus,5,3030865,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0",19
 cauanzin,Breach,"0.78
 1.08
 0.66","201
@@ -12253,7 +13603,7 @@ cauanzin,Breach,"0.78
 0
 3","+1
 +2
--1",LOUD,Lotus,5,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0",19
+-1",LOUD,Lotus,5,3030865,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0",19
 saadhak,Skye,"0.65
 0.75
 0.61","174
@@ -12280,7 +13630,7 @@ saadhak,Skye,"0.65
 0
 0","0
 0
-0",LOUD,Lotus,5,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0",19
+0",LOUD,Lotus,5,3030865,Playoffs,Grand Final,Sentinels,"0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0",19
 zekken,Raze,"1.39
 1.55
 1.01","307
@@ -12307,7 +13657,7 @@ zekken,Raze,"1.39
 0
 2","+2
 +3
--1",Sentinels,Lotus,5,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1",19
+-1",Sentinels,Lotus,5,3030865,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1",19
 Sacy,Fade,"1.23
 1.44
 0.71","247
@@ -12334,7 +13684,7 @@ Sacy,Fade,"1.23
 0
 0","0
 0
-0",Sentinels,Lotus,5,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1",19
+0",Sentinels,Lotus,5,3030865,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1",19
 johnqt,Viper,"1.18
 1.12
 1.30","229
@@ -12361,7 +13711,7 @@ johnqt,Viper,"1.18
 0
 0","0
 0
-0",Sentinels,Lotus,5,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1",19
+0",Sentinels,Lotus,5,3030865,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1",19
 TenZ,Omen,"1.12
 0.91
 1.61","239
@@ -12388,7 +13738,7 @@ TenZ,Omen,"1.12
 3
 0","+2
 +1
-+1",Sentinels,Lotus,5,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1",19
++1",Sentinels,Lotus,5,3030865,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1",19
 Zellsis,Killjoy,"0.69
 0.46
 1.26","164
@@ -12415,4 +13765,4 @@ Zellsis,Killjoy,"0.69
 2
 1","-3
 -2
--1",Sentinels,Lotus,5,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1",19
+-1",Sentinels,Lotus,5,3030865,Playoffs,Grand Final,Sentinels,"1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1",19

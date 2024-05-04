@@ -425,14 +425,14 @@ def calculate_win_rate(df, scope = 'match'):
             win_rates = {team : round(len(data[data['Team Name'] == team].where(data['Team Name'] == data['winner']).dropna()) / len(data[data['Team Name'] == team].dropna()),2) for team in list(set(data['Team Name']))}
             return win_rates
         case "map":
-            data_round = df.drop_duplicates(['Stage', 'Series','Team Name', 'Map #'])[['Stage', 'Series', 'Map #','Team Name', 'rounds', 'winner']]
+            data_round = df.drop_duplicates(['Team Name', 'Unique Enum'])[['Stage', 'Series', 'Map #','Team Name', 'rounds', 'winner']]
             data_round['rounds'] = data_round['rounds'].apply(lambda x: list(map(int, x.split(', '))))
             data_round['total_rounds'] = data_round['rounds'].apply(lambda x: sum(x))
             map_winners = set_map_winner(data_round)
             win_rates = {team : round(len(map_winners[map_winners['Team Name'] == team].where(map_winners['Team Name'] == map_winners['map_winners']).dropna()) / len(map_winners[map_winners['Team Name'] == team].dropna()),2) for team in list(set(df['Team Name']))}
             return win_rates
         case "round":
-            data_round = df.drop_duplicates(['Stage', 'Series','Team Name', 'Map #'])[['Stage', 'Series', 'Map #','Team Name', 'rounds', 'winner']]
+            data_round = df.drop_duplicates(['Team Name', 'Unique Enum'])[['Stage', 'Series', 'Map #','Team Name', 'rounds', 'winner']]
             data_round['rounds'] = data_round['rounds'].apply(lambda x: list(map(int, x.split(', '))))
             data_round['total_rounds'] = data_round['rounds'].apply(lambda x: sum(x))
             win_rates = {team : round(sum(data_round[data_round['Team Name'] == team].dropna()['total_rounds']) / data_round[data_round['Team Name'] == team].dropna()['rounds'].apply(len).sum(), 2) for team in list(set(df['Team Name']))}
