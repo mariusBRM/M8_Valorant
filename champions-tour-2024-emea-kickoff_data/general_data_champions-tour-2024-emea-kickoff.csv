@@ -1,4 +1,4 @@
-Player Name,Agent Name,R,ACS,K,D,K/D +/–,+/–,ADR,HS%,FK,FK/FD +/–,+/–,Team Name,Map Name,Map #,Unique Enum,Stage,Series,winner,rounds,Id
+Player Name,Agent Name,R,ACS,K,D,K/D +/–,+/–,ADR,HS%,FK,FK/FD +/–,+/–.1,Team Name,Map Name,Map #,Unique Enum,Stage,Series,winner,rounds,Id
 cNed,Yoru,"1.10
 1.29
 0.91","250
