@@ -2,16 +2,24 @@ import pandas as pd
 import os
 import ast
 from collections import defaultdict
+from data_processing import *
 import re
 from bs4 import BeautifulSoup, Comment
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
+import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+from sklearn.feature_selection import SelectKBest, f_classif
+from sklearn.manifold import TSNE
+from sklearn.feature_selection import RFECV
+from sklearn.model_selection import StratifiedKFold
+from sklearn.svm import SVC
 
 # Set general constant
+matplotlib.use('TkAgg')
 SIDE = {'Total' : 0, 'Side 1' : 1, 'Side 2' : 2}
 NAME = ['logaN', 'Wailers', 'beyAz', 'TakaS', 'nataNk']
 TEAM = "Gentle Mates"
@@ -1283,4 +1291,231 @@ def display_individual_statistics(data, metric_name, type_calculated='total', me
 
     plot_bar_individual_data(data, metric_name, top_X, mean, std)
 
-#endregion   
+#endregion  
+
+#region Dataset Generation
+    
+def create_dataframe(df_emea, df_americas, df_pacific, to_normalize=True):
+    """ Function that creates the features X and the target y 
+        
+        Parameter:
+            df_emea: dataframe for the feature selected for the EMEA region
+            df_americas: dataframe for the feature selected for the AMERICAS region
+            df_pacific: dataframe for the feacture selected for the PACIFIC region"""
+
+    # df_emea, df_americas, and df_pacific are dataframes for each region
+    # Concatenate the dataframes vertically to create a single dataframe
+    df_concatenated = pd.concat([df_emea, df_americas, df_pacific], keys=['EMEA', 'Americas', 'Pacific'])
+
+    if to_normalize:
+        # normalize data
+        df_concatenated = normalize_data(df_concatenated)
+
+    return df_concatenated
+
+def parse_value(x, index, default):
+
+    split_values = x.strip().split('\n')
+
+    if (len(split_values) > index) and (len(split_values[index]) > 0):
+        return float(split_values[index])
+    else:
+        return default
+
+def parse_hs_value(x, index, default):
+
+    split_values = x.strip().split('\n')
+
+    if (len(split_values) > index) and (len(split_values[index][:-1]) > 0):
+        return float(split_values[index][:-1])
+    else:
+        return default
+
+def general_feature_creation_for_teams(general, list_feature = ['R', 'ACS', 'K', 'D','ADR', 'HS%', 'FK']):
+
+    """
+        Function that creates a dataframe of the average/std features for a region with the general data. Individual feature only. 
+
+        Parameter:
+            general : dataframe from the scraper general_data_scraper
+            list_feature : list of feature to compute
+    """
+
+    teams_of_regions = set(general['Team Name'])
+
+    gathered_feature_name = []
+    gathered_dictionnaries = []
+
+    for feature_name in list_feature:
+
+        if feature_name == 'HS%':
+
+            default = np.mean(general[feature_name].apply(lambda x : float(x.strip().split('\n')[0][:-1])).values)
+            # Action
+            avrg_action_per_team = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_hs_value(x, 0, default))) for team in teams_of_regions}
+            std_action_per_team = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_hs_value(x, 0, default))) for team in teams_of_regions}
+            # Action attack
+            avrg_action_per_team_atk = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_hs_value(x, 1, default))) for team in teams_of_regions}
+            std_action_per_team_atk = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_hs_value(x, 1, default))) for team in teams_of_regions}
+            # Action defense
+            avrg_action_per_team_dfs = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_hs_value(x, 2, default))) for team in teams_of_regions}
+            std_action_per_team_dfs = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_hs_value(x, 2, default))) for team in teams_of_regions}
+        else:
+            default = np.mean(general[feature_name].apply(lambda x : float(x.strip().split('\n')[0])).values)
+            # Action
+            avrg_action_per_team = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_value(x, 0, default))) for team in teams_of_regions}
+            std_action_per_team = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_value(x, 0, default))) for team in teams_of_regions}
+            # Action attack
+            avrg_action_per_team_atk = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_value(x, 1, default))) for team in teams_of_regions}
+            std_action_per_team_atk = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_value(x, 1, default))) for team in teams_of_regions}
+            # Action defense
+            avrg_action_per_team_dfs = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_value(x, 2, default))) for team in teams_of_regions}
+            std_action_per_team_dfs = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_value(x, 2, default))) for team in teams_of_regions}
+
+        gathered_dictionnaries.append(avrg_action_per_team)
+        gathered_feature_name.append(f'avrg_{feature_name.lower()}_per_team')
+        gathered_dictionnaries.append(std_action_per_team)
+        gathered_feature_name.append(f'std_{feature_name.lower()}_per_team')
+        gathered_dictionnaries.append(avrg_action_per_team_atk)
+        gathered_feature_name.append(f'avrg_{feature_name.lower()}_per_team_atk')
+        gathered_dictionnaries.append(std_action_per_team_atk)
+        gathered_feature_name.append(f'std_{feature_name.lower()}_per_team_atk')
+        gathered_dictionnaries.append(avrg_action_per_team_dfs)
+        gathered_feature_name.append(f'avrg_{feature_name.lower()}_per_team_dfs')
+        gathered_dictionnaries.append(std_action_per_team_dfs)
+        gathered_feature_name.append(f'std_{feature_name.lower()}_per_team_dfs')
+    
+    # Create an empty DataFrame
+    df = pd.DataFrame(columns=gathered_feature_name)
+
+    # Iterate over the list of dictionaries
+    for team in gathered_dictionnaries[0].keys():
+        # Create a new row for each team
+        row_values = [d[team] for d in gathered_dictionnaries]
+        df.loc[team] = row_values
+    
+    return df
+
+def performance_feature_creation_for_teams(performance, economy, 
+                                            features_ratio = ['2K', '3K', '4K', '5K', '1v1', '1v2', '1v3','1v4', '1v5'],
+                                            features_mean = ['ECON','PL','DE']):
+    """ Function that calculate the feature creation for each """
+    values = {'team': []}
+
+    for feature in features_ratio:
+        # Gather data
+        df = ratio_individual_exploit(performance, feature, economy)
+        # Calculate mean per team
+        mean_per_team = df.groupby('team')[feature].mean()
+        std_per_team = df.groupby('team')[feature].std()
+
+        # Store mean values in the dictionary
+        values[f'{feature.lower()}_mean'] = mean_per_team.values
+        values['team'] = mean_per_team.index.tolist() 
+        values[f'{feature.lower()}_std'] = std_per_team.values
+        #values['team'] = std_per_team.index.tolist() 
+
+
+    df = pd.DataFrame(values)
+
+    # Calculate mean for features_mean and add to DataFrame
+    for feature in features_mean:
+        # Gather data and calculate mean per team
+        mean_per_team = performance.groupby('Team Name')[feature].mean()
+        std_per_team = performance.groupby('Team Name')[feature].std()
+        
+        # Add mean values to DataFrame
+        df[f'{feature.lower()}_mean'] = mean_per_team[df['team']].values
+        df[f'{feature.lower()}_std'] = std_per_team[df['team']].values
+    
+    df.set_index('team', inplace=True)
+    
+    return df
+
+#endregion
+    
+#region Feature Selection for Analysis
+    
+def selectKbest(X,y,k=10):
+    """ Fonction that select the k best features (for explainability) """
+    
+    # Initialize SelectKBest with the desired number of features
+    selector = SelectKBest(score_func=f_classif, k=k)
+    # Fit the selector to the data
+    selector.fit(X, y)
+    # Get the indices of the selected features
+    selected_indices = selector.get_support(indices=True)
+    # Get the names of the selected features
+    selected_features = X.columns[selected_indices]
+    feature_scores = selector.scores_[selected_indices]
+
+    # Print names and scores for selected features
+    for feature, score in zip(selected_features, feature_scores):
+        print(f"Feature '{feature}': {score}")
+
+    return selected_features
+
+def RFECV_feature_selection(X,y, krnl="rbf"):
+
+    # Create a Support Vector Classifier as the estimator
+    estimator = SVC(kernel= krnl)
+    # Create RFECV object
+    rfecv = RFECV(estimator=estimator, cv=StratifiedKFold(5), scoring='accuracy')  # 5-fold cross-validation
+    # Fit RFECV to the data
+    rfecv.fit(X, y)
+    # Get selected features
+    selected_indices = rfecv.support_
+    # Get names of selected features
+    selected_features = X.columns[selected_indices]
+
+    # Print selected features
+    print("Selected Features:")
+    print(selected_features)
+
+    # Print optimal number of features
+    print("Optimal number of features: {}".format(rfecv.n_features_))
+
+    return selected_features
+
+#endregion
+    
+#region Visualize Data for analysis
+
+def visualize_mean_feature_for_each_region(df_concatenated, discriminating_feature):
+    """ Fonction that visualize the data for the three region"""
+
+    # Calculate the mean of each column for each region
+    mean_per_region = df_concatenated.groupby(level=0).mean()
+
+    filtered_dataframe = mean_per_region[discriminating_feature]
+
+    # Plot the mean of each column for each region
+    for column in filtered_dataframe.columns:
+        fig, ax = plt.subplots(figsize=(8, 6))
+        ax.bar(filtered_dataframe.index, filtered_dataframe[column])
+        ax.set_title(f"Mean of {column} by Region")
+        ax.set_ylabel("Mean")
+        ax.set_xlabel("Region")
+        ax.grid(True)
+        plt.tight_layout()
+        plt.savefig(f"analysis\mean_{column}_by_region.png")  # Save each plot to a PNG file
+        plt.close(fig)  # Close the figure to free up memory
+
+    print("Plots saved as PNG files.")
+
+def plot_t_sne(X,y,n=2):
+    # Perform t-SNE with 2 components
+    tsne = TSNE(n_components=n, random_state=42)
+    X_tsne = tsne.fit_transform(X)
+
+    # Plot t-SNE embeddings
+    plt.figure(figsize=(10, 8))
+    for region in np.unique(y):
+        plt.scatter(X_tsne[y == region, 0], X_tsne[y == region, 1], label=region)
+    plt.title("t-SNE Visualization of Data with Region Labels")
+    plt.xlabel("t-SNE Component 1")
+    plt.ylabel("t-SNE Component 2")
+    plt.legend()
+    plt.show()
+
+#endregion 
