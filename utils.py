@@ -643,6 +643,26 @@ def calculate_mean_economy(data, team=[], series=None, stage=None):
 
     return banks_buys
 
+def calculate_std_economy(data, team=[], series=None, stage=None):
+    """
+    Function that calculate the standard deviation for the economy (banks and buys) filtered on the team, the stage and the series
+    Intentionally no conflict here 
+    """
+    if len(team)>0:
+        teams = team
+    else:
+        teams = set(data['Team Name'])
+        
+    if series:
+        data = data[data['Series'] == series]
+
+    if stage:
+        data = data[data['Stage'] == stage]
+                
+    banks_buys = {team : (round(np.mean(data[data['Team Name'] == team]['Bank'].apply(lambda x: np.std(ast.literal_eval(x)))),2), round(np.mean(data[data['Team Name'] == team]['Buys'].apply(lambda x: np.std(ast.literal_eval(x)))),2))for team in teams}
+
+    return banks_buys
+
 def create_summary_rounds_dataset(data):
     """ 
     Function that summarize the Economy data for each teams with rounds statistics over the all tournament
@@ -1294,6 +1314,19 @@ def display_individual_statistics(data, metric_name, type_calculated='total', me
 #endregion  
 
 #region Dataset Generation
+
+def normalize_data(df):
+    """ Function that normalize the data """
+    # Initialize MinMaxScaler
+    scaler = MinMaxScaler()
+
+    # Fit and transform the data
+    df_normalized = scaler.fit_transform(df)
+
+    # Convert the result back to a DataFrame
+    df_normalized = pd.DataFrame(df_normalized, columns=df.columns, index=df.index)
+
+    return df_normalized
     
 def create_dataframe(df_emea, df_americas, df_pacific, to_normalize=True):
     """ Function that creates the features X and the target y 
@@ -1399,7 +1432,7 @@ def general_feature_creation_for_teams(general, list_feature = ['R', 'ACS', 'K',
 def performance_feature_creation_for_teams(performance, economy, 
                                             features_ratio = ['2K', '3K', '4K', '5K', '1v1', '1v2', '1v3','1v4', '1v5'],
                                             features_mean = ['ECON','PL','DE']):
-    """ Function that calculate the feature creation for each """
+    """ Function that calculate the feature creation for each performance dataframe"""
     values = {'team': []}
 
     for feature in features_ratio:
@@ -1432,6 +1465,22 @@ def performance_feature_creation_for_teams(performance, economy,
     
     return df
 
+def economy_feature_creation_for_teams(economy):
+    """ Function that create the dataframe with selected feature for the economic data for each region """
+
+    # Economic rounds ratio
+    summary_economy_rounds = create_summary_rounds_dataset(economy)
+    columns_to_drop = summary_economy_rounds.columns[1:][:-1]
+    ratio = create_ratio_economy_rounds(summary_economy_rounds)
+    ratio_dropped = ratio.drop(columns=columns_to_drop)
+    ratio_dropped.set_index('Team Name', inplace=True)
+
+    # Bank and Buys
+    bank_and_buys = calculate_mean_economy(economy)
+    ratio_dropped['Bank'] = ratio_dropped.index.map(lambda x: bank_and_buys[x][0])
+    ratio_dropped['Buys'] = ratio_dropped.index.map(lambda x: bank_and_buys[x][1])
+
+    return ratio_dropped
 #endregion
     
 #region Feature Selection for Analysis
@@ -1455,10 +1504,10 @@ def selectKbest(X,y,k=10):
 
     return selected_features
 
-def RFECV_feature_selection(X,y, krnl="rbf"):
+def RFECV_feature_selection(X,y, krnl="linear"):
 
     # Create a Support Vector Classifier as the estimator
-    estimator = SVC(kernel= krnl)
+    estimator = SVC(kernel=krnl)
     # Create RFECV object
     rfecv = RFECV(estimator=estimator, cv=StratifiedKFold(5), scoring='accuracy')  # 5-fold cross-validation
     # Fit RFECV to the data
