@@ -2,6 +2,7 @@ import pandas as pd
 import os
 import ast
 from collections import defaultdict
+import csv
 from data_processing import *
 import re
 from bs4 import BeautifulSoup, Comment
@@ -12,17 +13,36 @@ import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-from sklearn.feature_selection import SelectKBest, f_classif
+from sklearn.feature_selection import SelectKBest, f_classif, mutual_info_classif, chi2
 from sklearn.manifold import TSNE
+from sklearn.preprocessing import MinMaxScaler
 from sklearn.feature_selection import RFECV
 from sklearn.model_selection import StratifiedKFold
 from sklearn.svm import SVC
+import statsmodels.api as sm
 
 # Set general constant
 matplotlib.use('TkAgg')
 SIDE = {'Total' : 0, 'Side 1' : 1, 'Side 2' : 2}
 NAME = ['logaN', 'Wailers', 'beyAz', 'TakaS', 'nataNk']
 TEAM = "Gentle Mates"
+team_name_datapath = 'data/team_names.csv'
+
+#region Read file & csv
+
+def create_dictionary_from_csv(csv_file):
+    name_dict = {}
+    with open(csv_file, 'r') as file:
+        reader = csv.reader(file)
+        next(reader)  # Skip header row if it exists
+        for row in reader:
+            if len(row) >= 2:  # Ensure there are at least two columns
+                fullname = row[0]
+                surname = row[1]
+                name_dict[fullname] = surname
+    return name_dict
+
+#endregion
 
 #region BasicStatistiques
 
@@ -1315,6 +1335,7 @@ def display_individual_statistics(data, metric_name, type_calculated='total', me
 
 #region Dataset Generation
 
+    #region Per team
 def normalize_data(df):
     """ Function that normalize the data """
     # Initialize MinMaxScaler
@@ -1373,6 +1394,12 @@ def general_feature_creation_for_teams(general, list_feature = ['R', 'ACS', 'K',
             general : dataframe from the scraper general_data_scraper
             list_feature : list of feature to compute
     """
+    # Change name for the dataframe
+    try:
+        dict_name = create_dictionary_from_csv(team_name_datapath)
+        general['Team Name'] = general['Team Name'].apply(lambda x: dict_name[x])
+    except:
+        pass
 
     teams_of_regions = set(general['Team Name'])
 
@@ -1481,15 +1508,52 @@ def economy_feature_creation_for_teams(economy):
     ratio_dropped['Buys'] = ratio_dropped.index.map(lambda x: bank_and_buys[x][1])
 
     return ratio_dropped
+
+def picks_and_bans_feature_creation_for_teams(pick_ban):
+    """ Function that create the feature for the picks and bans dataframe. Creates dummies feature for the map selection"""
+    # Get dummies for 'Bans', 'Picks', and 'Decider' columns
+    bans_dummies = pd.get_dummies(pick_ban['Bans'].apply(lambda x : ast.literal_eval(x)).apply(pd.Series).stack()).sum(level=0)
+    picks_dummies = pd.get_dummies(pick_ban['Picks'].apply(lambda x : ast.literal_eval(x)).apply(pd.Series).stack()).sum(level=0)
+    decider_dummies = pd.get_dummies(pick_ban['Decider'].apply(lambda x : ast.literal_eval(x)).apply(pd.Series).stack()).sum(level=0)
+
+    # Concatenate dummies with the original DataFrame
+    df_by_match = pd.concat([pick_ban, bans_dummies.add_prefix('Bans_'), picks_dummies.add_prefix('Picks_'), decider_dummies.add_prefix('Decider_')], axis=1)
+
+    # Drop original 'Bans', 'Picks', and 'Decider' columns
+    df_by_match.drop(columns=['Bans', 'Picks', 'Decider','Stage','Series'], inplace=True)
+    df_by_match.set_index('Team Name')
+
+    values = {'team': []}
+    for feature in df_by_match.columns[1:]:
+        mean_per_team = df_by_match.groupby('Team Name')[feature].mean()
+        
+        values[f'{feature.lower()}_mean'] = mean_per_team.values
+        values['team'] = mean_per_team.index.tolist() 
+
+    df = pd.DataFrame(values)
+    df.set_index('team', inplace=True)
+
+    return df
+
+    #endregion
+
+    #region Per Match
+
+    #endregion
 #endregion
-    
+  
 #region Feature Selection for Analysis
     
-def selectKbest(X,y,k=10):
+def selectKbest(X, y, k=10, selec_type='f_classif'):
     """ Fonction that select the k best features (for explainability) """
-    
     # Initialize SelectKBest with the desired number of features
-    selector = SelectKBest(score_func=f_classif, k=k)
+    # selector = f_classif, mutual_info_classif
+    if selec_type == 'f_classif':
+        selector = SelectKBest(score_func=f_classif, k=k)
+    elif selec_type == 'mutual_info_classif':
+        selector = SelectKBest(score_func=mutual_info_classif, k=k)
+    else:
+        selector = SelectKBest(score_func=chi2, k=k)
     # Fit the selector to the data
     selector.fit(X, y)
     # Get the indices of the selected features
@@ -1501,6 +1565,12 @@ def selectKbest(X,y,k=10):
     # Print names and scores for selected features
     for feature, score in zip(selected_features, feature_scores):
         print(f"Feature '{feature}': {score}")
+
+    plt.plot(np.arange(1, len(feature_scores) + 1), sorted(feature_scores))
+    plt.xlabel('Number of Features')
+    plt.ylabel('Feature Score')
+    plt.title('Feature Scores vs Number of Features Selected')
+    plt.show()
 
     return selected_features
 
@@ -1547,10 +1617,24 @@ def visualize_mean_feature_for_each_region(df_concatenated, discriminating_featu
         ax.set_xlabel("Region")
         ax.grid(True)
         plt.tight_layout()
-        plt.savefig(f"analysis\mean_{column}_by_region.png")  # Save each plot to a PNG file
+        plt.savefig(f"analysis\\refined\\mean_{column}_by_region.png")  # Save each plot to a PNG file
         plt.close(fig)  # Close the figure to free up memory
 
     print("Plots saved as PNG files.")
+
+def plot_q_q(X):
+    # Select numerical columns for Q-Q plot
+    numerical_columns = X.select_dtypes(include='number').columns
+
+    # Plot Q-Q plots for each numerical feature
+    for column in numerical_columns:
+        plt.figure(figsize=(8, 6))
+        sm.qqplot(X[column], line='s')
+        plt.title(f'Q-Q Plot of {column}')
+        plt.xlabel('Theoretical Quantiles')
+        plt.ylabel('Sample Quantiles')
+        plt.grid(True)
+        plt.show()
 
 def plot_t_sne(X,y,n=2):
     # Perform t-SNE with 2 components

@@ -17,19 +17,3 @@ def fix_koi_naming(df):
 
 #endregion
 
-#region Data Normalization
-
-def normalize_data(df):
-    """ Function that normalize the data """
-    # Initialize MinMaxScaler
-    scaler = MinMaxScaler()
-
-    # Fit and transform the data
-    df_normalized = scaler.fit_transform(df)
-
-    # Convert the result back to a DataFrame
-    df_normalized = pd.DataFrame(df_normalized, columns=df.columns, index=df.index)
-
-    return df_normalized
-
-#endregion
