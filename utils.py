@@ -752,10 +752,16 @@ def create_ratio_economy_rounds(data):
 
 #region Performance
 
-def total_individual_exploit(performance):
-    """ Function that calculate the total number of individual exploit for each player throughout the tournament."""
+def total_individual_exploit(performance, type_discretization ='Team Name'):
+    """ Function that calculate the total number of individual exploit for each player throughout the tournament.
+
+        Parameter:
+            performance : dataset of the scrped performance data
+            type_discretization : str | calculate the action per discretization, multiple value possible : 'Team Name' (default), 'Id', '    
+    """
     
     performance.replace(np.nan, '[]', inplace=True)
+
     names = set(performance['Player Name'])
 
     total_2K = {name : ( performance[performance['Player Name'] == name]['Team Name'].iloc[0], performance[performance['Player Name'] == name]['2K'].apply(lambda x: len(ast.literal_eval(x))).sum()) for name in names}
@@ -782,7 +788,7 @@ def total_individual_exploit(performance):
 
     return df_totals
 
-def ratio_individual_exploit(performance, data_type, economy, tot_rounds=False):
+def ratio_individual_exploit(performance, data_type, economy, tot_rounds=False, type_discretization ='Team Name'):
     """ Function that calculates the ratio of action X in the total number of round throughout the tournament.
         
         Parameter:
@@ -950,12 +956,20 @@ def get_banking_data(bank):
     
     return banks, buys
 
-def create_economy_row(general_data1, general_data2, bank, buys, series, stage, map_num, map_name):
+def create_economy_row(general_data1, general_data2, bank, buys, match_id, map_id, series, stage, map_num, map_name):
     """ 
-    Build a row with that header : ["Team Name", "Map #", "Map Name", "Stage", "Series", "Pistol_Won", "Eco", "Eco_Won", "$", "$_Won", "$$", "$$_Won", '$$$', '$$$_Won', "Bank", "Buys"]
+    Build a row with that header : ["Id", "Unique Enum", "Team Name", "Map #", "Map Name", "Stage", "Series", "Pistol_Won", "Eco", "Eco_Won", "$", "$_Won", "$$", "$$_Won", '$$$', '$$$_Won', "Bank", "Buys"]
     """
     row1, row2 = [], []
 
+    # Id - Match Id
+    row1.append(match_id)
+    row2.append(match_id)
+
+    # Unique Enum - Map Id
+    row1.append(map_id)
+    row2.append(map_id)
+    
     # Team Name
     row1.append(general_data1[0])
     row2.append(general_data2[0])
@@ -1335,7 +1349,6 @@ def display_individual_statistics(data, metric_name, type_calculated='total', me
 
 #region Dataset Generation
 
-    #region Per team
 def normalize_data(df):
     """ Function that normalize the data """
     # Initialize MinMaxScaler
@@ -1374,8 +1387,8 @@ def parse_value(x, index, default):
     if (len(split_values) > index) and (len(split_values[index]) > 0):
         return float(split_values[index])
     else:
-        return default
-
+        return default    
+    
 def parse_hs_value(x, index, default):
 
     split_values = x.strip().split('\n')
@@ -1383,12 +1396,14 @@ def parse_hs_value(x, index, default):
     if (len(split_values) > index) and (len(split_values[index][:-1]) > 0):
         return float(split_values[index][:-1])
     else:
-        return default
+        return default    
+    
+    #region Per team
 
 def general_feature_creation_for_teams(general, list_feature = ['R', 'ACS', 'K', 'D','ADR', 'HS%', 'FK']):
 
     """
-        Function that creates a dataframe of the average/std features for a region with the general data. Individual feature only. 
+        Function that creates a dataframe of the average/std features for a region with the general data discretized by team. Individual feature only. 
 
         Parameter:
             general : dataframe from the scraper general_data_scraper
@@ -1538,7 +1553,78 @@ def picks_and_bans_feature_creation_for_teams(pick_ban):
     #endregion
 
     #region Per Match
+def general_feature_creation_for_matches(general, list_feature = ['R', 'ACS', 'K', 'D','ADR', 'HS%', 'FK']):
+    """
+        Function that creates a dataframe of the average/std features for a region with the general data discretized by matches. Individual feature only. 
 
+        Parameter:
+            general : dataframe from the scraper general_data_scraper
+            list_feature : list of feature to compute
+    """
+
+    gathered_feature_name = []
+    gathered_dictionnaries = []
+    match_ids = set(general['Id'])
+    
+    for feature_name in list_feature:
+
+        if feature_name == 'HS%':
+
+            default = np.mean(general[feature_name].apply(lambda x : float(x.strip().split('\n')[0][:-1])).values)
+            # Action
+            avrg_action_per_match = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_hs_value(x, 0, default))) for id_match in match_ids}
+            std_action_per_match = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_hs_value(x, 0, default))) for id_match in match_ids}
+            # Action attack
+            avrg_action_per_match_atk = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_hs_value(x, 1, default))) for id_match in match_ids}
+            std_action_per_match_atk = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_hs_value(x, 1, default))) for id_match in match_ids}
+            # Action defense
+            avrg_action_per_match_dfs = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_hs_value(x, 2, default))) for id_match in match_ids}
+            std_action_per_match_dfs = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_hs_value(x, 2, default))) for id_match in match_ids}
+        else:
+            default = np.mean(general[feature_name].apply(lambda x : float(x.strip().split('\n')[0])).values)
+            # Action
+            avrg_action_per_match = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_value(x, 0, default))) for id_match in match_ids}
+            std_action_per_match = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_value(x, 0, default))) for id_match in match_ids}
+            # Action attack
+            avrg_action_per_match_atk = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_value(x, 1, default))) for id_match in match_ids}
+            std_action_per_match_atk = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_value(x, 1, default))) for id_match in match_ids}
+            # Action defense
+            avrg_action_per_match_dfs = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_value(x, 2, default))) for id_match in match_ids}
+            std_action_per_match_dfs = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_value(x, 2, default))) for id_match in match_ids}
+
+        gathered_dictionnaries.append(avrg_action_per_match)
+        gathered_feature_name.append(f'avrg_{feature_name.lower()}_per_match')
+        gathered_dictionnaries.append(std_action_per_match)
+        gathered_feature_name.append(f'std_{feature_name.lower()}_per_match')
+        gathered_dictionnaries.append(avrg_action_per_match_atk)
+        gathered_feature_name.append(f'avrg_{feature_name.lower()}_per_match_atk')
+        gathered_dictionnaries.append(std_action_per_match_atk)
+        gathered_feature_name.append(f'std_{feature_name.lower()}_per_match_atk')
+        gathered_dictionnaries.append(avrg_action_per_match_dfs)
+        gathered_feature_name.append(f'avrg_{feature_name.lower()}_per_match_dfs')
+        gathered_dictionnaries.append(std_action_per_match_dfs)
+        gathered_feature_name.append(f'std_{feature_name.lower()}_per_match_dfs')
+    
+    # Create an empty DataFrame
+    df = pd.DataFrame(columns=gathered_feature_name)
+
+    # Iterate over the list of dictionaries
+    for id_match in gathered_dictionnaries[0].keys():
+        # Create a new row for each team
+        row_values = [d[id_match] for d in gathered_dictionnaries]
+        df.loc[id_match] = row_values
+    
+    return df
+  
+    #endregion
+
+    #region Per Map played
+    #endreion
+
+    #region Per Map
+    #endregion
+
+    #region Per Side
     #endregion
 #endregion
   
