@@ -5,7 +5,10 @@ import requests
 from bs4 import BeautifulSoup, Comment
 import re
 from utils import *
+from config import *
 import sys
+
+config = Config()
 
 def matches_scraper(url):
     """
@@ -402,13 +405,13 @@ def main(url):
     try:
         print("Saving the data...")
         # saving the general data from all matches 
-        save_match_data(url, "general", general_data) 
+        save_match_data(url, "general", general_data, config.SAVE_RAW_PATH) 
         # saving the performance data from all matches 
-        save_match_data(url, "performance", performance_data) 
+        save_match_data(url, "performance", performance_data, config.SAVE_RAW_PATH) 
         # saving the economic data from all matches 
-        save_match_data(url, "economy", economy_data) 
+        save_match_data(url, "economy", economy_data, config.SAVE_RAW_PATH) 
         # saving the pick and ban from all matches 
-        save_match_data(url, "pick_ban", pick_and_ban_data) 
+        save_match_data(url, "pick_ban", pick_and_ban_data, config.SAVE_RAW_PATH) 
     except NameError:
         print(f"Failed at saving data. Error : {NameError}")
         print("The Url must be of the same type as : https://www.vlr.gg/event/matches/[INTEGER]/[NAME OF EVENT]/?series_id=all")

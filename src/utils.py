@@ -1053,7 +1053,7 @@ def reorganize_rounds_based_on_titles(scoring_one_by_one_for_all):
             team2_score.append(int(actual_scores[1]) - int(previous_scores[1]))
     return [team1_score, team2_score]
 
-def save_match_data(url, type_of_data, data):
+def save_match_data(url, type_of_data, data, absolute_path_to_raw):
     """
     Save the dataframe as CSV into the correct directory...
     """
@@ -1061,10 +1061,10 @@ def save_match_data(url, type_of_data, data):
 
     name_of_data = type_of_data + "_data_" + event + ".csv"
 
-    if not os.path.exists(event +'_data'):
-        os.makedirs(event +'_data')
+    if not os.path.exists(absolute_path_to_raw + '\\' + event +'_data'):
+        os.makedirs(absolute_path_to_raw + '\\' + event +'_data')
     
-    file_path = os.path.join(event +'_data', name_of_data)
+    file_path = os.path.join(absolute_path_to_raw, event +'_data', name_of_data)
 
     data.to_csv(file_path, index=False)
 
