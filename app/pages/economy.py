@@ -1,18 +1,20 @@
+import os 
+import sys
 import streamlit as st
 import pandas as pd
-from utils import *
 
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src')))
+
+from utils import *
+from config import *
+
+config = Config()
 st.set_page_config(page_title="Economic Data", page_icon="$$")
 
 region = st.session_state['region']
 
-# "EMEA", "Pacific", "Americas"
-if region == 'Pacific':
-    economic_data = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/economy_data_champions-tour-2024-pacific-kickoff.csv')
-elif region == 'EMEA':
-    economic_data = pd.read_csv('../champions-tour-2024-emea-kickoff_data/economy_data_champions-tour-2024-emea-kickoff.csv')
-elif region == 'Americas':
-    economic_data = pd.read_csv('../champions-tour-2024-americas-kickoff_data/economy_data_champions-tour-2024-americas-kickoff.csv')
+data_path = config.load_data(f'kickoff {region.lower()}', config.ECONOMY_DATA)
+economic_data = pd.read_csv(data_path)
 
 st.text('Economic Data')
 st.write(economic_data)

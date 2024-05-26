@@ -1,21 +1,21 @@
+import os 
+import sys
 import streamlit as st
 import numpy as np
 import pandas as pd
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src')))
+
 from utils import *
+from config import *
 
-
+config = Config()
 st.set_page_config(page_title="Performance Data", page_icon="performance")
 
 region = st.session_state['region']
 
-# "EMEA", "Pacific", "Americas"
-if region == 'Pacific':
-    performance_data = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/performance_data_champions-tour-2024-pacific-kickoff.csv')
-elif region == 'EMEA':
-    performance_data = pd.read_csv('../champions-tour-2024-emea-kickoff_data/performance_data_champions-tour-2024-emea-kickoff.csv')
-elif region == 'Americas':
-    performance_data = pd.read_csv('../champions-tour-2024-americas-kickoff_data/performance_data_champions-tour-2024-americas-kickoff.csv')
-
+data_path = config.load_data(f'kickoff {region.lower()}', config.PERFORMANCE_DATA)
+performance_data = pd.read_csv(data_path)
 
 st.text('Performance Data')
 st.write(performance_data)
@@ -66,12 +66,8 @@ def display_individual_total_action():
 
 def display_individual_action_rate(region):
     
-    if region == 'Pacific':
-        economy = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/economy_data_champions-tour-2024-pacific-kickoff.csv')
-    elif region == 'EMEA':
-        economy = pd.read_csv('../champions-tour-2024-emea-kickoff_data/economy_data_champions-tour-2024-emea-kickoff.csv')
-    elif region == 'Americas':
-        economy = pd.read_csv('../champions-tour-2024-americas-kickoff_data/economy_data_champions-tour-2024-americas-kickoff.csv')
+    data_path = config.load_data(f'kickoff {region.lower()}', config.ECONOMY_DATA)
+    economy = pd.read_csv(data_path)
 
     ratio_2K = ratio_individual_exploit(performance_data,'2K',economy)
     # 2Ks
@@ -120,7 +116,6 @@ def display_individual_action_rate(region):
     # DE
     de = calculate_spike_action(performance_data,'DE',False)
     display_individual_statistics(de, 'DE','ratio')
-
 
 
 if display_option == "Total individual action":

@@ -402,13 +402,13 @@ def main(url):
     try:
         print("Saving the data...")
         # saving the general data from all matches 
-        save_match_data(url, "general", general_data)
-        # saving the performance data from all matches
-        save_match_data(url, "performance", performance_data)
-        # saving the economic data from all matches
-        save_match_data(url, "economy", economy_data)
+        save_match_data(url, "general", general_data) 
+        # saving the performance data from all matches 
+        save_match_data(url, "performance", performance_data) 
+        # saving the economic data from all matches 
+        save_match_data(url, "economy", economy_data) 
         # saving the pick and ban from all matches 
-        save_match_data(url, "pick_ban", pick_and_ban_data)
+        save_match_data(url, "pick_ban", pick_and_ban_data) 
     except NameError:
         print(f"Failed at saving data. Error : {NameError}")
         print("The Url must be of the same type as : https://www.vlr.gg/event/matches/[INTEGER]/[NAME OF EVENT]/?series_id=all")

@@ -969,7 +969,7 @@ def create_economy_row(general_data1, general_data2, bank, buys, match_id, map_i
     # Unique Enum - Map Id
     row1.append(map_id)
     row2.append(map_id)
-    
+
     # Team Name
     row1.append(general_data1[0])
     row2.append(general_data2[0])
@@ -1349,6 +1349,7 @@ def display_individual_statistics(data, metric_name, type_calculated='total', me
 
 #region Dataset Generation
 
+    #region Helpers
 def normalize_data(df):
     """ Function that normalize the data """
     # Initialize MinMaxScaler
@@ -1389,7 +1390,7 @@ def parse_value(x, index, default):
     else:
         return default    
     
-def parse_hs_value(x, index, default):
+def parse_percentage_value(x, index, default):
 
     split_values = x.strip().split('\n')
 
@@ -1397,7 +1398,9 @@ def parse_hs_value(x, index, default):
         return float(split_values[index][:-1])
     else:
         return default    
-    
+ 
+    #endregion
+  
     #region Per team
 
 def general_feature_creation_for_teams(general, list_feature = ['R', 'ACS', 'K', 'D','ADR', 'HS%', 'FK']):
@@ -1427,14 +1430,14 @@ def general_feature_creation_for_teams(general, list_feature = ['R', 'ACS', 'K',
 
             default = np.mean(general[feature_name].apply(lambda x : float(x.strip().split('\n')[0][:-1])).values)
             # Action
-            avrg_action_per_team = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_hs_value(x, 0, default))) for team in teams_of_regions}
-            std_action_per_team = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_hs_value(x, 0, default))) for team in teams_of_regions}
+            avrg_action_per_team = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_percentage_value(x, 0, default))) for team in teams_of_regions}
+            std_action_per_team = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_percentage_value(x, 0, default))) for team in teams_of_regions}
             # Action attack
-            avrg_action_per_team_atk = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_hs_value(x, 1, default))) for team in teams_of_regions}
-            std_action_per_team_atk = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_hs_value(x, 1, default))) for team in teams_of_regions}
+            avrg_action_per_team_atk = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_percentage_value(x, 1, default))) for team in teams_of_regions}
+            std_action_per_team_atk = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_percentage_value(x, 1, default))) for team in teams_of_regions}
             # Action defense
-            avrg_action_per_team_dfs = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_hs_value(x, 2, default))) for team in teams_of_regions}
-            std_action_per_team_dfs = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_hs_value(x, 2, default))) for team in teams_of_regions}
+            avrg_action_per_team_dfs = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_percentage_value(x, 2, default))) for team in teams_of_regions}
+            std_action_per_team_dfs = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_percentage_value(x, 2, default))) for team in teams_of_regions}
         else:
             default = np.mean(general[feature_name].apply(lambda x : float(x.strip().split('\n')[0])).values)
             # Action
@@ -1572,14 +1575,14 @@ def general_feature_creation_for_matches(general, list_feature = ['R', 'ACS', 'K
 
             default = np.mean(general[feature_name].apply(lambda x : float(x.strip().split('\n')[0][:-1])).values)
             # Action
-            avrg_action_per_match = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_hs_value(x, 0, default))) for id_match in match_ids}
-            std_action_per_match = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_hs_value(x, 0, default))) for id_match in match_ids}
+            avrg_action_per_match = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_percentage_value(x, 0, default))) for id_match in match_ids}
+            std_action_per_match = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_percentage_value(x, 0, default))) for id_match in match_ids}
             # Action attack
-            avrg_action_per_match_atk = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_hs_value(x, 1, default))) for id_match in match_ids}
-            std_action_per_match_atk = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_hs_value(x, 1, default))) for id_match in match_ids}
+            avrg_action_per_match_atk = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_percentage_value(x, 1, default))) for id_match in match_ids}
+            std_action_per_match_atk = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_percentage_value(x, 1, default))) for id_match in match_ids}
             # Action defense
-            avrg_action_per_match_dfs = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_hs_value(x, 2, default))) for id_match in match_ids}
-            std_action_per_match_dfs = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_hs_value(x, 2, default))) for id_match in match_ids}
+            avrg_action_per_match_dfs = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_percentage_value(x, 2, default))) for id_match in match_ids}
+            std_action_per_match_dfs = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_percentage_value(x, 2, default))) for id_match in match_ids}
         else:
             default = np.mean(general[feature_name].apply(lambda x : float(x.strip().split('\n')[0])).values)
             # Action
@@ -1619,13 +1622,17 @@ def general_feature_creation_for_matches(general, list_feature = ['R', 'ACS', 'K
     #endregion
 
     #region Per Map played
-    #endreion
+
+    #endregion
 
     #region Per Map
+
     #endregion
 
     #region Per Side
+
     #endregion
+
 #endregion
   
 #region Feature Selection for Analysis

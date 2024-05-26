@@ -1,9 +1,10 @@
+import sys
+import os
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
 import streamlit as st
 import pandas as pd
-import sys
-
-sys.path.append('C:\\Users\\marius.reymauzaize\\Desktop\\Project\\M8_Valorant')
-
 from utils import *
 
 st.set_page_config(
