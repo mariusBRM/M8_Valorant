@@ -12,7 +12,6 @@ st.set_page_config(
     page_icon="Valorant",
 )
 
-
 display_option = st.radio("Select Region", ("EMEA", "Pacific", "Americas"))
 
 st.session_state['region'] = display_option

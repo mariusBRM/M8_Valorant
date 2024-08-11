@@ -40,7 +40,8 @@ class Config:
         'stage 1 americas' : 'champions-tour-2024-americas-stage-1'
     }
 
-    def load_data(self, name_event, type_of_data):    
+    def load_data(self, name_event, type_of_data):
+        """ Make sure to target the endpoint in raw data"""    
         if name_event in self.Name_event:
             event_name = self.Name_event[name_event]
             path = os.path.join(

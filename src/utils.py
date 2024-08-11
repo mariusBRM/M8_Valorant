@@ -1403,7 +1403,7 @@ def parse_percentage_value(x, index, default):
   
     #region Per team
 
-def general_feature_creation_for_teams(general, list_feature = ['R', 'ACS', 'K', 'D','ADR', 'HS%', 'FK']):
+def general_feature_creation_for_teams(general, list_feature = ['R', 'ACS', 'K', 'D','ADR', 'KAST','HS%', 'FK']):
 
     """
         Function that creates a dataframe of the average/std features for a region with the general data discretized by team. Individual feature only. 
@@ -1426,7 +1426,7 @@ def general_feature_creation_for_teams(general, list_feature = ['R', 'ACS', 'K',
 
     for feature_name in list_feature:
 
-        if feature_name == 'HS%':
+        if feature_name in ['HS%','KAST']:
 
             default = np.mean(general[feature_name].apply(lambda x : float(x.strip().split('\n')[0][:-1])).values)
             # Action
@@ -1477,7 +1477,7 @@ def general_feature_creation_for_teams(general, list_feature = ['R', 'ACS', 'K',
 def performance_feature_creation_for_teams(performance, economy, 
                                             features_ratio = ['2K', '3K', '4K', '5K', '1v1', '1v2', '1v3','1v4', '1v5'],
                                             features_mean = ['ECON','PL','DE']):
-    """ Function that calculate the feature creation for each performance dataframe"""
+    """ Function that calculate the feature creation for each performance dataframe for each team"""
     values = {'team': []}
 
     for feature in features_ratio:
@@ -1556,7 +1556,7 @@ def picks_and_bans_feature_creation_for_teams(pick_ban):
     #endregion
 
     #region Per Match
-def general_feature_creation_for_matches(general, list_feature = ['R', 'ACS', 'K', 'D','ADR', 'HS%', 'FK']):
+def general_feature_creation_for_matches(general, list_feature = ['R', 'ACS', 'K', 'D','ADR', 'KAST','HS%', 'FK']):
     """
         Function that creates a dataframe of the average/std features for a region with the general data discretized by matches. Individual feature only. 
 
@@ -1571,7 +1571,7 @@ def general_feature_creation_for_matches(general, list_feature = ['R', 'ACS', 'K
     
     for feature_name in list_feature:
 
-        if feature_name == 'HS%':
+        if feature_name in ['HS%','KAST']:
 
             default = np.mean(general[feature_name].apply(lambda x : float(x.strip().split('\n')[0][:-1])).values)
             # Action
@@ -1618,7 +1618,42 @@ def general_feature_creation_for_matches(general, list_feature = ['R', 'ACS', 'K
         df.loc[id_match] = row_values
     
     return df
-  
+
+def performance_feature_creation_for_matches(performance, economy, 
+                                            features_ratio = ['2K', '3K', '4K', '5K', '1v1', '1v2', '1v3','1v4', '1v5'],
+                                            features_mean = ['ECON','PL','DE']):
+    """ Function that calculate the feature creation for each performance dataframe"""
+    values = {'id': []}
+
+    for feature in features_ratio:
+        # Gather data
+        df = ratio_individual_exploit(performance, feature, economy)
+        # Calculate mean per team
+        mean_per_team = df.groupby('Id')[feature].mean()
+        std_per_team = df.groupby('Id')[feature].std()
+
+        # Store mean values in the dictionary
+        values[f'{feature.lower()}_mean'] = mean_per_team.values
+        values['team'] = mean_per_team.index.tolist() 
+        values[f'{feature.lower()}_std'] = std_per_team.values
+        #values['team'] = std_per_team.index.tolist() 
+
+
+    df = pd.DataFrame(values)
+
+    # Calculate mean for features_mean and add to DataFrame
+    for feature in features_mean:
+        # Gather data and calculate mean per team
+        mean_per_team = performance.groupby('Team Name')[feature].mean()
+        std_per_team = performance.groupby('Team Name')[feature].std()
+        
+        # Add mean values to DataFrame
+        df[f'{feature.lower()}_mean'] = mean_per_team[df['team']].values
+        df[f'{feature.lower()}_std'] = std_per_team[df['team']].values
+    
+    df.set_index('team', inplace=True)
+    
+    return df  
     #endregion
 
     #region Per Map played
