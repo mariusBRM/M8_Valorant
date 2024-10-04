@@ -19,7 +19,12 @@ def load_model():
     model = project.version(3).model
 
     return model
+
+def predict_image(model, path_image):
+
+    # Predict image
     
+    return 0
 
 
 def main():
