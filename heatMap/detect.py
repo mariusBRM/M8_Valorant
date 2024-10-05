@@ -3,7 +3,6 @@ import sys
 import os
 
 # import roboflow API
-# rf = Roboflow(api_key="xEb6a3dXc9T0RuJ5Qnox")
 # project = rf.workspace().project("valorant-heat-map")
 
 # # m
