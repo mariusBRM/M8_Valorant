@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
+## test
 # Set general constant
 SIDE = {'Total' : 0, 'Side 1' : 1, 'Side 2' : 2}
 NAME = ['logaN', 'Wailers', 'beyAz', 'TakaS', 'nataNk']
