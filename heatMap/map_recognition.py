@@ -273,7 +273,7 @@ def find_map(baseline_folder, study_img, resizing = True, compute_type='Default'
         # compute resemblance and store each scores
         return [compute_ransac_homographic_resemblance(base_map, study_img, resizing) for base_map in baseline_img_paths]
     
-def find_sample_of_maps(baseline_folder, study_folder, sample_size=1, resizing=True, compute_type='Default'):
+def find_map_sample_recognition(baseline_folder, study_folder, sample_size=3, resizing=True, compute_type='Default'):
     """
     Selects a sample of images from the study_folder, compares them with all the baseline images from the baseline_folder,
     and computes the average resemblance score for each baseline map based on the sample size.
@@ -304,7 +304,7 @@ def find_sample_of_maps(baseline_folder, study_folder, sample_size=1, resizing=T
     for study_img in sample_study_images:
         # Call find_map for each study image and get the resemblance scores for all baseline maps
         image_results = find_map(baseline_folder, study_img, resizing, compute_type)
-        
+            
         # Update the resemblance scores for each baseline map
         for adjusted_score, baseline_image in image_results:
             baseline_map_name = os.path.basename(baseline_image)  # Extract the map name
@@ -319,4 +319,37 @@ def find_sample_of_maps(baseline_folder, study_folder, sample_size=1, resizing=T
             average_scores[baseline_map] = None  # No comparison was made for this baseline map
     
     return average_scores
+
+def map_recognition(baseline_folder, study_folder, sample_size=3):
+    """Run the map recognition 
+            * baseline folder : baseline folder of the different baseline maps. 
+            * study folder : study folder for the different maps.
+            * sample size : sample size to work recognition."""
+    
+    # dictionnary Default
+    print('Running ORB - default strategy...')
+    default = find_map_sample_recognition(baseline_folder, study_folder, sample_size, True, 'Default')
+
+    # dictionnary Adjusted
+    print('Running ORB - weighted distance average ...')
+    adjusted = find_map_sample_recognition(baseline_folder, study_folder, sample_size, True, 'Adjusted')
+
+    # dictionnary Homographic
+    print('Running ORB - Homographic transformation ...')
+    homographic = find_map_sample_recognition(baseline_folder, study_folder, sample_size, True, 'Homographic')
+
+    # Calculate average value for each key across the three dictionaries
+    cumulative_result = {}
+    
+    for key in default:
+        # Compute average value across the three dictionaries for each key
+        avg_value = (default[key] + adjusted[key] + homographic[key]) / 3
+        cumulative_result[key] = avg_value
+
+    # Find the key with the highest average value
+    highest_key = max(cumulative_result, key=cumulative_result.get)
+    highest_value = cumulative_result[highest_key]
+
+    print(f"Map with the highest average value: {highest_key}, Value: {highest_value}")
+    return highest_key
 

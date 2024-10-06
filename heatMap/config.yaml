@@ -1,0 +1,6 @@
+data_paths:
+  raw_video_data: "C:\\Users\\marius.reymauzaize\\Desktop\\Project\\Data_Valorant\\Raw_video"
+  extracted_image_data: "C:\\Users\\marius.reymauzaize\\Desktop\\Project\\Data_Valorant\\Extracted_Images"
+  processed_image_data: "C:\\Users\\marius.reymauzaize\\Desktop\\Project\\Data_Valorant\\Processed_Images"
+  detected_image_data: "C:\\Users\\marius.reymauzaize\\Desktop\\Project\\Data_Valorant\\Yolo_Detection"
+  baseline_map: "Base_map"

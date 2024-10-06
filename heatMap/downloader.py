@@ -3,21 +3,35 @@ import cv2
 from PIL import Image
 import subprocess
 
-def download_youtube_video(url, name, resolution='1080p'):
-    output_path = f'{name}.mp4'
+def download_youtube_video(url,output_path, name, resolution):
+
+    full_path = os.path.join(output_path, f'{name}.mp4')
     command = [
         'yt-dlp',
         '-f', f'bestvideo[height>={resolution[:-1]}][ext=mp4]/best[ext=mp4]',
-        '-o', output_path,
+        '-o', full_path,
         url
     ]
     try:
         subprocess.run(command, check=True)
-        print(f"Downloaded video: {output_path}")
+        print(f"Downloaded video: {full_path}")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred: {e}")
 
+
+def download(url, output_path, resolution='1080p'):
+
+    # will be deleted afterwards
+    video_name = 'video'
+
+    # Check if the directory exists, if not, create it
+    if not os.path.exists(output_path):
+        os.makedirs(output_path)
+
+    download_youtube_video(url, output_path, video_name ,resolution)
+
 def extract_frames_from_video(video_path, output_folder, frame_rate=1):
+    
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
     
