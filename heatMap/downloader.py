@@ -18,7 +18,6 @@ def download_youtube_video(url,output_path, name, resolution):
     except subprocess.CalledProcessError as e:
         print(f"An error occurred: {e}")
 
-
 def download(url, output_path, resolution='1080p'):
 
     # will be deleted afterwards

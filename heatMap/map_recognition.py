@@ -168,9 +168,9 @@ def compute_ransac_homographic_resemblance(baseline, img, resizing=True):
         num_good_matches = sum(matches_mask)
         similarity_score = num_good_matches / len(good_matches)  # Calculate a similarity score
 
-        # print(f"Total Good Matches: {num_good_matches}")
-        # print(f"Total Matches: {len(good_matches)}")
-        # print(f"Similarity Score: {similarity_score:.2f}")
+        print(f"Total Good Matches: {num_good_matches}")
+        print(f"Total Matches: {len(good_matches)}")
+        print(f"Similarity Score: {similarity_score:.2f}")
     
     return similarity_score, baseline
 
