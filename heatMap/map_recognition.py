@@ -33,7 +33,7 @@ def compute_resemblance(baseline, img, resizing=True):
     img2 = cv2.imread(img, 0)  # Test image (image you uploaded)
 
     if resizing:
-        img2_resized = resize_img_to_baseline(img1,img2)
+        img2_resized = resize_img_to_baseline(img1, img2)
     else:
         img2_resized = img2
 
@@ -44,11 +44,20 @@ def compute_resemblance(baseline, img, resizing=True):
     kp1, des1 = orb.detectAndCompute(img1, None)
     kp2, des2 = orb.detectAndCompute(img2_resized, None)
 
+    # Check if descriptors are found (if any of the images doesn't have keypoints)
+    if des1 is None or des2 is None:
+        # No descriptors found in one of the images
+        return 0, baseline  # Return 0 similarity ratio since no match can be made
+
     # Create BFMatcher object with Hamming distance
     bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
 
     # Match descriptors
     matches = bf.match(des1, des2)
+
+    # If no matches found, return 0 similarity
+    if not matches:
+        return 0, baseline
 
     # Sort matches by distance (optional, but helps if you want the best matches)
     matches = sorted(matches, key=lambda x: x.distance)
@@ -62,12 +71,6 @@ def compute_resemblance(baseline, img, resizing=True):
         similarity_ratio = num_matches / total_keypoints
     else:
         similarity_ratio = 0  # Avoid division by zero
-
-    # Display results
-    # print(f"Total Matches: {num_matches}")
-    # print(f"Total Keypoints in Query Image: {len(kp1)}")
-    # print(f"Total Keypoints in Test Image: {len(kp2)}")
-    # print(f"Similarity Ratio: {similarity_ratio:.2f}")
 
     return similarity_ratio, baseline
 
@@ -90,12 +93,21 @@ def compute_adjusted_resemblance(baseline, img, resizing=True):
     kp1, des1 = orb.detectAndCompute(img1, None)
     kp2, des2 = orb.detectAndCompute(img2_resized, None)
 
+    # Check if descriptors are found (if any of the images doesn't have keypoints)
+    if des1 is None or des2 is None:
+        # No descriptors found in one of the images
+        return 0, baseline  # Return 0 similarity ratio since no match can be made
+    
     # Create BFMatcher object (for KNN matcher)
     bf = cv2.BFMatcher(cv2.NORM_HAMMING)
 
     # Find the top 2 matches for each keypoint (KNN matching)
     matches = bf.knnMatch(des1, des2, k=2)
 
+    # If no matches found, return 0 similarity
+    if not matches:
+        return 0, baseline
+    
     # Apply ratio test to find good matches
     good_matches = []
     for m, n in matches:
@@ -145,9 +157,19 @@ def compute_ransac_homographic_resemblance(baseline, img, resizing=True):
     kp_baseline, des_baseline = orb.detectAndCompute(baseline_image, None)
     kp_blurred, des_blurred = orb.detectAndCompute(blurred_image_resized, None)
 
+    # Check if descriptors are found (if any of the images doesn't have keypoints)
+    if des_baseline is None or des_blurred is None:
+        # No descriptors found in one of the images
+        return 0, baseline  # Return 0 similarity ratio since no match can be made
+    
     # Step 3: Feature Matching
     bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=False)  # Cross-check is false to use KNN
     matches = bf.knnMatch(des_baseline, des_blurred, k=2)
+
+        
+    # If no matches found, return 0 similarity
+    if not matches:
+        return 0, baseline
 
     # Step 4: Ratio test to filter good matches
     good_matches = []
@@ -168,9 +190,9 @@ def compute_ransac_homographic_resemblance(baseline, img, resizing=True):
         num_good_matches = sum(matches_mask)
         similarity_score = num_good_matches / len(good_matches)  # Calculate a similarity score
 
-        print(f"Total Good Matches: {num_good_matches}")
-        print(f"Total Matches: {len(good_matches)}")
-        print(f"Similarity Score: {similarity_score:.2f}")
+        #print(f"Total Good Matches: {num_good_matches}")
+        #print(f"Total Matches: {len(good_matches)}")
+        #print(f"Similarity Score: {similarity_score:.2f}")
     
     return similarity_score, baseline
 
@@ -245,6 +267,66 @@ def get_mask(image, kmeans, cluster):
     ax[1].axis("off")
 
     plt.show()
+
+#endregion
+
+#region Align map to baseline
+
+def align_image_to_baseline(baseline_path, image_path):
+    
+    # Load both images (baseline and photo of map)
+    baseline = cv2.imread(baseline_path, cv2.IMREAD_COLOR)
+    photo = cv2.imread(image_path, cv2.IMREAD_COLOR)
+
+    # Step 1: Detect keypoints and descriptors using SIFT or ORB
+    sift = cv2.SIFT_create()
+
+    # Detect keypoints and compute descriptors
+    keypoints_baseline, descriptors_baseline = sift.detectAndCompute(baseline, None)
+    keypoints_photo, descriptors_photo = sift.detectAndCompute(photo, None)
+
+    # Check if descriptors are found (if any of the images doesn't have keypoints)
+    if descriptors_baseline is None or descriptors_photo is None:
+        # No descriptors found in one of the images
+        os.remove(image_path)
+        return 0
+
+
+    # Step 2: Match keypoints using FLANN matcher
+    FLANN_INDEX_KDTREE = 1
+    index_params = dict(algorithm=FLANN_INDEX_KDTREE, trees=5)
+    search_params = dict(checks=50)
+
+    flann = cv2.FlannBasedMatcher(index_params, search_params)
+    matches = flann.knnMatch(descriptors_baseline, descriptors_photo, k=2)
+
+    # If no matches found, return 0 similarity
+    if not matches:
+        os.remove(image_path)
+        return 0
+    
+    # Apply Lowe's ratio test to filter good matches
+    good_matches = []
+    for m, n in matches:
+        if m.distance < 0.7 * n.distance:
+            good_matches.append(m)
+
+    # Step 3: Find homography matrix to warp the photo to align with the baseline
+    if len(good_matches) > 10:  # Ensure enough good matches are found
+        src_pts = np.float32([keypoints_photo[m.trainIdx].pt for m in good_matches]).reshape(-1, 1, 2)
+        dst_pts = np.float32([keypoints_baseline[m.queryIdx].pt for m in good_matches]).reshape(-1, 1, 2)
+
+        # Compute the homography matrix (map photo to baseline)
+        matrix, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC, 5.0)
+
+        # Step 4: Warp the photo to align with the baseline
+        height, width = baseline.shape[:2]
+        aligned_photo = cv2.warpPerspective(photo, matrix, (width, height))
+
+        # Save or display the aligned image
+        cv2.imwrite(image_path, aligned_photo)
+    else:
+        print("Not enough good matches found.")
 
 #endregion
 
@@ -353,3 +435,13 @@ def map_recognition(baseline_folder, study_folder, sample_size=3):
     print(f"Map with the highest average value: {highest_key}, Value: {highest_value}")
     return highest_key
 
+def align_maps(baseline, img_folder):
+
+    # Loop through all the files in the baseline folder
+    for filename in os.listdir(img_folder):
+        if filename.endswith(".jpg"):
+            # Construct the full file path
+            file_path = os.path.join(img_folder, filename)
+            align_image_to_baseline(baseline, file_path)
+    
+    
