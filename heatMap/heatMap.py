@@ -152,6 +152,10 @@ def main(url, nameFolder, sample_size = 10):
     # Run HeatMap Analysis
     print("Run HeatMap Analysis ...")
 
+    run_heatMap_analysis(f"{config.get_data_path("prediction_data")}\\{nameFolder}", map_study)
+
+    print("HeatMap finished.")
+
     return 0
 
 if __name__ == "__main__":
