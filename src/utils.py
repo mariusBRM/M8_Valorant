@@ -2,19 +2,47 @@ import pandas as pd
 import os
 import ast
 from collections import defaultdict
+import csv
+from data_processing import *
 import re
 from bs4 import BeautifulSoup, Comment
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
+import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+from sklearn.feature_selection import SelectKBest, f_classif, mutual_info_classif, chi2
+from sklearn.manifold import TSNE
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.feature_selection import RFECV
+from sklearn.model_selection import StratifiedKFold
+from sklearn.svm import SVC
+import statsmodels.api as sm
 
 # Set general constant
+matplotlib.use('TkAgg')
 SIDE = {'Total' : 0, 'Side 1' : 1, 'Side 2' : 2}
 NAME = ['logaN', 'Wailers', 'beyAz', 'TakaS', 'nataNk']
 TEAM = "Gentle Mates"
+team_name_datapath = 'data/team_names.csv'
+
+#region Read file & csv
+
+def create_dictionary_from_csv(csv_file):
+    name_dict = {}
+    with open(csv_file, 'r') as file:
+        reader = csv.reader(file)
+        next(reader)  # Skip header row if it exists
+        for row in reader:
+            if len(row) >= 2:  # Ensure there are at least two columns
+                fullname = row[0]
+                surname = row[1]
+                name_dict[fullname] = surname
+    return name_dict
+
+#endregion
 
 #region BasicStatistiques
 
@@ -425,14 +453,14 @@ def calculate_win_rate(df, scope = 'match'):
             win_rates = {team : round(len(data[data['Team Name'] == team].where(data['Team Name'] == data['winner']).dropna()) / len(data[data['Team Name'] == team].dropna()),2) for team in list(set(data['Team Name']))}
             return win_rates
         case "map":
-            data_round = df.drop_duplicates(['Stage', 'Series','Team Name', 'Map #'])[['Stage', 'Series', 'Map #','Team Name', 'rounds', 'winner']]
+            data_round = df.drop_duplicates(['Team Name', 'Unique Enum'])[['Stage', 'Series', 'Map #','Team Name', 'rounds', 'winner']]
             data_round['rounds'] = data_round['rounds'].apply(lambda x: list(map(int, x.split(', '))))
             data_round['total_rounds'] = data_round['rounds'].apply(lambda x: sum(x))
             map_winners = set_map_winner(data_round)
             win_rates = {team : round(len(map_winners[map_winners['Team Name'] == team].where(map_winners['Team Name'] == map_winners['map_winners']).dropna()) / len(map_winners[map_winners['Team Name'] == team].dropna()),2) for team in list(set(df['Team Name']))}
             return win_rates
         case "round":
-            data_round = df.drop_duplicates(['Stage', 'Series','Team Name', 'Map #'])[['Stage', 'Series', 'Map #','Team Name', 'rounds', 'winner']]
+            data_round = df.drop_duplicates(['Team Name', 'Unique Enum'])[['Stage', 'Series', 'Map #','Team Name', 'rounds', 'winner']]
             data_round['rounds'] = data_round['rounds'].apply(lambda x: list(map(int, x.split(', '))))
             data_round['total_rounds'] = data_round['rounds'].apply(lambda x: sum(x))
             win_rates = {team : round(sum(data_round[data_round['Team Name'] == team].dropna()['total_rounds']) / data_round[data_round['Team Name'] == team].dropna()['rounds'].apply(len).sum(), 2) for team in list(set(df['Team Name']))}
@@ -635,6 +663,26 @@ def calculate_mean_economy(data, team=[], series=None, stage=None):
 
     return banks_buys
 
+def calculate_std_economy(data, team=[], series=None, stage=None):
+    """
+    Function that calculate the standard deviation for the economy (banks and buys) filtered on the team, the stage and the series
+    Intentionally no conflict here 
+    """
+    if len(team)>0:
+        teams = team
+    else:
+        teams = set(data['Team Name'])
+        
+    if series:
+        data = data[data['Series'] == series]
+
+    if stage:
+        data = data[data['Stage'] == stage]
+                
+    banks_buys = {team : (round(np.mean(data[data['Team Name'] == team]['Bank'].apply(lambda x: np.std(ast.literal_eval(x)))),2), round(np.mean(data[data['Team Name'] == team]['Buys'].apply(lambda x: np.std(ast.literal_eval(x)))),2))for team in teams}
+
+    return banks_buys
+
 def create_summary_rounds_dataset(data):
     """ 
     Function that summarize the Economy data for each teams with rounds statistics over the all tournament
@@ -704,10 +752,16 @@ def create_ratio_economy_rounds(data):
 
 #region Performance
 
-def total_individual_exploit(performance):
-    """ Function that calculate the total number of individual exploit for each player throughout the tournament."""
+def total_individual_exploit(performance, type_discretization ='Team Name'):
+    """ Function that calculate the total number of individual exploit for each player throughout the tournament.
+
+        Parameter:
+            performance : dataset of the scrped performance data
+            type_discretization : str | calculate the action per discretization, multiple value possible : 'Team Name' (default), 'Id', '    
+    """
     
-    performance.replace(pd.NA, '[]', inplace=True)
+    performance.replace(np.nan, '[]', inplace=True)
+
     names = set(performance['Player Name'])
 
     total_2K = {name : ( performance[performance['Player Name'] == name]['Team Name'].iloc[0], performance[performance['Player Name'] == name]['2K'].apply(lambda x: len(ast.literal_eval(x))).sum()) for name in names}
@@ -734,7 +788,7 @@ def total_individual_exploit(performance):
 
     return df_totals
 
-def ratio_individual_exploit(performance, data_type, economy, tot_rounds=False):
+def ratio_individual_exploit(performance, data_type, economy, tot_rounds=False, type_discretization ='Team Name'):
     """ Function that calculates the ratio of action X in the total number of round throughout the tournament.
         
         Parameter:
@@ -745,7 +799,7 @@ def ratio_individual_exploit(performance, data_type, economy, tot_rounds=False):
         Return:
             Dict : key is Player Name and value is ratio or (ratio, total rounds played) depending on tot_rounds"""
     
-    performance.replace(pd.NA, '[]', inplace=True)
+    performance.replace(np.nan, '[]', inplace=True)
     
     ActionRatio_eco = {name : [performance[performance['Player Name'] == name][data_type].apply(lambda x: len(ast.literal_eval(x))),
                               performance[performance['Player Name'] == name]['Team Name'],
@@ -814,6 +868,22 @@ def calculate_spike_action(performance, data_type, total):
 #endregion
 
 #region Scraping
+
+def create_id_column(df):
+    """ Function that create an Id column in General data"""
+    id_column = []
+    prev_values = None
+    current_id = 0
+
+    for index, row in df.iterrows():
+        current_values = row[['winner', 'Stage', 'Series']]
+        if prev_values is None or not prev_values.equals(current_values):
+            current_id += 1
+        id_column.append(current_id)
+        prev_values = current_values
+
+    df['Id'] = id_column
+    return df
 
 def extract_round_numbers_if_present(text):
     """ Extract the round in the performance table from the text : Round X --> X """
@@ -886,11 +956,19 @@ def get_banking_data(bank):
     
     return banks, buys
 
-def create_economy_row(general_data1, general_data2, bank, buys, series, stage, map_num, map_name):
+def create_economy_row(general_data1, general_data2, bank, buys, match_id, map_id, series, stage, map_num, map_name):
     """ 
-    Build a row with that header : ["Team Name", "Map #", "Map Name", "Stage", "Series", "Pistol_Won", "Eco", "Eco_Won", "$", "$_Won", "$$", "$$_Won", '$$$', '$$$_Won', "Bank", "Buys"]
+    Build a row with that header : ["Id", "Unique Enum", "Team Name", "Map #", "Map Name", "Stage", "Series", "Pistol_Won", "Eco", "Eco_Won", "$", "$_Won", "$$", "$$_Won", '$$$', '$$$_Won', "Bank", "Buys"]
     """
     row1, row2 = [], []
+
+    # Id - Match Id
+    row1.append(match_id)
+    row2.append(match_id)
+
+    # Unique Enum - Map Id
+    row1.append(map_id)
+    row2.append(map_id)
 
     # Team Name
     row1.append(general_data1[0])
@@ -975,7 +1053,7 @@ def reorganize_rounds_based_on_titles(scoring_one_by_one_for_all):
             team2_score.append(int(actual_scores[1]) - int(previous_scores[1]))
     return [team1_score, team2_score]
 
-def save_match_data(url, type_of_data, data):
+def save_match_data(url, type_of_data, data, absolute_path_to_raw):
     """
     Save the dataframe as CSV into the correct directory...
     """
@@ -983,10 +1061,10 @@ def save_match_data(url, type_of_data, data):
 
     name_of_data = type_of_data + "_data_" + event + ".csv"
 
-    if not os.path.exists(event +'_data'):
-        os.makedirs(event +'_data')
+    if not os.path.exists(absolute_path_to_raw + '\\' + event +'_data'):
+        os.makedirs(absolute_path_to_raw + '\\' + event +'_data')
     
-    file_path = os.path.join(event +'_data', name_of_data)
+    file_path = os.path.join(absolute_path_to_raw, event +'_data', name_of_data)
 
     data.to_csv(file_path, index=False)
 
@@ -1267,4 +1345,438 @@ def display_individual_statistics(data, metric_name, type_calculated='total', me
 
     plot_bar_individual_data(data, metric_name, top_X, mean, std)
 
-#endregion   
+#endregion  
+
+#region Dataset Generation
+
+    #region Helpers
+def normalize_data(df):
+    """ Function that normalize the data """
+    # Initialize MinMaxScaler
+    scaler = MinMaxScaler()
+
+    # Fit and transform the data
+    df_normalized = scaler.fit_transform(df)
+
+    # Convert the result back to a DataFrame
+    df_normalized = pd.DataFrame(df_normalized, columns=df.columns, index=df.index)
+
+    return df_normalized
+    
+def create_dataframe(df_emea, df_americas, df_pacific, to_normalize=True):
+    """ Function that creates the features X and the target y 
+        
+        Parameter:
+            df_emea: dataframe for the feature selected for the EMEA region
+            df_americas: dataframe for the feature selected for the AMERICAS region
+            df_pacific: dataframe for the feacture selected for the PACIFIC region"""
+
+    # df_emea, df_americas, and df_pacific are dataframes for each region
+    # Concatenate the dataframes vertically to create a single dataframe
+    df_concatenated = pd.concat([df_emea, df_americas, df_pacific], keys=['EMEA', 'Americas', 'Pacific'])
+
+    if to_normalize:
+        # normalize data
+        df_concatenated = normalize_data(df_concatenated)
+
+    return df_concatenated
+
+def parse_value(x, index, default):
+
+    split_values = x.strip().split('\n')
+
+    if (len(split_values) > index) and (len(split_values[index]) > 0):
+        return float(split_values[index])
+    else:
+        return default    
+    
+def parse_percentage_value(x, index, default):
+
+    split_values = x.strip().split('\n')
+
+    if (len(split_values) > index) and (len(split_values[index][:-1]) > 0):
+        return float(split_values[index][:-1])
+    else:
+        return default    
+ 
+    #endregion
+  
+    #region Per team
+
+def general_feature_creation_for_teams(general, list_feature = ['R', 'ACS', 'K', 'D','ADR', 'KAST','HS%', 'FK']):
+
+    """
+        Function that creates a dataframe of the average/std features for a region with the general data discretized by team. Individual feature only. 
+
+        Parameter:
+            general : dataframe from the scraper general_data_scraper
+            list_feature : list of feature to compute
+    """
+    # Change name for the dataframe
+    try:
+        dict_name = create_dictionary_from_csv(team_name_datapath)
+        general['Team Name'] = general['Team Name'].apply(lambda x: dict_name[x])
+    except:
+        pass
+
+    teams_of_regions = set(general['Team Name'])
+
+    gathered_feature_name = []
+    gathered_dictionnaries = []
+
+    for feature_name in list_feature:
+
+        if feature_name in ['HS%','KAST']:
+
+            default = np.mean(general[feature_name].apply(lambda x : float(x.strip().split('\n')[0][:-1])).values)
+            # Action
+            avrg_action_per_team = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_percentage_value(x, 0, default))) for team in teams_of_regions}
+            std_action_per_team = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_percentage_value(x, 0, default))) for team in teams_of_regions}
+            # Action attack
+            avrg_action_per_team_atk = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_percentage_value(x, 1, default))) for team in teams_of_regions}
+            std_action_per_team_atk = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_percentage_value(x, 1, default))) for team in teams_of_regions}
+            # Action defense
+            avrg_action_per_team_dfs = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_percentage_value(x, 2, default))) for team in teams_of_regions}
+            std_action_per_team_dfs = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_percentage_value(x, 2, default))) for team in teams_of_regions}
+        else:
+            default = np.mean(general[feature_name].apply(lambda x : float(x.strip().split('\n')[0])).values)
+            # Action
+            avrg_action_per_team = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_value(x, 0, default))) for team in teams_of_regions}
+            std_action_per_team = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_value(x, 0, default))) for team in teams_of_regions}
+            # Action attack
+            avrg_action_per_team_atk = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_value(x, 1, default))) for team in teams_of_regions}
+            std_action_per_team_atk = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_value(x, 1, default))) for team in teams_of_regions}
+            # Action defense
+            avrg_action_per_team_dfs = {team : np.mean(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_value(x, 2, default))) for team in teams_of_regions}
+            std_action_per_team_dfs = {team : np.std(general[general['Team Name'] == team][feature_name].apply(lambda x : parse_value(x, 2, default))) for team in teams_of_regions}
+
+        gathered_dictionnaries.append(avrg_action_per_team)
+        gathered_feature_name.append(f'avrg_{feature_name.lower()}_per_team')
+        gathered_dictionnaries.append(std_action_per_team)
+        gathered_feature_name.append(f'std_{feature_name.lower()}_per_team')
+        gathered_dictionnaries.append(avrg_action_per_team_atk)
+        gathered_feature_name.append(f'avrg_{feature_name.lower()}_per_team_atk')
+        gathered_dictionnaries.append(std_action_per_team_atk)
+        gathered_feature_name.append(f'std_{feature_name.lower()}_per_team_atk')
+        gathered_dictionnaries.append(avrg_action_per_team_dfs)
+        gathered_feature_name.append(f'avrg_{feature_name.lower()}_per_team_dfs')
+        gathered_dictionnaries.append(std_action_per_team_dfs)
+        gathered_feature_name.append(f'std_{feature_name.lower()}_per_team_dfs')
+    
+    # Create an empty DataFrame
+    df = pd.DataFrame(columns=gathered_feature_name)
+
+    # Iterate over the list of dictionaries
+    for team in gathered_dictionnaries[0].keys():
+        # Create a new row for each team
+        row_values = [d[team] for d in gathered_dictionnaries]
+        df.loc[team] = row_values
+    
+    return df
+
+def performance_feature_creation_for_teams(performance, economy, 
+                                            features_ratio = ['2K', '3K', '4K', '5K', '1v1', '1v2', '1v3','1v4', '1v5'],
+                                            features_mean = ['ECON','PL','DE']):
+    """ Function that calculate the feature creation for each performance dataframe for each team"""
+    values = {'team': []}
+
+    for feature in features_ratio:
+        # Gather data
+        df = ratio_individual_exploit(performance, feature, economy)
+        # Calculate mean per team
+        mean_per_team = df.groupby('team')[feature].mean()
+        std_per_team = df.groupby('team')[feature].std()
+
+        # Store mean values in the dictionary
+        values[f'{feature.lower()}_mean'] = mean_per_team.values
+        values['team'] = mean_per_team.index.tolist() 
+        values[f'{feature.lower()}_std'] = std_per_team.values
+        #values['team'] = std_per_team.index.tolist() 
+
+
+    df = pd.DataFrame(values)
+
+    # Calculate mean for features_mean and add to DataFrame
+    for feature in features_mean:
+        # Gather data and calculate mean per team
+        mean_per_team = performance.groupby('Team Name')[feature].mean()
+        std_per_team = performance.groupby('Team Name')[feature].std()
+        
+        # Add mean values to DataFrame
+        df[f'{feature.lower()}_mean'] = mean_per_team[df['team']].values
+        df[f'{feature.lower()}_std'] = std_per_team[df['team']].values
+    
+    df.set_index('team', inplace=True)
+    
+    return df
+
+def economy_feature_creation_for_teams(economy):
+    """ Function that create the dataframe with selected feature for the economic data for each region """
+
+    # Economic rounds ratio
+    summary_economy_rounds = create_summary_rounds_dataset(economy)
+    columns_to_drop = summary_economy_rounds.columns[1:][:-1]
+    ratio = create_ratio_economy_rounds(summary_economy_rounds)
+    ratio_dropped = ratio.drop(columns=columns_to_drop)
+    ratio_dropped.set_index('Team Name', inplace=True)
+
+    # Bank and Buys
+    bank_and_buys = calculate_mean_economy(economy)
+    ratio_dropped['Bank'] = ratio_dropped.index.map(lambda x: bank_and_buys[x][0])
+    ratio_dropped['Buys'] = ratio_dropped.index.map(lambda x: bank_and_buys[x][1])
+
+    return ratio_dropped
+
+def picks_and_bans_feature_creation_for_teams(pick_ban):
+    """ Function that create the feature for the picks and bans dataframe. Creates dummies feature for the map selection"""
+    # Get dummies for 'Bans', 'Picks', and 'Decider' columns
+    bans_dummies = pd.get_dummies(pick_ban['Bans'].apply(lambda x : ast.literal_eval(x)).apply(pd.Series).stack()).sum(level=0)
+    picks_dummies = pd.get_dummies(pick_ban['Picks'].apply(lambda x : ast.literal_eval(x)).apply(pd.Series).stack()).sum(level=0)
+    decider_dummies = pd.get_dummies(pick_ban['Decider'].apply(lambda x : ast.literal_eval(x)).apply(pd.Series).stack()).sum(level=0)
+
+    # Concatenate dummies with the original DataFrame
+    df_by_match = pd.concat([pick_ban, bans_dummies.add_prefix('Bans_'), picks_dummies.add_prefix('Picks_'), decider_dummies.add_prefix('Decider_')], axis=1)
+
+    # Drop original 'Bans', 'Picks', and 'Decider' columns
+    df_by_match.drop(columns=['Bans', 'Picks', 'Decider','Stage','Series'], inplace=True)
+    df_by_match.set_index('Team Name')
+
+    values = {'team': []}
+    for feature in df_by_match.columns[1:]:
+        mean_per_team = df_by_match.groupby('Team Name')[feature].mean()
+        
+        values[f'{feature.lower()}_mean'] = mean_per_team.values
+        values['team'] = mean_per_team.index.tolist() 
+
+    df = pd.DataFrame(values)
+    df.set_index('team', inplace=True)
+
+    return df
+
+    #endregion
+
+    #region Per Match
+def general_feature_creation_for_matches(general, list_feature = ['R', 'ACS', 'K', 'D','ADR', 'KAST','HS%', 'FK']):
+    """
+        Function that creates a dataframe of the average/std features for a region with the general data discretized by matches. Individual feature only. 
+
+        Parameter:
+            general : dataframe from the scraper general_data_scraper
+            list_feature : list of feature to compute
+    """
+
+    gathered_feature_name = []
+    gathered_dictionnaries = []
+    match_ids = set(general['Id'])
+    
+    for feature_name in list_feature:
+
+        if feature_name in ['HS%','KAST']:
+
+            default = np.mean(general[feature_name].apply(lambda x : float(x.strip().split('\n')[0][:-1])).values)
+            # Action
+            avrg_action_per_match = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_percentage_value(x, 0, default))) for id_match in match_ids}
+            std_action_per_match = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_percentage_value(x, 0, default))) for id_match in match_ids}
+            # Action attack
+            avrg_action_per_match_atk = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_percentage_value(x, 1, default))) for id_match in match_ids}
+            std_action_per_match_atk = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_percentage_value(x, 1, default))) for id_match in match_ids}
+            # Action defense
+            avrg_action_per_match_dfs = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_percentage_value(x, 2, default))) for id_match in match_ids}
+            std_action_per_match_dfs = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_percentage_value(x, 2, default))) for id_match in match_ids}
+        else:
+            default = np.mean(general[feature_name].apply(lambda x : float(x.strip().split('\n')[0])).values)
+            # Action
+            avrg_action_per_match = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_value(x, 0, default))) for id_match in match_ids}
+            std_action_per_match = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_value(x, 0, default))) for id_match in match_ids}
+            # Action attack
+            avrg_action_per_match_atk = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_value(x, 1, default))) for id_match in match_ids}
+            std_action_per_match_atk = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_value(x, 1, default))) for id_match in match_ids}
+            # Action defense
+            avrg_action_per_match_dfs = {id_match : np.mean(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_value(x, 2, default))) for id_match in match_ids}
+            std_action_per_match_dfs = {id_match : np.std(general[general['Id'] == id_match][feature_name].apply(lambda x : parse_value(x, 2, default))) for id_match in match_ids}
+
+        gathered_dictionnaries.append(avrg_action_per_match)
+        gathered_feature_name.append(f'avrg_{feature_name.lower()}_per_match')
+        gathered_dictionnaries.append(std_action_per_match)
+        gathered_feature_name.append(f'std_{feature_name.lower()}_per_match')
+        gathered_dictionnaries.append(avrg_action_per_match_atk)
+        gathered_feature_name.append(f'avrg_{feature_name.lower()}_per_match_atk')
+        gathered_dictionnaries.append(std_action_per_match_atk)
+        gathered_feature_name.append(f'std_{feature_name.lower()}_per_match_atk')
+        gathered_dictionnaries.append(avrg_action_per_match_dfs)
+        gathered_feature_name.append(f'avrg_{feature_name.lower()}_per_match_dfs')
+        gathered_dictionnaries.append(std_action_per_match_dfs)
+        gathered_feature_name.append(f'std_{feature_name.lower()}_per_match_dfs')
+    
+    # Create an empty DataFrame
+    df = pd.DataFrame(columns=gathered_feature_name)
+
+    # Iterate over the list of dictionaries
+    for id_match in gathered_dictionnaries[0].keys():
+        # Create a new row for each team
+        row_values = [d[id_match] for d in gathered_dictionnaries]
+        df.loc[id_match] = row_values
+    
+    return df
+
+def performance_feature_creation_for_matches(performance, economy, 
+                                            features_ratio = ['2K', '3K', '4K', '5K', '1v1', '1v2', '1v3','1v4', '1v5'],
+                                            features_mean = ['ECON','PL','DE']):
+    """ Function that calculate the feature creation for each performance dataframe"""
+    values = {'id': []}
+
+    for feature in features_ratio:
+        # Gather data
+        df = ratio_individual_exploit(performance, feature, economy)
+        # Calculate mean per team
+        mean_per_team = df.groupby('Id')[feature].mean()
+        std_per_team = df.groupby('Id')[feature].std()
+
+        # Store mean values in the dictionary
+        values[f'{feature.lower()}_mean'] = mean_per_team.values
+        values['team'] = mean_per_team.index.tolist() 
+        values[f'{feature.lower()}_std'] = std_per_team.values
+        #values['team'] = std_per_team.index.tolist() 
+
+
+    df = pd.DataFrame(values)
+
+    # Calculate mean for features_mean and add to DataFrame
+    for feature in features_mean:
+        # Gather data and calculate mean per team
+        mean_per_team = performance.groupby('Team Name')[feature].mean()
+        std_per_team = performance.groupby('Team Name')[feature].std()
+        
+        # Add mean values to DataFrame
+        df[f'{feature.lower()}_mean'] = mean_per_team[df['team']].values
+        df[f'{feature.lower()}_std'] = std_per_team[df['team']].values
+    
+    df.set_index('team', inplace=True)
+    
+    return df  
+    #endregion
+
+    #region Per Map played
+
+    #endregion
+
+    #region Per Map
+
+    #endregion
+
+    #region Per Side
+
+    #endregion
+
+#endregion
+  
+#region Feature Selection for Analysis
+    
+def selectKbest(X, y, k=10, selec_type='f_classif'):
+    """ Fonction that select the k best features (for explainability) """
+    # Initialize SelectKBest with the desired number of features
+    # selector = f_classif, mutual_info_classif
+    if selec_type == 'f_classif':
+        selector = SelectKBest(score_func=f_classif, k=k)
+    elif selec_type == 'mutual_info_classif':
+        selector = SelectKBest(score_func=mutual_info_classif, k=k)
+    else:
+        selector = SelectKBest(score_func=chi2, k=k)
+    # Fit the selector to the data
+    selector.fit(X, y)
+    # Get the indices of the selected features
+    selected_indices = selector.get_support(indices=True)
+    # Get the names of the selected features
+    selected_features = X.columns[selected_indices]
+    feature_scores = selector.scores_[selected_indices]
+
+    # Print names and scores for selected features
+    for feature, score in zip(selected_features, feature_scores):
+        print(f"Feature '{feature}': {score}")
+
+    plt.plot(np.arange(1, len(feature_scores) + 1), sorted(feature_scores))
+    plt.xlabel('Number of Features')
+    plt.ylabel('Feature Score')
+    plt.title('Feature Scores vs Number of Features Selected')
+    plt.show()
+
+    return selected_features
+
+def RFECV_feature_selection(X,y, krnl="linear"):
+
+    # Create a Support Vector Classifier as the estimator
+    estimator = SVC(kernel=krnl)
+    # Create RFECV object
+    rfecv = RFECV(estimator=estimator, cv=StratifiedKFold(5), scoring='accuracy')  # 5-fold cross-validation
+    # Fit RFECV to the data
+    rfecv.fit(X, y)
+    # Get selected features
+    selected_indices = rfecv.support_
+    # Get names of selected features
+    selected_features = X.columns[selected_indices]
+
+    # Print selected features
+    print("Selected Features:")
+    print(selected_features)
+
+    # Print optimal number of features
+    print("Optimal number of features: {}".format(rfecv.n_features_))
+
+    return selected_features
+
+#endregion
+    
+#region Visualize Data for analysis
+
+def visualize_mean_feature_for_each_region(df_concatenated, discriminating_feature):
+    """ Fonction that visualize the data for the three region"""
+
+    # Calculate the mean of each column for each region
+    mean_per_region = df_concatenated.groupby(level=0).mean()
+
+    filtered_dataframe = mean_per_region[discriminating_feature]
+
+    # Plot the mean of each column for each region
+    for column in filtered_dataframe.columns:
+        fig, ax = plt.subplots(figsize=(8, 6))
+        ax.bar(filtered_dataframe.index, filtered_dataframe[column])
+        ax.set_title(f"Mean of {column} by Region")
+        ax.set_ylabel("Mean")
+        ax.set_xlabel("Region")
+        ax.grid(True)
+        plt.tight_layout()
+        plt.savefig(f"analysis\\refined\\mean_{column}_by_region.png")  # Save each plot to a PNG file
+        plt.close(fig)  # Close the figure to free up memory
+
+    print("Plots saved as PNG files.")
+
+def plot_q_q(X):
+    # Select numerical columns for Q-Q plot
+    numerical_columns = X.select_dtypes(include='number').columns
+
+    # Plot Q-Q plots for each numerical feature
+    for column in numerical_columns:
+        plt.figure(figsize=(8, 6))
+        sm.qqplot(X[column], line='s')
+        plt.title(f'Q-Q Plot of {column}')
+        plt.xlabel('Theoretical Quantiles')
+        plt.ylabel('Sample Quantiles')
+        plt.grid(True)
+        plt.show()
+
+def plot_t_sne(X,y,n=2):
+    # Perform t-SNE with 2 components
+    tsne = TSNE(n_components=n, random_state=42)
+    X_tsne = tsne.fit_transform(X)
+
+    # Plot t-SNE embeddings
+    plt.figure(figsize=(10, 8))
+    for region in np.unique(y):
+        plt.scatter(X_tsne[y == region, 0], X_tsne[y == region, 1], label=region)
+    plt.title("t-SNE Visualization of Data with Region Labels")
+    plt.xlabel("t-SNE Component 1")
+    plt.ylabel("t-SNE Component 2")
+    plt.legend()
+    plt.show()
+
+#endregion 

@@ -1,9 +1,10 @@
+import sys
+import os
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
 import streamlit as st
 import pandas as pd
-import sys
-
-sys.path.append('C:\\Users\\marius.reymauzaize\\Desktop\\Project\\M8_Valorant')
-
 from utils import *
 
 st.set_page_config(
@@ -11,11 +12,31 @@ st.set_page_config(
     page_icon="Valorant",
 )
 
-st.write('Enter an event: ')
-#input
+display_option = st.radio("Select Region", ("EMEA", "Pacific", "Americas"))
 
-st.title("PRX in VCT Pacific Kick Off 2024!")
+st.session_state['region'] = display_option
 
-st.sidebar.success("Select a report above!")
+def display_emea():
+    st.title("VCT EMEA Kick Off 2024!")
 
-st.image('icon\\vct_pacific_logo.png')
+    st.image('icon\\vct_emea_logo.png')
+
+def display_pacific():
+
+    st.title("VCT Pacific Kick Off 2024!")
+
+    st.image('icon\\vct_pacific_logo.png')
+
+def display_americas():
+    
+    st.title("VCT Americas Kick Off 2024!")
+
+    st.image('icon\\vct_americas_logo.png')
+
+if display_option == "EMEA":
+    display_emea()
+elif display_option == "Pacific":
+    display_pacific()
+elif display_option == "Americas":
+    display_americas()
+

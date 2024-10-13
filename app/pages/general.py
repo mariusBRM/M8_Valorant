@@ -1,17 +1,27 @@
+import os
+import sys
 import streamlit as st
 import pandas as pd
-from utils import *
 import plotly.express as px
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src')))
+
+from utils import *
+from config import *
 
 st.set_page_config(page_title="General Data", page_icon="general")
 
+config = Config()
 if st.button("Clear All"):
     # Clear values from *all* all in-memory and on-disk data caches:
     # i.e. clear values from both square and cube
     st.cache_data.clear()
 
-st.title('Data visualization of the general data of the Pacific KickOff 2024')
-general_data = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/general_data_champions-tour-2024-pacific-kickoff.csv')
+st.title('Data visualization of the general data of the KickOff 2024')
+region = st.session_state['region']
+
+data_path = config.load_data(f'kickoff {region.lower()}', config.GENERAL_DATA)
+general_data = pd.read_csv(data_path)
 
 st.text('General Data')
 st.write(general_data)

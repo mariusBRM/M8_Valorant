@@ -1,11 +1,21 @@
+import os 
+import sys
 import streamlit as st
+import numpy as np
 import pandas as pd
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src')))
+
 from utils import *
+from config import *
 
-
+config = Config()
 st.set_page_config(page_title="Performance Data", page_icon="performance")
 
-performance_data = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/performance_data_champions-tour-2024-pacific-kickoff.csv')
+region = st.session_state['region']
+
+data_path = config.load_data(f'kickoff {region.lower()}', config.PERFORMANCE_DATA)
+performance_data = pd.read_csv(data_path)
 
 st.text('Performance Data')
 st.write(performance_data)
@@ -14,6 +24,8 @@ display_option = st.radio("Select Display Option", ("Total individual action", "
 
 
 def display_individual_total_action():
+
+    performance_data.replace(np.nan, '[]', inplace=True)
 
     total_2K, total_3K, total_4K, total_5K, total_1v1, total_1v2, total_1v3, total_1v4, total_1v5 = total_individual_exploit(performance_data)
     # 2Ks
@@ -52,9 +64,10 @@ def display_individual_total_action():
     display_individual_statistics(de, 'DE')
 
 
-def display_individual_action_rate():
+def display_individual_action_rate(region):
     
-    economy = pd.read_csv('../champions-tour-2024-pacific-kickoff_data/economy_data_champions-tour-2024-pacific-kickoff.csv')
+    data_path = config.load_data(f'kickoff {region.lower()}', config.ECONOMY_DATA)
+    economy = pd.read_csv(data_path)
 
     ratio_2K = ratio_individual_exploit(performance_data,'2K',economy)
     # 2Ks
@@ -105,8 +118,7 @@ def display_individual_action_rate():
     display_individual_statistics(de, 'DE','ratio')
 
 
-
 if display_option == "Total individual action":
     display_individual_total_action()
 elif display_option == "Individual action rate":
-    display_individual_action_rate()
+    display_individual_action_rate(region)

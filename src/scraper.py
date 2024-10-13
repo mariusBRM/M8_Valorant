@@ -5,7 +5,10 @@ import requests
 from bs4 import BeautifulSoup, Comment
 import re
 from utils import *
+from config import *
 import sys
+
+config = Config()
 
 def matches_scraper(url):
     """
@@ -48,6 +51,9 @@ def general_data_scraper(list_url):
     for matchnum in range(len(list_url)):
 
         url = list_url[matchnum]
+
+        unique_match_id = url.split('/')[3]
+
         source_match = requests.get(url=url).text
         soup_match = BeautifulSoup(source_match, features="html.parser")
         
@@ -103,6 +109,8 @@ def general_data_scraper(list_url):
                 df_match['Team Name'] = team_name
                 df_match['Map Name'] = map_name
                 df_match['Map #'] = map_num
+                df_match['Id'] = unique_match_id
+                df_match['Unique Enum'] = unique_match_id + str(map_num)
                 df_match['Stage'] = stage
                 df_match['Series'] = series
                 df_match['winner'] = winner
@@ -129,10 +137,9 @@ def general_data_scraper(list_url):
         result['Player Name'] = result['Player Name'].str.split("\n").str[0].str.strip()
         result['D'] = result['D'].str[1:-1]
         result = result.apply(pd.to_numeric, errors='ignore')
-        result.drop('KAST', axis=1, inplace = True)
     except:
         result = None
-
+        
     return result
 
 def performance_data_scraper(list_url):
@@ -153,6 +160,8 @@ def performance_data_scraper(list_url):
 
         url = list_url[matchnum] + '/?game=all&tab=performance'
         
+        unique_match_id = url.split('/')[3]
+
         source_match = requests.get(url=url).text
         soup_match = BeautifulSoup(source_match, features="html.parser")
 
@@ -206,6 +215,8 @@ def performance_data_scraper(list_url):
                 
                 df_match['Map Name'] = map_name
                 df_match['Map #'] = map_num
+                df_match['Id'] = unique_match_id
+                df_match['Unique Enum'] = unique_match_id + str(map_num)
                 df_match['Stage'] = stage
                 df_match['Series'] = series
 
@@ -238,7 +249,9 @@ def economy_data_scraper(list_url):
     for matchnum in range(len(list_url)):
 
         url = list_url[matchnum] + "/?game=all&tab=economy"
-        
+
+        unique_match_id = url.split('/')[3]
+
         source_match = requests.get(url=url).text
         soup_match = BeautifulSoup(source_match, features="html.parser")
 
@@ -247,7 +260,6 @@ def economy_data_scraper(list_url):
         series = soup_match.findAll('div', {'class':'match-header-event-series'})[0].text.strip().split("\n", 1)[1].strip()
 
         try:
-            winner = soup_match.findAll('div', {'class':'match-bet-item-team'})[0].text.strip().split("\n")[2].strip()
 
             # for table_economy[i] if i%2==0 : the full bank with the round description, otherwise that is the higher level information
             # the last one is not useful as it is the overall result so only things interesting are [0,5] for a BO3
@@ -256,6 +268,8 @@ def economy_data_scraper(list_url):
             for i in range(0, len(table_economy)-1, 2):
 
                 map_num = i // 2
+
+                unique_map_id = unique_match_id + str(map_num + 1)
 
                 # need to check if this is a BO1 for map name
                 bo_x = soup_match.findAll('div', {'class':'match-header-vs-note'})[1].text.strip()
@@ -270,7 +284,7 @@ def economy_data_scraper(list_url):
                     map_name = soup_match.findAll('div', {'class':'vm-stats-gamesnav-item js-map-switch'})[map_num].text.strip()[1:].strip()
 
 
-                headers_match = ["Team Name", "Map #", "Map Name", "Stage", "Series", "Pistol_Won", "Eco", "Eco_Won", "$", "$_Won", "$$", "$$_Won", '$$$', '$$$_Won', "Bank", "Buys"]
+                headers_match = ["Id","Unique Enum","Team Name", "Map #", "Map Name", "Stage", "Series", "Pistol_Won", "Eco", "Eco_Won", "$", "$_Won", "$$", "$$_Won", '$$$', '$$$_Won', "Bank", "Buys"]
                 df_match = pd.DataFrame(columns=headers_match)
 
                 table_economy_general = table_economy[i]
@@ -281,7 +295,7 @@ def economy_data_scraper(list_url):
 
                 length = len(df_match)
 
-                df_match.loc[length], df_match.loc[length+1] = create_economy_row(team1, team2, banks, buys, series, stage, map_num, map_name)
+                df_match.loc[length], df_match.loc[length+1] = create_economy_row(team1, team2, banks, buys, unique_match_id, unique_map_id, series, stage, map_num, map_name)
 
                 match_stats.append(df_match)
         except NameError:
@@ -312,8 +326,11 @@ def pick_and_ban_scraper(list_url):
     match_stats = []
 
     for matchnum in range(len(list_url)):
+
         url = list_url[matchnum]
-        
+
+        unique_match_id = url.split('/')[3]
+
         source_match = requests.get(url=url).text
         soup_match = BeautifulSoup(source_match, features="html.parser")
 
@@ -322,17 +339,16 @@ def pick_and_ban_scraper(list_url):
         series = soup_match.findAll('div', {'class':'match-header-event-series'})[0].text.strip().split("\n", 1)[1].strip()
 
         try:
-            winner = soup_match.findAll('div', {'class':'match-bet-item-team'})[0].text.strip().split("\n")[2].strip()
 
             picks_bans = soup_match.findAll('div', {'class':'match-header-note'})[0].text.strip().split(";")
 
-            headers_match = ["Stage","Series","Team Name", "Bans", "Picks", "Decider"]
+            headers_match = ["Id","Stage","Series","Team Name", "Bans", "Picks", "Decider"]
             df_match = pd.DataFrame(columns=headers_match)
 
             [pick_or_ban_team1, pick_or_ban_team2] = reorganize_phrases(picks_bans)
 
-            row1 = [stage, series] + pick_or_ban_team1
-            row2 = [stage, series]+ pick_or_ban_team2
+            row1 = [unique_match_id, stage, series] + pick_or_ban_team1
+            row2 = [unique_match_id, stage, series]+ pick_or_ban_team2
 
             length = len(df_match)
             df_match.loc[length] = row1
@@ -354,6 +370,9 @@ def pick_and_ban_scraper(list_url):
     return result
 
 def map_data_scraper(list_url):
+    return None
+
+def map_vods_info_scraper(list_url):
     return None
 
 def main(url):
@@ -382,13 +401,13 @@ def main(url):
     try:
         print("Saving the data...")
         # saving the general data from all matches 
-        save_match_data(url, "general", general_data)
-        # saving the performance data from all matches
-        save_match_data(url, "performance", performance_data)
-        # saving the economic data from all matches
-        save_match_data(url, "economy", economy_data)
+        save_match_data(url, "general", general_data, config.SAVE_RAW_PATH) 
+        # saving the performance data from all matches 
+        save_match_data(url, "performance", performance_data, config.SAVE_RAW_PATH) 
+        # saving the economic data from all matches 
+        save_match_data(url, "economy", economy_data, config.SAVE_RAW_PATH) 
         # saving the pick and ban from all matches 
-        save_match_data(url, "pick_ban", pick_and_ban_data)
+        save_match_data(url, "pick_ban", pick_and_ban_data, config.SAVE_RAW_PATH) 
     except NameError:
         print(f"Failed at saving data. Error : {NameError}")
         print("The Url must be of the same type as : https://www.vlr.gg/event/matches/[INTEGER]/[NAME OF EVENT]/?series_id=all")
